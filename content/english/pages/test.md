@@ -1,7 +1,7 @@
 ---
 title: "Test"
 # meta title
-meta_title: ""
+meta_title: "This is a test meta description"
 # meta description
 description: "This is a test meta description"
 # save as draft
