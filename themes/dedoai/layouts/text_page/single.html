@@ -1,0 +1,21 @@
+{{- $_ := .Page.Params -}}
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        <section class="info-page">
+            <div class="container">
+                <div class="section-title">
+                  <h1>
+                    {{ $_.content_title }}
+                  </h1>
+                </div>
+                <div class="info-page-content"><!-- maybe insert ID here  -->
+                    {{ .Content }}
+                </div>
+             </div>
+            </section>
+        </div>
+        {{- partial "foot.html" . -}}
+    </body>
+</html>

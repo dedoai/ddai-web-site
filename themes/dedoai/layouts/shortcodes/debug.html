@@ -1,0 +1,7 @@
+<hr>
+<ol>
+{{ range $key, $value := .Page.Params }}
+   <li><strong>{{ $key }}</strong>: {{ $value }}</li>
+{{ end }}
+</ol>
+<hr>

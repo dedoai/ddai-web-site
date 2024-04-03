@@ -1,0 +1,48 @@
+<!doctype html>
+<html
+  itemscope
+  class="{{- if not site.Params.theme_switcher -}}
+    {{- site.Params.theme_default -}}
+  {{- end -}}"
+  lang="{{ site.LanguageCode | default `en-US` }}"
+  itemtype="http://schema.org/WebPage">
+  <head>
+    <!-- head (don't cache it) -->
+    {{ partial "common/head.html" . }}
+
+
+    <!-- style (always cache it) -->
+    {{ partialCached "common/style.html" . }}
+  </head>
+
+  <body>
+    <!-- cache partial only in production -->
+    {{ if hugo.IsProduction }}
+      {{ partialCached "preloader.html" . }}
+      {{ partialCached "gtm-noscript.html" . }}
+    {{ else }}
+      {{ partial "preloader.html" . }}
+
+
+      <!-- tailwind size indicator -->
+      {{ partial "components/tw-size-indicator.html" . }}
+    {{ end }}
+
+
+    <!-- header (don't cache it) -->
+    {{ partial "common/header.html" . }}
+    {{ partial "search-modal.html" (dict "Context" . ) }}
+
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- footer -->
+    {{ partial "common/footer.html" . }}
+
+
+    <!-- script (always cache it) -->
+    {{ partialCached "common/script.html" . }}
+  </body>
+</html>

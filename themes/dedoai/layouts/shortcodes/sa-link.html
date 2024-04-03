@@ -1,0 +1,4 @@
+{{- $text := .Get 0 -}}
+{{- $url := .Get 1 -}}
+{{- $sa_subject := .Get 2 -}}
+<a class="sa-event sa-link" href="{{$url}}"{{ with $sa_subject }} data-sa_subject="{{.}}"{{ end }}>{{$text}}</a>

@@ -1,0 +1,9 @@
+<amp-iframe {{ with .Get "src" }}src="{{ . }}"{{ end }}
+            {{ with .Get "width" }}width="{{ . }}"{{ end }}
+            {{ with .Get "height" }}height="{{ . }}"{{ end }}
+            {{ with .Get "layout" }}layout="{{ . }}"{{ end }}
+            {{ with .Get "resizable" }} resizable {{ end }}
+            {{ with .Get "sandbox" }}sandbox="{{ range (split . " ") }}{{ . }} {{ end }}"{{ end }}
+            layout="responsive" frameborder="0">
+    {{ with .Get "overflow" }}<div overflow tabindex=0 role=button aria-label="Read more">{{ . }}</div>{{ end }}
+</amp-iframe>

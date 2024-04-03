@@ -1,0 +1,5 @@
+{{ with .Page.Params.redirect }}
+    <script>
+        window.location.href = "{{ . }}";
+    </script>
+{{ end }}

@@ -1,0 +1,5 @@
+<img class="s_image"
+    {{ with .Get "src"  }}src="{{ . }}"{{ end }}
+    {{- with .Get "alt" }} alt="{{.}}"{{ end }}
+    {{- with .Get "width" }} width="{{.}}"{{else}}width="100%"{{ end }}
+>

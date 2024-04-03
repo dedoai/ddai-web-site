@@ -1,0 +1,8 @@
+<iframe {{ with .Get "src" }}src="{{ . }}"{{ end }} 
+            {{ with .Get "width" }}width="{{ . }}"{{ end }}
+            {{ with .Get "height" }}height="{{ . }}"{{ end }}
+            {{ if isset .Params ( .Get "frameborder" ) }}frameborder="{{ . }}"{{ end }}
+            {{ with .Get "resizable" }} resizable {{ end }}
+            {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }}>
+    {{ with .Get "overflow" }}<div tabindex=0 role=button aria-label="Read more">{{.}}</div>{{ end }}
+</ iframe>
