@@ -8,11 +8,11 @@ draft: false
 banner:
   title: "Welcome to dedoAI: Decentralizing Data for a Better Tomorrow"
   content: ""
-  image: "/images/banner.png"
+  image: "/images/demo_banner.jpg"
   button:
     enable: false
     label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: "https://www.dedoai.org/contacts/"
 
 ---
 
