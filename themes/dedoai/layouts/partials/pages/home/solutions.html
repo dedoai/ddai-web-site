@@ -1,0 +1,15 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <div class="row justify-center">
+        <h2 class="my-8 text-h4 lg:text-h2">
+          {{ $_.solutions.title | markdownify }}
+        </h2>
+        <ul>
+        {{ range  $_.solutions.items }}
+            <li> <h3>{{ .title }}</h3>
+            <p>{{ .text }}</p>
+             </li>
+        {{ end }}
+        </ul>
+    </div>
+</div>

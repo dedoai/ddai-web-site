@@ -1,1 +1,13 @@
 // Add your own custom styles here
+
+#main h1{
+    color: #ff33cc;
+    font-family: Montserrat, 'sans serif';
+    background: -webkit-linear-gradient(0deg, #9900ff, #ff33cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main h1 span{
+    -webkit-text-fill-color: white;
+}

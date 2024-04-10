@@ -2,11 +2,10 @@
   {{ with $_.banner }}
       {{ $image := resources.Get .image }}
       {{ $image_url := $image.RelPermalink }}
-    <section class="section pt-14">
-      <div class="containerh-screen bg-cover bg-no-repeat h-screen pt-8" style="background-image: url('{{ $image_url }}');">
+      <div class="bg-cover bg-no-repeat h-screen pt-8" style="background-image: url('{{ $image_url }}');">
         <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
-            <h1 class="mb-4 text-h3 lg:text-h1">
+          <div class="lg:col-7 md:col-9 text-center">
+            <h1 class="mt-8 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
             <p class="mb-8">
@@ -26,12 +25,6 @@
               {{ end }}
             {{ end }}
           </div>
-          <!--
-          <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[1920px]" "DisplayXL" "800x" ) }}
-          </div>
-          -->
         </div>
       </div>
-    </section>
   {{ end }}

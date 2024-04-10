@@ -1,0 +1,11 @@
+{{- $_ := .Page.Params -}}
+    <div class="container">
+        <div class="row justify-center">
+            <h2 class="my-8 text-h4 lg:text-h2">
+              {{ $_.intro_title | markdownify }}
+            </h2>
+            <p class="mb-8">
+              {{ $_.intro_txt  | markdownify }}
+            </p>
+        </div>
+    </div>

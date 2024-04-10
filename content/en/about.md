@@ -4,7 +4,7 @@ meta_title: "About Us: Shaping the Future of Data"
 description: "this is meta description"
 draft: false
 ---
-{{< content-block >}}
+{{< content-block "about" "1">}} <!-- #TODO: add parameters to content-block shortcode to add id, etc  -->
 
 **About Us: Shaping the Future of Data**
 

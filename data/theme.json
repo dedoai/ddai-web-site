@@ -3,6 +3,7 @@
     "default": {
       "theme_color": {
         "primary": "#121212",
+        "secondary": "#ff33cc",
         "body": "#fff",
         "border": "#eaeaea",
         "theme_light": "#f6f6f6",
@@ -17,6 +18,7 @@
     "darkmode": {
       "theme_color": {
         "primary": "#fff",
+        "secondary": "#ff33cc",
         "body": "#0f0d30",
         "border": "#3E3E3E",
         "theme_light": "#222222",
@@ -34,7 +36,10 @@
       "primary": "Montserrat:wght@400;600",
       "primary_type": "sans-serif",
       "secondary": "Hindi:wght@500;700",
-      "secondary_type": "sans-serif"
+      "secondary_type": "sans-serif",
+      "tertiary": "Lato",
+      "tertiary_type": "sans-serif"
+      
     },
     "font_size": {
       "base": "16",
