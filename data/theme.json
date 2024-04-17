@@ -3,11 +3,14 @@
     "default": {
       "theme_color": {
         "primary": "#121212",
-        "secondary": "#ff33cc",
+        "secondary": "#9900ff",
         "body": "#fff",
         "border": "#eaeaea",
         "theme_light": "#f6f6f6",
-        "theme_dark": ""
+        "theme_dark": "",
+        "bgr": "#0f0d30",
+        "accent": "#ff33cc",
+        "cta": "#ffff00"
       },
       "text_color": {
         "default": "#444444",
@@ -18,14 +21,14 @@
     "darkmode": {
       "theme_color": {
         "primary": "#fff",
-        "secondary": "#ff33cc",
+        "secondary": "#9900ff",
         "body": "#0f0d30",
         "border": "#3E3E3E",
         "theme_light": "#222222",
         "theme_dark": ""
       },
       "text_color": {
-        "default": "#B4AFB6",
+        "default": "#fff",
         "dark": "#fff",
         "light": "#B4AFB6"
       }
@@ -33,9 +36,9 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Montserrat:wght@400;600",
+      "primary": "Hindi+Madurai:wght@500;700",
       "primary_type": "sans-serif",
-      "secondary": "Hindi:wght@500;700",
+      "secondary": "Montserrat:wght@400;600",
       "secondary_type": "sans-serif",
       "tertiary": "Lato",
       "tertiary_type": "sans-serif"

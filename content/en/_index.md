@@ -10,24 +10,24 @@ banner:
   content: ""
   image: "/images/demo_banner.jpg"
   button:
-    enable: false
-    label: "Get Started For Free"
+    enable: true
+    label: "Get Involved !"
     link: "https://www.dedoai.org/contacts/"
 
-intro_title: Empowering Data Ownership
+intro_title: Empowering <br>Data<br> Ownership
 intro_txt: "At dedoAI, we're revolutionizing the way data is exchanged, owned, and monetized. Utilizing blockchain technology, we're creating a world where data is accessible, secure, and rightfully owned by its creators. Join us on our mission to democratize data and empower individuals and businesses worldwide."
 
 why:
    title: 'Why dedoAI?'
    items:
       - title: 'Decentralization'
-        icon: ''
+        icon: 'iph.svg'
         text: 'Experience true data ownership and exchange through our decentralized platform.'
       - title: Security
-        icon: ''
+        icon: 'iph.svg'
         text: 'Rest assured that your data is protected with state-of-the-art blockchain security.'
       - title: Monetization
-        icon: ''
+        icon: 'iph.svg'
         text: 'Unlock the true value of your data with our innovative monetization mechanisms.'
 
 solutions:
@@ -35,13 +35,13 @@ solutions:
    items:
       - title: 'dedoAI Marketplace'
         text: 'A secure platform for buying, selling, and trading data with ease.'
-        icon: ''
+        img: 'abstract-01.png'
       - title: 'Smart Contracts'
         text: 'Automate transactions and agreements with trust and transparency.'
-        icon: ''
+        img: 'abstract-02.png'
       - title: 'Data Staking'
         text: 'Participate in our unique "Proof of Data" program to earn rewards for contributing data.'
-        icon: ''
+        img: 'abstract-03.png'
 
 involved:
    title: 'Get Involved'
@@ -50,7 +50,7 @@ involved:
         text: 'Join our vibrant community of developers to improve the dedoAI ecosystem.'
         icon: ''
       - title: 'Partners'
-        text: 'Explore partne'
+        text: 'Explore partnership opportunities to accelerate data democratization.'
         icon: ''
       - title: 'Users'
         text: 'Sign up to gain early access to our platform and take control of your data today.'
@@ -65,7 +65,7 @@ final_cta:
 ---
 
 {{< wrap >}}
-{{< section "home/banner" "" "1" "main" "pt-0" >}}
+{{< section "home/hero" "" "1" "main" "pt-0" >}}
 {{< section "home/intro" "2" "" "intro" >}}
 {{< section "home/why" "3" "" "why" >}}
 {{< section "home/solutions" "4" "" "solutions" >}}

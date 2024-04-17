@@ -1,15 +1,36 @@
 {{- $_ := .Page.Params -}}
 <div class="container">
     <div class="row justify-center">
-        <h2 class="my-8 text-h4 lg:text-h2">
-          {{ $_.solutions.title | markdownify }}
-        </h2>
-        <ul>
-        {{ range  $_.solutions.items }}
-            <li> <h3>{{ .title }}</h3>
-            <p>{{ .text }}</p>
-             </li>
-        {{ end }}
-        </ul>
+        <div class="section-title">
+            <h2 class="my-8 text-h4 lg:text-h2">
+              {{ $_.solutions.title | markdownify }}
+            </h2>
+        </div>
     </div>
+
+        {{ range $i, $s:= $_.solutions.items }}
+            {{ $img := .img | default "plchldr.png" }}
+            {{if (modBool $i 2)}}
+            <div class="alternate flex content-center gap-x-lg">
+                <div class="flex-initial img-hldr frst">
+                    <img src='/assets/images/bg/{{$img}}'>
+                </div>
+                <div class="flex-initial txt-hldr scnd">
+                    <h3 class="alt-title">{{ $s.title }}</h3>
+                    <p class="alt-txt">{{ $s.text }}</p>
+                </div>
+            </div>
+            {{else}}
+            <div class="alternate inv flex content-center gap-x-lg">
+                <div class="flex-initial txt-hldr frst">
+                    <h3 class="alt-title">{{ $s.title }}</h3>
+                    <p class="alt-txt">{{ $s.text }}</p>
+                </div>
+                <div class="flex-initial img-hldr scnd">
+                    <img src="/assets/images/bg/{{$img}}">
+                </div>
+            </div>
+            {{ end }}
+        {{ end }}
+
 </div>

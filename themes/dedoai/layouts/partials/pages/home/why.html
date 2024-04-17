@@ -1,15 +1,21 @@
 {{- $_ := .Page.Params -}}
 <div class="container">
     <div class="row justify-center">
-        <h2 class="my-8 text-h4 lg:text-h2">
-          {{ $_.why.title | markdownify }}
-        </h2>
-        <ul>
-        {{ range  $_.why.items }}
-            <li> <h3>{{ .title }}</h3>
-            <p>{{ .text }}</p>
-             </li>
-        {{ end }}
-        </ul>
+        <div class="section-title text-center mb-8">
+            <h2 class="text-h4 lg:text-h2">
+              {{ $_.why.title | markdownify }}
+            </h2>
+        </div>
+        
+        <div class="flex gap-x-lg">
+            {{ range  $_.why.items }}
+            <div class="flex-initial dd-card">
+                <img class="card-img" src="/assets/images/icons/{{.icon}}">
+                <h3 class="card-title">{{ .title }}</h3>
+                <p class="card-text">{{ .text }}</p>
+            </div>
+            {{ end }}
+        
+        </div>
     </div>
 </div>

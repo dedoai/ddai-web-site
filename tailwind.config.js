@@ -60,6 +60,9 @@ module.exports = {
         border: theme.colors.default.theme_color.border,
         "theme-light": theme.colors.default.theme_color.theme_light,
         "theme-dark": theme.colors.default.theme_color.theme_dark,
+        bgr:theme.colors.default.theme_color.bgr,
+        accent:theme.colors.default.theme_color.accent,
+        cta:theme.colors.default.theme_color.cta,
         darkmode: {
           text: theme.colors.darkmode.text_color.default,
           light: theme.colors.darkmode.text_color.light,
@@ -70,7 +73,7 @@ module.exports = {
           border: theme.colors.darkmode.theme_color.border,
           "theme-light": theme.colors.darkmode.theme_color.theme_light,
           "theme-dark": theme.colors.darkmode.theme_color.theme_dark,
-        },
+        }
       },
       fontSize: {
         base: font_base + "px",
@@ -89,6 +92,12 @@ module.exports = {
         secondary: [fontSecondary, fontSecondaryType],
         tertiary: [fontTertiary, fontTertiaryType],
       },
+      spacing: {
+        sm: '20px',
+        md: '40px',
+        lg: '80px',
+        xl: '120px',
+      }
     },
   },
   plugins: [

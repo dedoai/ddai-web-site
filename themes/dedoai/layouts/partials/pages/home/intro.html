@@ -1,11 +1,13 @@
 {{- $_ := .Page.Params -}}
-    <div class="container">
-        <div class="row justify-center">
-            <h2 class="my-8 text-h4 lg:text-h2">
-              {{ $_.intro_title | markdownify }}
-            </h2>
-            <p class="mb-8">
-              {{ $_.intro_txt  | markdownify }}
-            </p>
+    <div class="container mx-auto">
+        <div class="flex gap-x-lg">
+            <div class="section-title flex-initial text-right my-8">
+                <h2 class="text-h4 lg:text-h2">
+                  {{ $_.intro_title | markdownify }}
+                </h2>
+            </div>
+            <div class="flex-initial dd-ballon dd-gradient my-8 p-8">
+                <p>{{ $_.intro_txt  | markdownify }}</p>
+            </div>
         </div>
     </div>

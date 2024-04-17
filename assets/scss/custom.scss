@@ -1,13 +1,106 @@
 // Add your own custom styles here
+// Variables: 
+
+$qu: 10px; // quarter u
+$hu: 20px; // half u
+$u: 40px; // unit
+$du: 80px; // double u
+$tu: 120px; // triple u
+
+$dd-violet: #9900ff;
+$dd-pink: #ff33cc;
+$dd-blue: #0f0d30;
+$dd-ylw: #FF0;
+
+// HTML tags
+
+section {
+    margin: ($u * 3) auto;
+}
+
+// General classes
+
+.row .section-title {
+    margin-bottom: $du;
+}
+
+.dd-gradient {
+    background: -webkit-linear-gradient(0deg, $dd-violet, $dd-pink );
+    background: linear-gradient(90deg, $dd-violet, $dd-pink );
+}
+
+.dd-leaf {
+    border-radius: 0 $u;
+}
+
+.dd-ballon {
+    border-radius: $u $u $u 0;
+}
+
+.dd-card {
+    border: 1px solid $dd-pink;
+    border-image: linear-gradient(0deg, $dd-violet, $dd-pink) 1;
+    border-image: -webkit-linear-gradient(0deg, $dd-violet, $dd-pink) 1;
+    border-radius: $qu;
+    padding: $u;
+}
+
+.dd-card .card-img{
+    margin: auto;
+    width: 50%;
+}
+.dd-card .card-title{
+    margin: $u auto;
+    text-align: center;
+}
+.dd-card .card-text{
+    text-align: justify;
+}
+
+// alternate rows
+
+.alternate{
+    align-items: center;
+    justify-content: left;
+}
+
+.alternate .alt-title{
+    margin-bottom: $u;
+}
+
+.alternate .img-hldr{
+    margin: auto;
+    width: 33%;
+}
+
+.alternate.inv{
+    justify-content: right;
+}
+
+.alternate .txt-hldr.frst{
+    text-align: right;
+    margin-right:0;
+}
+
+
+// Home start 
+#main {
+    margin-top: 0;
+}
 
 #main h1{
-    color: #ff33cc;
-    font-family: Montserrat, 'sans serif';
-    background: -webkit-linear-gradient(0deg, #9900ff, #ff33cc);
+    color: $dd-pink;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: Montserrat, 'sans serif';
 }
 
 #main h1 span{
     -webkit-text-fill-color: white;
 }
+
+.btn.btn-cta {
+    font-family: Montserrat, 'sans serif';
+    text-transform: uppercase;
+}
+
