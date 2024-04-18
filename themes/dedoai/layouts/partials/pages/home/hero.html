@@ -3,7 +3,7 @@
       {{ $image := resources.Get .image }}
       {{ $image_url := $image.RelPermalink }}
       <div class="bg-cover bg-no-repeat h-screen pt-8" style="background-image: url('{{ $image_url }}');">
-        <div class="row justify-center">
+        <div class="flex justify-center">
           <div class="lg:col-7 md:col-9 text-center">
             <h1 class="dd-gradient mt-8 text-h3 lg:text-h1">
               {{ .title | markdownify }}
