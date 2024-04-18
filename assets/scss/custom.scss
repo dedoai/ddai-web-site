@@ -12,10 +12,20 @@ $dd-pink: #ff33cc;
 $dd-blue: #0f0d30;
 $dd-ylw: #FF0;
 
+$dd-violet-l: #cc80ff;
+$dd-pink-l: #ff99e5;
+
+$dd-violet-ul: #e4bdff;
+$dd-pink-ul: #ffccf2;
+
 // HTML tags
 
 section {
     margin: ($u * 3) auto;
+}
+
+pre{
+    text-wrap: wrap;
 }
 
 // General classes
@@ -29,6 +39,23 @@ section {
     background: linear-gradient(90deg, $dd-violet, $dd-pink );
 }
 
+.dd-gradient-light {
+    background: -webkit-linear-gradient(0deg, $dd-violet-l, $dd-pink-l );
+    background: linear-gradient(90deg, $dd-violet-l, $dd-pink-l );
+    color: $dd-blue;
+}
+
+
+.dd-gradient-ul {
+    background: -webkit-linear-gradient(0deg, $dd-violet-ul, $dd-pink-ul );
+    background: linear-gradient(90deg, $dd-violet-ul, $dd-pink-ul );
+    color: $dd-blue;
+}
+
+.dd-rounded {
+    border-radius: $u;
+}
+
 .dd-leaf {
     border-radius: 0 $u;
 }
@@ -36,6 +63,11 @@ section {
 .dd-ballon {
     border-radius: $u $u $u 0;
 }
+
+.dd-drop {
+    border-radius: 0 $u $u $u;
+}
+
 
 .dd-card {
     border: 1px solid $dd-pink;
@@ -82,6 +114,13 @@ section {
 }
 
 // Items
+
+
+.items-hldr {
+    display: flex;
+
+}
+
 .dd-item .itm-img{
     margin: auto;
     width: 50%;
@@ -90,6 +129,7 @@ section {
 .dd-item .itm-title{
     margin: $u auto;
     text-align: center;
+    color: $dd-blue;
 }
 .dd-item .itm-text{
     padding: 0 $u;

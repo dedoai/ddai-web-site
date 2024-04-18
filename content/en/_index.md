@@ -69,7 +69,7 @@ final_cta:
 {{< section "home/intro" "2" "" "intro" >}}
 {{< section "home/why" "3" "" "why" >}}
 {{< section "home/solutions" "4" "" "solutions" >}}
-{{< section "home/involved" "5" "" "involved" >}}
+{{< section "home/involved" "5" "" "involved" >}} <!-- -->
 {{< section "commons/final_cta" "6" "" "final_cta" >}}
 {{< /wrap >}}
 
