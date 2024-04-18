@@ -8,29 +8,18 @@
         </div>
     </div>
 
-        {{ range $i, $s:= $_.solutions.items }}
-            {{ $img := .img | default "plchldr.png" }}
-            {{if (modBool $i 2)}}
-            <div class="alternate flex content-center gap-x-lg">
-                <div class="flex-initial img-hldr frst">
-                    <img src='/assets/images/bg/{{$img}}'>
-                </div>
-                <div class="flex-initial txt-hldr scnd">
-                    <h3 class="alt-title">{{ $s.title }}</h3>
-                    <p class="alt-txt">{{ $s.text }}</p>
-                </div>
+    {{ range $i, $s:= $_.solutions.items }}
+        {{ $img := .img | default "plchldr.png" }}
+        {{ $inv := (cond ( (modBool $i 2) ) "" "inv") }}
+        <div class="alternate {{$inv}} flex content-center gap-x-lg">
+            <div class="flex-initial img-hldr">
+                <img src='/assets/images/bg/{{$img}}'>
             </div>
-            {{else}}
-            <div class="alternate inv flex content-center gap-x-lg">
-                <div class="flex-initial txt-hldr frst">
-                    <h3 class="alt-title">{{ $s.title }}</h3>
-                    <p class="alt-txt">{{ $s.text }}</p>
-                </div>
-                <div class="flex-initial img-hldr scnd">
-                    <img src="/assets/images/bg/{{$img}}">
-                </div>
+            <div class="flex-initial txt-hldr">
+                <h3 class="alt-title">{{ $s.title }}</h3>
+                <p class="alt-txt">{{ $s.text }}</p>
             </div>
-            {{ end }}
-        {{ end }}
+        </div>
+    {{ end }}
 
 </div>

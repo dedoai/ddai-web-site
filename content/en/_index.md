@@ -35,26 +35,26 @@ solutions:
    items:
       - title: 'dedoAI Marketplace'
         text: 'A secure platform for buying, selling, and trading data with ease.'
-        img: 'abstract-01.png'
+        img: 'image-placeholder.png'
       - title: 'Smart Contracts'
         text: 'Automate transactions and agreements with trust and transparency.'
-        img: 'abstract-02.png'
+        img: 'image-placeholder.png'
       - title: 'Data Staking'
         text: 'Participate in our unique "Proof of Data" program to earn rewards for contributing data.'
-        img: 'abstract-03.png'
+        img: 'image-placeholder.png'
 
 involved:
    title: 'Get Involved'
    items:
       - title: 'Developers'
         text: 'Join our vibrant community of developers to improve the dedoAI ecosystem.'
-        icon: ''
+        icon: 'iph.svg'
       - title: 'Partners'
         text: 'Explore partnership opportunities to accelerate data democratization.'
-        icon: ''
+        icon: 'iph.svg'
       - title: 'Users'
         text: 'Sign up to gain early access to our platform and take control of your data today.'
-        icon: ''
+        icon: 'iph.svg'
 
 final_cta:
     title: 'Join the Revolution'

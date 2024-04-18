@@ -64,22 +64,45 @@ section {
     justify-content: left;
 }
 
+.alternate div{
+    width: 50%;
+}
+
+.alternate.inv{
+    flex-direction: row-reverse;
+}
+
 .alternate .alt-title{
     margin-bottom: $u;
 }
 
-.alternate .img-hldr{
-    margin: auto;
-    width: 33%;
-}
-
-.alternate.inv{
-    justify-content: right;
-}
-
-.alternate .txt-hldr.frst{
+.alternate.inv .txt-hldr{
     text-align: right;
     margin-right:0;
+}
+
+// Items
+.dd-item .itm-img{
+    margin: auto;
+    width: 50%;
+}
+
+.dd-item .itm-title{
+    margin: $u auto;
+    text-align: center;
+}
+.dd-item .itm-text{
+    padding: 0 $u;
+    text-align: center;
+}
+
+
+#final_cta .container{
+    border: 1px solid $dd-pink;
+    border-image: linear-gradient(0deg, $dd-violet, $dd-pink) 1;
+    border-image: -webkit-linear-gradient(0deg, $dd-violet, $dd-pink) 1;
+    border-radius: $qu;
+    padding: $u;
 }
 
 
