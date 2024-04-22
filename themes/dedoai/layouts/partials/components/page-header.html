@@ -1,13 +1,10 @@
-<section>
+<section id="page-header">
   <div class="container text-center">
-    <div
-      _class="from-body to-theme-light dark:from-darkmode-body dark:to-darkmode-theme-light rounded-2xl bg-gradient-to-b px-8 py-14"
-      class="from-body to-theme-light dark:from-darkmode-body dark:to-darkmode-theme-light px-8 py-14">
+    <div class="page-title">
       <h1>{{ i18n (printf "%s" (lower .Title)) | default .Title | title }}</h1>
+    </div>
       {{ with site.Params.breadcrumbs }}
         {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
       {{ end }}
-      
-    </div>
   </div>
 </section>

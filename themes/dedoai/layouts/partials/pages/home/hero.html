@@ -16,7 +16,7 @@
             {{ with .button }}
               {{ if .enable }}
                 <a
-                  class="btn btn-cta bg-cta text-dark hover:bg-purple-900 font-semibold hover:text-white"
+                  class="btn btn-cta bg-cta text-dark hover:bg-middle font-semibold hover:text-white"
                   href="{{ .link | absURL }}"
                   {{ if strings.HasPrefix .link `http` }}
                     target="_blank" rel="noopener"

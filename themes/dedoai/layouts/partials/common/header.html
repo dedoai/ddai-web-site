@@ -77,22 +77,23 @@
             </ul>
           </li>
         {{ else }}
-          <li class="nav-item">
-            <a
-              class="nav-link {{ if $active }}active{{- end -}}"
-              {{ if findRE `^http` .URL }}
-                target="_blank" rel="noopener"
-              {{ end }}
-              href="{{- if findRE `^#` .URL -}}
-                {{- if not $.IsHome -}}
-                  {{- site.Home.RelPermalink -}}
-                {{- end }}{{- .URL -}}
-              {{- else -}}
-                {{- .URL | relLangURL -}}
-              {{- end -}}"
-              >{{ .Name }}</a
-            >
-          </li>
+            {{ if ne .URL "/" }}
+              <li class="nav-item">
+                <a
+                  class="nav-link {{ if $active }}active{{- end -}}"
+                  {{ if findRE `^http` .URL }}
+                    target="_blank" rel="noopener"
+                  {{ end }}
+                  href="{{- if findRE `^#` .URL -}}
+                    {{- if not $.IsHome -}}
+                      {{- site.Home.RelPermalink -}}
+                    {{- end }}{{- .URL -}}
+                  {{- else -}}
+                    {{- .URL | relLangURL -}}
+                  {{- end -}}"
+                  >{{ .Name }}</a>
+              </li>
+        {{ end }}
         {{ end }}
       {{ end }}
       {{ if site.Params.navigation_button.enable }}
