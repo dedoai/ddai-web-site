@@ -11,7 +11,7 @@
     {{ range $i, $s:= $_.solutions.items }}
         {{ $img := .img | default "plchldr.png" }}
         {{ $inv := (cond ( (modBool $i 2) ) "" "inv") }}
-        <div class="alternate {{$inv}} flex content-center gap-x-lg">
+        <div class="alternate {{$inv}} flex content-center gap-x-md">
             <div class="flex-initial img-hldr">
                 <img src='/assets/images/bg/{{$img}}'>
             </div>

@@ -63,6 +63,8 @@ module.exports = {
         bgr:theme.colors.default.theme_color.bgr,
         accent:theme.colors.default.theme_color.accent,
         cta:theme.colors.default.theme_color.cta,
+        middle:theme.colors.default.theme_color.middle,
+        blend:theme.colors.default.theme_color.blend,
         darkmode: {
           text: theme.colors.darkmode.text_color.default,
           light: theme.colors.darkmode.text_color.light,
@@ -95,9 +97,9 @@ module.exports = {
       spacing: {
         sm: '20px',
         md: '40px',
-        lg: '40px',
+        lg: '80px',
         xl: '120px',
-      }
+      },
     },
   },
   plugins: [

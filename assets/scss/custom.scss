@@ -10,8 +10,8 @@ $tu: 120px; // triple u
 $dd-violet: #9900ff;
 $dd-pink: #ff33cc;
 $dd-blue: #0f0d30;
-$dd-ylw: #FF0;
-
+$dd-ylw: #ffec1a; //ffec1a  FF0
+  
 $dd-violet-l: #cc80ff;
 $dd-pink-l: #ff99e5;
 
@@ -147,7 +147,7 @@ pre{
 
 
 // Home start 
-#main {
+#page-header, #main {
     margin-top: 0;
 }
 
@@ -166,4 +166,3 @@ pre{
     font-family: Montserrat, 'sans serif';
     text-transform: uppercase;
 }
-

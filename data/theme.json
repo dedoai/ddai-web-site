@@ -10,7 +10,10 @@
         "theme_dark": "",
         "bgr": "#0f0d30",
         "accent": "#ff33cc",
-        "cta": "#ffff00"
+        "middle": "#ec1aff",
+        "blend": "#cc1ae6",
+        "cta": "#ffec1a",
+        "//comment":  "#ffff00 //old cta color"
       },
       "text_color": {
         "default": "#444444",
