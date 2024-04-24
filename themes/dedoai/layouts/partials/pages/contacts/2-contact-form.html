@@ -1,0 +1,73 @@
+{{- $_ := .Page.Params -}}
+<!-- 
+Name: [TextField] "Your full name"
+
+Email: [TextField] "Your email address"
+
+Subject: [Dropdown Menu] Options: "General Inquiry", "Partnership Opportunities", "Technical Support", "Media & Press", "Other"
+
+Message: [TextArea] "Please enter your message here"
+
+[Submit Button] "Send Message"
+-->
+<div class="container">
+    <div class="row justify-center my-8 py-8">
+        <div class="md:col-10 lg:col-10">
+
+            <div class="section-title">
+                <h2>{{ $_.t2 }}</h2>
+            </div>
+            <p>{{ $_.t3 }}</p>
+            <p>{{ $_.t4 }}</p>
+        </div>
+    </div>
+
+    <div class="row justify-center">
+        <div class="md:col-10 lg:col-10">
+            
+            <form>
+                <div class="mb-4">
+                  <label class="text-white" blockfor="">
+                    Name
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" type="text" placeholder="Your full name">
+                </div>
+
+                <div class="mb-4">
+                  <label class="text-white" blockfor="">
+                    Email
+                  </label>
+                  <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="" type="text" placeholder="Your email address">
+                </div>
+
+                <div class="mb-4">
+                  <label class="text-white" blockfor="">
+                    Subject
+                  </label>
+                  <select class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="subject">
+                      <option>General Inquiry</option>
+                      <option>Partnership Opportunities</option>
+                      <option>Technical Support</option>
+                      <option>Media & Press</option>
+                      <option>Other</option>
+                  </select>      
+                </div>
+
+                <div class="mb-4">
+                  <label class="text-white" blockfor="">
+                      Message
+                  </label>
+                  <textarea rows="5" class="block w-full resize-none px-0 border-gray-200  text-gray-800 bg-white px-4 pr-8" placeholder="Please enter your message here."></textarea>
+                </div>
+                
+                <div class="mb-4">
+                    <button class="btn btn-cta bg-cta text-dark hover:bg-middle font-semibold hover:text-white focus:outline-none focus:shadow-outline" type="button">
+                        Send Message
+                      </button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>

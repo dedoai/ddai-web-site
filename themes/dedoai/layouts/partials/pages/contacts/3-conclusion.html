@@ -1,0 +1,38 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <div class="row justify-center">
+        <div class="md:col-10 lg:col-10">
+            
+            <div class="flex gap-x-lg">
+                <div class="flex-initial my-8">
+                    <div class="section-title">
+                        <h2 class="text-h4 lg:text-h2">
+                          {{ $_.t5 | markdownify }}
+                        </h2>
+                    </div>
+                    <p>{{ $_.t6 | markdownify }}</p>
+                    <p>{{ $_.t7 | markdownify }}</p>
+                </div>
+                
+                <div class="flex-initial my-8">
+                    <div class="section-title">
+                        <h2 class="text-h4 lg:text-h2">
+                          {{ $_.t8 | markdownify | markdownify }}
+                        </h2>
+                    </div>
+                    <p>{{ $_.t9 | markdownify }}</p>
+                    
+                    {{range $_.contacts}}
+                        <p>- {{.name}} : {{ .url }}</p>
+                    {{end}}
+                    
+                </div>
+            </div>
+            
+            <div class="text-center my-8  py-8">
+                <p>{{ $_.t10 | markdownify }}</p>
+            </div>
+            
+        </div>
+    </div>
+</div>

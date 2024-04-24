@@ -1,0 +1,16 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <div class="row justify-center">
+        <div class="md:col-10 lg:col-10">
+        {{ range $_.timeline }}
+            <p>{{ .title }}</p>
+            {{ range .quarters }}
+                <p> - {{ .title }}</p>
+                {{ range .steps }}
+                    <p> - - {{ . }}</p>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+        </div>
+    </div>
+</div>

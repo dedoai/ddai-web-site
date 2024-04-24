@@ -21,14 +21,27 @@ $dd-pink-ul: #ffccf2;
 // HTML tags
 
 section {
-    margin: ($u * 3) auto;
+    margin: (3 * $u) auto;
 }
+
+// Home start 
+section#page-header, section#main {
+    margin-top: $u;
+    margin-bottom: 0;
+}
+
+section.page-content, section.intro {
+    margin-top: 2 * $u;
+}
+
 
 pre{
     text-wrap: wrap;
 }
 
 // General classes
+
+
 
 .row .section-title {
     margin-bottom: $du;
@@ -146,10 +159,7 @@ pre{
 }
 
 
-// Home start 
-#page-header, #main {
-    margin-top: 0;
-}
+
 
 #main h1{
     color: $dd-pink;

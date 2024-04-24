@@ -4,7 +4,8 @@ meta_title: "About Us: Shaping the Future of Data"
 description: "this is meta description"
 draft: false
 ---
-{{< content-block "about">}} <!-- #TODO: add parameters to content-block shortcode to add id, etc  -->
+
+{{< content-block "about">}}
 
 ## Our Mission
 
@@ -12,7 +13,13 @@ At dedoAI, we are pioneers in the quest to democratize data ownership and utiliz
 
 ## Who We Are
 
-dedoAI is more than a project; it's a movement led by visionaries and experts passionate about changing how the world perceives and uses data. Our core team consists of Luca Viviani, the visionary CEO; Marco Visibelli, our CDS with over 16 years in AI; Ivan Di Lelio, the innovative CTO; and Emanuele Costa, our crypto and data architect, among others. Together, we are dedicated to creating a platform that not only addresses the current challenges in data exchange but also sets the foundation for a sustainable, data-driven future.
+dedoAI is more than a project; it's a movement led by visionaries and experts passionate about changing how the world perceives and uses data. Our core team consists of:
+- **Luca Viviani**, the visionary CEO; 
+- **Marco Visibelli**, our CDS with over 16 years in AI;
+- **Ivan Di Lelio**, the innovative CTO;
+- **Emanuele Costa**, our crypto and data architect, among others.
+
+Together, we are dedicated to creating a platform that not only addresses the current challenges in data exchange but also sets the foundation for a sustainable, data-driven future.
 
 ## Our Values
 
