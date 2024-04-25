@@ -1,14 +1,12 @@
 {{- $class := .Get 0 -}}
 {{- $pre := .Get 1 -}}
 <section class="page-content{{- with $class }} {{.}}{{ end -}}">
-    <div class="container">
-        <div class="row justify-center">
-            <div class="md:col-10 lg:col-10">
-                <div class="content">
-                    {{- with $pre }} <pre>{{ end -}}
-                    {{ .Inner | markdownify }}
-                    {{- with $pre }} </pre>{{ end -}}
-                </div>
+    <div class="container row justify-center">
+        <div class="md:col-10 lg:col-10">
+            <div class="content">
+            {{- with $pre }} <pre>{{ end -}}
+                {{ .Inner | markdownify }}
+            {{- with $pre }} </pre>{{ end -}}
             </div>
         </div>
     </div>

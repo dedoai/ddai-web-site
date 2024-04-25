@@ -32,19 +32,24 @@ url = "/roadmap/"
 weight = 4
 
 [[main]]
+name = "Partners"
+url = "/partners/"
+weight = 5
+
+[[main]]
 name = "Jobs"
 url = "/jobs/"
-weight = 5
+weight = 6
 
 [[main]]
 name = "Source code"
 url = "/source-code/"
-weight = 6
+weight = 7
 
 [[main]]
 name = "Contacts"
 url = "/contacts/"
-weight = 7
+weight = 8
 
 # footer menu
 [[footer]]

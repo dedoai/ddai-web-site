@@ -11,6 +11,7 @@ $dd-violet: #9900ff;
 $dd-pink: #ff33cc;
 $dd-blue: #0f0d30;
 $dd-ylw: #ffec1a; //ffec1a  FF0
+$dd-gr-md: #ec1aff;
   
 $dd-violet-l: #cc80ff;
 $dd-pink-l: #ff99e5;
@@ -142,7 +143,7 @@ pre{
 .dd-item .itm-title{
     margin: $u auto;
     text-align: center;
-    color: $dd-blue;
+    color: white;
 }
 .dd-item .itm-text{
     padding: 0 $u;
@@ -175,4 +176,97 @@ pre{
 .btn.btn-cta {
     font-family: Montserrat, 'sans serif';
     text-transform: uppercase;
+}
+
+
+// ROADMAP
+
+
+.timeline .row:nth-child(1) .year{
+    justify-content: flex-end;
+}
+
+.timeline .circle {
+    padding: 13px 7px;
+    border-radius: 50%;
+    background-color: $dd-gr-md;
+    color: $dd-blue;
+    max-height: 50px;
+    z-index: 2;
+}
+
+.timeline .vertical-line::after {
+    content: '';
+    position: relative;
+    border-left: 3px solid $dd-gr-md;
+    z-index: 1;
+    height: 100%;
+    left: -25px;
+}
+
+.timeline .horizontal-line div {
+    padding: 0;
+    height: 40px;
+}
+
+.timeline .horizontal-line .timeline-side-div {
+    display: flex;
+    overflow: hidden;
+}
+
+.timeline .horizontal-line .corner {
+    border: 3px solid $dd-gr-md;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.timeline .horizontal-line .corner {
+    border: 3px solid $dd-gr-md;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.timeline .horizontal-line hr {
+    border-top: 3px solid $dd-gr-md;
+    margin: 0;
+    top: 17px;
+    position: relative;
+    opacity: 1;
+}
+
+
+.timeline .row:nth-child(2n) div:nth-child(1) .corner {
+    left: calc(50% - 2px);
+    top: -50%;
+}
+
+.timeline .row:nth-child(2n) div:nth-child(3) .corner {
+    left: -50%;
+    top: calc(50% - 3px);
+}
+
+.timeline .row:nth-child(4n) div:nth-child(1) .corner {
+    left: calc(50% - 2px);
+    top: calc(50% - 3px);
+}
+
+.timeline .row:nth-child(4n) div:nth-child(3) .corner {
+    left: -50%;
+    top: -50%;
+}
+
+.timeline .quarter {
+    width: 25%;
+    border: 1px solid $dd-violet;
+    border-radius: $qu; 
+}
+
+.timeline .plchldr {
+    width: 25%;
+}
+
+.timeline .quarter .subtitle{
+    color: $dd-gr-md;
 }

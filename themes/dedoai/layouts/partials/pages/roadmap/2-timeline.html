@@ -1,16 +1,21 @@
 {{- $_ := .Page.Params -}}
-<div class="container">
-    <div class="row justify-center">
-        <div class="md:col-10 lg:col-10">
-        {{ range $_.timeline }}
-            <p>{{ .title }}</p>
-            {{ range .quarters }}
-                <p> - {{ .title }}</p>
-                {{ range .steps }}
-                    <p> - - {{ . }}</p>
-                {{ end }}
-            {{ end }}
-        {{ end }}
-        </div>
-    </div>
+{{ $totalYears := len $_.timeline }}
+<div class="container timeline">
+{{ range $i, $tl := $_.timeline }}
+    {{ if eq (mod $i 2) 0 }}
+       <div class="row flex">
+         {{ partial "components/timeline/vertical-line.html" $tl.year }}
+         {{ partial "components/timeline/year-container.html" $tl }}
+       </div>
+     {{else}}
+       <div class="row flex justify-end">
+         {{ partial "components/timeline/year-container.html" $tl }}
+         {{ partial "components/timeline/vertical-line.html" $tl.year }}
+       </div>
+     {{ end }}
+     {{ if lt $i (sub $totalYears 1) }}
+       {{ partial "components/timeline/horizontal-line.html" $i }}
+     {{ end }}
+
+{{end}}
 </div>

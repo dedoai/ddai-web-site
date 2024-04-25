@@ -1,7 +1,7 @@
 ---
 title: "Get in Touch with dedoAI"
-meta_title: "Get in Touch with dedoAI"
-description: "this is meta description"
+meta_title: "Contacts - dedoAi"
+description: "Get in Touch with dedoAI"
 draft: false
 
 t1: "Whether you're curious about our technology, interested in partnering with us, or simply have questions about the future of data, we're here to answer all your inquiries. Our team is dedicated to fostering open communication and collaboration with our community, potential partners, and anyone interested in the dedoAI project."
@@ -17,8 +17,8 @@ t8: Follow Us
 t9: "Stay updated with the latest news and developments from dedoAI by following us on our social media channels:"
 t10: "We look forward to hearing from you!"
 
-contacts: 
-- name: Twitter
+links: 
+- name: X
   url: "[@dedoAI]"
 - name: LinkedIn
   url: "[dedoAI Company Page]"

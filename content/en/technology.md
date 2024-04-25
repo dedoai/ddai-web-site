@@ -1,7 +1,7 @@
 ---
 title: "Technology"
-meta_title: "Technology at the Heart of dedoAI"
-description: "this is meta description"
+meta_title: "Technology - dedoAi"
+description: "Technology at the Heart of dedoAI"
 draft: false
 ---
 {{< content-block >}}

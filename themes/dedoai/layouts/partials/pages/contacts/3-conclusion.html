@@ -22,8 +22,8 @@
                     </div>
                     <p>{{ $_.t9 | markdownify }}</p>
                     
-                    {{range $_.contacts}}
-                        <p>- {{.name}} : {{ .url }}</p>
+                    {{range $_.links}}
+                        <p>- <a href="{{ .url }}">{{.name}} : {{ .url }}</a></p>
                     {{end}}
                     
                 </div>

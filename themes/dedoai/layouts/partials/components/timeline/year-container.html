@@ -1,0 +1,21 @@
+<div class="col-10 lg:col-8_ my-8">
+    <h3 class="my-8">{{ .title }}</h3>
+    <div class="year flex gap-x-md">
+        <!-- range quarters -->
+        {{ range .quarters }}
+            {{ with .empty }}
+             <div class="plchldr"></div>
+            {{ else }}
+            <div class="quarter my-8 px-2">
+                <h4 class="my-4">{{ .title }}</h4>
+                <p class="subtitle text-color-accent font-bold my-4">{{ .st }}</p>
+                <ul class="mb-4">
+                {{ range .steps }}
+                    <li class="mb-2">- {{ . }}</li>
+                {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>

@@ -1,7 +1,7 @@
 ---
-title: "Innovation - dedoAi"
-meta_title: "dedoAI Innovation: Pioneering a New Data Economy"
-description: "this is meta description"
+title: "Innovation"
+meta_title: "Innovation - dedoAi"
+description: "dedoAI Innovation: Pioneering a New Data Economy"
 draft: false
 ---
 {{< content-block "innovation">}} <!-- #TODO: add parameters to content-block shortcode to add id, etc  -->
