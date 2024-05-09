@@ -4,7 +4,8 @@ meta_title: ""
 description: "this is a default common content file"
 draft: false
 
-build: false
+_build:
+  render: "never"
 
 final_cta:
     title: 'Join the Revolution'
