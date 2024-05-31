@@ -4,57 +4,52 @@ meta_title: "dedo AI | Showcase"
 description: "this is meta description"
 draft: false
 
-# Banner
-banner:
-  title: "Welcome to dedoAI: Decentralizing data for a <span>Better Tomorrow<span>"
-  content: ""
+phld_title: This is an awensome placeholder title
+phld_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+phld_text2: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+phld_text3: Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+ctx1:
+  title: "title ctx 1"
+  content: "content text 1 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   image: "/images/demo_banner.jpg"
   button:
     enable: true
     label: "Get Involved !"
     link: "https://www.dedoai.org/contacts/"
 
-intro_title: Empowering <br>Data<br> Ownership
-intro_txt: "At dedoAI, we're revolutionizing the way data is exchanged, owned, and monetized. Utilizing blockchain technology, we're creating a world where data is accessible, secure, and rightfully owned by its creators. Join us on our mission to democratize data and empower individuals and businesses worldwide."
-
-why:
-   title: 'Why dedoAI?'
+ctx2:
+   title: "title ctx 2"
    items:
-      - title: 'Decentralization'
+      - title: 'ctx 2 - item 1'
         icon: 'iph.svg'
-        text: 'Experience true data ownership and exchange through our decentralized platform.'
-      - title: Security
-        icon: 'iph.svg'
-        text: 'Rest assured that your data is protected with state-of-the-art blockchain security.'
-      - title: Monetization
-        icon: 'iph.svg'
-        text: 'Unlock the true value of your data with our innovative monetization mechanisms.'
-
-solutions:
-   title: 'Our Solutions'
-   items:
-      - title: 'dedoAI Marketplace'
-        text: 'A secure platform for buying, selling, and trading data with ease.'
+        text: "ctx 2 - item 1 txt : sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         img: 'image-placeholder.png'
-      - title: 'Smart Contracts'
-        text: 'Automate transactions and agreements with trust and transparency.'
+      - title: 'ctx 2 - item 2'
+        icon: 'iph.svg'
+        text: "ctx 2 - item 2 txt : sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         img: 'image-placeholder.png'
-      - title: 'Data Staking'
-        text: 'Participate in our unique "Proof of Data" program to earn rewards for contributing data.'
+      - title: 'ctx 2 - item 3'
+        icon: 'iph.svg'
+        text: "ctx 2 - item 3 txt : sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         img: 'image-placeholder.png'
 
-involved:
-   title: 'Get Involved'
+
+ctx3:
+   title: "title ctx 3"
    items:
-      - title: 'Developers'
-        text: 'Join our vibrant community of developers to improve the dedoAI ecosystem.'
+      - title: 'ctx 3 - item 1'
         icon: 'iph.svg'
-      - title: 'Partners'
-        text: 'Explore partnership opportunities to accelerate data democratization.'
+        text: 'ctx 3 - item 1 txt :sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        img: 'image-placeholder.png'
+      - title: 'ctx 3 - item 2'
         icon: 'iph.svg'
-      - title: 'Users'
-        text: 'Sign up to gain early access to our platform and take control of your data today.'
+        text: 'ctx 3 - item 2 txt :sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        img: 'image-placeholder.png'
+      - title: 'ctx 3 - item 3'
         icon: 'iph.svg'
+        text: 'ctx 3 - item 3 txt :sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        img: 'image-placeholder.png'
 
 final_cta:
     title: 'Join the Revolution'
@@ -63,6 +58,30 @@ final_cta:
     btn_link: '#newsletter'
 
 ---
+
+## layouts:
+
+- 1 column full
+- 1 column right
+- 1 column left
+- 2 columns
+- 3 columns
+- 4 columns
+- 5 columns
+
+## elements:
+
+- simple title
+- title with h space
+- title with bg
+- hero
+- intro title and text
+- 3 cards
+- horizontal alternate text
+- box with 3 plus
+- steps
+
+- boxed final CTA
 
 {{< wrap >}}
 {{< section "generic/hero" "" "1" "main" "pt-0" >}}
