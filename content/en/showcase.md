@@ -57,8 +57,7 @@ final_cta:
     btn_label: 'Get Involved!'
     btn_link: '#newsletter'
 
----
-
+full_descr: '''
 ## layouts:
 
 - 1 column full
@@ -82,9 +81,15 @@ final_cta:
 - steps
 
 - boxed final CTA
+'''
+
+---
 
 {{< wrap >}}
 {{< section "generic/hero" "" "1" "main" "pt-0" >}}
+<!-- {{< section "generic/columns" "" "2" "main" "" >}} -->
+{{< block "generic/testctx" "ctx1" "3" "ctx1">}}
+{{< block "generic/testctx" "ctx2" "4" "ctx2">}}
 {{< /wrap >}}
 
 <!-- Sections to add:

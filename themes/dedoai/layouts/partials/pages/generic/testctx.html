@@ -1,0 +1,7 @@
+{{- $_ := .Page.Params -}}
+{{- $b := .data -}}
+
+<h2>{{ $b.title }}</h2>
+{{with $b.content}}
+ <p>{{.}}</p>
+{{end}}
