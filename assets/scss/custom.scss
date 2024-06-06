@@ -1,6 +1,10 @@
 // Add your own custom styles here
 // Variables: 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $qu: 10px; // quarter u
 $hu: 20px; // half u
 $u: 40px; // unit

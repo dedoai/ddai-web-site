@@ -1,13 +1,16 @@
 {{- $key := .Get 2 -}}
 {{- $params := cond (isset .Page.Params $key) .Page.Params .Site.Params -}} 
 {{ $d := index $params $key  }}
-<pre>
-    Type : {{ printf "%T" $d }}
-    {{ range $i, $val := $d }}
-    <p>Tp : {{ printf "%T" $val }} - {{ $i }} - {{ $val }} </p>
-    {{ debug.Dump $val }}
-    {{ end }}
-    <hr>
-    <p>Raw: {{ $d }}</p>
-    <hr>
-</pre>
+<div class="container">
+    <pre>
+<b>Type :</b> {{ printf "%T" $d }}
+
+        {{ range $i, $val := $d }}
+---
+   <p><b>Tp :</b><br>{{ printf "%T" $val }} - {{ $i }} - {{ $val }} </p>    
+        {{ end }}
+        <hr>
+{{ debug.Dump $d }}
+        <hr>
+    </pre>
+</div>

@@ -115,6 +115,13 @@ module.exports = {
         4: "1.5rem",
         5: "3rem",
       },
+      // test prop.
+      containerMaxWidths: {
+        sm: '540px',
+        md: '960px',
+        lg: '1140px',
+        xl: '1320px',
+      },
     }),
   ],
 };
