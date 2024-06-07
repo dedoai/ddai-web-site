@@ -62,8 +62,8 @@ final_cta:
 {{< wrap >}}
 {{< section "generic/hero" "" "1" "main" "pt-0" >}}
 {{< section "generic/columns_test" "" "2" "column_test" "" >}}
-{{< block "generic/testctx" "ctx1" "3" "data1">}}
-{{< block "generic/testctx" "ctx2" "4" "data2">}}
+{{< block "generic/testctx" "data1" "3">}}
+{{< block "generic/testctx" "data2" "4">}}
 {{< pblock "generic/testctx" "test" "data3" >}}
 
 {{< /wrap >}}
