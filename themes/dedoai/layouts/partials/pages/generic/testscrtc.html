@@ -1,0 +1,8 @@
+{{- $_ := .Page.Params -}}
+{{- $b := .Scratch.Get "data" -}}
+<div class="container">
+    <h2>{{ $b.title }}</h2>
+    {{with $b.content}}
+        <p>{{.}}</p>
+    {{end}}
+</div>

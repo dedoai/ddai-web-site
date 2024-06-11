@@ -65,5 +65,6 @@ final_cta:
 {{< block "generic/testctx" "data1" "3">}}
 {{< block "generic/testctx" "data2" "4">}}
 {{< pblock "generic/testctx" "test" "data3" >}}
+{{< sblock "generic/testscrtc" "data1" "data1" >}}
 
 {{< /wrap >}}
