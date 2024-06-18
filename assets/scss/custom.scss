@@ -11,17 +11,26 @@ $u: 40px; // unit
 $du: 80px; // double u
 $tu: 120px; // triple u
 
-$dd-violet: #9900ff;
-$dd-pink: #ff33cc;
-$dd-blue: #0f0d30;
-$dd-ylw: #ffec1a; //ffec1a  FF0
-$dd-gr-md: #ec1aff;
-  
-$dd-violet-l: #cc80ff;
-$dd-pink-l: #ff99e5;
+// Colors:
 
-$dd-violet-ul: #e4bdff;
-$dd-pink-ul: #ffccf2;
+$dd-text: #ffffff;
+$dd-background: #2f2b36;
+$dd-primary: #6655E4;
+$dd-secondary: #e9dff6;
+$dd-middle: #a89aed;
+$dd-accent: #ece9f1;
+$dd-acc-dark: #e47c53;
+$dd-acc-light: #53e588;
+
+// Light & Ultra light variations:
+
+$dd-primary-l: #A49BE4; 
+$dd-secondary-l: #F0ECF6;
+$dd-background-l: #3A3640;
+
+$dd-primary-ul: #C4C0E4;
+$dd-secondary-ul: #F6F6F6;
+$dd-background-ul: #2f2b36;
 
 // HTML tags
 
@@ -53,21 +62,21 @@ pre{
 }
 
 .dd-gradient {
-    background: -webkit-linear-gradient(0deg, $dd-violet, $dd-pink );
-    background: linear-gradient(90deg, $dd-violet, $dd-pink );
+    background: -webkit-linear-gradient(0deg, $dd-primary, $dd-secondary );
+    background: linear-gradient(90deg, $dd-primary, $dd-secondary );
 }
 
 .dd-gradient-light {
-    background: -webkit-linear-gradient(0deg, $dd-violet-l, $dd-pink-l );
-    background: linear-gradient(90deg, $dd-violet-l, $dd-pink-l );
-    color: $dd-blue;
+    background: -webkit-linear-gradient(0deg, $dd-primary-l, $dd-secondary-l );
+    background: linear-gradient(90deg, $dd-primary-l, $dd-secondary-l );
+    color: $dd-background;
 }
 
 
 .dd-gradient-ul {
-    background: -webkit-linear-gradient(0deg, $dd-violet-ul, $dd-pink-ul );
-    background: linear-gradient(90deg, $dd-violet-ul, $dd-pink-ul );
-    color: $dd-blue;
+    background: -webkit-linear-gradient(0deg, $dd-primary-ul, $dd-secondary-ul );
+    background: linear-gradient(90deg, $dd-primary-ul, $dd-secondary-ul );
+    color: $dd-background;
 }
 
 .dd-rounded {
@@ -88,9 +97,9 @@ pre{
 
 
 .dd-card {
-    border: 1px solid $dd-pink;
-    border-image: linear-gradient(0deg, $dd-violet, $dd-pink) 1;
-    border-image: -webkit-linear-gradient(0deg, $dd-violet, $dd-pink) 1;
+    border: 1px solid $dd-secondary;
+    border-image: linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
+    border-image: -webkit-linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
     border-radius: $qu;
     padding: $u;
 }
@@ -156,9 +165,9 @@ pre{
 
 
 #final_cta .container{
-    border: 1px solid $dd-pink;
-    border-image: linear-gradient(0deg, $dd-violet, $dd-pink) 1;
-    border-image: -webkit-linear-gradient(0deg, $dd-violet, $dd-pink) 1;
+    border: 1px solid $dd-secondary;
+    border-image: linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
+    border-image: -webkit-linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
     border-radius: $qu;
     padding: $u;
 }
@@ -167,10 +176,10 @@ pre{
 
 
 #main h1{
-    color: $dd-pink;
+    color: $dd-secondary;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Montserrat, 'sans serif';
+    font-family: Jost, 'sans serif';
 }
 
 #main h1 span{
@@ -178,7 +187,7 @@ pre{
 }
 
 .btn.btn-cta {
-    font-family: Montserrat, 'sans serif';
+    font-family: Jost, 'sans serif';
     text-transform: uppercase;
 }
 
@@ -193,8 +202,8 @@ pre{
 .timeline .circle {
     padding: 13px 7px;
     border-radius: 50%;
-    background-color: $dd-gr-md;
-    color: $dd-blue;
+    background-color: $dd-middle;
+    color: $dd-background;
     max-height: 50px;
     z-index: 2;
 }
@@ -202,7 +211,7 @@ pre{
 .timeline .vertical-line::after {
     content: '';
     position: relative;
-    border-left: 3px solid $dd-gr-md;
+    border-left: 3px solid $dd-middle;
     z-index: 1;
     height: 100%;
     left: -25px;
@@ -219,21 +228,21 @@ pre{
 }
 
 .timeline .horizontal-line .corner {
-    border: 3px solid $dd-gr-md;
+    border: 3px solid $dd-middle;
     width: 100%;
     position: relative;
     border-radius: 15px;
 }
 
 .timeline .horizontal-line .corner {
-    border: 3px solid $dd-gr-md;
+    border: 3px solid $dd-middle;
     width: 100%;
     position: relative;
     border-radius: 15px;
 }
 
 .timeline .horizontal-line hr {
-    border-top: 3px solid $dd-gr-md;
+    border-top: 3px solid $dd-middle;
     margin: 0;
     top: 17px;
     position: relative;
@@ -263,7 +272,7 @@ pre{
 
 .timeline .quarter {
     width: 25%;
-    border: 1px solid $dd-violet;
+    border: 1px solid $dd-primary;
     border-radius: $qu; 
 }
 
@@ -272,5 +281,5 @@ pre{
 }
 
 .timeline .quarter .subtitle{
-    color: $dd-gr-md;
+    color: $dd-middle;
 }
