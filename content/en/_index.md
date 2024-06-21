@@ -65,7 +65,7 @@ final_cta:
 ---
 
 {{< wrap >}}
-{{< section "home/hero" "" "1" "main" "pt-0" >}}
+{{< section "home/hero" "" "1" "main" "pt-0 hero" >}}
 {{< section "home/intro" "2" "" "intro" >}}
 {{< section "home/why" "3" "" "why" >}}
 {{< section "home/solutions" "4" "" "solutions" >}}

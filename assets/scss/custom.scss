@@ -47,6 +47,10 @@ section#page-header, section#main {
     margin-bottom: 0;
 }
 
+section#main.hero {
+    margin-top: 0;
+}
+
 section.page-content, section.intro {
     margin-top: 2 * $u;
 }
