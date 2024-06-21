@@ -8,7 +8,7 @@ draft: false
 banner:
   title: "Welcome to dedoAI: Decentralizing data for a <span>Better Tomorrow<span>"
   content: ""
-  image: "/images/demo_banner.jpg"
+  image: "/images/home-hero-1.webp"
   button:
     enable: true
     label: "Get Involved !"
