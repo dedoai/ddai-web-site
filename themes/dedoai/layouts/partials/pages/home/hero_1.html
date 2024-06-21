@@ -1,0 +1,30 @@
+{{- $_ := .Page.Params -}}
+{{ with $_.banner }}
+    {{- $image := resources.Get .image }}
+    {{- $image_url := $image.RelPermalink }}
+    <div class="bg-cover bg-no-repeat h-screen pt-8" style="background-image: url('{{ $image_url }}');">
+        <div class="container static">
+        <div class="txt_hldr absolute dd-bt-3u">
+            <div class="subtitle">{{ .sub_title | markdownify }}</div>
+            <div class="title">
+              <h1>{{ .title | markdownify }}</h1h1>
+            </div>
+            <div class="text">{{ .text | markdownify }}</div>
+            <div class="button">
+                {{ with .button }}
+                  {{ if .enable }}
+                    <a
+                      class="btn btn-cta bg-cta le font-semibold hover:text-white"
+                      href="{{ .link | absURL }}"
+                      {{ if strings.HasPrefix .link `http` }}
+                        target="_blank" rel="noopener"
+                      {{ end }}>
+                      {{ .label }}
+                    </a>
+                  {{ end }}
+                {{ end }}
+            </div>
+        </div>
+        </div>
+    </div>
+{{ end }}

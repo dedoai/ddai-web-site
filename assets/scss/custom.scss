@@ -35,11 +35,28 @@ $dd-secondary-ul_: #F6F6F6;
 $dd-secondary-ul: #C4C0E4;
 $dd-background-ul: #2f2b36;
 
+
+
+// SPACING
+
+.dd-bt-u{
+    bottom: $u;
+}
+
+.dd-bt-2u{
+    bottom: $du;
+}
+
+.dd-bt-3u{
+    bottom: $tu;
+}
+
 // HTML tags
 
 section {
     margin: (3 * $u) auto;
 }
+
 
 // Home start 
 section#page-header, section#main {
@@ -49,6 +66,15 @@ section#page-header, section#main {
 
 section#main.hero {
     margin-top: 0;
+}
+
+
+section#main.hero .txt_hldr{
+    width:35%;
+}
+
+section#main.hero .subtitle{  
+    color: #EAC7FF;
 }
 
 section.page-content, section.intro {
@@ -180,10 +206,12 @@ pre{
 }
 
 
+// Blocks
 
 
-#main h1{
-    color: $dd-secondary;
+
+#main_old h1{
+    color: $dd-text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Jost, 'sans serif';

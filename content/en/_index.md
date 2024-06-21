@@ -6,19 +6,18 @@ draft: false
 
 # Banner
 banner:
-  title: "Welcome to dedoAI: Decentralizing data for a <span>Better Tomorrow<span>"
-  content: ""
+  title: "Decentralizing data <br>for a Better Tomorrow"
+  sub_title: "A secure platform for easily buying, selling, and trading data."
+  text: "At dedoAI, we're changing how data is shared, owned, and sold with blockchain technology. We make data easy to access, secure, and owned by its creators. Join us to make data fair and empower everyone."
   image: "/images/home-hero-1.webp"
   button:
     enable: true
     label: "Get Involved !"
     link: "https://www.dedoai.org/contacts/"
 
-intro_title: Empowering <br>Data<br> Ownership
-intro_txt: "At dedoAI, we're revolutionizing the way data is exchanged, owned, and monetized. Utilizing blockchain technology, we're creating a world where data is accessible, secure, and rightfully owned by its creators. Join us on our mission to democratize data and empower individuals and businesses worldwide."
-
 why:
-   title: 'Why dedoAI?'
+   title: 'Empowering <br>Data<br> Ownership'
+   text: "At dedoAI, we're revolutionizing the way data is exchanged, owned, and monetized. Utilizing blockchain technology, we're creating a world where data is accessible, secure, and rightfully owned by its creators. Join us on our mission to democratize data and empower individuals and businesses worldwide."
    items:
       - title: 'Decentralization'
         icon: 'iph.svg'
@@ -65,27 +64,10 @@ final_cta:
 ---
 
 {{< wrap >}}
-{{< section "home/hero" "" "1" "main" "pt-0 hero" >}}
-{{< section "home/intro" "2" "" "intro" >}}
+{{< section "home/hero_1" "" "1" "main" "pt-0 hero" >}}
+
 {{< section "home/why" "3" "" "why" >}}
 {{< section "home/solutions" "4" "" "solutions" >}}
 {{< section "home/involved" "5" "" "involved" >}} <!-- -->
 {{< section "commons/final_cta" "6" "" "final_cta" >}}
 {{< /wrap >}}
-
-<!-- Sections to add:
-### Latest News
-
-Stay updated with the latest advancements, partnerships, and opportunities at dedoAI. [Link to News page](#)
-
-### Featured Partners
-
-- **Tech Innovations Ltd.**: 
-- **Green Solutions Inc.**: 
-- **HealthData Corp.**: 
-
-### Contact Us
-
-Have questions or ideas? We'd love to hear from you. [Link to Contact page](#)
-
--->
