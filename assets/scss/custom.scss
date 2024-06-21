@@ -16,7 +16,8 @@ $tu: 120px; // triple u
 $dd-text: #ffffff;
 $dd-background: #2f2b36;
 $dd-primary: #6655E4;
-$dd-secondary: #e9dff6;
+$dd-secondary_: #e9dff6;
+$dd-secondary: #6655e4;
 $dd-middle: #a89aed;
 $dd-accent: #ece9f1;
 $dd-acc-dark: #e47c53;
@@ -25,11 +26,13 @@ $dd-acc-light: #53e588;
 // Light & Ultra light variations:
 
 $dd-primary-l: #A49BE4; 
-$dd-secondary-l: #F0ECF6;
+$dd-secondary-l_: #F0ECF6;
+$dd-secondary-l: #A49BE4;
 $dd-background-l: #3A3640;
 
 $dd-primary-ul: #C4C0E4;
-$dd-secondary-ul: #F6F6F6;
+$dd-secondary-ul_: #F6F6F6;
+$dd-secondary-ul: #C4C0E4;
 $dd-background-ul: #2f2b36;
 
 // HTML tags
