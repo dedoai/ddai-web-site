@@ -1,30 +1,35 @@
 {{- $_ := .Page.Params -}}
 {{ with $_.banner }}
-    {{- $image := resources.Get .image }}
-    {{- $image_url := $image.RelPermalink }}
-    <div class="bg-cover bg-no-repeat h-screen pt-8" style="background-image: url('{{ $image_url }}');">
+    {{- $bg_img := resources.Get .bg_img }}
+    {{- $bg_img_url := $bg_img.RelPermalink }}
+    {{- $fg_img := resources.Get .fg_img }}
+    {{- $fg_img_url := $fg_img.RelPermalink }}
+    <div class="bg-cover bg-no-repeat h-screen pt-8" style="background-image: url('{{ $bg_img_url }}');">
         <div class="container static">
-        <div class="txt_hldr absolute dd-bt-3u">
-            <div class="subtitle">{{ .sub_title | markdownify }}</div>
-            <div class="title">
-              <h1>{{ .title | markdownify }}</h1h1>
+            <div class="txt_hldr absolute dd-bt-3u">
+                <div class="subtitle">{{ .sub_title | markdownify }}</div>
+                <div class="title">
+                  <h1>{{ .title | markdownify }}</h1h1>
+                </div>
+                <div class="text">{{ .text | markdownify }}</div>
+                <div class="button">
+                    {{ with .button }}
+                      {{ if .enable }}
+                        <a
+                          class="btn btn-cta bg-cta le font-semibold hover:text-white"
+                          href="{{ .link | absURL }}"
+                          {{ if strings.HasPrefix .link `http` }}
+                            target="_blank" rel="noopener"
+                          {{ end }}>
+                          {{ .label }}
+                        </a>
+                      {{ end }}
+                    {{ end }}
+                </div>
             </div>
-            <div class="text">{{ .text | markdownify }}</div>
-            <div class="button">
-                {{ with .button }}
-                  {{ if .enable }}
-                    <a
-                      class="btn btn-cta bg-cta le font-semibold hover:text-white"
-                      href="{{ .link | absURL }}"
-                      {{ if strings.HasPrefix .link `http` }}
-                        target="_blank" rel="noopener"
-                      {{ end }}>
-                      {{ .label }}
-                    </a>
-                  {{ end }}
-                {{ end }}
+            <div class="img_hldr absolute dd-bt-3u">
+                <img class="side-image" width=480 src="{{ $fg_img_url }}">
             </div>
-        </div>
         </div>
     </div>
 {{ end }}

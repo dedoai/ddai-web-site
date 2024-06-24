@@ -57,26 +57,6 @@ section {
     margin: (3 * $u) auto;
 }
 
-
-// Home start 
-section#page-header, section#main {
-    margin-top: $u;
-    margin-bottom: 0;
-}
-
-section#main.hero {
-    margin-top: 0;
-}
-
-
-section#main.hero .txt_hldr{
-    width:35%;
-}
-
-section#main.hero .subtitle{  
-    color: #EAC7FF;
-}
-
 section.page-content, section.intro {
     margin-top: 2 * $u;
 }
@@ -86,9 +66,8 @@ pre{
     text-wrap: wrap;
 }
 
-// General classes
 
-
+// --- General classes ---
 
 .row .section-title {
     margin-bottom: $du;
@@ -127,7 +106,6 @@ pre{
 .dd-drop {
     border-radius: 0 $u $u $u;
 }
-
 
 .dd-card {
     border: 1px solid $dd-secondary;
@@ -206,19 +184,44 @@ pre{
 }
 
 
-// Blocks
+// ----- PAGES -----
 
+// -- HOME --
 
-
-#main_old h1{
-    color: $dd-text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Jost, 'sans serif';
+section#page-header, section#main {
+    margin-top: $u;
+    margin-bottom: 0;
 }
 
-#main h1 span{
-    -webkit-text-fill-color: white;
+section#main.hero {
+    margin-top: 0;
+}
+
+
+section#main.hero .txt_hldr{
+    width:35%;
+}
+
+section#main.hero .subtitle{  
+    color: #EAC7FF;
+}
+
+section#main.hero .title{  
+    
+}
+
+section#main.hero .text{  
+    margin-bottom:40px;
+}
+
+section#main.hero .button{  
+    
+}
+
+section#main.hero .img_hldr {
+    width:35%;
+    margin-left: 48%;
+    margin-bottom: 1.25em;
 }
 
 .btn.btn-cta {
@@ -227,7 +230,7 @@ pre{
 }
 
 
-// ROADMAP
+// -- ROADMAP --
 
 
 .timeline .row:nth-child(1) .year{

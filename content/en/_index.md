@@ -9,7 +9,8 @@ banner:
   title: "Decentralizing data <br>for a Better Tomorrow"
   sub_title: "A secure platform for easily buying, selling, and trading data."
   text: "At dedoAI, we're changing how data is shared, owned, and sold with blockchain technology. We make data easy to access, secure, and owned by its creators. Join us to make data fair and empower everyone."
-  image: "/images/home-hero-1.webp"
+  bg_img: "/images/home/home-hero-1.webp"
+  fg_img: "/images/home/hero-1-screen.webp"
   button:
     enable: true
     label: "Get Involved !"
