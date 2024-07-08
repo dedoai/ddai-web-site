@@ -1,4 +1,8 @@
 {{- $_ := .Page.Params -}}
+{{ with $_.roles }}
 <div class="container">
-    <h2>roles</h2>
+    
+   <h2>{{.title}}</h2>
+   
 </div>
+{{end}}

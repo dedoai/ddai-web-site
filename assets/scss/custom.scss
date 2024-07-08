@@ -188,49 +188,68 @@ pre{
 
 // -- HOME --
 
-section#page-header, section#main {
+section#page-header, section#hero {
     margin-top: $u;
     margin-bottom: 0;
 }
 
-section#main.hero {
+section#hero {
+    padding-top: 0;
     margin-top: 0;
 }
 
-section#main.hero .txt_hldr{
-    width:35%;
+section#hero .txt_hldr{
+    position: absolute;
+    width:50%;
+    bottom: $tu;
 }
 
-section#main.hero .subtitle{  
-    color: #EAC7FF;
+section#hero .title h1{  
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 116.18px;
+    color: #FAFAFA;
+    margin-bottom:10px;
 }
 
-section#main.hero .title{  
-    
-}
-
-section#main.hero .text{  
+section#hero .text p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
     margin-bottom:40px;
 }
 
-section#main.hero .button{  
-    
+section#hero .text span{
+    font-weight: 600;
 }
 
-section#main.hero .img_hldr {
-    margin-left: 40%;
+section#hero .cta-row{
+    display: flex;
+    align-items: center;
+    gap: 45px;
 }
 
-section#main.hero .img_hldr img{
-    width: 75%;
+section#hero .cta-row a{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+}
+
+
+section#hero .img_hldr {
+    position: absolute;
+    width:49%;
+    right: 0;
+    bottom: $tu;
+}
+
+section#hero .img_hldr img{
+    width: 750px;
 }
 
 .btn.btn-cta {
     text-align: center;
-    padding: 17px 27px;
-
-
-
+    padding: 14px 27px;
     width: 240px;
     height: 58px;
 

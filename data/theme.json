@@ -43,7 +43,7 @@
     "font_family": {
       "primary": "Inter:wght@300;400;500;700:900",
       "primary_type": "sans-serif",
-      "secondary": "Lato:wght@400;600",
+      "secondary": "Inter:wght@300;400;500;700:900",
       "secondary_type": "sans-serif"      
     },
     "font_size": {

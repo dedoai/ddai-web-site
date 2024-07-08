@@ -1,4 +1,8 @@
 {{- $_ := .Page.Params -}}
+{{ with $_.members }}
 <div class="container">
-    <h2>members</h2>
+    
+   <h2>{{.title}}</h2>
+   
 </div>
+{{end}}

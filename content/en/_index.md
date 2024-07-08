@@ -4,10 +4,9 @@ meta_title: "dedo AI | Home meta title"
 description: "this is meta description"
 draft: false
 
-# Banner
 hero:
   bg_img: "/images/home/home-hero-bg-1.webp"
-  title: "Decentralizing  <br>Datafor a Better  <br>Tomorrow"
+  title: "Decentralizing  <br>Data for a Better  <br>Tomorrow"
   sub_title: "A secure platform for easily buying, selling, and trading data."
   text: "Transforming Data with Blockchain: <br><span>Secure, Accessible, and Creator-Owned</spam>"
   fg_img: "/images/home/home-right-elements-1.webp"
@@ -94,8 +93,8 @@ members:
 
 ---
 {{< wrap >}}
-{{< section "home/hero" "main" "pt-0 hero" >}}
-{{< section "home/roles" >}}
-{{< section "home/info" >}}
-{{< section "home/members" >}}
+{{< section "home/hero">}}
+{{< section "home/roles">}}
+{{< section "home/info">}}
+{{< section "home/members">}}
 {{< /wrap >}}
