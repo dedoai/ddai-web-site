@@ -6,15 +6,19 @@ draft: false
 
 # Banner
 banner:
-  title: "Decentralizing data <br>for a Better Tomorrow"
+  bg_img: "/images/home/home-hero-bg-1.webp"
+  title: "Decentralizing  <br>Datafor a Better  <br>Tomorrow"
   sub_title: "A secure platform for easily buying, selling, and trading data."
-  text: "At dedoAI, we're changing how data is shared, owned, and sold with blockchain technology. We make data easy to access, secure, and owned by its creators. Join us to make data fair and empower everyone."
-  bg_img: "/images/home/home-hero-1.webp"
-  fg_img: "/images/home/hero-1-screen.webp"
-  button:
+  text: "Transforming Data with Blockchain: <br>**Secure, Accessible, and Creator-Owned**"
+  fg_img: "/images/home/home-right-elements-1.webp"
+  cta:
     enable: true
-    label: "Get Involved !"
+    label: "Get Started Now"
     link: "https://www.dedoai.org/contacts/"
+  cta_2:
+    enable: true
+    label: "Read The Documentation"
+    link: "https://docs.dedoai.org/"
 
 why:
    title: 'Empowering <br>Data<br> Ownership'

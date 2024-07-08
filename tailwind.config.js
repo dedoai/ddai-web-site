@@ -25,12 +25,6 @@ if (theme.fonts.font_family.secondary) {
     .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
   fontSecondaryType = theme.fonts.font_family.secondary_type;
 }
-if (theme.fonts.font_family.tertiary) {
-  fontTertiary = theme.fonts.font_family.tertiary
-    .replace(/\+/g, " ")
-    .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;]+/gi, "");
-  fontTertiaryType = theme.fonts.font_family.tertiary_type;
-}
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -92,7 +86,6 @@ module.exports = {
       fontFamily: {
         primary: [fontPrimary, fontPrimaryType],
         secondary: [fontSecondary, fontSecondaryType],
-        tertiary: [fontTertiary, fontTertiaryType],
       },
       spacing: {
         sm: '20px',

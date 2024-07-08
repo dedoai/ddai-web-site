@@ -197,7 +197,6 @@ section#main.hero {
     margin-top: 0;
 }
 
-
 section#main.hero .txt_hldr{
     width:35%;
 }
@@ -219,14 +218,28 @@ section#main.hero .button{
 }
 
 section#main.hero .img_hldr {
-    width:35%;
-    margin-left: 48%;
-    margin-bottom: 1.25em;
+    margin-left: 40%;
+}
+
+section#main.hero .img_hldr img{
+    width: 75%;
 }
 
 .btn.btn-cta {
-    font-family: Jost, 'sans serif';
-    text-transform: uppercase;
+    text-align: center;
+    padding: 17px 27px;
+
+
+
+    width: 240px;
+    height: 58px;
+
+    /* Accent/Accent Pink */
+    background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+    /* Shadows/Shadow Medium */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    border: 2px solid #FFF;
 }
 
 
