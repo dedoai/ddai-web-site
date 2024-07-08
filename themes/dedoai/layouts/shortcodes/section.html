@@ -1,11 +1,9 @@
 {{- $partial := print "pages/" (.Get 0) -}}
-{{- $key := .Get 1 -}}
-{{- $scroll_index := .Get 2 -}}
-{{- $id := .Get 3 -}}
-{{- $class := .Get 4 -}}
-{{- $params := cond (isset .Page.Params $key) .Page.Params .Site.Params -}} 
-<section {{ with $scroll_index }} data-scroll-index="{{.}}"{{ end }}  
-         {{- with $id }} id="{{.}}"{{ end }} 
-         {{- with $class }} class="{{.}}"{{ end }}>
-  {{ partial $partial . }}
+{{- $pth := path.Split (.Get 0) -}}
+{{- $pname := $pth.File -}}
+{{- $id := .Get 1 -}}
+{{- $class := .Get 2 -}}
+<section id="{{- with $id }}{{.}}{{else}}{{$pname}}{{ end }}"
+ {{- with $class }} class="{{ . }}"{{ end }}>
+{{ partial $partial . }}
 </section>

@@ -31,8 +31,8 @@ final_cta:
 ---
 
 {{< wrap >}}
-{{< section "home/hero" "" "1" "main" "pt-0 hero" >}}
-{{< section "home/roles" "" "2" "roles" >}}
-{{< section "home/info" "" "5" "info" >}}
-{{< section "home/members" "" "7" "members" >}}
+{{< section "home/hero" "main" "pt-0 hero" >}}
+{{< section "home/roles" >}}
+{{< section "home/info" >}}
+{{< section "home/members" >}}
 {{< /wrap >}}
