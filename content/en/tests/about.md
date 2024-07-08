@@ -39,7 +39,7 @@ vision:
  txt: Imagine a future where data isn't just a commodity but a driving force for economic empowerment and innovation. This is the future dedoAI is committed to creating. With our cutting-edge technology and community-focused approach, we are on the path to revolutionizing the data economy. Join us as we pave the way for a world where data is democratized, and its true value is realized by all.
 
 ---
-{{< section "about/1-intro" "" "1" "intro" "" >}}
-{{< section "about/2-team" "" "2" "team" "" >}}
-{{< section "about/3-values" "" "3" "values" "" >}}
-{{< section "about/4-vision" "" "3" "vision" "" >}}
+{{< section "tests/about/1-intro" "" "1" "intro" "" >}}
+{{< section "tests/about/2-team" "" "2" "team" "" >}}
+{{< section "tests/about/3-values" "" "3" "values" "" >}}
+{{< section "tests/about/4-vision" "" "3" "vision" "" >}}
