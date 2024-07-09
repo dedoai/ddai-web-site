@@ -58,8 +58,8 @@ certifications:
   cta_text: "Read more"
   cta_link: "#"
 
-couintdown:
-  intro_title: "Cryptocurrency<br>is the value of dedoAI"
+countdown:
+  title: "Cryptocurrency<br>is the value of dedoAI"
   text: "DEDO is dedoAI's native cryptocurrency. It is used for marketplace operations, transactions, games or for selling and buying data."
   cta_txt: "Get DEDO Tokens"
   cta_link: "#"
@@ -120,6 +120,7 @@ members:
 {{< section "home/hero">}}
 {{< section "home/roles">}}
 {{< section "home/certifications">}}
+{{< section "home/countdown">}}
 {{< section "home/info">}}
 {{< section "home/members">}}
 {{< /wrap >}}

@@ -428,7 +428,24 @@ section#certifications .rgt-pnl .pill:hover {
     color: #FFF;
 }
 
+// ---
 
+section#countdown .pnls_hldr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#countdown .lft-pnl {
+    width: 500px;
+}
+
+section#countdown  .rgt-pnl {
+    width: 550px;
+}
+
+section#countdown {}
+    
 
 
 

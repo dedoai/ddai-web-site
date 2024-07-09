@@ -1,0 +1,21 @@
+{{ with .Page.Params.countdown }}
+<div class="container">
+    <div class="pnls_hldr">
+        <div class="lft-pnl">
+            <h2 class="section-title">{{.title | safeHTML }}</h2>
+            <p>{{.text}}</p>
+            <a href="{{.cta_link}}">{{.cta_txt}}</a>
+        </div>
+        
+         <div class="rgt-pnl">
+             <h2 class="section-title">{{.cd_txt | safeHTML }}</h2>
+             <div class="counter">
+                <div class="days"></div>
+                <div class="hours"></div>
+                <div class="minutes"></div>
+                <div class="seconds"></div>
+             </div>
+        </div>
+   
+</div>
+{{end}}
