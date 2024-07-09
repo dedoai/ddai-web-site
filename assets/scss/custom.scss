@@ -11,7 +11,7 @@ $u: 40px; // unit
 $du: 80px; // double u
 $tu: 120px; // triple u
 
-// Colors:
+// Colors: // to be updated
 
 $dd-text: #ffffff;
 $dd-background: #2f2b36;
@@ -167,6 +167,14 @@ pre{
     border: 2px solid #FFF;
 }
 
+h2.section-title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.09px;
+    text-align: center;
+    margin-bottom:50px;
+}
+
 // ----- PAGES -----
 
 // -- HOME --
@@ -218,7 +226,6 @@ section#hero .cta-row a{
     line-height: 24.2px;
 }
 
-
 section#hero .img_hldr {
     position: absolute;
     width:49%;
@@ -229,6 +236,211 @@ section#hero .img_hldr {
 section#hero .img_hldr img{
     width: 750px;
 }
+
+//---
+    
+section#roles .rbox{
+    position: relative;
+    border: 4px solid #FFFFFF;
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    padding: 38px 50px;
+    margin-top: 160px;
+}
+
+section#roles .rbox.vg-bg{
+    background: linear-gradient(90deg, #5C4ADF 0%, #A391FF 100%);
+}
+
+section#roles .rbox.pg-bg{
+    background: linear-gradient(90deg, #B15FFE 4.5%, #C8A8FF 61.5%);
+}
+
+section#roles .rbox h3{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.41px;
+    margin-bottom: 12px;
+}
+
+section#roles .rbox p{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    margin-bottom: 20px;
+}
+
+section#roles .rbox .cta_row{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+section#roles .rbox .pill {
+    display: block;
+    height: 50px;
+    padding: 17px 27px 17px 27px;
+    gap: 10px;
+    border-radius: 40px;
+    border: 0.7px 0px 0px 0px;
+    background: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    border: 0.7px solid #FFFFFF99;
+    transition: all 0.3s ease-in;
+}
+
+section#roles .rbox.vg-bg .pill {
+   color: #6756E5;
+}
+
+section#roles .rbox.pg-bg .pill {
+    color: #B15BF4
+}
+section#roles .rbox .pill:hover{
+    background: none;
+    color: #FFF;
+}
+
+section#roles .rbox .txt-cta {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+}
+
+section#roles .rbox .txt-cta span:after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('/assets/images/grth.webp');
+    background-size: cover;
+    
+    float: right;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+section#roles .rbox .img_hldr {
+    position: absolute;
+    right: 130px;
+    bottom: -10px;
+    width: 420px;
+}
+
+
+section#roles .rbox .cd_hldr {
+    position: absolute;
+    display: block;
+    width: 71px;
+    height: 60px;
+    right: 25px;
+    bottom: 5px;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.25));
+    
+}
+
+//---
+
+section#certifications {
+    background: #262626;
+    padding: 60px 0;
+}
+
+section#certifications .section-title{
+    margin-bottom: 50px;
+}
+
+section#certifications .pnls_hldr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#certifications .lft-pnl{
+    width: 600px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section#certifications .block{
+    width: 100%;
+    height: 200px;
+    background: #171717;
+    padding: 12px 36px;
+    border-radius: 24px;
+}
+
+section#certifications .block img{
+    height: 50px;
+    margin-bottom: 6px;
+}
+
+section#certifications .block h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+
+section#certifications .block p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+section#certifications .rgt-pnl{
+    width: 600px;
+    height: 660px;
+    position: relative;
+    background: url("/assets/images/home/cert-plchldr.webp");
+    background-size: cover;
+}
+
+section#certifications .rgt-pnl .pill{
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    display: block;
+    height: 50px;
+    padding: 15px 23px;
+    gap: 10px;
+    border-radius: 40px;
+    border: 0.7px 0px 0px 0px;
+    background: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    border: 0.7px solid #FFFFFF99;
+    transition: all 0.3s ease-in;
+    color: #6756E5;
+    box-shadow: 0px 2px 20px 0px #00000040;
+
+}
+
+section#certifications .rgt-pnl .pill:hover {
+    background: none;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
