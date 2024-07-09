@@ -6,10 +6,10 @@ draft: false
 
 hero:
   bg_img: "/images/home/home-hero-bg-1.webp"
+  fg_img: "/images/home/home-hero-elements-1.webp"
   title: "Decentralizing  <br>Data for a Better  <br>Tomorrow"
   sub_title: "A secure platform for easily buying, selling, and trading data."
   text: "Transforming Data with Blockchain: <br><span>Secure, Accessible, and Creator-Owned</spam>"
-  fg_img: "/images/home/home-right-elements-1.webp"
   cta:
     enable: true
     label: "Get Started Now"
@@ -24,17 +24,17 @@ roles:
   block_1:
     title: "Consumers"
     text: "Consumers can request datasets like images, videos, and etc. to train their AI systems, purchasing them with DedoAI tokens."
-    img: ""
+    img: "/images/home/roles-consumers.webp"
     cta_1:
       text: Read more
       link: "#"
-      cta_2:
-        text: Learn
-        link: "#"
+    cta_2:
+      text: Learn
+      link: "#"
   block_2:
     title: "Producers"
     text: "Producers can sell their data in response to consumer requests, using DedoAI tokens in our secure marketplace."
-    img: ""
+    img: "/images/home/roles-producers.webp"
     cta_1:
       text: Read more
       link: "#"

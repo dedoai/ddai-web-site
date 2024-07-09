@@ -1,8 +1,27 @@
 {{- $_ := .Page.Params -}}
 {{ with $_.roles }}
 <div class="container">
+    <h2>{{.title}}</h2>
+
+    <div class="rbox vg-bg">
+        <h3>{{.block_1.title}}</h3>
+        <p>{{.block_1.text}}</p>
+        <div class="cta_row">
+            <a href="{{.block_1.cta_1.link}}" class="button">{{.block_1.cta_1.text}}</a>
+            <a href="{{.block_1.cta_2.link}}" class="txt-cta">{{.block_1.cta_2.text}}</a>
+        </div>
+        <div class="img_hldr"><img src="{{.block_1.img}}" alt="{{.block_1.title}}"></div>
+    </div>
     
-   <h2>{{.title}}</h2>
+    <div class="rbox pg-bg">
+        <h3>{{.block_2.title}}</h3>
+        <p>{{.block_2.text}}</p>
+        <div class="cta_row">
+            <a href="{{.block_2.cta_1.link}}" class="button">{{.block_2.cta_1.text}}</a>
+            <a href="{{.block_2.cta_2.link}}" class="txt-cta">{{.block_2.cta_2.text}}</a>
+        </div>
+        <div class="img_hldr"><img src="{{.block_2.img}}" alt="{{.block_2.title}}"></div>
+    </div>
    
 </div>
 {{end}}

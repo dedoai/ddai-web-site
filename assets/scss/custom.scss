@@ -153,36 +153,19 @@ pre{
 
 // Items
 
-
-.items-hldr {
-    display: flex;
-
-}
-
-.dd-item .itm-img{
-    margin: auto;
-    width: 50%;
-}
-
-.dd-item .itm-title{
-    margin: $u auto;
+.btn.btn-cta {
     text-align: center;
-    color: white;
-}
-.dd-item .itm-text{
-    padding: 0 $u;
-    text-align: center;
-}
+    padding: 14px 27px;
+    width: 240px;
+    height: 58px;
 
-
-#final_cta .container{
-    border: 1px solid $dd-secondary;
-    border-image: linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
-    border-image: -webkit-linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
-    border-radius: $qu;
-    padding: $u;
+    /* Accent/Accent Pink */
+    background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+    /* Shadows/Shadow Medium */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    border: 2px solid #FFF;
 }
-
 
 // ----- PAGES -----
 
@@ -247,22 +230,43 @@ section#hero .img_hldr img{
     width: 750px;
 }
 
-.btn.btn-cta {
-    text-align: center;
-    padding: 14px 27px;
-    width: 240px;
-    height: 58px;
 
-    /* Accent/Accent Pink */
-    background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
-    /* Shadows/Shadow Medium */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 24px;
-    border: 2px solid #FFF;
+
+
+
+// -- TO BE REVIEWED --
+
+.items-hldr {
+    display: flex;
+
+}
+
+.dd-item .itm-img{
+    margin: auto;
+    width: 50%;
+}
+
+.dd-item .itm-title{
+    margin: $u auto;
+    text-align: center;
+    color: white;
+}
+.dd-item .itm-text{
+    padding: 0 $u;
+    text-align: center;
 }
 
 
-// -- ROADMAP --
+#final_cta .container{
+    border: 1px solid $dd-secondary;
+    border-image: linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
+    border-image: -webkit-linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
+    border-radius: $qu;
+    padding: $u;
+}
+
+
+// -- ROADMAP 
 
 
 .timeline .row:nth-child(1) .year{

@@ -7,10 +7,10 @@ draft: false
 # Banner
 banner:
   bg_img: "/images/home/home-hero-bg-1.webp"
+  fg_img: "/images/home/home-hero-elements-1.webp"
   title: "Decentralizing  <br>Datafor a Better  <br>Tomorrow"
   sub_title: "A secure platform for easily buying, selling, and trading data."
   text: "Transforming Data with Blockchain: <br>**Secure, Accessible, and Creator-Owned**"
-  fg_img: "/images/home/home-right-elements-1.webp"
   cta:
     enable: true
     label: "Get Started Now"
