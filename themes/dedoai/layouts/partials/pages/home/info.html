@@ -1,8 +1,16 @@
 {{- $_ := .Page.Params -}}
 {{ with $_.info }}
 <div class="container">
-    
-   <h2>{{.title}}</h2>
-   
+    <h2 class="section-title">{{.title}}</h2>
+    <div class="cards-hldr">
+        {{range .items}}
+            <div class="card">
+                <img src="{{.icon}}" alt="{{.title}}">
+                <h3>{{.title}}</h3>
+                <p>{{.text}}</p>
+                <a href="{{.cta_link}}">{{.cta_txt}}</a>
+            </div>
+        {{end}}
+    </div>
 </div>
 {{end}}

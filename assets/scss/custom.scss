@@ -11,9 +11,17 @@ $u: 40px; // unit
 $du: 80px; // double u
 $tu: 120px; // triple u
 
-// Colors: // to be updated
+// Colors: 
 
 $dd-text: #ffffff;
+$dd-purple: #866EFF;
+
+$dd-mld-grey: #262626;
+$dd-drk-grey: #171717;
+
+
+
+// to be updated: 
 $dd-background: #2f2b36;
 $dd-primary: #6655E4;
 $dd-secondary_: #e9dff6;
@@ -60,6 +68,12 @@ section.page-content, section.intro {
     margin-top: 2 * $u;
 }
 
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
 
 pre{
     text-wrap: wrap;
@@ -156,7 +170,6 @@ pre{
     text-align: center;
     padding: 14px 27px;
     width: 240px;
-    height: 58px;
     /* Accent/Accent Pink */
     background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
     /* Shadows/Shadow Medium */
@@ -520,11 +533,179 @@ section#countdown .time .digit span{
     line-height: 48px;
 }
 
-section#countdown {
+
+//---
+
+section#info {
+    background: #262626;
+    padding: 100px 0;
 }
 
-section#countdown {
+section#info .cards-hldr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
 }
+
+section#info .card{
+    width: 340px;
+    height: 280px;
+    padding: 50px;
+    border-radius: 24px;
+    background: #171717;
+}
+
+section#info .card img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+section#info .card h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+
+section#info .card p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+section#info .card a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #866EFF;
+}
+
+
+//---
+
+section#members {
+    margin: 100px auto;
+}
+
+section#members .tabs-hldr{
+    display: flex;
+    gap: 20px;
+    background: #262626;
+    border-radius: 24px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+section#members .tab-menu{
+    width: 230px;
+    height: 400px;
+    border-right: 1px solid #fff;
+}
+
+section#members .tab-menu li{
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 20px;
+}
+
+section#members .tab-menu li.active{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+section#members .tab-menu li:hover{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+section#members .tab-menu img{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+section#members .tab-content{
+    width: 400px;
+    height: 400px;
+}
+
+section#members .tab-content .tab_c{
+    display: none;
+}
+
+section#members .tab-content .tab_c.active{
+    display: block;
+}
+
+section#members  .tab-content h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+section#members p{
+    margin-bottom: 20px;
+}
+
+section#members .btn.btn-cta{
+    padding: 11px 27px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+section#members .tab-image{
+    width: 500px;
+    height: 400px
+}
+
+section#members .tab-image .tab_img{
+    display: none;
+}
+
+section#members .tab-image .tab_img.active{
+    display: block;
+}
+
+section#members {
+    
+}
+
+
+section#members .cards-hldr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+section#members .cards-hldr .card{
+    width: 360px;
+    height: 280px;
+    padding: 40px 34px;
+    border-radius: 24px;
+    background: #262626;
+}
+
+section#members .cards-hldr img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+section#members .cards-hldr h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom:12px;
+}
+
+// --- HOME END ---
 
 
 

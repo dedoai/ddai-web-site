@@ -1,8 +1,43 @@
 {{- $_ := .Page.Params -}}
 {{ with $_.members }}
 <div class="container">
+    <h2 class="section-title">{{.title}}</h2>
     
-   <h2>{{.title}}</h2>
-   
+    <div class="tabs-hldr">
+        <div class="tab-menu">
+            <ul>
+            {{range $i, $t := .tabs}}
+                <li class="{{ if (eq $i 0) }}active{{ end }}"><a href="#t-{{$t.label | urlize }}" data-index="{{$i}}"><img src="{{$t.icon}}">{{$t.label}}</a></li>
+            {{end}}
+            </ul>
+        </div>
+        <div class="tab-content">
+            {{range $i, $t := .tabs}}
+            <div class="tab_c{{ if (eq $i 0) }} active{{ end }}" id="tab_c_{{$i}}">
+                <h3>{{$t.title | safeHTML }}</h3>
+                <p>{{$t.text}}</p>
+                <a class="btn btn-cta" href="{{$t.cta_link}}">{{$t.cta_txt}}</a>
+            </div>
+            {{end}}
+        </div>
+        <div class="tab-image">
+            {{range $i, $t := .tabs}}
+            <div class="tab_img{{ if (eq $i 0) }} active{{ end }}" id="tab_img_{{$i}}">
+                <img src="{{$t.cover}}" alt="{{$t.title}}">
+            </div>
+            {{end}}
+        </div>
+    </div>
+    
+    <div class="cards-hldr">
+        {{range .cards}}
+            <div class="card">
+                <img src="{{.icon}}" alt="{{.title}}">
+                <h3>{{.title}}</h3>
+                <p>{{.text}}</p>
+                <a href="{{.cta_link}}">{{.cta_txt}}</a>
+            </div>
+        {{end}}
+    </div>
 </div>
 {{end}}
