@@ -64,7 +64,7 @@ countdown:
   cta_txt: "Get DEDO Tokens"
   cta_link: "#"
   cd_txt: "Listing Token Countdown"
-  cd_date: [13,Days,17,Hours,01,Minutes,17,Seconds]
+  cd_date: [Days,Hours,Minutes,Seconds]
 
 info:
   title: "Empowering Data Owenership"
