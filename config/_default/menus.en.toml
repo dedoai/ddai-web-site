@@ -7,62 +7,292 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "About"
-url = "/about/"
+name = "Use"
 weight = 2
 
 [[main]]
-name = "Innovation"
-url = "/innovation/"
-weight = 2
+parent = "Use"
+name = "Get a Wallet"
+url = ""
+weight = 1
 
 [[main]]
-name = "Token"
+parent = "Use"
+name = "Get a DEDO Token"
 url = "/token/"
 weight = 2
 
 [[main]]
-name = "Technology"
-url = "/technology/"
+parent = "Use"
+name = "Stake"
+url = ""
 weight = 3
 
 [[main]]
-name = "Roadmap"
-url = "/roadmap/"
+parent = "Use"
+name = "Call for Data"
+url = ""
 weight = 4
 
 [[main]]
-name = "Partners"
-url = "/partners/"
+parent = "Use"
+name = "Sell your Data"
+url = ""
 weight = 5
 
 [[main]]
-name = "Jobs"
-url = "/jobs/"
+parent = "Use"
+name = "Source Code"
+url = "/source-code/"
+weight = 6
+
+
+[[main]]
+name = "Learn"
+weight = 3
+
+[[main]]
+parent = "Learn"
+name = "About"
+url = "/about/"
+weight = 1
+
+[[main]]
+parent = "Learn"
+name = "Marketplace"
+url = ""
+weight = 2
+
+[[main]]
+parent = "Learn"
+name = "Webapp"
+url = ""
+weight = 3
+
+[[main]]
+parent = "Learn"
+name = "Certificate Info"
+url = ""
+weight = 4
+
+[[main]]
+parent = "Learn"
+name = "DedoAI Innovation"
+url = "/innovation/"
+weight = 5
+
+[[main]]
+parent = "Learn"
+name = "Value of dedoAI"
+url = ""
 weight = 6
 
 [[main]]
-name = "Source code"
-url = "/source-code/"
+parent = "Learn"
+name = "Roadmap"
+url = "/roadmap/"
 weight = 7
 
 [[main]]
-name = "Contacts"
-url = "/contacts/"
+parent = "Learn"
+name = "Documents"
+url = ""
 weight = 8
 
-# footer menu
-[[footer]]
-name = "About"
-url = "about/"
+[[main]]
+parent = "Learn"
+name = "Technology"
+url = "/technology/"
+weight = 9
+
+[[main]]
+name = "Support"
+weight = 3
+
+[[main]]
+parent = "Support"
+name = "Help center"
+url = ""
 weight = 1
 
+[[main]]
+parent = "Support"
+name = "Contacts"
+url = "/contacts/"
+weight = 2
+
+
+[[main]]
+name = "Other"
+weight = 4
+
+[[main]]
+parent = "Other"
+name = "News"
+url = "/news/"
+weight = 1
+
+[[main]]
+parent = "Other"
+name = "Communities"
+url = ""
+weight = 2
+
+[[main]]
+parent = "Other"
+name = "Partners"
+url = "/partners/"
+weight = 3
+
+[[main]]
+parent = "Other"
+name = "Careers"
+url = "/careers/"
+weight = 4
+
+#-----------------
+# Footer menu
+
 [[footer]]
-name = "Terms of service"
-url = "terms-of-service/"
+name = "Use"
 weight = 2
 
 [[footer]]
-name = "Privacy Policy"
-url = "privacy-policy/"
+parent = "Use"
+name = "Get a Wallet"
+url = ""
+weight = 1
+
+[[footer]]
+parent = "Use"
+name = "Get a DEDO Token"
+url = "/token/"
+weight = 2
+
+[[footer]]
+parent = "Use"
+name = "Stake"
+url = ""
 weight = 3
+
+[[footer]]
+parent = "Use"
+name = "Call for Data"
+url = ""
+weight = 4
+
+[[footer]]
+parent = "Use"
+name = "Sell your Data"
+url = ""
+weight = 5
+
+[[footer]]
+parent = "Use"
+name = "Source Code"
+url = "/source-code/"
+weight = 6
+
+
+[[footer]]
+name = "Learn"
+weight = 3
+
+[[footer]]
+parent = "Learn"
+name = "About"
+url = "/about/"
+weight = 1
+
+[[footer]]
+parent = "Learn"
+name = "Marketplace"
+url = ""
+weight = 2
+
+[[footer]]
+parent = "Learn"
+name = "Webapp"
+url = ""
+weight = 3
+
+[[footer]]
+parent = "Learn"
+name = "Certificate Info"
+url = ""
+weight = 4
+
+[[footer]]
+parent = "Learn"
+name = "DedoAI Innovation"
+url = "/innovation/"
+weight = 5
+
+[[footer]]
+parent = "Learn"
+name = "Value of dedoAI"
+url = ""
+weight = 6
+
+[[footer]]
+parent = "Learn"
+name = "Roadmap"
+url = "/roadmap/"
+weight = 7
+
+[[footer]]
+parent = "Learn"
+name = "Documents"
+url = ""
+weight = 8
+
+[[footer]]
+parent = "Learn"
+name = "Technology"
+url = "/technology/"
+weight = 9
+
+[[footer]]
+name = "Support"
+weight = 3
+
+[[footer]]
+parent = "Support"
+name = "Help center"
+url = ""
+weight = 1
+
+[[footer]]
+parent = "Support"
+name = "Contacts"
+url = "/contacts/"
+weight = 2
+
+
+[[footer]]
+name = "Other"
+weight = 4
+
+[[footer]]
+parent = "Other"
+name = "News"
+url = "/news/"
+weight = 1
+
+[[footer]]
+parent = "Other"
+name = "Communities"
+url = ""
+weight = 2
+
+[[footer]]
+parent = "Other"
+name = "Partners"
+url = "/partners/"
+weight = 3
+
+[[footer]]
+parent = "Other"
+name = "Careers"
+url = "/careers/"
+weight = 4
