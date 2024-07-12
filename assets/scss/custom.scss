@@ -186,6 +186,28 @@ h2.section-title {
     margin-bottom:50px;
 }
 
+// ----- LAYOUT -------
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+
+.footer-menu p {
+    font-weight: 800;
+}
+
+#footer .social-icons li a {
+    border-radius: 1.25rem;
+    background: #FFF;
+    color: #171717;
+    height: 2rem;
+    width: 2rem;
+}
+
+
 // ----- PAGES -----
 
 // -- HOME --
@@ -704,6 +726,65 @@ section#members .cards-hldr h3{
     line-height: 30px;
     margin-bottom:12px;
 }
+
+//---
+
+section#newsletter {
+    background: #262626;
+}
+
+section#newsletter .frm-hldr{
+    background: #171717;
+    padding: 50px;
+    border-radius: 24px 0 0 24px;
+}
+section#newsletter .frm-hldr h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: left;
+    margin-bottom:20px;
+}
+
+section#newsletter .frm-hldr p{
+    width: 580px;
+    margin-bottom: 50px;
+}
+
+section#newsletter .frm input{
+    width: 425px;
+    height: 60px;
+    margin-right: 20px;
+    padding: 20px 16px;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 600;
+}
+
+section#newsletter .frm input::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    color: #888;
+}
+section#newsletter .frm .btn-cta{
+    width: 150px;
+    height: 60px;
+    padding: 17px 27px;
+    border-radius: 8px;
+    background: linear-gradient(34deg, #6655E4 7.5%, #C86DFF 75%);
+    font-weight: 700;
+    line-height: 20px;
+}
+
+section#newsletter .img-hldr{
+    border-radius: 0 24px 24px 0;
+    background-size: cover;
+    background-position: center;
+}
+section#newsletter {}
+section#newsletter {}
 
 // --- HOME END ---
 

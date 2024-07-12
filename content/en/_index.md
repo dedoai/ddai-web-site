@@ -150,6 +150,16 @@ members:
     text: "Sign up to gain early access to our platform and take control of your data today."
     icon: "/assets/images/home/members-ico-usr.webp"
 
+newsletter:
+  title: "dedoAI Newsletter"
+  text: "Get the latest updates from dedoAI. Discover exciting developments, partnerships, and breakthroughs as we revolutionize the data economy and shape the future of data democratization and blockchain technology."
+  img: "/assets/images/home/members-cover-plchldr.webp"
+  placeholder: "Enter your email!"
+  confirm: "Successful subscribed"
+  error: "Problem ssubscibing"
+  btn_txt: "Subscribe"
+  btn_link: "#"
+  
 ---
 {{< wrap >}}
 {{< section "home/hero">}}
@@ -158,4 +168,5 @@ members:
 {{< section "home/countdown">}}
 {{< section "home/info">}}
 {{< section "home/members">}}
+{{< section "_common/newsletter">}}
 {{< /wrap >}}

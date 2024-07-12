@@ -3,7 +3,7 @@
 favicon = "images/favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
 logo = "images/logo.png"
-logo_darkmode = "images/logo.png"
+logo_darkmode = "images/color-logo-cr.webp"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "160px"
@@ -12,6 +12,8 @@ logo_height = "32px"
 logo_webp = true
 # logo text will only show when logo is missing.
 logo_text = "dedoAI"
+logo_footer = "images/white-logo.png"
+logo_footer_size = "131x41"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
@@ -54,12 +56,10 @@ show_categories = true
 
 # announcement
 # announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
-#[announcement]
-#enable = true
-#expire_days = 7
-#content = "You must replace the **baseURL** in **hugo.toml** file when deploying, you can manage this announcement from the **params.toml** file."
-
-
+[announcement]
+enable = false
+expire_days = 7
+content = "You must replace the **baseURL** in **hugo.toml** file when deploying, you can manage this announcement from the **params.toml** file."
 
 #breadcrumbs
 breadcrumbs = false
@@ -67,9 +67,9 @@ breadcrumbs = false
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Hugo & Tailwindcss Starter"
-author = "zeon.studio"
+keywords = ["dedoAI", "AI Data Exchange"]
+description = "Decentralizing Data for a Better Tomorrow"
+author = "dedoAI"
 image = "images/og-image.png"
 
 

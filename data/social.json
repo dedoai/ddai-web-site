@@ -1,14 +1,19 @@
 {
   "main": [
     {
-      "name": "facebook",
-      "icon": "fab fa-facebook",
-      "link": "https://www.facebook.com/"
+      "name": "linkedin",
+      "icon": "fab fa-linkedin",
+      "link": "https://www.linkedin.com/"
     },
     {
-      "name": "twitter",
-      "icon": "fab fa-twitter",
-      "link": "https://twitter.com/"
+      "name": "instagram",
+      "icon": "fab fa-instagram",
+      "link": "https://www.instagram.com/"
+    },
+    {
+      "name": "x",
+      "icon": "fab fa-x",
+      "link": "https://x.com/"
     },
     {
       "name": "github",
@@ -16,9 +21,9 @@
       "link": "https://www.github.com/"
     },
     {
-      "name": "linkedin",
-      "icon": "fab fa-linkedin",
-      "link": "https://www.linkedin.com/"
+      "name": "email",
+      "icon": "fa fa-envelope",
+      "link": "mailto:hello@dedoai.org"
     }
   ]
 }

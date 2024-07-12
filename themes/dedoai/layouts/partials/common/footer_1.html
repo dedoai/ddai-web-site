@@ -1,6 +1,9 @@
-<footer id="footer" class="bg-theme-light dark:bg-darkmode-theme-light">
+<footer class="bg-theme-light dark:bg-darkmode-theme-light">
   <div class="container">
-    <div class="footer-menu">
+    <div class="row py-10">
+<!--
+        <div class="lg:col-1 mb-8 lg:mb-0 lg:text-left"></div>
+-->
 
           {{ $currentPage := . }}
           {{ range site.Menus.footer }}
@@ -8,18 +11,21 @@
             {{ $menuURL := .URL | absLangURL }}
             {{ $pageURL:= $currentPage.Permalink | absLangURL }}
             {{ $active := eq $menuURL $pageURL }}
-            <div>
+            <div class="lg:col-3 mb-8 lg:mb-0 lg:text-left pl-10">
             {{ if .HasChildren }}
-                <p class="mb-4">
+                <h3 class="mb-4">
                   {{ .Name }}
-                </p>
+                </h3>
                 <ul
                   class="">
                   {{ range .Children }}
                     {{ $childURL := .URL | absLangURL }}
                     {{ $active := eq $childURL $pageURL }}
                     <li class="nav-dropdown-item">
-                      <a class="{{ if $active -}}active{{- end -}}"
+                      <a
+                        class="nav-dropdown-link {{ if $active }}
+                          active
+                        {{- end -}}"
                         {{ if findRE `^http` .URL }}
                           target="_blank" rel="noopener"
                         {{ end }}
@@ -64,7 +70,7 @@
         <a
           class="navbar-brand inline-block"
           href="{{ site.Home.RelPermalink }}">
-          {{ partial "image.html" (dict "Src" .Site.Params.logo_footer "Size" .Site.Params.logo_footer_size ) }}
+          {{ partial "logo" }}
         </a>
       </div>
       <div class="lg:col-6 mb-8 text-center lg:mb-0">
@@ -87,7 +93,6 @@
       </div>
     </div>
   </div>
-  <!-->
   <div class="border-border dark:border-darkmode-border border-t py-7">
     <div class="text-light dark:text-darkmode-light container text-center">
       <p>
@@ -95,5 +100,4 @@
       </p>
     </div>
   </div>
-  -->
 </footer>
