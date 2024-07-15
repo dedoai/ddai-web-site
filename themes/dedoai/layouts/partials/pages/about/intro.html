@@ -1,0 +1,13 @@
+{{- $_ := .Page.Params -}}
+<div class="container row justify-center">
+    <div class="md:col-10 lg:col-10">
+        <div class="section-title">
+            <h2 class="text-h4 lg:text-h2">
+               {{ $_.intro.title  }}
+            </h2>
+        </div>
+        <div class="my-8">
+            <p>{{ $_.intro.txt }}</p>
+        </div>
+    </div>
+</div>

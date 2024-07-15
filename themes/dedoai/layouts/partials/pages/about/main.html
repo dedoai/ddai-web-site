@@ -1,0 +1,54 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    {{ with $_.intro }}
+    <div id="intro" class="sect">
+        <h1 class="section-title">{{.title}}</h1>
+        <p>{{.text}}</p>
+        <a href="{{.cta_link}}">{{.cta_txt}}</a>
+    </div>
+    {{end}}
+
+    {{ with $_.team }}
+    <div id="team" class="sect">
+        <h2 class="section-title">{{.title}}</h2>
+        <div class="members">
+            {{range .members}}
+            {{- $bg_img := resources.Get .img }}
+            {{- $bg_img_url := $bg_img.RelPermalink }}
+                <div class="member" style="background:url('{{$bg_img_url}}')">
+                    <div class="txt-hldr">
+                        <h3>{{.name}}</h3>
+                        <p>{{.descr}}</p>
+                    </div>
+                </div>
+            {{end}}
+        </div>
+    </div>
+    {{end}}
+    
+    {{ with $_.values }}
+    <div id="values" class="sect">
+        <h2 class="section-title">{{.title}}</h2>
+        <div class="cards">
+            {{range .items}}
+                <div class="item">
+                    <div class="txt-hldr">
+                        <img src="{{.icon}}">
+                        <h3>{{.title}}</h3>
+                        <p>{{.txt}}</p>
+                    </div>
+                </div>
+            {{end}}
+        </div>
+        
+    </div>
+    {{end}}
+    
+    {{ with $_.vision }}
+    <div id="vision" class="sect">
+        <h2 class="section-title">{{.title}}</h2>
+        <p>{{.text}}</p>
+    </div>
+    {{end}}
+
+</div>

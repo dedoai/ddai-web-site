@@ -60,6 +60,12 @@ $dd-background-ul: #2f2b36;
 
 // HTML tags
 
+::selection {
+    background-color: $dd-purple;
+    color: #fff;
+}
+
+
 section {
     margin: (2.5 * $u) auto;
 }
@@ -77,6 +83,16 @@ p {
 
 pre{
     text-wrap: wrap;
+}
+
+
+option:checked, option:selected {
+    --tw-ring-color: #866EFF;
+}
+
+option:checked, option:hover {
+    background-color: $dd-purple;
+    --swiper-theme-color: #866EFF;
 }
 
 
@@ -181,9 +197,14 @@ pre{
 .tr-menu {}
 
 
-.tr-menu select {
+.tr-menu select, .tr-menu select:focus {
     border: none;
     font-weight: 700;
+    --tw-ring-color: #171717;
+}
+
+.tr-menu option {
+    --tw-ring-color: #866EFF;
 }
 
 .tr-menu .btn-cta{
@@ -826,14 +847,18 @@ section#newsletter .img-hldr{
     background-size: cover;
     background-position: center;
 }
-section#newsletter {}
-section#newsletter {}
 
 // --- HOME END ---
 
+// --- ABOUT ---
 
+#about h2.section-title {
+    text-align: left;
+}
 
-
+#about .sect{
+    margin-bottom: 50px;
+}
 
 
 
