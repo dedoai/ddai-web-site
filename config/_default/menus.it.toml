@@ -1,337 +1,314 @@
-############# English navigation ##############
-
-# main menu
+# menu principale
 [[main]]
 name = "Home"
 url = "/"
 weight = 1
 
 [[main]]
-name = "Use"
+name = "Utilizza"
 weight = 2
 
 [[main]]
-parent = "Use"
-name = "Get a Wallet"
+parent = "Utilizza"
+name = "Ottieni un Wallet"
 url = ""
 weight = 1
 
 [[main]]
-parent = "Use"
-name = "Get a DEDO Token"
+parent = "Utilizza"
+name = "Ottieni un Token DEDO"
 url = "/token/"
 weight = 2
 
 [[main]]
-parent = "Use"
+parent = "Utilizza"
 name = "Stake"
 url = ""
 weight = 3
 
 [[main]]
-parent = "Use"
-name = "Call for Data"
+parent = "Utilizza"
+name = "Richiesta di Dati"
 url = ""
 weight = 4
 
 [[main]]
-parent = "Use"
-name = "Sell your Data"
+parent = "Utilizza"
+name = "Vendi i tuoi Dati"
 url = ""
 weight = 5
 
 [[main]]
-parent = "Use"
-name = "Source Code"
+parent = "Utilizza"
+name = "Codice Sorgente"
 url = "/source-code/"
 weight = 6
 
 
 [[main]]
-name = "Learn"
+name = "Impara"
 weight = 3
 
 [[main]]
-parent = "Learn"
-name = "About"
+parent = "Impara"
+name = "Chi siamo"
 url = "/about/"
 weight = 1
 
 [[main]]
-parent = "Learn"
+parent = "Impara"
 name = "Marketplace"
 url = ""
 weight = 2
 
 [[main]]
-parent = "Learn"
+parent = "Impara"
 name = "Webapp"
 url = ""
 weight = 3
 
 [[main]]
-parent = "Learn"
-name = "Certificate Info"
+parent = "Impara"
+name = "Info Certificati"
 url = ""
 weight = 4
 
 [[main]]
-parent = "Learn"
-name = "DedoAI Innovation"
+parent = "Impara"
+name = "Innovazione DedoAI"
 url = "/innovation/"
 weight = 5
 
 [[main]]
-parent = "Learn"
-name = "Value of dedoAI"
+parent = "Impara"
+name = "Valore di DedoAI"
 url = ""
 weight = 6
 
 [[main]]
-parent = "Learn"
+parent = "Impara"
 name = "Roadmap"
 url = "/roadmap/"
 weight = 7
 
 [[main]]
-parent = "Learn"
-name = "Documents"
+parent = "Impara"
+name = "Documenti"
 url = ""
 weight = 8
 
 [[main]]
-parent = "Learn"
-name = "Technology"
+parent = "Impara"
+name = "Tecnologia"
 url = "/technology/"
 weight = 9
 
 [[main]]
-name = "Support"
+name = "Supporto"
 weight = 3
 
 [[main]]
-parent = "Support"
-name = "Help center"
+parent = "Supporto"
+name = "Centro Assistenza"
 url = ""
 weight = 1
 
 [[main]]
-parent = "Support"
-name = "Contacts"
+parent = "Supporto"
+name = "Contatti"
 url = "/contacts/"
 weight = 2
 
 
 [[main]]
-name = "Other"
+name = "Altro"
 weight = 4
 
 [[main]]
-parent = "Other"
-name = "News"
+parent = "Altro"
+name = "Notizie"
 url = "/news/"
 weight = 1
 
 [[main]]
-parent = "Other"
-name = "Communities"
+parent = "Altro"
+name = "Comunità"
 url = ""
 weight = 2
 
 [[main]]
-parent = "Other"
-name = "Partners"
+parent = "Altro"
+name = "Partner"
 url = "/partners/"
 weight = 3
 
 [[main]]
-parent = "Other"
-name = "Careers"
+parent = "Altro"
+name = "Carriere"
 url = "/careers/"
 weight = 4
 
 #-----------------
-#Top right menu
-
-[[top_right]]
-name = "Marketpalce"
-url = "#"
-weight = 1
-params = { icon = "ico-marketplace" }
-
-
-[[top_right]]
-name = "Sign Up"
-url = "#"
-weight = 2
-params = { class = "btn-cta"}
-
-[[top_right]]
-name = "Log In"
-url = "#"
-weight = 3
-
-#-----------------
-# Footer menu
+# Menu a piè di pagina
 
 [[footer]]
-name = "Use"
+name = "Utilizza"
 weight = 2
 
 [[footer]]
-parent = "Use"
-name = "Get a Wallet"
+parent = "Utilizza"
+name = "Ottieni un Wallet"
 url = ""
 weight = 1
 
 [[footer]]
-parent = "Use"
-name = "Get a DEDO Token"
+parent = "Utilizza"
+name = "Ottieni un Token DEDO"
 url = "/token/"
 weight = 2
 
 [[footer]]
-parent = "Use"
+parent = "Utilizza"
 name = "Stake"
 url = ""
 weight = 3
 
 [[footer]]
-parent = "Use"
-name = "Call for Data"
+parent = "Utilizza"
+name = "Richiesta di Dati"
 url = ""
 weight = 4
 
 [[footer]]
-parent = "Use"
-name = "Sell your Data"
+parent = "Utilizza"
+name = "Vendi i tuoi Dati"
 url = ""
 weight = 5
 
 [[footer]]
-parent = "Use"
-name = "Source Code"
+parent = "Utilizza"
+name = "Codice Sorgente"
 url = "/source-code/"
 weight = 6
 
 
 [[footer]]
-name = "Learn"
+name = "Impara"
 weight = 3
 
 [[footer]]
-parent = "Learn"
-name = "About"
+parent = "Impara"
+name = "Chi siamo"
 url = "/about/"
 weight = 1
 
 [[footer]]
-parent = "Learn"
+parent = "Impara"
 name = "Marketplace"
 url = ""
 weight = 2
 
 [[footer]]
-parent = "Learn"
+parent = "Impara"
 name = "Webapp"
 url = ""
 weight = 3
 
 [[footer]]
-parent = "Learn"
-name = "Certificate Info"
+parent = "Impara"
+name = "Info Certificati"
 url = ""
 weight = 4
 
 [[footer]]
-parent = "Learn"
-name = "DedoAI Innovation"
+parent = "Impara"
+name = "Innovazione DedoAI"
 url = "/innovation/"
 weight = 5
 
 [[footer]]
-parent = "Learn"
-name = "Value of dedoAI"
+parent = "Impara"
+name = "Valore di DedoAI"
 url = ""
 weight = 6
 
 [[footer]]
-parent = "Learn"
+parent = "Impara"
 name = "Roadmap"
 url = "/roadmap/"
 weight = 7
 
 [[footer]]
-parent = "Learn"
-name = "Documents"
+parent = "Impara"
+name = "Documenti"
 url = ""
 weight = 8
 
 [[footer]]
-parent = "Learn"
-name = "Technology"
+parent = "Impara"
+name = "Tecnologia"
 url = "/technology/"
 weight = 9
 
 [[footer]]
-name = "Support"
+name = "Supporto"
 weight = 3
 
 [[footer]]
-parent = "Support"
-name = "Help center"
+parent = "Supporto"
+name = "Centro Assistenza"
 url = ""
 weight = 1
 
 [[footer]]
-parent = "Support"
-name = "Contacts"
+parent = "Supporto"
+name = "Contatti"
 url = "/contacts/"
 weight = 2
 
 [[footer]]
-parent = "Support"
-name = "Terms of Service"
+parent = "Supporto"
+name = "Termini di Servizio"
 url = "/terms-of-service/"
 weight = 3
 
 [[footer]]
-parent = "Support"
-name = "Privacy Policy"
+parent = "Supporto"
+name = "Politica sulla Privacy"
 url = "/privacy-policy/"
 weight = 4
 
 [[footer]]
-parent = "Support"
-name = "Cookie Policy"
-url = "/cookie-policy//"
+parent = "Supporto"
+name = "Politica sui Cookie"
+url = "/cookie-policy/"
 weight = 5
 
 
 [[footer]]
-name = "Other"
+name = "Altro"
 weight = 4
 
 [[footer]]
-parent = "Other"
-name = "News"
+parent = "Altro"
+name = "Notizie"
 url = "/news/"
 weight = 1
 
 [[footer]]
-parent = "Other"
-name = "Communities"
+parent = "Altro"
+name = "Comunità"
 url = ""
 weight = 2
 
 [[footer]]
-parent = "Other"
-name = "Partners"
+parent = "Altro"
+name = "Partner"
 url = "/partners/"
 weight = 3
 
 [[footer]]
-parent = "Other"
-name = "Careers"
+parent = "Altro"
+name = "Carriere"
 url = "/careers/"
 weight = 4

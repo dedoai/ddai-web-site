@@ -166,6 +166,49 @@ pre{
 
 // Items
 
+// Top Right Menu
+
+.tr-menu{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.tr-menu a{
+    font-weight: 700;
+}
+
+.tr-menu {}
+
+
+.tr-menu select {
+    border: none;
+    font-weight: 700;
+}
+
+.tr-menu .btn-cta{
+    top: 1px;
+    position: relative;
+}
+
+.ico-marketplace {
+    top: 3px;
+    background: url('/assets/images/icons/marketplace-icon.webp');
+}
+
+.ico-globe {
+    margin-left: 40px;
+    background: url('/assets/images/icons/globe-icon.webp');
+}
+
+.ico {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    background-size: cover;
+}
+
 .btn.btn-cta {
     text-align: center;
     background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);

@@ -37,14 +37,6 @@ copyright = "dedo AI - Decentralizing Data for a Better Tomorrow"
 enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
-# Navigation button
-[navigation_button]
-enable = true
-label = "Sign up"
-link = "/signup/"
-label2 = "Log in"
-link2 = "/login/"
-
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
