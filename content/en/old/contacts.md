@@ -28,7 +28,7 @@ links:
 ---
 {{< wrap >}}
 <!-- Contact Form -->
-{{< section "tests/contacts/1-intro" "" "1" "intro" "" >}}
-{{< section "tests/contacts/2-contact-form" "" "2" "contact-form" "" >}}
-{{< section "tests/contacts/3-conclusion" "" "3" "conclusion" "" >}}
+{{< section "old/contacts/1-intro" "" "1" "intro" "" >}}
+{{< section "old/contacts/2-contact-form" "" "2" "contact-form" "" >}}
+{{< section "old/contacts/3-conclusion" "" "3" "conclusion" "" >}}
 {{< /wrap >}}

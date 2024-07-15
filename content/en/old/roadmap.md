@@ -65,7 +65,7 @@ cuts: '''
 
 ---
 {{< wrap >}}
-{{< section "tests/roadmap/1-intro" "2" "" "intro" >}}
-{{< section "tests/roadmap/2-timeline" "2" "" "timeline" >}}
-{{< section "tests/roadmap/3-conclusion" "2" "" "conclusion" >}}
+{{< section "old/roadmap/1-intro" "2" "" "intro" >}}
+{{< section "old/roadmap/2-timeline" "2" "" "timeline" >}}
+{{< section "old/roadmap/3-conclusion" "2" "" "conclusion" >}}
 {{< /wrap >}}

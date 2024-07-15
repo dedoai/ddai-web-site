@@ -51,5 +51,5 @@ vision:
 
 ---
 {{< wrap >}}
-{{< section "about/main" "about">}}
+{{< section "about">}}
 {{< /wrap >}}

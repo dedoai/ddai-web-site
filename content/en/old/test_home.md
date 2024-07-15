@@ -69,10 +69,10 @@ final_cta:
 ---
 
 {{< wrap >}}
-{{< section "tests/hero_1" "" "1" "main" "pt-0 hero" >}}
+{{< section "old/hero_1" "" "1" "main" "pt-0 hero" >}}
 
-{{< section "tests/why" "3" "" "why" >}}
-{{< section "tests/solutions" "4" "" "solutions" >}}
-{{< section "tests/involved" "5" "" "involved" >}} <!-- -->
+{{< section "old/why" "3" "" "why" >}}
+{{< section "old/solutions" "4" "" "solutions" >}}
+{{< section "old/involved" "5" "" "involved" >}} <!-- -->
 {{< section "_common/final_cta" "6" "" "final_cta" >}}
 {{< /wrap >}}
