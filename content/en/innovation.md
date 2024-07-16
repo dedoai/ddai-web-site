@@ -1,36 +1,29 @@
 ---
 title: "Innovation"
-meta_title: "Innovation - dedoAi"
-description: "dedoAI Innovation: Pioneering a New Data Economy"
+meta_title: "Innovation: Pioneering a New Data Economy"
+description: "Revolutionizing Data Exchange"
+date: 2024-07-16T06:00:00.000Z
 draft: false
+noheader: true
+
+title:  Pioneering a New Data Economy
+img_: "/assests/images/innovation/cover.webp"
+img: "/assets/images/page_cover_placeholder.webp"
+items:
+ - title: "Revolutionizing Data Exchange"
+   text: "At dedoAI, we're redefining the data economy. Our platform uses blockchain to ensure secure, transparent, and fair data exchange, empowering individuals and organizations to control and monetize their data."
+ - title: "Empowerment through Tokenization"
+   text: "The dedoAI token rewards data producers, representing real economic value and encouraging the sharing of high-quality data. This makes data exchange more dynamic and engaging."
+ - title: "Blockchain at the Core"
+   text: "We leverage blockchain technology to create a decentralized marketplace for direct transactions between data producers and consumers. This reduces costs, increases trust, and enhances security, with every transaction verifiable on the blockchain."
+ - title: "Join the Data Revolution"
+   text: "Join dedoAI to democratize data ownership and monetization. Be part of a revolution where your data unlocks new opportunities and innovations. With dedoAI, the future of data is decentralized, democratic, and driven by you."
+ - title: "Smart Contracts for Smart Data"
+   text: "Our platform uses smart contracts to automate agreements, ensuring compliance with data usage and privacy standards. This simplifies legal processes, making data exchange faster and more reliable."
+ - title: "Future-Proof Architecture"
+   text: "dedoAI's scalable architecture adapts to future technologies and regulations. We are committed to continuous improvement to meet the evolving needs of our community and the broader data economy."
+
 ---
-{{< content-block "innovation">}} <!-- #TODO: add parameters to content-block shortcode to add id, etc  -->
-
-
-## Introduction to dedoAI Tokenomics
-
-In the heart of the dedoAI ecosystem lies the dedoAI Token, a digital asset designed to facilitate transactions, reward contributions, and incentivize the growth of our decentralized data economy. Our tokenomics model is crafted to balance supply and demand, ensuring long-term value and utility.
-
-## The Engine of Data Transactions
-
-The dedoAI Token serves as the primary currency within our platform, enabling the purchase, sale, and trade of data assets securely and transparently. This utility ensures that every token holder can participate directly in the data economy, whether as a data producer, consumer, or investor.
-
-## Staking and "Proof of Data"
-
-Our innovative staking mechanism, the "Proof of Data", rewards token holders not just for holding tokens but for actively contributing to the ecosystem. By staking dedoAI Tokens, participants can earn rewards proportional to the volume and value of data they contribute, fostering a vibrant community of engaged users.
-
-## Dynamic Pricing and Liquidity
-
-dedoAI’s marketplace leverages smart contracts for dynamic pricing, ensuring that data assets are traded at fair market value. This system supports an efficient and liquid market, with the dedoAI Token at its core, facilitating swift transactions and providing financial incentives for ecosystem participants.
-
-## Investment Potential
-
-For traders and investors, the dedoAI Token offers a unique opportunity. As the ecosystem grows and the demand for data increases, the intrinsic value of dedoAI Tokens is expected to rise. Early participants stand to benefit from potential appreciation as the platform scales and diversifies its data offerings.
-
-## Joining the dedoAI Economy
-
-Investing in dedoAI Tokens is more than a financial decision; it's a commitment to empowering data producers and democratizing access to data. As we move forward, the dedoAI Token will be instrumental in pioneering a new era of data exchange and monetization.
-
-Become part of the revolution. Explore the potential of dedoAI Tokens today.
-
-{{< /content-block >}}
+{{< wrap >}}
+{{< section "innovation">}}
+{{< /wrap >}}

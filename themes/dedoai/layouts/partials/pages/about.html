@@ -4,7 +4,7 @@
     <div id="intro" class="sect">
         <h1 class="section-title">{{.title}}</h1>
         <p>{{.text}}</p>
-        <a href="{{.cta_link}}">{{.cta_txt}}</a>
+        <a class="btn btn-cta" href="{{.cta_link}}">{{.cta_txt}}</a>
     </div>
     {{end}}
 
@@ -13,9 +13,11 @@
         <h2 class="section-title">{{.title}}</h2>
         <div class="members">
             {{range .members}}
-            {{- $bg_img := resources.Get .img }}
-            {{- $bg_img_url := $bg_img.RelPermalink }}
-                <div class="member" style="background:url('{{$bg_img_url}}')">
+            {{/*- $bg_img := resources.Get .img */}}
+            {{/*- $bg_img_url := $bg_img.RelPermalink */}}
+           
+                <!-- <div class="item" style="background:url('{{/*$bg_img_url*/}}')">-->
+                <div class="item" style="background-color:#f1f1f1;">
                     <div class="txt-hldr">
                         <h3>{{.name}}</h3>
                         <p>{{.descr}}</p>
@@ -33,7 +35,7 @@
             {{range .items}}
                 <div class="item">
                     <div class="txt-hldr">
-                        <img src="{{.icon}}">
+                        <img class="ico" src="{{.icon}}">
                         <h3>{{.title}}</h3>
                         <p>{{.txt}}</p>
                     </div>

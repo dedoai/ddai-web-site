@@ -2,12 +2,13 @@
 title: "About"
 meta_title: "About Us: Shaping the Future of Data"
 description: "this is meta description"
+date: 2024-07-15T06:00:00.000Z
 draft: false
 noheader: true
 
 intro:
  title:  Shaping the Future of Data
- text: At dedoAI, we're making data ownership and use accessible for everyone. Our mission is to help you control and profit from your data. Using blockchain, we ensure fair and transparent exchanges, valuing your data as a key asset in the digital economy.
+ text: "At dedoAI, we're making data ownership and use accessible for everyone. Our mission is to help you control and profit from your data. Using blockchain, we ensure fair and transparent exchanges, valuing your data as a key asset in the digital economy."
  cta_txt: "Join our Team"
  cta_link: "#"
 
@@ -15,39 +16,37 @@ team:
  title: Our Team
  members:
  - name: Luca Viviani
-   descr: the visionary CEO
-   img: "/images/home/home-hero-bg-1.webp"
+   descr: Founder & CEO
+   img_: "/images/about/members/lv.webp"
  - name: Marco Visibelli
-   descr: our CDS with over 16 years in AI
-   img: "/images/home/home-hero-bg-1.webp"
+   descr: CDS
+   img_: "/images/about/members/mv.webp"
  - name: Ivan Di Lelio
-   descr: the innovative CTO
-   img: "/images/home/home-hero-bg-1.webp"
+   descr: CTO
+   img_: "/images/about/members/idl.webp"
  - name: Emanuele Costa
-   descr: "our crypto and data architect, among others"
-   img: "/images/home/home-hero-bg-1.webp"
-   
- t2: "Together, we are dedicated to creating a platform that not only addresses the current challenges in data exchange but also sets the foundation for a sustainable, data-driven future."
+   descr: Crypto and Data Architect
+   img_: "/images/about/members/ec.webp"
  
 values:
  title: Our Values
  items:
   - title: Empowerment
-    txt: "We believe in empowering data producers by ensuring they have control over their data and can benefit from its value."
-    icon: ""
+    txt: "We give data producers control and the ability to profit from their data."
+    icon: "/assets/images/icons/about-empowerment-icon.webp"
   - title: Transparency
-    txt: "Our commitment to transparency is unwavering, whether it's about data transactions or how our platform operates."
-    icon: ""
+    txt: "We're dedicated to transparency in all aspects, from data transactions to platform operations."
+    icon: "/assets/images/icons/about-transparency-icon.webp"
   - title: Innovation
-    txt: "At the heart of dedoAI is innovation, driving us to explore new technologies and methodologies to enhance data exchange."
-    icon: ""
+    txt: "We continuously explore new technologies to improve data exchange."
+    icon: "/assets/images/icons/about-innovation-icon.webp"
   - title: Community
-    txt: "We are building a community where everyone, from data producers to consumers, can thrive in a mutually beneficial ecosystem."
-    icon: ""
+    txt: " We create a thriving ecosystem for both data producers and consumers."
+    icon: "/assets/images/icons/about-community-icon.webp"
 
 vision:
  title: Our Vision for the Future
- text: Imagine a future where data isn't just a commodity but a driving force for economic empowerment and innovation. This is the future dedoAI is committed to creating. With our cutting-edge technology and community-focused approach, we are on the path to revolutionizing the data economy. Join us as we pave the way for a world where data is democratized, and its true value is realized by all.
+ text: "Imagine a future where data drives economic empowerment and innovation. At dedoAI, we're committed to making this a reality. With advanced technology and a community focus, we're revolutionizing the data economy. Join us in democratizing data and unlocking its true value for everyone."
 
 ---
 {{< wrap >}}
