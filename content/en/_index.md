@@ -1,6 +1,6 @@
 ---
-title: "dedo AI"
-meta_title: "dedo AI | Decentralizing  <Data for a Better Tomorrow"
+title: "dedoAI | Home"
+meta_title: "dedo AI | Decentralizing Data for a Better Tomorrow"
 description: " secure platform for easily buying, selling, and trading data."
 date: 2024-07-15T06:00:00.000Z
 draft: false
