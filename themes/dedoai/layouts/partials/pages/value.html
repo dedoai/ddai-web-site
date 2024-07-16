@@ -1,0 +1,41 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <h1 class="title">{{$_.title}}</h1>
+    
+    <div class="split-row">
+        
+        <div class="cards">
+            {{range $_.row_1.items}}
+                <div class="item">
+                    <h2>{{.title}}</h2>
+                    <p>{{.text}}</p>
+                </div>
+            {{end}}
+        </div>    
+            
+        
+        <div class="cover">
+            <img src="{{$_.row_1.img}}" />
+        </div>
+        
+    </div>
+    
+    <div class="split-row last">
+    
+        <div class="cover">
+            <img src="{{$_.row_2.img}}" />
+        </div>
+        
+        <div class="cards">
+            {{range $_.row_2.items}}
+                <div class="item">
+                    <h2>{{.title}}</h2>
+                    <p>{{.text}}</p>
+                </div>
+            {{end}}
+        </div>
+        
+    </div>
+    
+
+</div>

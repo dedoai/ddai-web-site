@@ -997,7 +997,63 @@ section#newsletter .img-hldr{
 
 
 //------------------------------------------------------------------------------
+// --- VALUE START ---
 
+#value  h1.title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 75px;
+}
+
+#value .split-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+#value  .cover{
+    width: 600px;
+    height: 660px;
+}
+
+#value .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+#value .item{
+    width: 600px;
+    height: 200px;
+    padding: 35px;
+    border-radius: 24px;
+    border: 1px solid #BDBDBD;
+    background: linear-gradient(100deg, #2C2C2C 40%, #212121 100%);
+}
+
+#value .item h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 5px;    
+}
+
+#value .item p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#value last{
+    margin-bottom: 200px;
+}
+
+
+
+// --- VALUE END ---
 
 
 

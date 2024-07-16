@@ -1,6 +1,6 @@
 ---
-title: "About"
-meta_title: "About Us: Shaping the Future of Data"
+title: "dedoAI | About"
+meta_title: "dedoAI | About Us: Shaping the Future of Data"
 description: "this is meta description"
 date: 2024-07-15T06:00:00.000Z
 draft: false
