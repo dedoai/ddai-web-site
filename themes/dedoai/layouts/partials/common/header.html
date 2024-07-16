@@ -119,8 +119,10 @@
                         url="{{.URL }}" >{{with .Params.icon}}<i class="ico {{.}} mr-2"></i> {{ end }}{{.Name}}</a>
                 {{ end }}
             {{ end }}
-            <i class="ico ico-globe"></i>
-            {{ partial "components/language-switcher" (dict "Context" . "Class" "dark:bg-darkmode-theme-light") }}
+            {{ if .IsTranslated }}
+                <i class="ico ico-globe"></i>
+                {{ partial "components/language-switcher" (dict "Context" . "Class" "dark:bg-darkmode-theme-light") }}
+            {{ end}}
         </div>
         <!-- /Top Right Menu -->
 

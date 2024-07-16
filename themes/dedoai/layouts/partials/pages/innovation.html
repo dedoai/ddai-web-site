@@ -1,0 +1,15 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <h1 class="title">{{$_.title}}</h1>
+    <div class="cover">
+        <img src="{{$_.img}}" />
+    </div>
+    <div class="cards">
+        {{range $_.items}}
+            <div class="item">
+                <h2>{{.title}}</h2>
+                <p>{{.text}}</p>
+            </div>
+        {{end}}
+    </div>
+</div>

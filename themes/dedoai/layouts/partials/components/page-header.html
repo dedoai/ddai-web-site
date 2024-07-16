@@ -1,3 +1,4 @@
+{{ with .Page.Params.noheader }}{{else}}
 <section id="page-header">
   <div class="container text-center">
     <div class="page-title">
@@ -8,3 +9,4 @@
       {{ end }}
   </div>
 </section>
+{{end}}

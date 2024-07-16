@@ -149,6 +149,27 @@ url = "/careers/"
 weight = 4
 
 #-----------------
+#Top right menu
+
+[[top_right]]
+name = "Marketpalce"
+url = "#"
+weight = 1
+params = { icon = "ico-marketplace" }
+
+
+[[top_right]]
+name = "Registrati"
+url = "#"
+weight = 2
+params = { class = "btn-cta"}
+
+[[top_right]]
+name = "Entra"
+url = "#"
+weight = 3
+
+#-----------------
 # Menu a piè di pagina
 
 [[footer]]

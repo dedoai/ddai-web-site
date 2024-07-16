@@ -10,12 +10,7 @@
         "theme_dark": "#171717",
         "bgr": "#0f0d30",
         "accent": "#ece9f1",
-        "middle": "#a89aed",
-        "blend": "#a89aed",
-        "cta": "#6655e4",
-        "cta-green": "#53e588",
-        "cta-orange": "#e47c53",
-        "//comment":  "#ffff00 //old cta color"
+        "cta": "#6655e4"
       },
       "text_color": {
         "default": "#444444",
@@ -30,7 +25,7 @@
         "body": "#171717",
         "border": "#3E3E3E",
         "theme_light": "#171717",
-        "theme_dark": ""
+        "theme_dark": "#fff"
       },
       "text_color": {
         "default": "#fff",
