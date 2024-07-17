@@ -1,12 +1,11 @@
 ---
-title: "dedoAI | Value"
+title: "The Value of dedoAI Token"
 meta_title: "dedoAI | Value: The dedoAI Token"
 description: "The dedoAI Token"
 date: 2024-07-16T06:00:00.000Z
 draft: false
 noheader: true
 
-title: The Value of dedoAI Token
 row_1:
   img: "/assets/images/page_half_placeholder.webp"
   items:

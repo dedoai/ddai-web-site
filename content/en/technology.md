@@ -1,32 +1,37 @@
 ---
-title: "Technology"
-meta_title: "Technology - dedoAi"
+title: "The Value of dedoAI Token"
+meta_title: "dedoAI | Technology"
 description: "Technology at the Heart of dedoAI"
+date: 2024-07-16T06:00:00.000Z
 draft: false
+noheader: true
+
+p1: "At dedoAI, we use blockchain to revolutionize data exchange, ensuring secure, transparent, and decentralized transactions. This technology builds integrity and trust between data producers and consumers."
+subt: "dedoAI Architecture"
+p2: "Our architecture is scalable and secure, with key components working seamlessly:"
+cover: "/assets/images/square-cover.webp"
+
+side_cards:
+ - title: "dedoAI Datalake"
+   text: "Stores and processes large amounts of data using both decentralized IPFS and traditional cloud storage."
+   icon: "/assets/images/icons/technology-icon-1.webp"
+ - title: "dedoAI Connectors"
+   text: "Validates and processes data, ensuring compliance with legal and quality standards."
+   icon: "/assets/images/icons/technology-icon-2.webp"
+ - title: "dedoAI Data Context"
+   text: "Manages data transactions with smart contracts for fair and transparent compensation."
+   icon: "/assets/images/icons/technology-icon-2.webp"
+
+bottom_cards:
+ - title: "Future-Proof Technology"
+   text: "Our roadmap includes AI and machine learning integration for advanced data analysis, and exploration of new blockchain technologies to enhance our platform."
+   cta:
+     text: "Roadmap"
+     link: "/roadmap/"
+ - title: "Empowering Innovation with Smart Contracts"
+   text: "Smart contracts automate secure and tamper-proof agreements and transactions, supporting staking mechanisms and the governance model of the dedoAI DAO."
+
 ---
-{{< content-block >}}
-## Innovating Data Exchange with Blockchain
-
-At dedoAI, our commitment to revolutionizing data exchange and democratization is powered by cutting-edge blockchain technology. By integrating blockchain into the core of our platform, we enable secure, transparent, and decentralized transactions between data producers and consumers, ensuring integrity and trust throughout the ecosystem.
-
-## dedoAI Architecture: Building a Decentralized Future**
-
-The dedoAI architecture is designed with scalability and security in mind, comprising several key components that work together seamlessly:
-
-* **dedoAI Datalake**: Our centralized repository for storing, processing, and securing vast amounts of structured and unstructured data. By leveraging both IPFS for decentralized storage and traditional cloud storage solutions, we ensure our platform can meet diverse user needs with optimal security and efficiency.
-* **dedoAI Connectors**: Modular and flexible, dedoAI Connectors are the backbone of our data processing capabilities. They enable producers to validate and process their data, ensuring compliance with legal and quality standards, and facilitating smooth data exchanges within the ecosystem.
-* **dedoAI Data Context**: At the core of our marketplace, the dedoAI Data Context utilizes smart contracts for managing data transactions, enabling dynamic price discovery and ensuring transparent and fair compensation for data producers.
-
-## Empowering Innovation with Smart Contracts
-
-Smart contracts are pivotal to dedoAI's operation, automating agreements and transactions in a secure and tamper-proof manner. This automation extends to our innovative staking mechanisms and the governance model of the dedoAI DAO, fostering a self-regulating and continuously evolving ecosystem.
-
-## Future-Proof Technology
-
-Looking ahead, dedoAI is committed to staying at the forefront of technology innovation. Our roadmap includes the integration of AI and machine learning for advanced data analysis and the exploration of new blockchain technologies to enhance our platform's capabilities and user experience.
-
-## Join Us in Shaping the Future of Data
-
-At dedoAI, we believe that the future of data is decentralized, secure, and user-empowered. Our technology is not just a foundation but a stepping stone towards a more equitable and innovative data economy. Explore dedoAI, and join us in shaping the future.
-
-{{< /content-block >}}
+{{< wrap >}}
+{{< section "technology">}}
+{{< /wrap >}}
