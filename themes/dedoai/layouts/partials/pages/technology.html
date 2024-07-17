@@ -1,0 +1,39 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <div class="section-title">
+        <h1>{{$_.title}}</h1>
+        <p>{{$_.p1}}</p>
+    </div>
+    
+    <div class="sub-title">
+        <h2>{{$_.subt}}</h2>
+        <p>{{$_.p2}}</p>
+    </div>
+
+    <div class="card-container">    
+        <div class="cards">
+            {{range $_.side_cards}}            
+            <div class="item">
+                <img src="{{.icon}}" alt="{{.title}}" />
+                <h3>{{.title}}</h3>
+                <p>{{.text}}</p>
+            </div>
+            {{end}}
+        </div>
+        <div class="cover-hldr">
+            <img src="{{$_.cover}}" alt="" />
+        </div>
+    </div>
+    
+    <div class="splited">
+        {{range $_.bottom_cards}}
+        <div class="item">
+            <h2>{{.title}}</h2>
+            <p>{{.text}}</p>
+            {{with .cta }}
+                <a class="btn btn-cta" href="{{.link}}">{{.text}}</a>
+            {{end}}
+        </div>
+        {{end}}
+     </div>
+</div>

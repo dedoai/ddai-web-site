@@ -1056,136 +1056,98 @@ section#newsletter .img-hldr{
 // --- VALUE END ---
 
 
+//------------------------------------------------------------------------------
+// --- TECHNOLOGY START ---
 
+#technology .section-title, #technology .sub-title{
+    margin-bottom: 50px;
+}
 
+#technology .section-title h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
 
+#technology .sub-title h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
 
+#technology p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
 
-
-
-
-
-
-// -- TO BE REVIEWED --
-
-.items-hldr {
+#technology .card-container{
     display: flex;
-
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
-.dd-item .itm-img{
-    margin: auto;
-    width: 50%;
-}
-
-.dd-item .itm-title{
-    margin: $u auto;
-    text-align: center;
-    color: white;
-}
-.dd-item .itm-text{
-    padding: 0 $u;
-    text-align: center;
-}
-
-
-#final_cta .container{
-    border: 1px solid $dd-secondary;
-    border-image: linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
-    border-image: -webkit-linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
-    border-radius: $qu;
-    padding: $u;
-}
-
-
-// -- ROADMAP 
-
-
-.timeline .row:nth-child(1) .year{
-    justify-content: flex-end;
-}
-
-.timeline .circle {
-    padding: 13px 7px;
-    border-radius: 50%;
-    background-color: $dd-middle;
-    color: $dd-background;
-    max-height: 50px;
-    z-index: 2;
-}
-
-.timeline .vertical-line::after {
-    content: '';
-    position: relative;
-    border-left: 3px solid $dd-middle;
-    z-index: 1;
-    height: 100%;
-    left: -25px;
-}
-
-.timeline .horizontal-line div {
-    padding: 0;
-    height: 40px;
-}
-
-.timeline .horizontal-line .timeline-side-div {
+#technology .cards{
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.timeline .horizontal-line .corner {
-    border: 3px solid $dd-middle;
-    width: 100%;
-    position: relative;
-    border-radius: 15px;
+#technology .cards .item{
+    width: 320px;
+    height: 250px;
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid #BDBDBD;
+    background: linear-gradient(100deg, #2C2C2C 40%, #212121 100%);
 }
 
-.timeline .horizontal-line .corner {
-    border: 3px solid $dd-middle;
-    width: 100%;
-    position: relative;
-    border-radius: 15px;
+#technology .cards .item img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
-.timeline .horizontal-line hr {
-    border-top: 3px solid $dd-middle;
-    margin: 0;
-    top: 17px;
-    position: relative;
-    opacity: 1;
+#technology .cards .item h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 10px;
 }
 
-
-.timeline .row:nth-child(2n) div:nth-child(1) .corner {
-    left: calc(50% - 2px);
-    top: -50%;
+#technology .cover-hldr img{
+    width: 916px;
+    height: 850px;
 }
 
-.timeline .row:nth-child(2n) div:nth-child(3) .corner {
-    left: -50%;
-    top: calc(50% - 3px);
+#technology .splited{
+    display: flex;
+    justify-content: space-between;
 }
 
-.timeline .row:nth-child(4n) div:nth-child(1) .corner {
-    left: calc(50% - 2px);
-    top: calc(50% - 3px);
+#technology .splited .item{
+    width: 630px;
+    height: 250px;
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid #BDBDBD;
+    background: linear-gradient(100deg, #2C2C2C 40%, #212121 100%);
 }
 
-.timeline .row:nth-child(4n) div:nth-child(3) .corner {
-    left: -50%;
-    top: -50%;
+#technology .splited h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 24px;
 }
 
-.timeline .quarter {
-    width: 25%;
-    border: 1px solid $dd-primary;
-    border-radius: $qu; 
+#technology .splited .btn-cta{
+    margin-top: 24px;
+    font-weight: 700;
+    line-height: 20px;
 }
 
-.timeline .plchldr {
-    width: 25%;
-}
+// --- TECHNOLOGY END ---
 
-.timeline .quarter .subtitle{
-    color: $dd-middle;
-}
+
+//------------------------------------------------------------------------------
