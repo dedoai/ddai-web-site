@@ -1,0 +1,46 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <div class="section-title">
+        <h1>{{$_.title}}</h1>
+        <p>{{$_.p1}}</p>
+    </div>
+
+    <div class="main">    
+        <div class="frm-hldr">
+            <h2>{{$_.subt}}</h2>
+            <p>{{$_.p2}}</p>
+            <form action="{{$_.form.action}}">
+                {{range $_.form.items}}
+                <div class="item{{- with .class}} {{.}}{{end -}}">
+                    <label for="{{.name}}">{{.label}}</label>
+                    {{ if ne .type "textarea"}}
+                        {{if ne .type "select"}}
+                            <input type="{{.type}}" id="{{.name}}" name="{{.name}}" placegholder="{{.placeholder}}">
+                        {{else}}
+                            <select id="{{.name}}" name="{{.name}}" placeholder="{{.placeholder}}" >
+                                {{range .options}}
+                                    <option value="{{.value}}">{{.label}}</option>
+                                {{end}}
+                            </select>
+                        {{end}}
+                    {{else}}
+                    <textarea  id="{{.name}}" name="{{.name}}"></textarea>
+                    {{end}}
+                </div>
+                {{end}}
+                <button class="btn btn-cta">{{$_.form.submit_text}}</button>
+            </form>
+        </div>
+        <div class="map-hldr" style="background-image: url('{{$_.cover}}')">
+            <img class="map-picker" src="{{$_.picker_img}}" alt="" />
+            <div class="map-info">
+                <h2>{{$_.map_title}}</h2>
+                <p>{{$_.map_text | safeHTML}}</p>
+                <p>{{$_.map_l1 | safeHTML}}</p>
+                <p>{{$_.map_l2 | safeHTML}}</p>
+                <p>{{$_.map_l3 | safeHTML}}</p>
+            </div>
+        </div>
+    </div>
+    
+</div>

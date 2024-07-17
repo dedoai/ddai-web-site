@@ -15,7 +15,7 @@
             {{range $i, $t := .tabs}}
             <div class="tab_c{{ if (eq $i 0) }} active{{ end }}" id="tab_c_{{$i}}">
                 <h3>{{$t.title | safeHTML }}</h3>
-                <p>{{$t.text}}</p>
+                <p>{{$t.text| safeHTML }}</p>
                 <a class="btn btn-cta" href="{{$t.cta_link}}">{{$t.cta_txt}}</a>
             </div>
             {{end}}
@@ -34,7 +34,7 @@
             <div class="card">
                 <img src="{{.icon}}" alt="{{.title}}">
                 <h3>{{.title}}</h3>
-                <p>{{.text}}</p>
+                <p>{{.text | safeHTML }}</p>
                 <a href="{{.cta_link}}">{{.cta_txt}}</a>
             </div>
         {{end}}
