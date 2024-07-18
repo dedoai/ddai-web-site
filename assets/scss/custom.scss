@@ -1,79 +1,18 @@
 // Add your own custom styles here
-// Variables: 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-$qu: 10px; // quarter u
-$hu: 20px; // half u
-$u: 40px; // unit
-$du: 80px; // double u
-$tu: 120px; // triple u
-
-// Colors: 
-
-$dd-text: #ffffff;
-$dd-purple: #866EFF;
-
-$dd-mld-grey: #262626;
-$dd-drk-grey: #171717;
-
-
-
-// to be updated: 
-$dd-background: #2f2b36;
-$dd-primary: #6655E4;
-$dd-secondary_: #e9dff6;
-$dd-secondary: #6655e4;
-$dd-middle: #a89aed;
-$dd-accent: #ece9f1;
-$dd-acc-dark: #e47c53;
-$dd-acc-light: #53e588;
-
-// Light & Ultra light variations:
-
-$dd-primary-l: #A49BE4; 
-$dd-secondary-l_: #F0ECF6;
-$dd-secondary-l: #A49BE4;
-$dd-background-l: #3A3640;
-
-$dd-primary-ul: #C4C0E4;
-$dd-secondary-ul_: #F6F6F6;
-$dd-secondary-ul: #C4C0E4;
-$dd-background-ul: #2f2b36;
-
-
-// SPACING
-
-.dd-bt-u{
-    bottom: $u;
-}
-
-.dd-bt-2u{
-    bottom: $du;
-}
-
-.dd-bt-3u{
-    bottom: $tu;
-}
-
-// HTML tags
+// HTML tags ###################################################################
 
 ::selection {
-    background-color: $dd-purple;
+    background-color: #866EFF;
     color: #fff;
 }
 
-
 section {
-    margin: (2.5 * $u) auto;
+    margin: 100px auto;
 }
-
-section.page-content, section.intro {
-    margin-top: 2 * $u;
-}
-
 
 p {
     font-size: 16px;
@@ -81,109 +20,22 @@ p {
     line-height: 20px;
     text-align: left;
     color: #FFFFFFCC;
-
 }
 
 pre{
     text-wrap: wrap;
 }
 
-
 option:checked, option:selected {
     --tw-ring-color: #866EFF;
 }
 
 option:checked, option:hover {
-    background-color: $dd-purple;
+    background-color: #866EFF;
     --swiper-theme-color: #866EFF;
 }
 
-
-// --- General classes ---
-
-.row .section-title {
-    margin-bottom: $du;
-}
-
-.dd-gradient{
-    background: -webkit-linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
-    background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
-}
-
-.dd-gradient-light {
-    background: -webkit-linear-gradient(0deg, $dd-primary-l, $dd-secondary-l );
-    background: linear-gradient(90deg, $dd-primary-l, $dd-secondary-l );
-    color: $dd-background;
-}
-
-
-.dd-gradient-ul {
-    background: -webkit-linear-gradient(0deg, $dd-primary-ul, $dd-secondary-ul );
-    background: linear-gradient(90deg, $dd-primary-ul, $dd-secondary-ul );
-    color: $dd-background;
-}
-
-.dd-rounded {
-    border-radius: $u;
-}
-
-.dd-leaf {
-    border-radius: 0 $u;
-}
-
-.dd-ballon {
-    border-radius: $u $u $u 0;
-}
-
-.dd-drop {
-    border-radius: 0 $u $u $u;
-}
-
-.dd-card {
-    border: 1px solid $dd-secondary;
-    border-image: linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
-    border-image: -webkit-linear-gradient(0deg, $dd-primary, $dd-secondary) 1;
-    border-radius: $qu;
-    padding: $u;
-}
-
-.dd-card .card-img{
-    margin: auto;
-    width: 50%;
-}
-.dd-card .card-title{
-    margin: $u auto;
-    text-align: center;
-}
-.dd-card .card-text{
-    text-align: justify;
-}
-
-// alternate rows
-
-.alternate{
-    align-items: center;
-    justify-content: left;
-}
-
-.alternate div{
-    width: 50%;
-}
-
-.alternate.inv{
-    flex-direction: row-reverse;
-}
-
-.alternate .alt-title{
-    margin-bottom: $u;
-}
-
-.alternate.inv .txt-hldr{
-    text-align: right;
-    margin-right:0;
-}
-
-// Items
+// THEME ######################################################################
 
 // Top Right Menu
 
@@ -231,14 +83,6 @@ option:checked, option:hover {
     background-size: cover;
 }
 
-.btn.btn-cta {
-    text-align: center;
-    background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
-    /* Shadows/Shadow Medium */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 24px;
-    border: 2px solid #FFF;
-}
 
 h2.section-title {
     font-size: 48px;
@@ -248,14 +92,24 @@ h2.section-title {
     margin-bottom:50px;
 }
 
-// ----- LAYOUT -------
+section.page-content, section.intro {
+    margin-top: 80px;
+}
+
+.btn.btn-cta {
+    text-align: center;
+    background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+    /* Shadows/Shadow Medium */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    border: 2px solid #FFF;
+}
 
 .footer-menu {
     display: flex;
     justify-content: space-between;
     padding-top: 70px;
 }
-
 
 .footer-menu p {
     font-weight: 800;
@@ -269,12 +123,11 @@ h2.section-title {
     width: 2rem;
 }
 
-
 // PAGES #######################################################################
-// --- HOME START ---
+//--- HOME START ---
 
 section#page-header, section#hero {
-    margin-top: $u;
+    margin-top: 40px;
     margin-bottom: 0;
 }
 
@@ -286,7 +139,7 @@ section#hero {
 section#hero .txt_hldr{
     position: absolute;
     width:50%;
-    bottom: $tu;
+    bottom: 120px;
 }
 
 section#hero .title h1{  
@@ -330,7 +183,7 @@ section#hero .img_hldr {
     position: absolute;
     width:49%;
     right: 0;
-    bottom: $tu;
+    bottom: 120px;
 }
 
 section#hero .img_hldr img{
@@ -848,9 +701,9 @@ section#newsletter .img-hldr{
     background-position: center;
 }
 
-// --- HOME END ---
+//--- HOME END ---
 //------------------------------------------------------------------------------
-// --- ABOUT START ---
+//--- ABOUT START ---
 
 #about .sect{
     margin-bottom: 50px;
@@ -943,11 +796,11 @@ section#newsletter .img-hldr{
 #about #vision{
     margin-bottom: 200px;
 }
-// --- ABOUT END ---
+//--- ABOUT END ---
 
 
 //------------------------------------------------------------------------------
-// --- INNOVATION START ---
+//--- INNOVATION START ---
 
 #innovation h1.title{
     font-size: 40px;
@@ -996,11 +849,11 @@ section#newsletter .img-hldr{
 }
 
 
-// --- INNOVATION END ---
+//--- INNOVATION END ---
 
 
 //------------------------------------------------------------------------------
-// --- VALUE START ---
+//--- VALUE START ---
 
 #value  h1.title{
     font-size: 40px;
@@ -1054,13 +907,11 @@ section#newsletter .img-hldr{
     margin-bottom: 200px;
 }
 
-
-
-// --- VALUE END ---
+//--- VALUE END ---
 
 
 //------------------------------------------------------------------------------
-// --- TECHNOLOGY START ---
+//--- TECHNOLOGY START ---
 
 #technology .section-title, #technology .sub-title{
     margin-bottom: 50px;
@@ -1150,11 +1001,11 @@ section#newsletter .img-hldr{
     line-height: 20px;
 }
 
-// --- TECHNOLOGY END ---
+//--- TECHNOLOGY END ---
 
 
 //------------------------------------------------------------------------------
-// --- CONTACTS START ---
+//--- CONTACTS START ---
 
 #contacts .section-title{
     margin-bottom: 75px;
@@ -1316,12 +1167,11 @@ section#newsletter .img-hldr{
 #contacts .map-info span{
     color: #54BEFA;
 }
-// --- CONTACTS END ---
+//--- CONTACTS END ---
 
 
 //------------------------------------------------------------------------------
-// --- NEWS START ---
-
+//--- NEWS START ---
 
 #news .title{
     font-size: 48px;
@@ -1399,11 +1249,86 @@ section#newsletter .img-hldr{
     margin-top: -3px;
 }
 
+//--- NEWS END ---
 
-// --- NEWS END ---
+
+//------------------------------------------------------------------------------
+//--- CAREERS START ---
+
+#careers .title{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 50px;
+}
+
+#careers .list{
+    margin-bottom: 50px;
+}
+
+#careers .item{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    border-radius: 24px;
+    background: linear-gradient(100deg, #2C2C2C 40%, #212121 100%);
+    border: 1px solid #BDBDBD;
+    margin-bottom: 50px;
+}
+
+#careers .item div{
+    margin-right: 24px;
+}
+
+#careers .item .last{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#careers .item h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height:30px;
+}
+#careers .item p{
+    
+}
+#careers .item .btn{
+    width: 160px;
+    padding: 11px 27px;
+    border-radius: 12px;
+    border: 2px solid #FFF;
+    box-shadow: 0.5px 0.5px 1px 0px #0000001A;
+}
+
+#careers .secondary h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+
+#careers .secondary a{
+    color: #0094FF;
+}
+
+
+//--- CAREERS END ---
+
+
+//------------------------------------------------------------------------------
+//--- ROADMAP START ---
+
+
+//--- ROADMAP END ---
 
 
 //------------------------------------------------------------------------------
 
 
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
