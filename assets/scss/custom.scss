@@ -1193,6 +1193,7 @@ section#newsletter .img-hldr{
 }
 #contacts .frm-hldr p{
     margin-bottom: 24px;
+    width: 510px;
 }
 
 #contacts .frm-hldr form{
@@ -1203,26 +1204,48 @@ section#newsletter .img-hldr{
 }
 
 #contacts .frm-hldr .item {
-    width: 240px;
     margin-bottom: 24px;
 }
 
-#contacts .frm-hldr .item.double {
-    width: 510px;
+#contacts .frm-hldr label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-bottom: 17px;
 }
-
 
 #contacts .frm-hldr textarea {
     width: 510px;
     height: 180px;
-    padding: 4px 16px 4px 4px;
+    padding: 10px;
     border-radius: 4px;
     resize: none;
 }
 
+#contacts .frm-hldr input,
+#contacts .frm-hldr select,
+#contacts .frm-hldr textarea  {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
 
-#contacts .frm-hldr input, #contacts .frm-hldr select {
+#contacts .frm-hldr input,
+#contacts .frm-hldr select{
     width: 240px;
+}
+
+#contacts .frm-hldr input,
+#contacts .frm-hldr option,
+#contacts .frm-hldr textarea {
+    color: #000;
+}
+
+#contacts .frm-hldr input::placeholder,
+#contacts .frm-hldr select,
+#contacts .frm-hldr textarea::placeholder {
+    color: #888;
 }
 
 #contacts .map-hldr{
@@ -1238,14 +1261,14 @@ section#newsletter .img-hldr{
     width: 90px;
     height: 72px;
     position: absolute;
-    left: 252px;
-    top: 211px;
+    left: 251px;
+    top: 248px;
 }
 
 #contacts .map-info{
     width: 345px;
     height: 242px;
-    padding: 30px;
+    padding: 22px 30px;
     border-radius: 24px;
     border: 1px solid #BDBDBD;
     background: linear-gradient(102.71deg, #2C2C2C 39.84%, #212121 98.44%);
@@ -1260,13 +1283,15 @@ section#newsletter .img-hldr{
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
+    margin-bottom: 16px;
 }
 
 #contacts .map-info p{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 16px;
     text-align: left;
+    margin-bottom: 16px;
 }
 
 #contacts .map-info span{

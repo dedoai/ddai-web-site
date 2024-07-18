@@ -46,7 +46,7 @@ form:
     class: "double"
     label: "Message"
     icon: "/assets/images/icons/contacts-icon-1.webp"
-    placeholder: "Inser your message"
+    placeholder: "Write your message here"
 
   action: "#"
   submit_text: "Send Message"

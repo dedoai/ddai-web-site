@@ -11,20 +11,21 @@
             <p>{{$_.p2}}</p>
             <form action="{{$_.form.action}}">
                 {{range $_.form.items}}
-                <div class="item{{- with .class}} {{.}}{{end -}}">
+                <div class="item">
                     <label for="{{.name}}">{{.label}}</label>
                     {{ if ne .type "textarea"}}
                         {{if ne .type "select"}}
-                            <input type="{{.type}}" id="{{.name}}" name="{{.name}}" placegholder="{{.placeholder}}">
+                            <input type="{{.type}}" id="{{.name}}" name="{{.name}}" placeholder="{{.placeholder}}" required>
                         {{else}}
-                            <select id="{{.name}}" name="{{.name}}" placeholder="{{.placeholder}}" >
-                                {{range .options}}
-                                    <option value="{{.value}}">{{.label}}</option>
-                                {{end}}
+                            <select id="{{.name}}" name="{{.name}}" required>
+                                <option disabled selected hidden value="">{{.placeholder}}</option>
+                            {{range .options}}
+                                <option value="{{.value}}">{{.label}}</option>
+                            {{end}}
                             </select>
                         {{end}}
                     {{else}}
-                    <textarea  id="{{.name}}" name="{{.name}}"></textarea>
+                    <textarea  id="{{.name}}" name="{{.name}}"  placeholder="{{.placeholder}}" required></textarea>
                     {{end}}
                 </div>
                 {{end}}
