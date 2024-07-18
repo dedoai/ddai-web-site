@@ -1320,6 +1320,87 @@ section#newsletter .img-hldr{
 
 
 //------------------------------------------------------------------------------
+// --- NEWS START ---
+
+
+#news .title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    margin-bottom: 50px;
+}
+
+#news .news-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#news .item{
+    width: 390px;
+    margin-bottom: 60px;
+}
+
+#news .cover{
+    width: 390px;
+    height: 140px;
+    border-radius: 24px;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+#news .info{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #866EFF;
+    margin-bottom: 15px;
+}
+
+#news .info span{
+    margin-right: 20px;
+}
+
+#news .info img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+#news h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+#news p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    opacity: 0.8;
+    margin-bottom: 18px;
+}
+
+#news .author{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #FFF;
+    opacity: 1;
+}
+
+#news .author img{
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: -3px;
+}
+
+
+// --- NEWS END ---
 
 
 //------------------------------------------------------------------------------
