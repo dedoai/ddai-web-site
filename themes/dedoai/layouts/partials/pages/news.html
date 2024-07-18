@@ -1,0 +1,23 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <h1 class="title">{{$_.title}}</h1>
+
+    <div class="news-list">
+    {{ range seq 6 }}
+    {{with $_.item}}
+        <div class="item">
+            <div class="cover" style="background-image:url('{{.cover}}')"></div>
+            <div class="info">
+                <span>{{.date}}</span>
+                <span><img src="/assets/images/icons/news-cat-icon.webp">{{.cat}}</span>
+                <span>{{.time_r}}</span>
+            </div>
+            <h2>{{.title}}</h2>
+            <p>{{.descr}}</p>
+            <p class="author"><img src="/assets/images/icons/news-author-icon.webp"><span>{{.author}}</span></p>
+        </div>
+    {{ end }}
+    {{end}}
+    </div>
+
+</div>
