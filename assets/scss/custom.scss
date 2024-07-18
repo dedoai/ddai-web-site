@@ -1171,7 +1171,6 @@ section#newsletter .img-hldr{
     
 }
     
-
 #contacts .main{
     display: flex;
     justify-content: space-between;
@@ -1215,14 +1214,6 @@ section#newsletter .img-hldr{
     margin-bottom: 17px;
 }
 
-#contacts .frm-hldr textarea {
-    width: 510px;
-    height: 180px;
-    padding: 10px;
-    border-radius: 4px;
-    resize: none;
-}
-
 #contacts .frm-hldr input,
 #contacts .frm-hldr select,
 #contacts .frm-hldr textarea  {
@@ -1234,6 +1225,8 @@ section#newsletter .img-hldr{
 #contacts .frm-hldr input,
 #contacts .frm-hldr select{
     width: 240px;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 #contacts .frm-hldr input,
@@ -1247,6 +1240,32 @@ section#newsletter .img-hldr{
 #contacts .frm-hldr textarea::placeholder {
     color: #888;
 }
+
+#contacts .frm-hldr input{
+    padding-left: 40px;
+}
+
+#contacts .frm-hldr .input-icon {
+    position: relative;
+}
+
+#contacts .frm-hldr .item img{ 
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+#contacts .frm-hldr textarea {
+    width: 510px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 4px;
+    resize: none;
+}
+
+//---
 
 #contacts .map-hldr{
     height: 640px;
@@ -1297,8 +1316,6 @@ section#newsletter .img-hldr{
 #contacts .map-info span{
     color: #54BEFA;
 }
-
-
 // --- CONTACTS END ---
 
 

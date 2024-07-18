@@ -15,7 +15,10 @@
                     <label for="{{.name}}">{{.label}}</label>
                     {{ if ne .type "textarea"}}
                         {{if ne .type "select"}}
+                        <div class="input-icon">
+                            <img src="{{.icon}}">
                             <input type="{{.type}}" id="{{.name}}" name="{{.name}}" placeholder="{{.placeholder}}" required>
+                        </div>
                         {{else}}
                             <select id="{{.name}}" name="{{.name}}" required>
                                 <option disabled selected hidden value="">{{.placeholder}}</option>
