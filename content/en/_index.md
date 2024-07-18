@@ -107,7 +107,7 @@ members:
   - label: Webapp
     icon: "/assets/images/home/members-ico-1.webp"
     title: "Make your data valuable and<br>earn with a passive income"
-    text: "Explore partnership opportunities to accelerate data democratization."
+    text: "Explore partnership opportunities to accelerate data democratization.<br>Explore partnership opportunities to accelerate data democratization.<br>Explore partnership opportunities to accelerate data democratization."
     cta_txt: "Launch Webapp"
     cta_link: "#"
     cover: "/assets/images/home/members-cover-plchldr.webp"
