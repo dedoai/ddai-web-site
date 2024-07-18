@@ -1,7 +1,7 @@
 ---
 title: "Contact US"
-meta_title: "dedoAI | Contact"
-description: "Technology at the Heart of dedoAI"
+meta_title: "dedoAI | Contacts"
+description: "Contact page of dedoAI"
 date: 2024-07-16T06:00:00.000Z
 draft: false
 noheader: true

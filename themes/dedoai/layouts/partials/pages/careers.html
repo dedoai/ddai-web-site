@@ -1,0 +1,19 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <h1 class="title">{{$_.title}}</h1>
+
+    <div class="list">
+    {{ range $_.positions }}
+        <div class="item">
+            <div><h2>{{.title}}</h2></div>
+            <div><p>{{.type}}</p></div>
+            <div><p>{{.experience}}</p></div>
+            <div class="last"><a href="#" class="btn btn-cta">{{$_.cta_label}}</a></div>
+        </div>
+    {{ end }}
+    </div>
+    <div class="secondary">
+        <h2>{{$_.sub_title}}</h2>
+        <p>{{$_.text | markdownify }}</p>
+    </div>
+</div>
