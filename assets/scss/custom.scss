@@ -1321,6 +1321,100 @@ section#newsletter .img-hldr{
 //------------------------------------------------------------------------------
 //--- ROADMAP START ---
 
+#roadmap .split{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#roadmap .first{
+    width: 600px;
+}
+
+#roadmap .first .title{
+    margin-bottom: 30px;
+}
+
+#roadmap .second{
+
+}
+
+#roadmap .second .img-holder{
+    width: 670px;
+    height: 200px;
+    background-size: cover;
+}
+
+#roadmap .step-list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+#roadmap .quarter{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 50px;
+}
+#roadmap .label{
+    margin-top:15px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+#roadmap .label h2{
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+#roadmap .label h2:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius:10px;
+    margin-right: 10px;
+    background-color: #6453E4;
+    // 866EFF
+}
+
+#roadmap .label.done h2:before{
+    background-image: url('/assets/images/icons/roadmap-icon-done.webp');
+    background-size: cover;
+    background-color: #FFFFFF;
+}
+
+#roadmap .steps{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#roadmap .item{
+    height: 50px;
+    padding: 15px;
+    border-radius: 14px;
+    border: 1px dashed #6453E4;
+    margin: 10px;
+}
+
+#roadmap .item img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#roadmap .item span{
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFF;
+}
 
 //--- ROADMAP END ---
 
