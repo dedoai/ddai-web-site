@@ -1,0 +1,30 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <div class="split">
+        <div class="first">
+            <h1 class="title">{{$_.title}}</h1>
+            <p>{{$_.p1}}</p>
+        </div>
+        <div class="second">
+            <div class="img-holder" style="background-image:url('{{$_.cover}}')"></div>
+        </div>
+    </div>
+    <div class="step-list">
+        {{ range $_.quarters }}
+        <div class="quarter">
+            <div class="label{{with .class}} {{.}}{{end}}"><span class="icon"></span><h2>{{.name}}</h2></div>
+            <div class="steps">
+                {{ range .steps }}
+                <div class="item">
+                    <img src="{{.icon}}" /><span>{{.step}}</span>
+                </div>
+                {{end}}
+            </div>
+        </div>
+        {{end}}
+    </div>
+    <div class="last">
+        <h2>{{$_.t2}}</h2>
+        <p>{{$_.p2}}</p>
+    </div>
+</div>
