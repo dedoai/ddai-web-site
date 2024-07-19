@@ -1,0 +1,21 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <h1 class="title">{{$_.title}}</h1>
+
+    <div class="partners-list">
+    {{ range $_.partners }}
+        <div class="item">
+            <h2>{{.name}}</h2>
+            <p>{{.descr}}</p>
+            <p><a href="{{.link}}" targer="_blank"><img src="/assets/images/home/partners-link-icon.webp"></a></p>
+        </div>
+    {{end}}
+    </div>
+
+    <div class="cta">
+        <h2>{{$_.t2}}</h2>
+        <p>{{$_.p}}</p>
+        <a class="btn btn-cta" href="{{$_.cta_link}}">{{$_.cta_txt}}</a>
+    </div>
+
+</div>
