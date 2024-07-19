@@ -1,7 +1,7 @@
 ---
 title: "dedoAI Roadmap"
 meta_title: "dedoAI | Roadmap"
-description: "News"
+description: "Roadmap"
 date: 2024-07-18T06:00:00.000Z
 draft: false
 noheader: true

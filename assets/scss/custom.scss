@@ -1466,6 +1466,64 @@ section.page-content, section.intro {
 
 
 //------------------------------------------------------------------------------
+//--- PARTNERS START ---
+
+#_partners_  .partners-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-contents: space-between;
+}
+
+#_partners_  .item{
+    width: 320px;
+    height: 240px;
+    padding: 30px;
+    position: relative;
+}
+
+#_partners_ .item h2{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #866EFF;
+    width: 271px;
+    margin-bottom: 10px;
+}
+
+#_partners_ .item p{
+    margin-bottom: 10px;
+}
+
+#_partners_ .item img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom:40px;
+    left: 30px;
+}
+
+#_partners_ .cta{
+    width: 1060px;
+    margin: 50px auto;
+    border-radius: 24px;
+    border: 1px solid #BDBDBD;
+    background: linear-gradient(100deg, #2C2C2C 40%, #212121 100%);
+    padding: 30px;
+}
+
+#_partners_ .cta h2{
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+#_partners_ .cta p{
+    margin-bottom: 40px;
+}
+
+//--- PARTNERS END ---
 
 
 //------------------------------------------------------------------------------
