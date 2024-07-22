@@ -110,7 +110,7 @@ members:
     text: "Explore partnership opportunities to accelerate data democratization.<br>Explore partnership opportunities to accelerate data democratization.<br>Explore partnership opportunities to accelerate data democratization."
     cta_txt: "Launch Webapp"
     cta_link: "#"
-    cover: "/assets/images/home/members-cover-plchldr.webp"
+    cover: "/assets/images/home/members-cover.webp"
   - label: Markerplace
     icon: "/assets/images/home/members-ico-2.webp"
     title: ""
@@ -154,7 +154,7 @@ members:
 newsletter:
   title: "dedoAI Newsletter"
   text: "Get the latest updates from dedoAI. Discover exciting developments, partnerships, and breakthroughs as we revolutionize the data economy and shape the future of data democratization and blockchain technology."
-  img: "/assets/images/home/members-cover-plchldr.webp"
+  img: "/assets/images/newsletter-cover.webp"
   placeholder: "Enter your email!"
   confirm: "Successful subscribed"
   error: "Problem ssubscibing"
