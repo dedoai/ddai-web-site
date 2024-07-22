@@ -22,8 +22,8 @@
         </div>
         <div class="tab-image">
             {{range $i, $t := .tabs}}
-            <div class="tab_img{{ if (eq $i 0) }} active{{ end }}" id="tab_img_{{$i}}">
-                <img src="{{$t.cover}}" alt="{{$t.title}}">
+            <div class="tab_img{{ if (eq $i 0) }} active{{ end }}" id="tab_img_{{$i}}" 
+                style="background-image:url('{{$t.cover}}');">
             </div>
             {{end}}
         </div>
