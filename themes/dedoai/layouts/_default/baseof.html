@@ -33,8 +33,15 @@
     {{ partial "common/header.html" . }}
     {{ partial "search-modal.html" (dict "Context" . ) }}
 
-    {{$pageName := cond .IsHome "home" (replace ( index ( split .Page.Path "." ) 0 ) "/" "" ) }}
-    <main id="_{{$pageName}}_">
+    {{/* add file name as main id */}}
+    {{ $path := "" }}
+    {{ with .File }}
+        {{ $path = .Path }}
+    {{ else }}
+        {{ $path = .Path }}
+    {{ end }}
+    {{$pageName := cond .IsHome "home" (replace ( index ( split $path "." ) 0 ) "/" "" ) }}
+    <main id="_{{$pageName}}">
       {{ block "main" . }}{{ end }}
     </main>
 

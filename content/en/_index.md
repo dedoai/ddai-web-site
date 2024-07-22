@@ -32,6 +32,12 @@ roles:
     cta_2:
       text: Learn
       link: "#"
+    panel:
+      title: "Getting started is easy: all you need is"
+      hl_txt: "Your PC"
+      hl_ico: "/assets/images/icons/home-roles-pc-icon.webp"
+      cta_txt: "Open Webapp"
+      cta_link: ""
   block_2:
     title: "Producers"
     text: "Producers can sell their data in response to consumer requests, using DedoAI tokens in our secure marketplace."
@@ -42,6 +48,12 @@ roles:
     cta_2:
       text: Learn
       link: "#"
+    panel:
+      title: "Getting started is easy: all you need is"
+      hl_txt: Telegram
+      hl_ico: /assets/images/icons/home-roles-telegram-icon.webp
+      cta_txt: "Open Telegram"
+      cta_link: ""
 
 certifications:
   title: "Our Digital Certification"
