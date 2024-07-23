@@ -71,8 +71,8 @@ weight = 3
 
 [[main]]
 parent = "Learn"
-name = "Certificate Info"
-url = ""
+name = "Certification Info"
+url = "/certification"
 weight = 4
 
 [[main]]
@@ -96,7 +96,7 @@ weight = 7
 [[main]]
 parent = "Learn"
 name = "Documents"
-url = "https://docs.dedoai.org"
+url = "documents"
 weight = 8
 
 [[main]]
@@ -239,8 +239,8 @@ weight = 3
 
 [[footer]]
 parent = "Learn"
-name = "Certificate Info"
-url = ""
+name = "Certification Info"
+url = "/certification"
 weight = 4
 
 [[footer]]
@@ -264,7 +264,7 @@ weight = 7
 [[footer]]
 parent = "Learn"
 name = "Documents"
-url = ""
+url = "/documents"
 weight = 8
 
 [[footer]]

@@ -1,0 +1,23 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    <div class="sect section-title">
+        <h1>{{$_.t1}}</h1>
+        <p>{{$_.p1}}</p>
+    </div>
+    <div class="sect second row">
+        <div class="text">
+            <h2>{{$_.t2}}</h2>
+            <p>{{$_.p2}}</p>
+            <a class="btn btn-cta" ref="{{$_.cta_link}}">{{$_.cta_text}}</a>
+        </div>
+        <div class="cover" style="background-image:url('{{$_.cover}}');"></div>
+    </div>
+    <div class="sect third">
+        <h2>{{$_.t3}}</h2>
+        <p>{{$_.p3}}</p>
+    </div>
+    <div class="sect fourth">
+        <h2>{{$_.t4}}</h2>
+        <p>{{$_.p4 | markdownify}}</p>
+    </div>
+</div>

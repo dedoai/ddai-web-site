@@ -9,7 +9,7 @@ noheader: true
 p1: "At dedoAI, we use blockchain to revolutionize data exchange, ensuring secure, transparent, and decentralized transactions. This technology builds integrity and trust between data producers and consumers."
 subt: "dedoAI Architecture"
 p2: "Our architecture is scalable and secure, with key components working seamlessly:"
-cover: "/assets/images/square-cover.webp"
+cover: "/assets/images/technology-cover.webp"
 
 side_cards:
  - title: "dedoAI Datalake"

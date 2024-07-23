@@ -224,11 +224,11 @@ section.page-content, section.intro {
 
 //---
 
-#roles {
+#_home #roles {
     margin: 100px auto;
 }
     
-#roles .rbox{
+#_home #roles .rbox{
     position: relative;
     border: 4px solid #FFFFFF;
     box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
@@ -237,22 +237,22 @@ section.page-content, section.intro {
     margin-top: 160px;
 }
 
-#roles .rbox.vg-bg{
+#_home #roles .rbox.vg-bg{
     background: linear-gradient(90deg, #5C4ADF 0%, #A391FF 100%);
 }
 
-#roles .rbox.pg-bg{
+#_home #roles .rbox.pg-bg{
     background: linear-gradient(90deg, #B15FFE 4.5%, #C8A8FF 61.5%);
 }
 
-#roles .rbox h3{
+#_home #roles .rbox h3{
     font-size: 40px;
     font-weight: 600;
     line-height: 48.41px;
     margin-bottom: 12px;
 }
 
-#roles .rbox p{
+#_home #roles .rbox p{
     width: 50%;
     font-size: 20px;
     font-weight: 600;
@@ -260,13 +260,13 @@ section.page-content, section.intro {
     margin-bottom: 20px;
 }
 
-#roles .rbox .cta_row{
+#_home #roles .rbox .cta_row{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-#roles .rbox .pill {
+#_home #roles .rbox .pill {
     display: block;
     height: 50px;
     padding: 17px 27px;
@@ -281,25 +281,25 @@ section.page-content, section.intro {
     transition: all 0.3s ease-in;
 }
 
-#roles .rbox.vg-bg .pill {
+#_home #roles .rbox.vg-bg .pill {
    color: #6756E5;
 }
 
-#roles .rbox.pg-bg .pill {
+#_home #roles .rbox.pg-bg .pill {
     color: #B15BF4
 }
-#roles .rbox .pill:hover{
+#_home #roles .rbox .pill:hover{
     background: none;
     color: #FFF;
 }
 
-#roles .rbox .txt-cta {
+#_home #roles .rbox .txt-cta {
     font-size: 20px;
     font-weight: 700;
     line-height: 24.2px;
 }
 
-#roles .rbox .txt-cta span:after {
+#_home #roles .rbox .txt-cta span:after {
     content: '';
     display: block;
     width: 15px;
@@ -313,14 +313,14 @@ section.page-content, section.intro {
     
 }
 
-#roles .rbox .img_hldr {
+#_home #roles .rbox .img_hldr {
     position: absolute;
     right: 130px;
     bottom: -10px;
     width: 420px;
 }
 
-#roles .rbox .toggler {
+#_home #roles .rbox .toggler {
     position: absolute;
     display: block;
     width: 71px;
@@ -331,15 +331,15 @@ section.page-content, section.intro {
     cursor: pointer;
 }
 
-#roles .toggler img {
+#_home #roles .toggler img {
     transition: transform 0.2s ease-out;
 }
 
-#roles .toggler.active img {
+#_home #roles .toggler.active img {
     transform: rotate(180deg);
 }
 
-#roles .slide-down{
+#_home #roles .slide-down{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -347,7 +347,7 @@ section.page-content, section.intro {
     position: relative;
 }
 
-#roles .slide-down .title-hldr{
+#_home #roles .slide-down .title-hldr{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -355,25 +355,25 @@ section.page-content, section.intro {
     margin-bottom: 65px;
 }
 
-#roles .slide-down h2 {
+#_home #roles .slide-down h2 {
     width: 620px;
     font-size: 48px;
     font-weight: 600;
     line-height: 58px;
 }
 
-#roles .slide-down .title-hldr img{
+#_home #roles .slide-down .title-hldr img{
     display: inline-block;
     width: 51px;
     height: 51px;
     margin-bottom: 2px;
 }
 
-#roles .slide-down .title-hldr .btn{
+#_home #roles .slide-down .title-hldr .btn{
     width: 165px;
 }
 
-#roles .slide-down .title-hldr.btn {
+#_home #roles .slide-down .title-hldr.btn {
     padding: 17px 27px;
     border-radius: 27px;
     border: 2px;
@@ -381,12 +381,12 @@ section.page-content, section.intro {
 }
 
 
-#roles .slide-down.first .title-hldr span{
+#_home #roles .slide-down.first .title-hldr span{
     background: linear-gradient(90deg, #866EFF 0%, #A54CF9 46%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#roles .slide-down.second  .title-hldr span{
+#_home #roles .slide-down.second  .title-hldr span{
     background: linear-gradient(90deg, #1399DE 0%, #8CD8FF 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -394,7 +394,7 @@ section.page-content, section.intro {
 
 
 
-#roles .slide-down.second .title-hldr.btn {
+#_home #roles .slide-down.second .title-hldr.btn {
     background: linear-gradient(90deg, #478FFE 20%, #79D3FD 86.5%);
     border: 1px solid #FFFFFF
 }
@@ -402,23 +402,23 @@ section.page-content, section.intro {
 //---
 
 
-#certifications {
+#_home #certifications {
     background: #262626;
     padding: 60px 0;
     margin: 100px auto;
 }
 
-#certifications .section-title{
+#_home #certifications .section-title{
     margin-bottom: 50px;
 }
 
-#certifications .pnls_hldr{
+#_home #certifications .pnls_hldr{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#certifications .lft-pnl{
+#_home #certifications .lft-pnl{
     width: 600px;
     height: 660px;
     display: flex;
@@ -426,7 +426,7 @@ section.page-content, section.intro {
     justify-content: space-between;
 }
 
-#certifications .block{
+#_home #certifications .block{
     width: 100%;
     height: 200px;
     background: #171717;
@@ -434,25 +434,25 @@ section.page-content, section.intro {
     border-radius: 24px;
 }
 
-#certifications .block img{
+#_home #certifications .block img{
     height: 50px;
     margin-bottom: 6px;
 }
 
-#certifications .block h3{
+#_home #certifications .block h3{
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 6px;
 }
 
-#certifications .block p{
+#_home #certifications .block p{
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
 }
 
-#certifications .rgt-pnl{
+#_home #certifications .rgt-pnl{
     width: 600px;
     height: 660px;
     position: relative;
@@ -460,7 +460,7 @@ section.page-content, section.intro {
     background-size: cover;
 }
 
-#certifications .rgt-pnl .pill{
+#_home #certifications .rgt-pnl .pill{
     position: absolute;
     bottom: 28px;
     left: 28px;
@@ -481,49 +481,49 @@ section.page-content, section.intro {
 
 }
 
-#certifications .rgt-pnl .pill:hover {
+#_home #certifications .rgt-pnl .pill:hover {
     background: none;
     color: #000;
 }
 
 // ---
 
-#countdown {
+#_home #countdown {
     margin: 200px auto;
 }
 
-#countdown .pnls_hldr {
+#_home #countdown .pnls_hldr {
     display: flex;
     justify-content: space-between;
 }
 
-#countdown .lft-pnl {
+#_home #countdown .lft-pnl {
     width: 500px;
 }
 
-#countdown  .rgt-pnl {
+#_home #countdown  .rgt-pnl {
     width: 550px;
 }
 
-#countdown .section-title{
+#_home #countdown .section-title{
     font-size: 40px;
     font-weight: 600;
     line-height: 48px;
 }
 
-#countdown .lft-pnl .section-title{
+#_home #countdown .lft-pnl .section-title{
     text-align: left;
     margin-bottom: 24px;
 }
 
-#countdown p{
+#_home #countdown p{
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 24px;
 }
 
-#countdown .btn.btn-cta{
+#_home #countdown .btn.btn-cta{
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -531,15 +531,15 @@ section.page-content, section.intro {
     padding: 14px 27px;
 }
 
-#countdown .btn.btn-cta:hover{
+#_home #countdown .btn.btn-cta:hover{
     background: none;
 }
 
-#countdown .rgt-pnl .section-title{
+#_home #countdown .rgt-pnl .section-title{
     margin-bottom: 55px;
 }
 
-#countdown .counter{
+#_home #countdown .counter{
     width: 100%;
     background: #262626;
     border-radius: 24px;
@@ -547,14 +547,14 @@ section.page-content, section.intro {
     display:flex;
 }
     
-#countdown .cd-logo{
+#_home #countdown .cd-logo{
     width: 54px;
     height: 54px;
     margin-top: 5px;
     margin-right: 20px;
 }
 
-#countdown .time{
+#_home #countdown .time{
     display: flex;
     flex: 1;
     justify-content: space-between;
@@ -564,17 +564,17 @@ section.page-content, section.intro {
     text-align: center;
 }
 
-#countdown .time .digit {
+#_home #countdown .time .digit {
     border-right: 1px solid #FFF;
     width: 25%;
     text-align: center;
 }
 
-#countdown .time .digit:last-child{
+#_home #countdown .time .digit:last-child{
     border:none;
 }
 
-#countdown .time .digit span{
+#_home #countdown .time .digit span{
     display: block;
     font-size: 40px;
     font-weight: 700;
@@ -584,20 +584,20 @@ section.page-content, section.intro {
 
 //---
 
-#info {
+#_home #info {
     background: #262626;
     padding: 100px 0;
     margin: 100px auto;
 }
 
-#info .cards-hldr{
+#_home #info .cards-hldr{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
 }
 
-#info .card{
+#_home #info .card{
     width: 340px;
     height: 280px;
     padding: 50px;
@@ -605,27 +605,27 @@ section.page-content, section.intro {
     background: #171717;
 }
 
-#info .card img{
+#_home #info .card img{
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
 }
 
-#info .card h3{
+#_home #info .card h3{
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 6px;
 }
 
-#info .card p{
+#_home #info .card p{
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     margin-bottom: 5px;
 }
 
-#info .card a{
+#_home #info .card a{
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -635,15 +635,15 @@ section.page-content, section.intro {
 
 //---
 
-#members {
+#_home #members {
     margin: 100px auto;
 }
 
-#members .container {
+#_home #members .container {
     padding: 0;
 }
 
-#members .tabs-hldr{
+#_home #members .tabs-hldr{
     display: flex;
     gap: 20px;
     background: #262626;
@@ -652,13 +652,13 @@ section.page-content, section.intro {
     margin-bottom: 50px;
 }
 
-#members .tab-menu{
+#_home #members .tab-menu{
     width: 230px;
     height: 400px;
     border-right: 1px solid #fff;
 }
 
-#members .tab-menu li{
+#_home #members .tab-menu li{
     display: flex;
     width:180px;
     margin-left: 50px;
@@ -668,64 +668,64 @@ section.page-content, section.intro {
     padding: 12px 20px;
 }
 
-#members .tab-menu li.active{
+#_home #members .tab-menu li.active{
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
 }
 
 
-#members .tab-menu li:hover {
+#_home #members .tab-menu li:hover {
     // background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
 }
 
-#members .tab-menu img{
+#_home #members .tab-menu img{
     display: inline;
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
 
-#members .tab-content{
+#_home #members .tab-content{
     width: 400px;
     height: 400px;
 }
 
-#members .tab-content .tab_c{
+#_home #members .tab-content .tab_c{
     display: none;
 }
 
-#members .tab-content .tab_c.active{
+#_home #members .tab-content .tab_c.active{
     display: block;
 }
 
-#members  .tab-content h3{
+#_home #members  .tab-content h3{
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 20px;
 }
 
-#members p{
+#_home #members p{
     margin-bottom: 20px;
 }
 
-#members .btn.btn-cta{
+#_home #members .btn.btn-cta{
     padding: 11px 27px;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
 }
 
-#members .tab-image{
+#_home #members .tab-image{
     width: 500px;
     height: 400px
 }
 
-#members .tab-image .tab_img{
+#_home #members .tab-image .tab_img{
     display: none;
 }
 
-#members .tab-image .tab_img.active{
+#_home #members .tab-image .tab_img.active{
     display: block;
     width: 550px;
     height: 400px;
@@ -733,18 +733,18 @@ section.page-content, section.intro {
     background-size: cover;
 }
 
-#members {
+#_home #members {
     
 }
 
-#members .cards-hldr{
+#_home #members .cards-hldr{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
 }
 
-#members .cards-hldr .card{
+#_home #members .cards-hldr .card{
     width: 360px;
     height: 280px;
     padding: 40px 34px;
@@ -752,13 +752,13 @@ section.page-content, section.intro {
     background: #262626;
 }
 
-#members .cards-hldr img{
+#_home #members .cards-hldr img{
     width: 50px;
     height: 50px;
     margin-bottom: 12px;
 }
 
-#members .cards-hldr h3{
+#_home #members .cards-hldr h3{
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
@@ -767,17 +767,17 @@ section.page-content, section.intro {
 
 //---
 
-#newsletter {
+#_home #newsletter {
     background: #262626;
     padding: 100px 10px;
 }
 
-#newsletter .frm-hldr{
+#_home #newsletter .frm-hldr{
     background: #171717;
     padding: 50px;
     border-radius: 24px 0 0 24px;
 }
-#newsletter .frm-hldr h2{
+#_home #newsletter .frm-hldr h2{
     font-size: 48px;
     font-weight: 700;
     line-height: 58px;
@@ -785,12 +785,12 @@ section.page-content, section.intro {
     margin-bottom:20px;
 }
 
-#newsletter .frm-hldr p{
+#_home #newsletter .frm-hldr p{
     width: 580px;
     margin-bottom: 50px;
 }
 
-#newsletter .frm input{
+#_home #newsletter .frm input{
     width: 425px;
     height: 60px;
     margin-right: 20px;
@@ -800,14 +800,14 @@ section.page-content, section.intro {
     font-weight: 600;
 }
 
-#newsletter .frm input::placeholder{
+#_home #newsletter .frm input::placeholder{
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     text-align: left;
     color: #888;
 }
-#newsletter .frm .btn-cta{
+#_home #newsletter .frm .btn-cta{
     width: 150px;
     height: 60px;
     padding: 17px 27px;
@@ -817,7 +817,7 @@ section.page-content, section.intro {
     line-height: 20px;
 }
 
-#newsletter .img-hldr{
+#_home #newsletter .img-hldr{
     border-radius: 0 24px 24px 0;
     background-size: cover;
     background-position: center;
@@ -1020,6 +1020,12 @@ section.page-content, section.intro {
 
 #value last{
     margin-bottom: 200px;
+}
+
+
+#value .last .cover{
+    width: 600px;
+    height: 684px;
 }
 
 //--- VALUE END ---
@@ -1608,8 +1614,162 @@ section.page-content, section.intro {
 //------------------------------------------------------------------------------
 //--- CERTIFICATION START ---
 
+#_certification .split{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#_certification .text .title{
+    margin-bottom: 30px;
+}
+
+#_certification .image{
+    height: 250px;
+    background-size: cover;
+}
+
+#_certification .first .text{
+    width: 540px;
+    margin-top: 50px;
+}
+
+#_certification .first .image {
+    width: 660px;
+}
+
+#_certification .second .image {
+    width: 655px;
+}
+
+#_certification .second .text{
+    width: 550px;
+    margin-top: 30px;
+    margin-left: 55px;
+}
+
+#_certification .third .title h2{
+    margin-bottom: 24px;
+}
+
+#_certification .third .title p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+#_certification .steps{
+    display: flex;
+    justify-contents: space-between;
+    margin: 50px auto;
+}
+
+#_certification .item {
+        width: 300px;
+        padding-left: 30px;
+}
+
+#_certification .item p{
+    width: 246px;
+}
+
+#_certification .item h3{
+    width: 271px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #866EFF;
+    margin-bottom: 10px;
+}
+
+#_certification .arw{
+    width: 30px;
+    height: 30px;
+    background-image:url('/assets/images/icons/certification-rgt-arr-icon.webp.webp');
+    background-size: cover;
+}
+
+#_certification .arw:last-child{
+    display: none;
+}
+
+#_certification .fourth .text {
+    width: 100%;
+}
 
 //--- CERTIFICATION END ---
+
+
+//------------------------------------------------------------------------------
+//--- DOCUMENTS START ---
+
+#_documents .sect{
+    margin-bottom: 50px;
+}
+
+#_documents .section-title{
+    margin-bottom: 60px;
+}
+
+#_documents h1, #_documents h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+
+#_documents .second{
+    display: flex;
+    height: 388px;
+}
+
+#_documents .second .text{
+    width: 660px;
+    background: linear-gradient(100deg, #2C2C2C 40%, #212121 100%);
+    border-radius: 24px 0 0 24px;
+    padding: 50px;
+    border: 1px solid #BDBDBDB2;
+}
+
+#_documents .second h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+
+#_documents .second p{
+    width: 540px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+#_documents .second .btn-cta {
+    padding: 21px 40px;
+    border-radius: 8px;
+    border: 2px solid #FFFFFF;
+    background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+    font-weight: 700;
+}
+
+#_documents .second .cover{
+    width: 660px;
+    background-size: cover;
+    border-radius: 0 24px 24px 0;
+}
+
+#_documents .fourth a{
+    color: #0094FF;
+}
+
+//--- DOCUMENTS END ---
 
 
 //------------------------------------------------------------------------------
