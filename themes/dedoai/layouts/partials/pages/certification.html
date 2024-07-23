@@ -1,0 +1,51 @@
+{{- $_ := .Page.Params -}}
+<div class="container">
+    
+    {{with $_.sec_1}}
+    <div class="sect split first">
+        <div class="text">
+            <h1 class="title">{{.title}}</h1>
+            <p>{{.text}}</p>
+        </div>
+        <div class="image" style="background-image:url('{{.img}}')"></div>
+    </div>
+    {{end}}
+    
+    {{with $_.sec_2}}
+    <div class="sect split second">
+        <div class="image" style="background-image:url('{{.img}}')"></div>
+        <div class="text">
+            <h2 class="title">{{.title}}</h2>
+            <p>{{.text}}</p>
+        </div>
+    </div>
+    {{end}}
+    
+    {{with $_.sec_3}}
+    <div class="sect third">
+        <h2 class="title">{{.title}}</h2>
+        <p>{{.text}}</p>
+        {{with .steps}}
+        <div class="steps">
+            {{range .}}
+                <div class="item">
+                    <h3>{{.title}}</h3>
+                    <p>{{.text}}</p>
+                </div>
+                <div class="arw"></div>
+            {{end}}
+        </div>
+        {{end}}
+    </div>
+    {{end}}
+    
+    {{with $_.sec_4}}
+    <div class="sect fourth">
+        <div class="text">
+            <h2 class="title">{{.title}}</h2>
+            <p>{{.text}}</p>
+        </div>
+    </div>
+    {{end}}
+
+</div>
