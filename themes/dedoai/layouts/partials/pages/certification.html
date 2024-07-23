@@ -23,8 +23,10 @@
     
     {{with $_.sec_3}}
     <div class="sect third">
-        <h2 class="title">{{.title}}</h2>
-        <p>{{.text}}</p>
+        <div class="title">
+            <h2>{{.title}}</h2>
+            <p>{{.text}}</p>
+        </div>
         {{with .steps}}
         <div class="steps">
             {{range .}}
