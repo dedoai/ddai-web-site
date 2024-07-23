@@ -6,7 +6,7 @@ draft: false
 
 hero:
   bg_img: "/images/home/home-hero-bg-1.webp"
-  fg_img: "/images/home/home-hero-elements-1.webp"
+  fg_img: "/assets/images/home/home-hero-elements-1.webp"
   title: "Decentralizzare <br>i Dati per un <br>Migliore Domani"
   sub_title: "Una piattaforma sicura per acquistare, vendere e scambiare dati facilmente."
   text: "Trasformare i Dati con Blockchain: <br><span>Sicuri, Accessibili e Posseduti dai Creatori</spam>"
@@ -31,6 +31,12 @@ roles:
     cta_2:
       text: Scopri
       link: "#"
+    panel:
+      title: "Iniziare è facile: ti serve solo"
+      hl_txt: "il tuo PC"
+      hl_ico: "/assets/images/icons/home-roles-pc-icon.webp"
+      cta_txt: "Apri la Webapp"
+      cta_link: ""
   block_2:
     title: "Produttori"
     text: "I produttori possono vendere i loro dati in risposta alle richieste dei consumatori, utilizzando i token DedoAI nel nostro mercato sicuro."
@@ -41,6 +47,12 @@ roles:
     cta_2:
       text: Scopri
       link: "#"
+    panel:
+      title: "Iniziare è facile: ti serve solo"
+      hl_txt: Telegram
+      hl_ico: /assets/images/icons/home-roles-telegram-icon.webp
+      cta_txt: "Apri Telegram"
+      cta_link: ""
 
 certifications:
   title: "La Nostra Certificazione Digitale"
@@ -109,7 +121,7 @@ members:
     text: "Esplora opportunità di partnership per accelerare la democratizzazione dei dati."
     cta_txt: "Lancia Webapp"
     cta_link: "#"
-    cover: "/assets/images/home/members-cover-plchldr.webp"
+    cover: "/assets/images/home/members-cover.webp"
   - label: Marketplace
     icon: "/assets/images/home/members-ico-2.webp"
     title: ""
@@ -153,7 +165,7 @@ members:
 newsletter:
   title: "Newsletter dedoAI"
   text: "Ricevi gli ultimi aggiornamenti da dedoAI. Scopri sviluppi entusiasmanti, partnership e innovazioni mentre rivoluzioniamo l'economia dei dati e modelliamo il futuro della democratizzazione dei dati e della tecnologia blockchain."
-  img: "/assets/images/home/members-cover-plchldr.webp"
+  img: "/assets/images/newsletter-cover.webp"
   placeholder: "Inserisci la tua email!"
   confirm: "Iscrizione avvenuta con successo"
   error: "Problema con l'iscrizione"

@@ -7,7 +7,7 @@ draft: false
 noheader: true
 
 row_1:
-  img: "/assets/images/page_half_placeholder.webp"
+  img: "/assets/images/value-cover-1.webp"
   items:
    - title: "Introduction to dedoAI Tokenomics"
      text: "In the heart of the dedoAI ecosystem lies the dedoAI Token, a digital asset designed to facilitate transactions, reward contributions, and incentivize the growth of our decentralized data economy. Our tokenomics model is crafted to balance supply and demand, ensuring long-term value and utility."
@@ -17,7 +17,7 @@ row_1:
      text: "The dedoAI Token serves as the primary currency within our platform, enabling the purchase, sale, and trade of data assets securely and transparently. This utility ensures that every token holder can participate directly in the data economy, whether as a data producer, consumer, or investor."
 
 row_2:
-  img: "/assets/images/page_half_placeholder.webp"
+  img: "/assets/images/value-cover-2.webp"
   items:
    - title: "Dynamic Pricing and Liquidity"
      text: "dedoAI’s marketplace leverages smart contracts for dynamic pricing, ensuring that data assets are traded at fair market value. This system supports an efficient and liquid market, with the dedoAI Token at its core, facilitating swift transactions and providing financial incentives for ecosystem participants."

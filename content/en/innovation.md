@@ -8,7 +8,7 @@ noheader: true
 
 title:  Pioneering a New Data Economy
 img_: "/assests/images/innovation/cover.webp"
-img: "/assets/images/page_cover_placeholder.webp"
+img: "/assets/images/innovation-cover.webp"
 items:
  - title: "Revolutionizing Data Exchange"
    text: "At dedoAI, we're redefining the data economy. Our platform uses blockchain to ensure secure, transparent, and fair data exchange, empowering individuals and organizations to control and monetize their data."
