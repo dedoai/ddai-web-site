@@ -100,8 +100,7 @@ option:checked, option:hover {
 }
 
 .tr-menu .btn-cta{
-    top: 1px;
-    position: relative;
+    line-height: 19px;
 }
 
 .ico-marketplace {
@@ -158,6 +157,10 @@ section.page-content, section.intro {
     font-weight: 800;
 }
 
+.footer-menu .nav-dropdown-item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
 #footer .social-icons li a {
     border-radius: 1.25rem;
     background: #FFF;
@@ -191,7 +194,8 @@ section.page-content, section.intro {
 
 #hero .txt_hldr{
     position: absolute;
-    bottom: 265px;
+    //bottom: 265px;
+    top: 286px;
     left: 215px;
     width: 800px;
 }
@@ -237,7 +241,8 @@ section.page-content, section.intro {
     position: absolute;
     width:49%;
     right: 0;
-    bottom: 120px;
+    //bottom: 120px;
+    top: 162px;
 }
 
 #hero .img_hldr img{
@@ -277,8 +282,8 @@ section.page-content, section.intro {
 #_home #roles .rbox p{
     width: 50%;
     font-size: 20px;
-    font-weight: 600;
-    line-height: 24.2px;
+    font-weight: 500;
+    line-height: 24px;
     margin-bottom: 20px;
 }
 
@@ -649,7 +654,7 @@ section.page-content, section.intro {
 
 #_home #info .card a{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 20px;
     color: #866EFF;
 }

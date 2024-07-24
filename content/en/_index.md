@@ -83,7 +83,7 @@ info:
   title: "Empowering Data Owenership"
   items:
   - title: "Decentralization"
-    text: "Experience true data ownershiPp and exchange trough our decentralized platform"
+    text: "Experience true data ownership and exchange trough our decentralized platform"
     icon: "/assets/images/home/info-ico-1.webp"
     cta_txt: "Read more"
     cta_link: "#"
