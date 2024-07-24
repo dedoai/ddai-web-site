@@ -37,11 +37,11 @@
             {{ if .HasChildren }}
               <li class="nav-item nav-dropdown group relative">
                 <span
-                  class="nav-link {{ range .Children }}
+                  class="nav-link {{- range .Children }}
                     {{ $childURL := .URL | absLangURL }}
                     {{ $active := eq $childURL $pageURL }}
                     {{ if $active }}active{{ end }}
-                  {{ end }} inline-flex items-center">
+                  {{ end -}} inline-flex items-center">
                   {{ .Name }}
                   <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
                     <path
@@ -55,7 +55,7 @@
                     {{ $active := eq $childURL $pageURL }}
                     <li class="nav-dropdown-item">
                       <a
-                        class="nav-dropdown-link {{ if $active }}
+                        class="nav-dropdown-link {{- if $active }}
                           active
                         {{- end -}}"
                         {{ if findRE `^http` .URL }}
@@ -79,7 +79,7 @@
                 {{ if ne .URL "/" }}
                   <li class="nav-item">
                     <a
-                      class="nav-link {{ if $active }}active{{- end -}}"
+                      class="nav-link {{- if $active }}active{{- end -}}"
                       {{ if findRE `^http` .URL }}
                         target="_blank" rel="noopener"
                       {{ end }}
@@ -109,9 +109,9 @@
         <!-- /main navbar -->
         
         <!-- Top Right Menu -->
-        <div class="tr-menu order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+        <div class="tr-menu order-1 ml-auto flex items-center md:order-2 _lg:ml-0_">
             {{with site.Menus.top_right}}
-                {{ range . }}
+                {{- range . }}
                     <a {{ if findRE `^http` .URL }}
                         target="_blank" rel="noopener"
                     {{ end }}

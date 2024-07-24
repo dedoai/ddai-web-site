@@ -49,23 +49,45 @@ option:checked, option:hover {
 
 .header {
     padding-bottom: 0;
+    padding-top: 1rem;
 }
 
 .navbar.container{
     border-bottom: 1px solid #8881;
-    padding-bottom: 1.5rem;
+    //padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: left;
 }
 
-.tr-menu{
+#nav-menu {
+    margin-left: 150px;
+}
+
+#nav-menu .nav-link svg{
+    margin-left: 10px;
+}
+
+#nav-menu .nav-dropdown-list {
+ transition: all 0.2s ease-out;    
+}
+
+.tr-menu {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
+    margin-left: auto;
 }
 
 .tr-menu a{
     font-weight: 700;
 }
 
+.tr-menu a:first-child{
+    margin-right: 35px;
+}
 
 .tr-menu select, .tr-menu select:focus {
     border: none;
@@ -186,11 +208,11 @@ section.page-content, section.intro {
 #hero .text p{
     font-size: 24px;
     font-weight: 400;
-    line-height: 29.05px;
+    line-height: 29px;
     margin-bottom:40px;
 }
 
-#hero .text span{
+#hero .text p span{
     font-weight: 600;
 }
 
