@@ -10,7 +10,7 @@ hero:
   fg_img: "/assets/images/home/home-hero-elements-1.webp"
   title: "Decentralizing  <br>Data for a Better  <br>Tomorrow"
   sub_title: "A secure platform for easily buying, selling, and trading data."
-  text: "Transforming Data with Blockchain: <br><span>Secure, Accessible, and Creator-Owned</spam>"
+  text: "Transforming Data with Blockchain: <span>Secure, <br>Accessible, and Creator-Owned</spam>"
   cta:
     enable: true
     label: "Get Started Now"
@@ -83,7 +83,7 @@ info:
   title: "Empowering Data Owenership"
   items:
   - title: "Decentralization"
-    text: "Experience true data ownershiPp and exchange trough our decentralized platform"
+    text: "Experience true data ownership and exchange trough our decentralized platform"
     icon: "/assets/images/home/info-ico-1.webp"
     cta_txt: "Read more"
     cta_link: "#"

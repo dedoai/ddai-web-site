@@ -154,7 +154,7 @@ weight = 4
 #Top right menu
 
 [[top_right]]
-name = "Marketpalce"
+name = "Marketplace"
 url = "#"
 weight = 1
 params = { icon = "ico-marketplace" }
