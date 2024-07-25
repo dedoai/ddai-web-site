@@ -1,0 +1,23 @@
+{{- $_ := .Page.Params -}}
+{{- $img_res := resources.Get $_.image }}
+{{- $img := $img_res.RelPermalink }}
+<div class="container">
+    <div class="info"></div>
+    
+    <div class="share"></div>
+    
+    <h1 class="title">{{$_.title}}</h1>
+    <img src="{{$img}}" alt="{{$_.title}}"/>
+    
+    <article class="content">
+        {{ $_.content | markdownify }}
+    </article>
+    
+    <div class="prefooter">
+    
+        <div class="share"></div>
+        
+        <div class="latest-articles"></div>
+    
+    </div>
+</div>
