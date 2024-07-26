@@ -13,8 +13,8 @@ item:
   date: 10 June 2024
   cat: Updates
   time_r: 2 Min Read
-  author: DedoAI Team
-
+  author: dedoAI Team
+  link: /news-detail
 ---
 {{< wrap >}}
 {{< section "news">}}

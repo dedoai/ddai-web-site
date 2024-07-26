@@ -1,0 +1,126 @@
+{{- $_ := .Page.Params -}}
+{{- $img_res := resources.Get $_.image }}
+{{- $img := $img_res.RelPermalink }}
+{{- $thumb := $img_res.Resize "390x140" -}}
+{{- $time := time.Format "2 Jan 2006" $_.date -}}
+<div class="container">
+
+    <div class="info">
+        <span>{{$time}}</span>
+        <span class="{{$_.cat}}"><img src="/assets/images/icons/news-cat-icon.webp">{{$_.cat}}</span>
+        <span>{{$_.rdtm}}</span>
+    </div>
+ 
+    <h1 class="title">{{$_.title}}</h1>
+
+    <div class="shrhldr">
+        <div class="author">
+            <img src="/assets/images/icons/news-author-icon.webp"> {{$_.author}}
+        </div>
+        <div class="share">
+            <ul class="social-icons">
+                <li>
+                  <a target="_blank" aria-label="linkedin" rel="nofollow noopener" href="https://www.linkedin.com/">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              
+                <li>
+                  <a target="_blank" aria-label="instagram" rel="nofollow noopener" href="https://www.instagram.com/">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              
+                <li>
+                  <a target="_blank" aria-label="x" rel="nofollow noopener" href="https://x.com/">
+                    <i class="fab fa-x"></i>
+                  </a>
+                </li>
+              
+                <li>
+                  <a target="_blank" aria-label="github" rel="nofollow noopener" href="https://www.github.com/">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+              
+                <li>
+                  <a target="_blank" aria-label="email" rel="nofollow noopener" href="mailto:hello@dedoai.org">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <img class="cover" src="{{$img}}" alt="{{$_.title}}"/>    
+    
+    <article class="content">
+        {{ $_.content | markdownify }}
+    </article>
+    
+    <div class="sepline"></div>
+    
+    <div class="secondary">    
+        <div class="shrhldr">
+            <div class="author">
+                <img src="/assets/images/icons/news-author-icon.webp">{{$_.author}}
+            </div>
+            <div class="share">
+                <ul class="social-icons">
+                    <li>
+                      <a target="_blank" aria-label="linkedin" rel="nofollow noopener" href="https://www.linkedin.com/">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a target="_blank" aria-label="instagram" rel="nofollow noopener" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a target="_blank" aria-label="x" rel="nofollow noopener" href="https://x.com/">
+                        <i class="fab fa-x"></i>
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a target="_blank" aria-label="github" rel="nofollow noopener" href="https://www.github.com/">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <a target="_blank" aria-label="email" rel="nofollow noopener" href="mailto:hello@dedoai.org">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <h2 class="rel_title">{{$_.related_title}}</h2>
+        <div class="latest-articles">
+            
+        {{range seq 3}}
+            <div class="item">
+                <img class="cover" src="{{$img}}" alt="{{$_.title}}"/>
+                <div class="info">
+                    <span>{{$time}}</span>
+                    <span class="{{$_.cat}}"><img src="/assets/images/icons/news-cat-icon.webp">{{$_.cat}}</span>
+                    <span>{{$_.rdtm}}</span>
+                </div>
+                <h3>{{$_.title}}</h3>
+                <p>{{ $_.short_descr }}</p>
+                <div class="author">
+                     <img src="/assets/images/icons/news-author-icon.webp"> {{$_.author}}
+                </div>
+            </div>
+        {{end}}
+        </div>
+    
+    </div>
+</div>
