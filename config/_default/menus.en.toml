@@ -14,36 +14,42 @@ weight = 2
 parent = "Use"
 name = "Get a Wallet"
 url = ""
+params = { ico = "01" }
 weight = 1
 
 [[main]]
 parent = "Use"
 name = "Get a DEDO Token"
 url = "/token/"
+params = { ico = "02" }
 weight = 2
 
 [[main]]
 parent = "Use"
 name = "Stake"
 url = ""
+params = { ico = "03" }
 weight = 3
 
 [[main]]
 parent = "Use"
 name = "Call for Data"
 url = ""
+params = { ico = "04" }
 weight = 4
 
 [[main]]
 parent = "Use"
 name = "Sell your Data"
 url = ""
+params = { ico = "05" }
 weight = 5
 
 [[main]]
 parent = "Use"
 name = "Source Code"
 url = "/source-code/"
+params = { ico = "06" }
 weight = 6
 
 
@@ -55,54 +61,63 @@ weight = 3
 parent = "Learn"
 name = "About"
 url = "/about/"
+params = { ico = "07" }
 weight = 1
 
 [[main]]
 parent = "Learn"
 name = "Marketplace"
 url = ""
+params = { ico = "08" }
 weight = 2
 
 [[main]]
 parent = "Learn"
 name = "Webapp"
 url = ""
+params = { ico = "09" }
 weight = 3
 
 [[main]]
 parent = "Learn"
 name = "Certification Info"
 url = "/certification"
+params = { ico = "10" }
 weight = 4
 
 [[main]]
 parent = "Learn"
 name = "DedoAI Innovation"
 url = "/innovation/"
+params = { ico = "11" }
 weight = 5
 
 [[main]]
 parent = "Learn"
 name = "Value of dedoAI"
 url = "/value/"
+params = { ico = "12" }
 weight = 6
 
 [[main]]
 parent = "Learn"
 name = "Roadmap"
 url = "/roadmap/"
+params = { ico = "13" }
 weight = 7
 
 [[main]]
 parent = "Learn"
 name = "Documents"
 url = "documents"
+params = { ico = "14" }
 weight = 8
 
 [[main]]
 parent = "Learn"
 name = "Technology"
 url = "/technology/"
+params = { ico = "15" }
 weight = 9
 
 [[main]]
@@ -113,12 +128,14 @@ weight = 3
 parent = "Support"
 name = "Help center"
 url = ""
+params = { ico = "16" }
 weight = 1
 
 [[main]]
 parent = "Support"
 name = "Contacts"
 url = "/contacts/"
+params = { ico = "17" }
 weight = 2
 
 
@@ -130,24 +147,28 @@ weight = 4
 parent = "Other"
 name = "News"
 url = "/news/"
+params = { ico = "18" }
 weight = 1
 
 [[main]]
 parent = "Other"
 name = "Communities"
 url = ""
+params = { ico = "19" }
 weight = 2
 
 [[main]]
 parent = "Other"
 name = "Partners"
 url = "/partners/"
+params = { ico = "20" }
 weight = 3
 
 [[main]]
 parent = "Other"
 name = "Careers"
 url = "/careers/"
+params = { ico = "21" }
 weight = 4
 
 #-----------------
