@@ -1700,6 +1700,12 @@ section.page-content, section.intro {
     background-color: #FFFFFF;
 }
 
+#roadmap .label.current .icon{
+    background-image: url('/assets/images/icons/roadmap-icon-current.webp');
+    background-size: cover;
+    background-color: #171717;
+}
+
 #roadmap .steps{
     display: flex;
     flex-wrap: wrap;
