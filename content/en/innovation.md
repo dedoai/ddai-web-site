@@ -13,7 +13,7 @@ items:
  - title: "Revolutionizing Data Exchange"
    text: "At dedoAI, we're redefining the data economy. Our platform uses blockchain to ensure secure, transparent, and fair data exchange, empowering individuals and organizations to control and monetize their data."
  - title: "Empowerment through Tokenization"
-   text: "The dedoAI token rewards data producers, representing real economic value and encouraging the sharing of high-quality data. This makes data exchange more dynamic and engaging."
+   text: "The token rewards data producers, representing real economic value and encouraging the sharing of high-quality data. This makes data exchange more dynamic and engaging."
  - title: "Blockchain at the Core"
    text: "We leverage blockchain technology to create a decentralized marketplace for direct transactions between data producers and consumers. This reduces costs, increases trust, and enhances security, with every transaction verifiable on the blockchain."
  - title: "Join the Data Revolution"

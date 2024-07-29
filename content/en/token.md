@@ -1,6 +1,6 @@
 ---
 title: "Token - dedoAi"
-meta_title: "Unlocking the Financial Potential of Data: The dedoAI Token"
+meta_title: "Unlocking the Financial Potential of Data: The DEDO Token"
 description: "this is meta description"
 draft: false
 ---
@@ -16,7 +16,7 @@ The foundation of our innovation lies in blockchain technology. By creating a de
 
 ## Empowerment through Tokenization
 
-With the dedoAI token, we introduce a novel approach to valuing and trading data. Data producers are rewarded with tokens that represent real economic value, providing an incentive to contribute high-quality data. This tokenization of data assets is a game-changer, making data exchange more dynamic and participatory.
+With the DEDO token, we introduce a novel approach to valuing and trading data. Data producers are rewarded with tokens that represent real economic value, providing an incentive to contribute high-quality data. This tokenization of data assets is a game-changer, making data exchange more dynamic and participatory.
 
 ## Smart Contracts for Smart Data
 

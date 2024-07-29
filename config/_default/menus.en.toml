@@ -87,14 +87,14 @@ weight = 4
 
 [[main]]
 parent = "Learn"
-name = "DedoAI Innovation"
+name = "Innovation"
 url = "/innovation/"
 params = { ico = "11" }
 weight = 5
 
 [[main]]
 parent = "Learn"
-name = "Value of dedoAI"
+name = "Value"
 url = "/value/"
 params = { ico = "12" }
 weight = 6
@@ -266,13 +266,13 @@ weight = 4
 
 [[footer]]
 parent = "Learn"
-name = "DedoAI Innovation"
+name = "Innovation"
 url = "/innovation/"
 weight = 5
 
 [[footer]]
 parent = "Learn"
-name = "Value of dedoAI"
+name = "Value"
 url = "/value/"
 weight = 6
 

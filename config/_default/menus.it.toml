@@ -75,13 +75,13 @@ weight = 4
 
 [[main]]
 parent = "Impara"
-name = "Innovazione DedoAI"
+name = "Innovazione"
 url = "/innovation/"
 weight = 5
 
 [[main]]
 parent = "Impara"
-name = "Valore di DedoAI"
+name = "Valore"
 url = ""
 weight = 6
 
@@ -243,13 +243,13 @@ weight = 4
 
 [[footer]]
 parent = "Impara"
-name = "Innovazione DedoAI"
+name = "Innovazione"
 url = "/innovation/"
 weight = 5
 
 [[footer]]
 parent = "Impara"
-name = "Valore di DedoAI"
+name = "Valore"
 url = ""
 weight = 6
 
