@@ -1,8 +1,7 @@
 ---
 title: "dedoAI Announces Strategic Partnership with Blockchain Innovations Inc."
-meta_title: "In today’s fast-paced world, it’s easy to feel overwhelmed and disconnected from what truly matters"
-description: "this is meta description"
-short_descr: "Experience true data ownershiPp and exchange trough our decentralized platform"
+meta_title: "dedoAI Announces Strategic Partnership with Blockchain Innovations Inc."
+description: "In today’s fast-paced world, it’s easy to feel overwhelmed and disconnected from what truly matters. We are constantly bombarded with information, and our to-do lists seem never-ending. Yet, in the midst of this chaos, a movement is quietly growing, encouraging us to slow down and embrace the art of mindful living."
 date: 2024-07-25T05:00:00Z
 image: "/images/news/news-detail-cover.webp"
 categories: ["Updates"]
