@@ -24,7 +24,7 @@ roles:
   title: "Exchange Data with DedoAI"
   block_1:
     title: "Consumers"
-    text: "Consumers can request datasets like images, videos, and etc. to train their AI systems, purchasing them with DedoAI tokens."
+    text: "Consumers can request datasets like images, videos, and etc. to train their AI systems, purchasing them with tokens."
     img: "/assets/images/home/roles-consumers.webp"
     cta_1:
       text: Read more
@@ -40,7 +40,7 @@ roles:
       cta_link: ""
   block_2:
     title: "Producers"
-    text: "Producers can sell their data in response to consumer requests, using DedoAI tokens in our secure marketplace."
+    text: "Producers can sell their data in response to consumer requests, using tokens in our secure marketplace."
     img: "/assets/images/home/roles-producers.webp"
     cta_1:
       text: Read more
@@ -87,7 +87,7 @@ info:
     icon: "/assets/images/home/info-ico-1.webp"
     cta_txt: "Read more"
     cta_link: "#"
-  - title: "dedoAI Marketplace"
+  - title: "Marketplace"
     text: "Experience true data ownership and exchange trough our decentralized platform"
     icon: "/assets/images/home/info-ico-2.webp"
     cta_txt: "Read more"
@@ -154,7 +154,7 @@ members:
 
   cards:
   - title: "Developers"
-    text: "Join our vibrant community of developers to improve the dedoAI ecosystem."
+    text: "Join our vibrant community of developers to improve the ecosystem."
     icon: "/assets/images/home/members-ico-dev.webp"
   - title: "Partners"
     text: "Explore partnership opportunities to accelerate data democratization."
@@ -164,7 +164,7 @@ members:
     icon: "/assets/images/home/members-ico-usr.webp"
 
 newsletter:
-  title: "dedoAI Newsletter"
+  title: "Newsletter"
   text: "Get the latest updates from dedoAI. Discover exciting developments, partnerships, and breakthroughs as we revolutionize the data economy and shape the future of data democratization and blockchain technology."
   img: "/assets/images/newsletter-cover.webp"
   placeholder: "Enter your email!"

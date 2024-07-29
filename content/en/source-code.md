@@ -12,7 +12,7 @@ At dedoAI, we believe in the power of open source to foster innovation, collabor
 
 ## Our Repositories
 
-Our [GitHub repositories](https://github.com/dedoai)  are the heart of our development process, hosting the code, documentation, and resources necessary to build and enhance the dedoAI ecosystem. [Here](https://github.com/dedoai) you can find everything from the initial concept and design documents to the cutting-edge code powering our platform.
+Our [GitHub repositories](https://github.com/dedoai)  are the heart of our development process, hosting the code, documentation, and resources necessary to build and enhance the ecosystem. [Here](https://github.com/dedoai) you can find everything from the initial concept and design documents to the cutting-edge code powering our platform.
 
 ## Contribute to dedoAI
 

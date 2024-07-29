@@ -9,12 +9,13 @@ weight = 1
 [[main]]
 name = "Use"
 weight = 2
+params = { hide = true}
 
 [[main]]
 parent = "Use"
 name = "Get a Wallet"
 url = ""
-params = { ico = "01" }
+params = { ico = "01" , hide = true }
 weight = 1
 
 [[main]]
@@ -28,21 +29,21 @@ weight = 2
 parent = "Use"
 name = "Stake"
 url = ""
-params = { ico = "03" }
+params = { ico = "03" , hide = true }
 weight = 3
 
 [[main]]
 parent = "Use"
 name = "Call for Data"
 url = ""
-params = { ico = "04" }
+params = { ico = "04" , hide = true }
 weight = 4
 
 [[main]]
 parent = "Use"
 name = "Sell your Data"
 url = ""
-params = { ico = "05" }
+params = { ico = "05" , hide = true }
 weight = 5
 
 [[main]]
@@ -68,14 +69,14 @@ weight = 1
 parent = "Learn"
 name = "Marketplace"
 url = ""
-params = { ico = "08" }
+params = { ico = "08" , hide = true }
 weight = 2
 
 [[main]]
 parent = "Learn"
 name = "Webapp"
 url = ""
-params = { ico = "09" }
+params = { ico = "09" , hide = true }
 weight = 3
 
 [[main]]
@@ -87,14 +88,14 @@ weight = 4
 
 [[main]]
 parent = "Learn"
-name = "DedoAI Innovation"
+name = "Innovation"
 url = "/innovation/"
 params = { ico = "11" }
 weight = 5
 
 [[main]]
 parent = "Learn"
-name = "Value of dedoAI"
+name = "Value"
 url = "/value/"
 params = { ico = "12" }
 weight = 6
@@ -109,7 +110,7 @@ weight = 7
 [[main]]
 parent = "Learn"
 name = "Documents"
-url = "documents"
+url = "/documents/"
 params = { ico = "14" }
 weight = 8
 
@@ -128,7 +129,7 @@ weight = 3
 parent = "Support"
 name = "Help center"
 url = ""
-params = { ico = "16" }
+params = { ico = "16" , hide = true }
 weight = 1
 
 [[main]]
@@ -154,7 +155,7 @@ weight = 1
 parent = "Other"
 name = "Communities"
 url = ""
-params = { ico = "19" }
+params = { ico = "19" , hide = true }
 weight = 2
 
 [[main]]
@@ -178,19 +179,20 @@ weight = 4
 name = "Marketplace"
 url = "#"
 weight = 1
-params = { icon = "ico-marketplace" }
+params = { icon = "ico-marketplace" , hide = true }
 
 
 [[top_right]]
 name = "Sign Up"
 url = "#"
 weight = 2
-params = { class = "btn-cta"}
+params = { class = "btn-cta" , hide = true}
 
 [[top_right]]
 name = "Log In"
 url = "#"
 weight = 3
+params = { hide = true}
 
 #-----------------
 # Footer menu
@@ -198,12 +200,14 @@ weight = 3
 [[footer]]
 name = "Use"
 weight = 2
+params = { hide = true}
 
 [[footer]]
 parent = "Use"
 name = "Get a Wallet"
 url = ""
 weight = 1
+params = { hide = true}
 
 [[footer]]
 parent = "Use"
@@ -216,18 +220,21 @@ parent = "Use"
 name = "Stake"
 url = ""
 weight = 3
+params = { hide = true}
 
 [[footer]]
 parent = "Use"
 name = "Call for Data"
 url = ""
 weight = 4
+params = { hide = true}
 
 [[footer]]
 parent = "Use"
 name = "Sell your Data"
 url = ""
 weight = 5
+params = { hide = true}
 
 [[footer]]
 parent = "Use"
@@ -251,12 +258,14 @@ parent = "Learn"
 name = "Marketplace"
 url = ""
 weight = 2
+params = { hide = true}
 
 [[footer]]
 parent = "Learn"
 name = "Webapp"
 url = ""
 weight = 3
+params = { hide = true}
 
 [[footer]]
 parent = "Learn"
@@ -266,13 +275,13 @@ weight = 4
 
 [[footer]]
 parent = "Learn"
-name = "DedoAI Innovation"
+name = "Innovation"
 url = "/innovation/"
 weight = 5
 
 [[footer]]
 parent = "Learn"
-name = "Value of dedoAI"
+name = "Value"
 url = "/value/"
 weight = 6
 
@@ -303,6 +312,7 @@ parent = "Support"
 name = "Help center"
 url = ""
 weight = 1
+params = { hide = true}
 
 [[footer]]
 parent = "Support"
@@ -344,6 +354,7 @@ parent = "Other"
 name = "Communities"
 url = ""
 weight = 2
+params = { hide = true}
 
 [[footer]]
 parent = "Other"

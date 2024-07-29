@@ -1,19 +1,19 @@
 ---
 title: "Certification Info"
 meta_title: "dedoAI | Certification Info"
-description: "When Producers sell their datasets, they sign a copyright transfer agreement, granting Consumers the rights to the purchased datasets. Supported by DedoAI Tokens, these contracts ensure a clear and traceable transfer of rights, protecting both Producers and Consumers."
+description: "When Producers sell their datasets, they sign a copyright transfer agreement, granting Consumers the rights to the purchased datasets. Supported by DEDO Tokens, these contracts ensure a clear and traceable transfer of rights, protecting both Producers and Consumers."
 date: 2024-07-23T06:00:00.000Z
 draft: false
 noheader: true
 
 sec_1:
   title: Copyright Guarantee
-  text: When Producers sell their datasets, they sign a copyright transfer agreement, granting Consumers the rights to the purchased datasets. Supported by DedoAI Tokens, these contracts ensure a clear and traceable transfer of rights, protecting both Producers and Consumers.
+  text: When Producers sell their datasets, they sign a copyright transfer agreement, granting Consumers the rights to the purchased datasets. Supported by DEDO Tokens, these contracts ensure a clear and traceable transfer of rights, protecting both Producers and Consumers.
   img: /assets/images/certification-1.webp
 
 sec_2:
   title: Blockchain Archiving
-  text: The DedoAI blockchain acts as an unchangeable archive for all transactions, ensuring data transparency and integrity. Each dataset is identified by a unique checksum, a digital fingerprint that guarantees its uniqueness. By storing these checksums on the blockchain, we create a permanent and tamper-proof record of each transaction, preventing fraud and manipulation.
+  text: The blockchain acts as an unchangeable archive for all transactions, ensuring data transparency and integrity. Each dataset is identified by a unique checksum, a digital fingerprint that guarantees its uniqueness. By storing these checksums on the blockchain, we create a permanent and tamper-proof record of each transaction, preventing fraud and manipulation.
   img: /assets/images/certification-2.webp
 
 sec_3:

@@ -4,7 +4,7 @@
 
           {{ $currentPage := . }}
           {{ range site.Menus.footer }}
-
+            {{if (not (isset .Params "hide")) }}
             {{ $menuURL := .URL | absLangURL }}
             {{ $pageURL:= $currentPage.Permalink | absLangURL }}
             {{ $active := eq $menuURL $pageURL }}
@@ -16,6 +16,7 @@
                 <ul
                   class="">
                   {{ range .Children }}
+                  {{if (not (isset .Params "hide")) }}
                     {{ $childURL := .URL | absLangURL }}
                     {{ $active := eq $childURL $pageURL }}
                     <li class="nav-dropdown-item">
@@ -34,6 +35,7 @@
                         {{ .Name }}
                       </a>
                     </li>
+                  {{ end }}
                   {{ end }}
                 </ul>
 
@@ -55,6 +57,7 @@
             {{ end }}
             {{ end }}
             </div>
+          {{ end }}
           {{ end }}
 
     </div>

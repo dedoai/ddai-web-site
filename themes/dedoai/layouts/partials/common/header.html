@@ -31,6 +31,7 @@
           class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
           {{ $currentPage := . }}
           {{ range site.Menus.main }}
+          {{if (not (isset .Params "hide")) }}
             {{ $menuURL := .URL | absLangURL }}
             {{ $pageURL:= $currentPage.Permalink | absLangURL }}
             {{ $active := eq $menuURL $pageURL }}
@@ -51,6 +52,7 @@
                 <ul
                   class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
                   {{ range .Children }}
+                  {{- if ne .Params.hide true -}}
                     {{ $childURL := .URL | absLangURL }}
                     {{ $active := eq $childURL $pageURL }}
                     <li class="nav-dropdown-item">
@@ -73,6 +75,7 @@
                       </a>
                     </li>
                   {{ end }}
+                  {{ end }}
                 </ul>
               </li>
             {{ else }}
@@ -94,6 +97,7 @@
                 {{ end }}
             {{ end }}
           {{ end }}
+          {{ end }}
           {{ if site.Params.navigation_button.enable }}
             <li class="mt-4 inline-block lg:hidden">
               <a
@@ -111,13 +115,17 @@
         <div class="tr-menu order-1 ml-auto flex items-center md:order-2 _lg:ml-0_">
             {{with site.Menus.top_right}}
                 {{- range . }}
+                {{if (not (isset .Params "hide")) }}
                     <a {{ if findRE `^http` .URL }}
                         target="_blank" rel="noopener"
                     {{ end }}
                         class="btn hidden lg:inline-block{{with .Params.class }} {{.}}{{end}}"
                         url="{{.URL }}" >{{with .Params.icon}}<i class="ico {{.}} mr-2"></i> {{ end }}{{.Name}}</a>
                 {{ end }}
+                {{ end }}
             {{ end }}
+            
+            
             {{ if .IsTranslated }}
                 <i class="ico ico-globe"></i>
                 {{ partial "components/language-switcher" (dict "Context" . "Class" "dark:bg-darkmode-theme-light") }}

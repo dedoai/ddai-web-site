@@ -6,7 +6,7 @@ date: 2024-07-16T06:00:00.000Z
 draft: false
 noheader: true
 
-p1: "Whether you're curious about our technology, interested in partnering with us, or simply have questions about the future of data, we're here to answer all your inquiries. Our team is dedicated to fostering open communication and collaboration with our community, potential partners, and anyone interested in the dedoAI project."
+p1: "Whether you're curious about our technology, interested in partnering with us, or simply have questions about the future of data, we're here to answer all your inquiries. Our team is dedicated to fostering open communication and collaboration with our community, potential partners, and anyone interested in the project."
 subt: "Get in Touch"
 p2: "To make it easier for you to get in touch, please fill out the form below with your details and your inquiry. Our team will get back to you as soon as possible."
 cover: "/assets/images/map-placeholder.png"
@@ -53,7 +53,7 @@ form:
   
 map_title: "Our Offices"
 map_text: "If you prefer, you can also contact us directly at our office:"
-map_l1: "dedoAI Headquarters <span>[Address] [City, Country]</span>"
+map_l1: "Headquarters <span>[Address] [City, Country]</span>"
 map_l2: "Phone: <span>[Phone Number]</span>"
 map_l3: "Email: <span>[General Contact Email]</span>"
  

@@ -1,5 +1,5 @@
 ---
-title: "The Value of dedoAI Token"
+title: "The Value of DEDO Token"
 meta_title: "dedoAI | Technology"
 description: "Technology at the Heart of dedoAI"
 date: 2024-07-16T06:00:00.000Z
@@ -12,13 +12,13 @@ p2: "Our architecture is scalable and secure, with key components working seamle
 cover: "/assets/images/technology-cover.webp"
 
 side_cards:
- - title: "dedoAI Datalake"
+ - title: "Datalake"
    text: "Stores and processes large amounts of data using both decentralized IPFS and traditional cloud storage."
    icon: "/assets/images/icons/technology-icon-1.webp"
- - title: "dedoAI Connectors"
+ - title: "Connectors"
    text: "Validates and processes data, ensuring compliance with legal and quality standards."
    icon: "/assets/images/icons/technology-icon-2.webp"
- - title: "dedoAI Data Context"
+ - title: "Data Context"
    text: "Manages data transactions with smart contracts for fair and transparent compensation."
    icon: "/assets/images/icons/technology-icon-2.webp"
 
@@ -29,7 +29,7 @@ bottom_cards:
      text: "Roadmap"
      link: "/roadmap/"
  - title: "Empowering Innovation with Smart Contracts"
-   text: "Smart contracts automate secure and tamper-proof agreements and transactions, supporting staking mechanisms and the governance model of the dedoAI DAO."
+   text: "Smart contracts automate secure and tamper-proof agreements and transactions, supporting staking mechanisms and the governance model of the DAO."
 
 ---
 {{< wrap >}}
