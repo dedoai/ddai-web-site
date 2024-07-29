@@ -1449,8 +1449,17 @@ section.page-content, section.intro {
 }
 
 #_news-detail .title {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
+
+#_news-detail .title h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 25px;
+}
+
+#_news-detail .title p{}
 
 #_news-detail .cover{
     margin-bottom: 50px;
