@@ -16,16 +16,16 @@ team:
  title: Our Team
  members:
  - name: Luca Viviani
-   descr: Founder & CEO
+   descr: Founder
    img_: "/images/about/members/lv.webp"
  - name: Marco Visibelli
-   descr: CDS
+   descr: Founder
    img_: "/images/about/members/mv.webp"
  - name: Ivan Di Lelio
-   descr: CTO
+   descr: Founder
    img_: "/images/about/members/idl.webp"
  - name: Emanuele Costa
-   descr: Crypto and Data Architect
+   descr: Founder
    img_: "/images/about/members/ec.webp"
  
 values:
