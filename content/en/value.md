@@ -1,7 +1,7 @@
 ---
-title: "The Value of dedoAI Token"
-meta_title: "dedoAI | Value: The dedoAI Token"
-description: "The dedoAI Token"
+title: "Value of DedoAI Token"
+meta_title: "dedoAI | Value of DedoAI Token"
+description: "The Value of DedoAI Token"
 date: 2024-07-16T06:00:00.000Z
 draft: false
 noheader: true
