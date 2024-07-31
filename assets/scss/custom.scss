@@ -147,6 +147,13 @@ option:checked, option:hover {
     background-size: cover;
 }
 
+h1.section-title, .page-title h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    margin-bottom: 50px;
+}
+
 
 h2.section-title {
     font-size: 48px;
@@ -1822,6 +1829,14 @@ section.page-content, section.intro {
 //------------------------------------------------------------------------------
 //--- CERTIFICATION START ---
 
+#_certification .container {
+    padding: 0,
+}
+
+#_certification .section-title{
+    margin-bottom: 50px;
+}
+
 #_certification .split{
     display: flex;
     justify-content: space-between;
@@ -1844,10 +1859,11 @@ section.page-content, section.intro {
 #_certification .first .text{
     width: 540px;
     margin-top: 50px;
+    margin-right:55px,
 }
 
 #_certification .first .image {
-    width: 660px;
+    width: 655px;
 }
 
 #_certification .second .image {
@@ -1855,9 +1871,9 @@ section.page-content, section.intro {
 }
 
 #_certification .second .text{
-    width: 550px;
+    width: 610px;
     margin-top: 30px;
-    margin-left: 55px;
+    //margin-left: 55px;
 }
 
 #_certification .third .title h2{
