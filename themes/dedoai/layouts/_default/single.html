@@ -6,13 +6,13 @@
           <div class="row justify-center">
             <div class="lg:col-10">
               <div class="content">
-                {{ .Content }}
+                {{ $.Page.Content }}
               </div>
             </div>
           </div>
         </div>
       </section>
     {{ else }}
-        {{ .Content }}
+        {{ $.Page.Content }}
     {{ end }}
 {{ end }}

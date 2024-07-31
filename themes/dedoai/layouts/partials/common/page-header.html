@@ -2,7 +2,10 @@
 <section id="page-header">
   <div class="container">
     <div class="page-title">
-      <h1>{{ i18n (printf "%s" (lower .Title)) | default .Title | title }}</h1>
+    <h1>{{ i18n (printf "%s" (lower .Title)) | default .Title | title }}</h1>
+      {{ with and .Page.Description false }}
+        <p>{{.}}</p>
+      {{end}}
     </div>
       {{ with site.Params.breadcrumbs }}
         {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
