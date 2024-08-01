@@ -13,7 +13,7 @@ t2: Litepaper
 p2: Discover our mission, technology, and solutions with dedoAI. Our Litepaper offers a concise, comprehensive introduction, perfect for those new to dedoAI or blockchain technology.
 cover: "/assets/images/documents-cover.webp"
 cta_text: Download Litepaper
-cta_link: "/assets/media/dedoai-litepaper.pdf"
+cta_link: "/assets/media/Litepaper_dedoAI_V1.20.pdf"
 
 t3: Stay Informed
 p3: Our journey is constantly evolving, and as we make strides in our mission, additional documents and updates will be made available here. We encourage you to check back regularly for the latest insights and developments.

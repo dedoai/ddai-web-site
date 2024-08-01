@@ -13,21 +13,21 @@ t2: Looking Ahead
 p2: As we progress on our journey, we remain committed to innovation, security, and community engagement. Future phases will focus on scaling the platform, exploring new technologies, and continuously enhancing the ecosystem to meet the evolving needs of our users.
 
 quarters:
- - name: 2024 Q1
+ - name: 2024 Q2
    class: done
    steps:
     - icon: /assets/images/icons/roadmap-icon-1.webp
       step: Official launch of the initiative
     - icon: /assets/images/icons/roadmap-icon-2.webp
       step: Whitepaper and litepaper completed
- - name: 2024 Q2
+ - name: 2024 Q3
    class: done
    steps:
     - icon: /assets/images/icons/roadmap-icon-3.webp
       step: Develop and test V1 smart contract focusing on security, efficiency, and scalability
     - icon: /assets/images/icons/roadmap-icon-4.webp
       step: Engage with the community for feedback and suggestions
- - name: 2024 Q3
+ - name: 2024 Q4
    class: current
    steps:
     - icon: /assets/images/icons/roadmap-icon-5.webp

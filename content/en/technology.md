@@ -3,7 +3,7 @@ title: "The Value of DEDO Token"
 meta_title: "dedoAI | Technology"
 description: "Technology at the Heart of dedoAI"
 date: 2024-07-16T06:00:00.000Z
-draft: false
+draft: true
 noheader: true
 
 p1: "At dedoAI, we use blockchain to revolutionize data exchange, ensuring secure, transparent, and decentralized transactions. This technology builds integrity and trust between data producers and consumers."

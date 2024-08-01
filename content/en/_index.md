@@ -8,7 +8,7 @@ draft: false
 hero:
   bg_img: "/images/home/home-hero-bg-1.webp"
   fg_img: "/assets/images/home/home-hero-elements-1.webp"
-  title: "Decentralizing  <br>Data for a Better  <br>Tomorrow"
+  title: "Decentralizing Data for a Better Tomorrow"
   sub_title: "A secure platform for easily buying, selling, and trading data."
   text: "Transforming Data with Blockchain: <span>Secure, <br>Accessible, and Creator-Owned</spam>"
   cta:
@@ -67,15 +67,15 @@ certifications:
   - icon: "/assets/images/home/cert-ico-3.webp"
     title: "Commitment to Data Protection Laws"
     text: "DedoAI adheres to data protection laws like GDPR and CCPA by incorporating compliance mechanisms into the platform. This commitment establishes DedoAI as a leader in the data ecosystem, emphasizing quality, transparency, and legality in every transaction."
-    
+  
   cta_text: "Read more"
   cta_link: "#"
 
 countdown:
-  title: "Cryptocurrency<br>is the value of dedoAI"
+  title: "Cryptocurrency is the value of dedoAI"
   text: "DEDO is dedoAI's native cryptocurrency. It is used for marketplace operations, transactions, games or for selling and buying data."
-  cta_txt: "Get DEDO Tokens"
-  cta_link: "#"
+  cta_txt: "Read more"
+  cta_link: "/documents/"
   cd_txt: "Listing Token Countdown"
   cd_date: [Days,Hours,Minutes,Seconds]
 
@@ -172,7 +172,6 @@ newsletter:
   error: "Problem ssubscibing"
   btn_txt: "Subscribe"
   btn_link: "#"
-  
 ---
 {{< wrap >}}
 {{< section "home/hero">}}
@@ -180,6 +179,6 @@ newsletter:
 {{< section "home/certifications">}}
 {{< section "home/countdown">}}
 {{< section "home/info">}}
-{{< section "home/members">}}
+{{/* < section "home/members" */>}}
 {{< section "_common/newsletter">}}
 {{< /wrap >}}
