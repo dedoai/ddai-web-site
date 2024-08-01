@@ -1,58 +1,130 @@
-// HERO SECTION #1
+// Do not change the order of BPs since they're used in the declaration's order
 
-// MD BreakPoint
-@media only screen and (max-width: 767px) {
+// BEYOND XL 
+@media only screen and (min-width: 1280px) {
+
+  // HERO
+  #hero .txt_hldr {
+    @apply left-24 top-44 right-12 w-[750px] text-balance #{!important};
+  }
+
+  #hero .img_hldr {
+    @apply top-16 #{!important};
+  }
+
+  #hero .cta-row {
+    @apply flex-row items-center gap-4 #{!important};
+  }
+
+  // END HERO
+}
+
+// FROM LG TO XL
+@media only screen and (max-width: 1279px) {
+
+  // HERO
   #hero #hero1 {
-    height: 800px !important;
+    height: 750px !important;
+  }
+
+  #hero .txt_hldr {
+    @apply left-20 top-44 right-12 w-auto #{!important};
+  }
+
+  #hero .title h1 {
+    @apply text-4xl w-96 #{!important};
+  }
+
+  #hero .img_hldr {
+    @apply top-16 #{!important};
+  }
+
+  #hero .cta-row {
+    @apply flex-row items-center gap-4 #{!important};
+  }
+
+  // END HERO
+}
+
+// FROM MD TO LG
+@media only screen and (max-width: 1023px) {
+
+  // HERO
+  #hero #hero1 {
+    height: 750px !important;
+  }
+
+  #hero .txt_hldr {
+    @apply left-12 top-32 right-12 w-auto #{!important};
+  }
+
+  #hero .title h1 {
+    @apply text-3xl w-80 #{!important};
+  }
+
+  #hero .img_hldr {
+    @apply top-16 #{!important};
+  }
+
+  #hero .cta-row {
+    @apply flex-col items-start gap-4 #{!important};
+  }
+
+  // END HERO
+}
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  // HERO
+  #hero #hero1 {
+    height: 750px !important;
   }
 
   #hero #hero1 .grd_hldr {
     background: url("/assets/images/home/mobile-home-hero-elements-1.svg") content-box no-repeat bottom !important;
   }
+
+  #hero .txt_hldr {
+    @apply left-6 top-8 right-6 w-auto #{!important};
+  }
+
+  #hero .title h1 {
+    @apply max-md:text-[32px] max-md:leading-normal max-md:font-semibold max-md:text-balance w-full #{!important};
+  }
+
+  #hero .img_hldr {
+    @apply hidden;
+  }
+
+  #hero .text p {
+    @apply text-sm font-normal mb-3 #{!important};
+  }
+
+  #hero .cta-row {
+    @apply gap-4 flex-row items-center #{!important};
+  }
+
+  #hero .cta-row .button a {
+    @apply w-[175px] h-12 font-normal text-sm #{!important};
+  }
+
+  #hero .cta-row .txt-cta a {
+    @apply text-sm text-nowrap #{!important};
+  }
+
+  // END HERO
+
+  // ROLES
+
+  #roles .section-title {
+    @apply text-2xl #{!important};
+  }
+
+  #roles .rbox {
+    @apply mt-0 #{!important};
+  }
+
+  // END ROLES
+
 }
-
-#hero .txt_hldr {
-  @apply max-md:left-6 max-md:top-8 max-md:right-0 max-md:w-auto #{!important};
-}
-
-#hero .title {
-  @apply max-md:w-full #{!important};
-}
-
-#hero .title h1 {
-  @apply max-md:text-[32px] max-md:leading-normal max-md:font-semibold max-md:text-balance #{!important};
-}
-
-#hero .text p {
-  @apply max-md:text-sm max-md:font-normal max-md:mb-3 #{!important};
-}
-
-#hero .cta-row {
-  @apply max-md:gap-4 #{!important};
-}
-
-#hero .cta-row .button a {
-  @apply max-md:w-[175px] max-md:h-12 max-md:font-normal max-md:text-sm #{!important};
-}
-
-#hero .cta-row .txt-cta a {
-  @apply max-md:text-sm max-md:text-nowrap #{!important};
-}
-
-#hero .img_hldr {
-  @apply max-md:hidden;
-}
-
-// END HERO #1
-
-// ROLES
-
-#roles .section-title {
-  @apply max-md:text-2xl #{!important};
-}
-
-#roles .rbox {
-  @apply max-md:mt-0 #{!important};
-}
-
-// END ROLES
