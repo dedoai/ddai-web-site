@@ -2,8 +2,12 @@
 
 // LG BreakPoint
 @media only screen and (max-width: 1023px) {
+  #hero #hero1 {
+    height: 800px !important;
+  }
+
   #hero #hero1 .grd_hldr {
-    background: url("/assets/images/home/mobile-home-hero-elements-1.svg") no-repeat center/contain !important;
+    background: url("/assets/images/home/mobile-home-hero-elements-1.svg") content-box no-repeat bottom !important;
   }
 }
 
@@ -20,7 +24,7 @@
 }
 
 #hero .text p {
-  @apply max-lg:text-sm max-lg:font-normal #{!important};
+  @apply max-lg:text-sm max-lg:font-normal max-lg:mb-3 #{!important};
 }
 
 #hero .cta-row {
@@ -40,3 +44,8 @@
 }
 
 // END HERO #1
+
+// ROLES
+
+
+// END ROLES
