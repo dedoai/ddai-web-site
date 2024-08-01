@@ -74,8 +74,8 @@ certifications:
 countdown:
   title: "Cryptocurrency<br>is the value of dedoAI"
   text: "DEDO is dedoAI's native cryptocurrency. It is used for marketplace operations, transactions, games or for selling and buying data."
-  cta_txt: "Get DEDO Tokens"
-  cta_link: "#"
+  cta_txt: "Read more"
+  cta_link: "/documents/"
   cd_txt: "Listing Token Countdown"
   cd_date: [Days,Hours,Minutes,Seconds]
 
@@ -180,6 +180,6 @@ newsletter:
 {{< section "home/certifications">}}
 {{< section "home/countdown">}}
 {{< section "home/info">}}
-{{< section "home/members">}}
+{{/* < section "home/members" */>}}
 {{< section "_common/newsletter">}}
 {{< /wrap >}}

@@ -7,6 +7,7 @@
             <a class="btn btn-cta" href="{{.cta_link}}">{{.cta_txt}}</a>
         </div>
         <div class="rgt-pnl">
+            {{if false }}
             <h2 class="section-title">{{.cd_txt | safeHTML }}</h2>
             <div class="counter">
                 <img class="cd-logo" src="/assets/images/home/cd-dedo-logo.webp" >
@@ -17,6 +18,11 @@
                     <div class="digit seconds"><span>17</span>{{ index .cd_date 3 }}</div>
                  </div>
              </div>
+             {{else}}
+             <div class="image-hldr">
+                
+             </div>
+             {{end}}
         </div>
     </div>
 </div>

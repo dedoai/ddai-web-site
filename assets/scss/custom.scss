@@ -554,7 +554,8 @@ section.page-content, section.intro {
 
 #_home #countdown .pnls_hldr {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: center;
 }
 
 #_home #countdown .lft-pnl {
@@ -577,6 +578,7 @@ section.page-content, section.intro {
 }
 
 #_home #countdown p{
+    width: 450px;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -597,6 +599,15 @@ section.page-content, section.intro {
 
 #_home #countdown .rgt-pnl .section-title{
     margin-bottom: 55px;
+}
+
+#_home #countdown .image-hldr{
+    display: block;
+    width: 550px;
+    height: 266px;
+    margin-left:30px;
+    background-image: url('/assets/images/home/home-countdown-cover.webp');
+    background-size: cover;
 }
 
 #_home #countdown .counter{

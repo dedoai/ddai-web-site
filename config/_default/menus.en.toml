@@ -1,120 +1,70 @@
 ############# English navigation ##############
 
-# main menu
 [[main]]
 name = "Home"
 url = "/"
 weight = 1
 
 [[main]]
-name = "Learn"
+name = "About"
+url = "/about/"
+weight = 2
+
+[[main]]
+name = "Roadmap"
+url = "/roadmap/"
 weight = 3
 
 [[main]]
-parent = "Learn"
-name = "About"
-url = "/about/"
-params = { ico = "07" }
-weight = 1
-
-
-[[main]]
-parent = "Learn"
-name = "Roadmap"
-url = "/roadmap/"
-params = { ico = "13" }
-weight = 7
-
-[[main]]
-parent = "Learn"
 name = "Documents"
 url = "/documents/"
-params = { ico = "14" }
 weight = 8
 
 [[main]]
-name = "Support"
-weight = 3
-
-[[main]]
 parent = "Support"
-name = "Contacts"
+name = "Contact us"
 url = "/contacts/"
 params = { ico = "17" }
 weight = 2
-
-
-
-#-----------------
-#Top right menu
-
-[[top_right]]
-name = "Marketplace"
-url = "#"
-weight = 1
-params = { icon = "ico-marketplace" , hide = true }
-
-
-[[top_right]]
-name = "Sign Up"
-url = "#"
-weight = 2
-params = { class = "btn-cta" , hide = true}
-
-[[top_right]]
-name = "Log In"
-url = "#"
-weight = 3
-params = { hide = true}
 
 #-----------------
 # Footer menu
 
 [[footer]]
-name = "Learn"
-weight = 3
-
-[[footer]]
 parent = "Learn"
 name = "About"
 url = "/about/"
 weight = 1
 
 [[footer]]
-parent = "Learn"
 name = "Roadmap"
 url = "/roadmap/"
-weight = 7
-
-[[footer]]
-parent = "Learn"
-name = "Documents"
-url = "/documents"
-weight = 8
-
-[[footer]]
-name = "Support"
-weight = 3
-
-[[footer]]
-parent = "Support"
-name = "Contacts"
-url = "/contacts/"
 weight = 2
 
 [[footer]]
+name = "Documents"
+url = "/documents"
+weight = 3
+
+[[footer]]
+name = "Contact us"
+url = "/contacts/"
+weight = 2
+
+
+[[legal]]
 parent = "Support"
 name = "Terms of Service"
 url = "/terms-of-service/"
 weight = 3
 
-[[footer]]
+[[legal]]
 parent = "Support"
 name = "Privacy Policy"
 url = "/privacy-policy/"
 weight = 4
 
-[[footer]]
+[[legal]]
 parent = "Support"
 name = "Cookie Policy"
 url = "/cookie-policy//"
