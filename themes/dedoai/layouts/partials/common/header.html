@@ -126,7 +126,7 @@
             {{ end }}
             
             
-            {{ if .IsTranslated }}
+            {{ if and .IsTranslated false }}
                 <i class="ico ico-globe"></i>
                 {{ partial "components/language-switcher" (dict "Context" . "Class" "dark:bg-darkmode-theme-light") }}
             {{ end}}
