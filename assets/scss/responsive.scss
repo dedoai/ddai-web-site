@@ -290,6 +290,10 @@
     @apply text-sm text-center w-[310px] m-auto mb-4 #{!important};
   }
 
+  #countdown .pnls_hldr .image-hldr {
+    @apply w-full m-0 bg-center bg-no-repeat bg-contain #{!important};
+  }
+
   // END COUNTDOWN
 
 }
