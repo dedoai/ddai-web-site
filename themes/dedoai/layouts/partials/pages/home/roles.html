@@ -1,77 +1,68 @@
 {{- $_ := .Page.Params -}}
 {{ with $_.roles }}
 <div class="container">
-    <h2 class="section-title">{{.title}}</h2>
-    
+  <h2 class="section-title">{{.title}}</h2>
 
-        <div class="rbox vg-bg">
-            <h3>{{.block_1.title}}</h3>
-            <p>{{.block_1.text}}</p>
-            <div class="cta_row">
-                <a href="{{.block_1.cta_1.link}}" class="pill">{{.block_1.cta_1.text}}</a>
-                <a href="{{.block_1.cta_2.link}}" class="txt-cta"><span>{{.block_1.cta_2.text}}</span></a>
-            </div>
-            <div class="img_hldr"><img src="{{.block_1.img}}" alt="{{.block_1.title}}"></div>
-            <div class="cd_hldr toggler"><img src="/assets/images/chvrn-dwn.webp" alt=""></div>
-        </div>
-    
-        <div class="slide-down first">
-            
-            <div class="title-hldr">
-                <h2>{{.block_1.panel.title}} <img src="{{.block_1.panel.hl_ico}}"/>
-                <span>{{.block_1.panel.hl_txt}}</span></h2>
-                <a class="btn btn-cta" href="{{.block_1.panel.cta_link}}">{{.block_1.panel.cta_txt}}</a>
-            </div>
-            
-            <div class="cnt-hldr">
-                <img src="/assets/images/home/roles-slide-down-1.webp" />
-                
-            </div>
-        </div>
 
-    
+  <div class="rbox vg-bg">
+    <h3>{{.block_1.title}}</h3>
+    <p>{{.block_1.text}}</p>
+    <div class="img_hldr"><img src="{{.block_1.img}}" alt="{{.block_1.title}}"></div>
+    <a href="{{.block_1.cta_1.link}}" class="pill">{{.block_1.cta_1.text}}</a>
+  </div>
 
-        <div class="rbox pg-bg">
-            <h3>{{.block_2.title}}</h3>
-            <p>{{.block_2.text}}</p>
-            <div class="cta_row">
-                <a href="{{.block_2.cta_1.link}}" class="pill">{{.block_2.cta_1.text}}</a>
-                <a href="{{.block_2.cta_2.link}}" class="txt-cta"><span>{{.block_2.cta_2.text}}</span></a>
-            </div>
-            <div class="img_hldr"><img src="{{.block_2.img}}" alt="{{.block_2.title}}"></div>
-            <div class="cd_hldr toggler"><img src="/assets/images/chvrn-dwn.webp" alt=""></div> 
-        </div>
-        
-        <div class="slide-down second">
-            <div class="title-hldr">
-                <h2>{{.block_2.panel.title}} <img src="{{.block_2.panel.hl_ico}}"/>
-                <span>{{.block_2.panel.hl_txt}}</span></h2>
-                <a class="btn btn-cta" href="{{.block_2.panel.cta_link}}">{{.block_2.panel.cta_txt}}</a>
-            </div>
-            
-            <div class="cnt-hldr">
-                <img src="/assets/images/home/roles-slide-down-2.webp" />
-            </div>
-        </div>    
-     
+  <div class="slide-down first">
+
+    <div class="title-hldr">
+      <h2>{{.block_1.panel.title}} <img src="{{.block_1.panel.hl_ico}}" />
+        <span>{{.block_1.panel.hl_txt}}</span>
+      </h2>
+      <a class="btn btn-cta" href="{{.block_1.panel.cta_link}}">{{.block_1.panel.cta_txt}}</a>
+    </div>
+
+    <div class="cnt-hldr">
+      <img src="/assets/images/home/roles-slide-down-1.webp" />
+
+    </div>
+  </div>
+
+  <div class="rbox pg-bg">
+    <h3>{{.block_2.title}}</h3>
+    <p>{{.block_2.text}}</p>
+    <div class="img_hldr"><img src="{{.block_2.img}}" alt="{{.block_2.title}}"></div>
+    <a href="{{.block_2.cta_1.link}}" class="pill">{{.block_2.cta_1.text}}</a>
+  </div>
+
+  <div class="slide-down second">
+    <div class="title-hldr">
+      <h2>{{.block_2.panel.title}} <img src="{{.block_2.panel.hl_ico}}" />
+        <span>{{.block_2.panel.hl_txt}}</span>
+      </h2>
+      <a class="btn btn-cta" href="{{.block_2.panel.cta_link}}">{{.block_2.panel.cta_txt}}</a>
+    </div>
+
+    <div class="cnt-hldr">
+      <img src="/assets/images/home/roles-slide-down-2.webp" />
+    </div>
+  </div>
 
 </div>
 
 <script>
-var acc = document.getElementsByClassName("toggler");
-var i;
+  var acc = document.getElementsByClassName("toggler");
+  var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.parentNode.nextElementSibling;
-    console.log( panel.textContent )
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.parentNode.nextElementSibling;
+      console.log(panel.textContent)
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
 </script>
 {{end}}

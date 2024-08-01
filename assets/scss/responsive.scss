@@ -17,6 +17,12 @@
   }
 
   // END HERO
+  // ROLES
+  #roles .rbox .pill {
+    @apply w-fit #{!important};
+  }
+
+  // END ROLES
 }
 
 // FROM LG TO XL
@@ -44,6 +50,17 @@
   }
 
   // END HERO
+
+  // ROLES
+  #roles .rbox .pill {
+    @apply w-fit #{!important};
+  }
+
+  #roles .rbox .img_hldr {
+    @apply right-7 bottom-1 #{!important};
+  }
+
+  // END ROLES
 }
 
 // FROM MD TO LG
@@ -71,6 +88,12 @@
   }
 
   // END HERO
+  // ROLES
+  #roles .rbox .img_hldr {
+    @apply -right-9 bottom-6 #{!important};
+  }
+
+  // END ROLES
 }
 
 // FROM XS TO MD
@@ -122,7 +145,23 @@
   }
 
   #roles .rbox {
-    @apply mt-0 #{!important};
+    @apply mt-0 p-7 #{!important};
+  }
+
+  #roles .rbox h3 {
+    @apply text-2xl mb-1 #{!important};
+  }
+
+  #roles .rbox p {
+    @apply text-sm w-full text-white #{!important};
+  }
+
+  #roles .rbox .img_hldr {
+    @apply static w-full #{!important};
+  }
+
+  #roles .rbox .pill {
+    @apply text-center w-full #{!important};
   }
 
   // END ROLES
