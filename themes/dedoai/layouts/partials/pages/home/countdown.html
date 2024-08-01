@@ -1,23 +1,11 @@
 {{ with .Page.Params.countdown }}
 <div class="container">
-    <div class="pnls_hldr">
-        <div class="lft-pnl">
-            <h2 class="section-title">{{.title | safeHTML }}</h2>
-            <p>{{.text}}</p>
-            <a class="btn btn-cta" href="{{.cta_link}}">{{.cta_txt}}</a>
-        </div>
-        <div class="rgt-pnl">
-            <h2 class="section-title">{{.cd_txt | safeHTML }}</h2>
-            <div class="counter">
-                <img class="cd-logo" src="/assets/images/home/cd-dedo-logo.webp" >
-                 <div class="time">
-                    <div class="digit days"><span>13</span>{{ index .cd_date 0 }}</div>
-                    <div class="digit hours"><span>17</span>{{ index .cd_date 1 }}</div>
-                    <div class="digit minutes"><span>01</span>{{ index .cd_date 2 }}</div>
-                    <div class="digit seconds"><span>17</span>{{ index .cd_date 3 }}</div>
-                 </div>
-             </div>
-        </div>
+  <div class="pnls_hldr">
+    <div class="lft-pnl">
+      <h2 class="section-title">{{.title | safeHTML }}</h2>
+      <p>{{.text}}</p>
+      <a class="btn btn-cta" href="{{.cta_link}}">{{.cta_txt}}</a>
     </div>
+  </div>
 </div>
 {{end}}

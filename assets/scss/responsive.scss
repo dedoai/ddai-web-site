@@ -169,7 +169,7 @@
   // CERTIFICATIONS
   #certifications {
     height: 1120px !important;
-    @apply rounded-b-3xl;
+    @apply rounded-3xl;
   }
 
   #certifications .section-title {
@@ -181,7 +181,7 @@
   }
 
   #certifications .pnls_hldr .lft-pnl {
-    @apply w-full gap-4 justify-normal items-center #{!important};
+    @apply w-full gap-4 justify-normal items-center h-auto #{!important};
   }
 
   #certifications .pnls_hldr .lft-pnl div {
@@ -206,5 +206,28 @@
   }
 
   // END CERTIFICATIONS
+
+  // COUNTDOWN
+  #countdown {
+    @apply m-0 my-12 #{!important};
+  }
+
+  #countdown .pnls_hldr {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl {
+    @apply w-full text-center #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl .section-title {
+    @apply text-2xl text-center text-balance #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl p {
+    @apply text-sm text-center w-[310px] m-auto mb-4 #{!important};
+  }
+
+  // END COUNTDOWN
 
 }

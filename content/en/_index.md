@@ -72,7 +72,7 @@ certifications:
   cta_link: "#"
 
 countdown:
-  title: "Cryptocurrency<br>is the value of dedoAI"
+  title: "Cryptocurrency is the value of dedoAI"
   text: "DEDO is dedoAI's native cryptocurrency. It is used for marketplace operations, transactions, games or for selling and buying data."
   cta_txt: "Get DEDO Tokens"
   cta_link: "#"
