@@ -1,0 +1,299 @@
+// Do not change the order of BPs since they're used in the declaration's order
+
+// BEYOND XL 
+@media only screen and (min-width: 1280px) {
+
+  // HERO
+  #hero .txt_hldr {
+    @apply left-24 top-44 right-12 w-[750px] text-balance #{!important};
+  }
+
+  #hero .img_hldr {
+    @apply top-16 #{!important};
+  }
+
+  #hero .cta-row {
+    @apply flex-row items-center gap-4 #{!important};
+  }
+
+  // END HERO
+  // ROLES
+  #roles .rbox .pill {
+    @apply w-fit #{!important};
+  }
+
+  // END ROLES
+}
+
+// FROM LG TO XL
+@media only screen and (max-width: 1279px) {
+
+  // HERO
+  #hero #hero1 {
+    height: 750px !important;
+  }
+
+  #hero .txt_hldr {
+    @apply left-20 top-44 right-12 w-auto #{!important};
+  }
+
+  #hero .title h1 {
+    @apply text-4xl w-96 #{!important};
+  }
+
+  #hero .img_hldr {
+    @apply top-16 #{!important};
+  }
+
+  #hero .cta-row {
+    @apply flex-row items-center gap-4 #{!important};
+  }
+
+  // END HERO
+
+  // ROLES
+  #roles .rbox .pill {
+    @apply w-fit #{!important};
+  }
+
+  #roles .rbox .img_hldr {
+    @apply right-7 bottom-1 #{!important};
+  }
+
+  // END ROLES
+}
+
+// FROM MD TO LG
+@media only screen and (max-width: 1023px) {
+
+  // HERO
+  #hero #hero1 {
+    height: 750px !important;
+  }
+
+  #hero .txt_hldr {
+    @apply left-12 top-32 right-12 w-auto #{!important};
+  }
+
+  #hero .title h1 {
+    @apply text-3xl w-80 #{!important};
+  }
+
+  #hero .img_hldr {
+    @apply top-16 #{!important};
+  }
+
+  #hero .cta-row {
+    @apply flex-col items-start gap-4 #{!important};
+  }
+
+  // END HERO
+  // ROLES
+  #roles .rbox .img_hldr {
+    @apply -right-9 bottom-6 #{!important};
+  }
+
+  // END ROLES
+  // CERTIFICATIONS
+  #certifications {
+    @apply pb-6;
+    @apply rounded-3xl;
+  }
+
+  #certifications .section-title {
+    @apply text-2xl #{!important};
+  }
+
+  #certifications .pnls_hldr {
+    @apply flex-row gap-4 #{!important};
+  }
+
+  #certifications .pnls_hldr .lft-pnl {
+    @apply w-full gap-4 justify-normal items-center h-auto #{!important};
+  }
+
+  #certifications .pnls_hldr .lft-pnl div {
+    @apply h-auto p-4 #{!important};
+  }
+
+  #certifications .pnls_hldr .lft-pnl div h3 {
+    @apply text-base mb-[10px] #{!important}
+  }
+
+  #certifications .pnls_hldr .lft-pnl div p {
+    line-height: 16.94px !important;
+    font-size: 14px !important;
+  }
+
+  #certifications .pnls_hldr .lft-pnl img {
+    @apply w-[30px] h-[30px] mb-[10px] #{!important};
+  }
+
+  #certifications .pnls_hldr .rgt-pnl {
+    @apply w-full h-auto self-stretch border-4 border-solid border-white rounded-[30px] bg-center #{!important};
+  }
+
+  // END CERTIFICATIONS
+  // COUNTDOWN
+  #countdown {
+    @apply m-0 my-12 #{!important};
+  }
+
+  #countdown .pnls_hldr {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl {
+    @apply w-full text-center #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl .section-title {
+    @apply text-2xl text-center text-balance #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl p {
+    @apply text-sm text-center w-[310px] m-auto mb-4 #{!important};
+  }
+
+  // END COUNTDOWN
+}
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  // HERO
+  #hero #hero1 {
+    height: 750px !important;
+  }
+
+  #hero #hero1 .grd_hldr {
+    background: url("/assets/images/home/mobile-home-hero-elements-1.svg") content-box no-repeat bottom !important;
+  }
+
+  #hero .txt_hldr {
+    @apply left-6 top-8 right-6 w-auto #{!important};
+  }
+
+  #hero .title h1 {
+    @apply max-md:text-[32px] max-md:leading-normal max-md:font-semibold max-md:text-balance w-full #{!important};
+  }
+
+  #hero .img_hldr {
+    @apply hidden;
+  }
+
+  #hero .text p {
+    @apply text-sm font-normal mb-3 #{!important};
+  }
+
+  #hero .cta-row {
+    @apply gap-4 flex-row items-center #{!important};
+  }
+
+  #hero .cta-row .button a {
+    @apply w-[175px] h-12 font-normal text-sm #{!important};
+  }
+
+  #hero .cta-row .txt-cta a {
+    @apply text-sm text-nowrap #{!important};
+  }
+
+  // END HERO
+
+  // ROLES
+
+  #roles .section-title {
+    @apply text-2xl #{!important};
+  }
+
+  #roles .rbox {
+    @apply mt-0 p-7 #{!important};
+  }
+
+  #roles .rbox h3 {
+    @apply text-2xl mb-1 #{!important};
+  }
+
+  #roles .rbox p {
+    @apply text-sm w-full text-white #{!important};
+  }
+
+  #roles .rbox .img_hldr {
+    @apply static w-full #{!important};
+  }
+
+  #roles .rbox .pill {
+    @apply text-center w-full #{!important};
+  }
+
+  // END ROLES
+
+  // CERTIFICATIONS
+  #certifications {
+    @apply pb-6;
+    @apply rounded-3xl;
+  }
+
+  #certifications .section-title {
+    @apply text-2xl #{!important};
+  }
+
+  #certifications .pnls_hldr {
+    @apply flex-col-reverse gap-4 #{!important};
+  }
+
+  #certifications .pnls_hldr .lft-pnl {
+    @apply w-full gap-4 justify-normal items-center h-auto #{!important};
+  }
+
+  #certifications .pnls_hldr .lft-pnl div {
+    @apply h-auto p-3 #{!important};
+  }
+
+  #certifications .pnls_hldr .lft-pnl div h3 {
+    @apply text-base mb-[10px] #{!important}
+  }
+
+  #certifications .pnls_hldr .lft-pnl div p {
+    line-height: 16.94px !important;
+    font-size: 14px !important;
+  }
+
+  #certifications .pnls_hldr .lft-pnl img {
+    @apply w-[30px] h-[30px] mb-[10px] #{!important};
+  }
+
+  #certifications .pnls_hldr .rgt-pnl {
+    @apply w-full h-[380px] border-4 border-solid border-white rounded-[30px] bg-center #{!important};
+  }
+
+  // END CERTIFICATIONS
+
+  // COUNTDOWN
+  #countdown {
+    @apply m-0 my-12 #{!important};
+  }
+
+  #countdown .pnls_hldr {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl {
+    @apply w-full text-center #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl .section-title {
+    @apply text-2xl text-center text-balance #{!important};
+  }
+
+  #countdown .pnls_hldr .lft-pnl p {
+    @apply text-sm text-center w-[310px] m-auto mb-4 #{!important};
+  }
+
+  #countdown .pnls_hldr .image-hldr {
+    @apply w-full m-0 bg-center bg-no-repeat bg-contain #{!important};
+  }
+
+  // END COUNTDOWN
+
+}
