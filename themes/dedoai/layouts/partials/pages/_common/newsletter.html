@@ -1,21 +1,21 @@
 {{ with .Page.Params.newsletter }}
 <div class="container">
-    <div class="row">
-        <div class="lg:col-7 frm-hldr">
-            <h2 class="section-title">{{.title}}</h2>
-            <p>{{.text}}</p>
-            <div class="frm">
-                <form action="">
-                    <input type="email" placeholder="{{.placeholder}}">
-                    <button class="btn btn-cta" type="submit">{{.btn_txt}}</button>
-                </form>
-            </div>
-        </div>
-        
-        <div class="lg:col-5 img-hldr" style="background-image: url('{{.img}}')">
-            &nbsp;
-        </div>
+  <div class="row">
+    <div class="lg:col-7 frm-hldr">
+      <h2 class="section-title">{{.title}}</h2>
+      <p>{{.text}}</p>
+      <div class="frm">
+        <form action="">
+          <input type="email" placeholder="{{.placeholder}}">
+          <button class="btn btn-cta" type="submit">{{.btn_txt}}</button>
+        </form>
+      </div>
     </div>
-    
+
+    <div class="lg:col-5 img-hldr" style="background-image: url('{{.img}}')">
+      &nbsp;
+    </div>
+  </div>
+
 </div>
 {{end}}

@@ -61,6 +61,14 @@
   }
 
   // END ROLES
+  // NEWSLETTER
+
+  #newsletter .frm-hldr .frm input {
+    @apply mb-4 #{!important};
+  }
+
+
+  // END NEWSLETTER
 }
 
 // FROM MD TO LG
@@ -140,7 +148,7 @@
   }
 
   #countdown .pnls_hldr {
-    @apply flex-col gap-4 #{!important};
+    @apply flex-col gap-4 items-center #{!important};
   }
 
   #countdown .pnls_hldr .lft-pnl {
@@ -156,6 +164,36 @@
   }
 
   // END COUNTDOWN
+  // NEWSLETTER
+  #newsletter {
+    @apply pt-[100px] pb-6 #{!important};
+  }
+
+  #newsletter .row {
+    @apply flex-col-reverse #{!important};
+  }
+
+  #newsletter .frm-hldr {
+    @apply rounded-b-3xl rounded-t-none #{!important};
+  }
+
+  #newsletter .frm-hldr .frm input {
+    @apply w-full mb-4 #{!important};
+  }
+
+  #newsletter .frm-hldr .frm button {
+    @apply w-full #{!important};
+  }
+
+  #newsletter .img-hldr {
+    @apply rounded-t-3xl rounded-b-none h-[300px] #{!important};
+  }
+
+  #newsletter .frm-hldr p {
+    @apply w-full #{!important};
+  }
+
+  // END NEWSLETTER
 }
 
 // FROM XS TO MD
@@ -275,7 +313,7 @@
   }
 
   #countdown .pnls_hldr {
-    @apply flex-col gap-4 #{!important};
+    @apply flex-col gap-4 items-center #{!important};
   }
 
   #countdown .pnls_hldr .lft-pnl {
@@ -295,5 +333,58 @@
   }
 
   // END COUNTDOWN
+  // INFO
+  #info {
+    @apply mb-0 pb-0 #{!important};
+  }
 
+  // END INFO
+  // NEWSLETTER
+  #newsletter {
+    @apply pt-[100px] pb-6 #{!important};
+  }
+
+  #newsletter .row {
+    @apply flex-col-reverse #{!important};
+  }
+
+  #newsletter .frm-hldr {
+    @apply rounded-b-3xl rounded-t-none #{!important};
+  }
+
+  #newsletter .frm-hldr .frm input {
+    @apply w-full mb-4 #{!important};
+  }
+
+  #newsletter .frm-hldr .frm button {
+    @apply w-full #{!important};
+  }
+
+  #newsletter .img-hldr {
+    @apply rounded-t-3xl rounded-b-none h-[300px] #{!important};
+  }
+
+  #newsletter .frm-hldr p {
+    @apply w-full #{!important};
+  }
+
+  // END NEWSLETTER
+  // FOOTER
+  #footer {
+    @apply mt-[100px] #{!important};
+  }
+
+  #footer .container {
+    @apply border-none #{!important};
+  }
+
+  #footer .footer-menu {
+    @apply items-center pt-0 #{!important};
+  }
+
+  #footer .footer-menu p {
+    @apply text-nowrap #{!important};
+  }
+
+  // END FOOTER
 }
