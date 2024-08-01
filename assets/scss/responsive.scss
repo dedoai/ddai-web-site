@@ -1,7 +1,7 @@
 // HERO SECTION #1
 
-// LG BreakPoint
-@media only screen and (max-width: 1023px) {
+// MD BreakPoint
+@media only screen and (max-width: 767px) {
   #hero #hero1 {
     height: 800px !important;
   }
@@ -12,40 +12,47 @@
 }
 
 #hero .txt_hldr {
-  @apply max-lg:left-6 max-lg:top-8 max-lg:right-0 max-lg:w-auto #{!important};
+  @apply max-md:left-6 max-md:top-8 max-md:right-0 max-md:w-auto #{!important};
 }
 
 #hero .title {
-  @apply max-lg:w-full #{!important};
+  @apply max-md:w-full #{!important};
 }
 
 #hero .title h1 {
-  @apply max-lg:text-[32px] max-lg:leading-normal max-lg:font-semibold max-lg:text-balance #{!important};
+  @apply max-md:text-[32px] max-md:leading-normal max-md:font-semibold max-md:text-balance #{!important};
 }
 
 #hero .text p {
-  @apply max-lg:text-sm max-lg:font-normal max-lg:mb-3 #{!important};
+  @apply max-md:text-sm max-md:font-normal max-md:mb-3 #{!important};
 }
 
 #hero .cta-row {
-  @apply max-lg:gap-4 #{!important};
+  @apply max-md:gap-4 #{!important};
 }
 
 #hero .cta-row .button a {
-  @apply max-lg:w-[175px] max-lg:h-12 max-lg:font-normal max-lg:text-sm #{!important};
+  @apply max-md:w-[175px] max-md:h-12 max-md:font-normal max-md:text-sm #{!important};
 }
 
 #hero .cta-row .txt-cta a {
-  @apply max-lg:text-sm max-lg:text-nowrap #{!important};
+  @apply max-md:text-sm max-md:text-nowrap #{!important};
 }
 
 #hero .img_hldr {
-  @apply max-lg:hidden;
+  @apply max-md:hidden;
 }
 
 // END HERO #1
 
 // ROLES
 
+#roles .section-title {
+  @apply max-md:text-2xl #{!important};
+}
+
+#roles .rbox {
+  @apply max-md:mt-0 #{!important};
+}
 
 // END ROLES
