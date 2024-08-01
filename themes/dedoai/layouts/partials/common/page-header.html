@@ -1,7 +1,7 @@
 {{ with .Page.Params.noheader }}{{else}}
 <section id="page-header">
   <div class="container">
-    <div class="page-title">
+    <div class="page-title{{ with .Page.Params.use_default_layout }} text-center{{end}}">
     <h1>{{ i18n (printf "%s" (lower .Title)) | default .Title | title }}</h1>
       {{ with and .Page.Description false }}
         <p>{{.}}</p>
