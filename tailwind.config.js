@@ -32,13 +32,12 @@ module.exports = {
   safelist: [{ pattern: /^swiper-/ }],
   darkMode: "class",
   theme: {
-    screens: {
-      sm: "540px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
-    },
+    xs: "375px",
+    sm: "540px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+    "2xl": "1536px",
     container: {
       center: true,
       padding: "2rem",
@@ -54,11 +53,11 @@ module.exports = {
         border: theme.colors.default.theme_color.border,
         "theme-light": theme.colors.default.theme_color.theme_light,
         "theme-dark": theme.colors.default.theme_color.theme_dark,
-        bgr:theme.colors.default.theme_color.bgr,
-        accent:theme.colors.default.theme_color.accent,
-        cta:theme.colors.default.theme_color.cta,
-        middle:theme.colors.default.theme_color.middle,
-        blend:theme.colors.default.theme_color.blend,
+        bgr: theme.colors.default.theme_color.bgr,
+        accent: theme.colors.default.theme_color.accent,
+        cta: theme.colors.default.theme_color.cta,
+        middle: theme.colors.default.theme_color.middle,
+        blend: theme.colors.default.theme_color.blend,
         darkmode: {
           text: theme.colors.darkmode.text_color.default,
           light: theme.colors.darkmode.text_color.light,
@@ -93,6 +92,26 @@ module.exports = {
         lg: '80px',
         xl: '120px',
       },
+      screens: {
+        "max-xs": {
+          max: '374px',
+        },
+        "max-sm": {
+          max: '539px',
+        },
+        "max-md": {
+          max: '767px',
+        },
+        "max-lg": {
+          max: '1023px',
+        },
+        "max-xl": {
+          max: '1279px',
+        },
+        "max-2xl": {
+          max: '1535px',
+        },
+      }
     },
   },
   plugins: [

@@ -1,0 +1,42 @@
+// HERO SECTION #1
+
+// LG BreakPoint
+@media only screen and (max-width: 1023px) {
+  #hero #hero1 .grd_hldr {
+    background: url("/assets/images/home/mobile-home-hero-elements-1.svg") no-repeat center/contain !important;
+  }
+}
+
+#hero .txt_hldr {
+  @apply max-lg:left-6 max-lg:top-8 max-lg:right-0 max-lg:w-auto #{!important};
+}
+
+#hero .title {
+  @apply max-lg:w-full #{!important};
+}
+
+#hero .title h1 {
+  @apply max-lg:text-[32px] max-lg:leading-normal max-lg:font-semibold max-lg:text-balance #{!important};
+}
+
+#hero .text p {
+  @apply max-lg:text-sm max-lg:font-normal #{!important};
+}
+
+#hero .cta-row {
+  @apply max-lg:gap-4 #{!important};
+}
+
+#hero .cta-row .button a {
+  @apply max-lg:w-[175px] max-lg:h-12 max-lg:font-normal max-lg:text-sm #{!important};
+}
+
+#hero .cta-row .txt-cta a {
+  @apply max-lg:text-sm max-lg:text-nowrap #{!important};
+}
+
+#hero .img_hldr {
+  @apply max-lg:hidden;
+}
+
+// END HERO #1
