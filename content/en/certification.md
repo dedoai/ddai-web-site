@@ -3,7 +3,7 @@ title: "Certification Info"
 meta_title: "dedoAI | Certification Info"
 description: "When Producers sell their datasets, they sign a copyright transfer agreement, granting Consumers the rights to the purchased datasets. Supported by DEDO Tokens, these contracts ensure a clear and traceable transfer of rights, protecting both Producers and Consumers."
 date: 2024-07-23T06:00:00.000Z
-draft: false
+draft: true
 
 sec_1:
   title: Copyright Guarantee

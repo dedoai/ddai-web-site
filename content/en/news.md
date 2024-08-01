@@ -3,7 +3,7 @@ title: "News"
 meta_title: "dedoAI | News"
 description: "News"
 date: 2024-07-18T06:00:00.000Z
-draft: false
+draft: true
 noheader: true
 
 item:
