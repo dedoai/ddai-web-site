@@ -180,6 +180,4 @@ newsletter:
 {{< section "home/certifications">}}
 {{< section "home/countdown">}}
 {{< section "home/info">}}
-{{/* < section "home/members" */>}}
-{{< section "_common/newsletter">}}
 {{< /wrap >}}

@@ -920,11 +920,11 @@ section.page-content, section.intro {
 
 #about #team .item{
     width: 280px;
-    height: 340px;
+    height: 416px;
     position: relative;
     padding: 12px 16px 12px 16px;
     border-radius: 8px;
-    background-pocition: cover;
+    background-position-x: center;
 }
 
 #about #team .item .txt-hldr{
@@ -935,8 +935,8 @@ section.page-content, section.intro {
     padding: 10px 20px;
     border-radius: 8px;
     border: 1px solid #FFF;
-    background: #1E1E1E;
-    justify: space-between;
+    background: #1E1E1E80;
+    justify-content: space-between;
 }
 
 #about #team .item .txt-hldr.txt-hldr h3{
