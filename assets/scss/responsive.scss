@@ -313,6 +313,16 @@
   }
 
   // END TEAM
+  // ROADMAP
+  #roadmap .step-list .quarter .steps {
+    @apply w-full #{!important};
+  }
+
+  #roadmap .step-list .quarter .item {
+    @apply w-full #{!important};
+  }
+
+  // END ROADMAP
   // FOOTER
   #footer {
     @apply mt-[100px] #{!important};
@@ -544,8 +554,16 @@
     @apply w-full h-full border-solid border-white border-4 rounded-3xl #{!important};
   }
 
+  #roadmap .step-list .quarter {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #roadmap .step-list .quarter .label {
+    @apply ml-0 pl-[26px] justify-start #{!important};
+  }
+
   #roadmap .step-list .quarter .item {
-    @apply h-auto #{!important};
+    @apply h-auto w-full #{!important};
   }
 
   // END ROADMAP
