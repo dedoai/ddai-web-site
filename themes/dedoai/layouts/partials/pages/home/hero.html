@@ -4,43 +4,44 @@
 {{- $bg_img_url := $bg_img.RelPermalink }}
 <div id="hero1">
   <div class="grd_hldr"></div>
-
-  <div class="txt_hldr">
-    <div class="title">
-      <h1>{{ .title | markdownify }}</h1>
-    </div>
-    <div class="text">
-      <p>{{ .text | markdownify }}</p>
-    </div>
-    <div class="cta-row">
-      {{ with .cta }}
-      {{ if .enable }}
-      <div class="button">
-        <a class="btn btn-cta bg-cta le" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
-          target="_blank" rel="noopener" {{ end }}>
-          {{ .label }}
-        </a>
+  <div class="wrapper">
+    <div class="txt_hldr">
+      <div class="title">
+        <h1>{{ .title | markdownify }}</h1>
       </div>
-      {{ end }}
-      {{ end }}
-      {{ with .cta_2 }}
-      {{ if .enable }}
-      <div class="txt-cta">
-        <a class="" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} target="_blank" rel="noopener"
-          {{ end }}>
-          {{ .label }}
-        </a>
+      <div class="text">
+        <p>{{ .text | markdownify }}</p>
       </div>
-      {{ end }}
-      {{ end }}
+      <div class="cta-row">
+        {{ with .cta }}
+        {{ if .enable }}
+        <div class="button">
+          <a class="btn btn-cta bg-cta le" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}
+            target="_blank" rel="noopener" {{ end }}>
+            {{ .label }}
+          </a>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{ with .cta_2 }}
+        {{ if .enable }}
+        <div class="txt-cta">
+          <a class="" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }} target="_blank" rel="noopener"
+            {{ end }}>
+            {{ .label }}
+          </a>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
     </div>
-  </div>
-  <div class="img_hldr">
-    <div>
-      <img class="side-image" src="{{ .fg_img_mesh }}">
-    </div>
-    <div>
-      <img class="side-image" src="{{ .fg_img_graphics }}">
+    <div class="img_hldr">
+      <div>
+        <img class="side-image" src="{{ .fg_img_mesh }}">
+      </div>
+      <div>
+        <img class="side-image" src="{{ .fg_img_graphics }}">
+      </div>
     </div>
   </div>
 </div>
