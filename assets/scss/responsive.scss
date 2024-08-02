@@ -63,6 +63,12 @@
   }
 
   // END CERTIFICATIONS
+  // INFO
+  #info {
+    @apply mb-0 pb-0 #{!important};
+  }
+
+  // END INFO
 }
 
 // FROM LG TO XL
@@ -141,6 +147,18 @@
   }
 
   // END CERTIFICATIONS
+  // COUNTDOWN
+  #countdown .pnls_hldr .image-hldr {
+    @apply bg-contain bg-no-repeat #{!important};
+  }
+
+  // END COUNTDOWN
+  // INFO
+  #info {
+    @apply mb-0 pb-0 #{!important};
+  }
+
+  // END INFO
   // NEWSLETTER
 
   #newsletter .frm-hldr .frm input {
@@ -244,6 +262,12 @@
   }
 
   // END COUNTDOWN
+  // INFO
+  #info {
+    @apply mb-0 pb-0 #{!important};
+  }
+
+  // END INFO
   // NEWSLETTER
   #newsletter {
     @apply pt-[100px] pb-6 #{!important};
