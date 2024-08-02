@@ -65,7 +65,7 @@
   // END CERTIFICATIONS
   // INFO
   #info {
-    @apply mb-0 pb-0 #{!important};
+    @apply mb-0 #{!important};
   }
 
   // END INFO
@@ -155,7 +155,7 @@
   // END COUNTDOWN
   // INFO
   #info {
-    @apply mb-0 pb-0 #{!important};
+    @apply mb-0 #{!important};
   }
 
   // END INFO
@@ -264,7 +264,7 @@
   // END COUNTDOWN
   // INFO
   #info {
-    @apply mb-0 pb-0 #{!important};
+    @apply mb-0 #{!important};
   }
 
   // END INFO
@@ -298,6 +298,28 @@
   }
 
   // END NEWSLETTER
+  // FOOTER
+  #footer {
+    @apply mt-[100px] #{!important};
+  }
+
+  #footer .first-row {
+    @apply flex-col items-center #{!important};
+  }
+
+  #footer .first-row .newsletter {
+    @apply w-full h-auto #{!important};
+  }
+
+  #footer .footer-menu {
+    @apply w-full pt-0 items-center flex-wrap justify-center #{!important};
+  }
+
+  #footer .footer-menu p {
+    @apply text-nowrap #{!important};
+  }
+
+  // END FOOTER
 }
 
 // FROM XS TO MD
@@ -439,7 +461,7 @@
   // END COUNTDOWN
   // INFO
   #info {
-    @apply mb-0 pb-0 #{!important};
+    @apply mb-0 #{!important};
   }
 
   // END INFO
@@ -478,12 +500,28 @@
     @apply mt-[100px] #{!important};
   }
 
-  #footer .container {
-    @apply border-none #{!important};
+  #footer .first-row {
+    @apply flex-col #{!important};
+  }
+
+  #footer .first-row .newsletter {
+    @apply w-full h-auto #{!important};
+  }
+
+  #footer .first-row .newsletter p {
+    @apply w-full #{!important};
+  }
+
+  #footer .first-row .newsletter .frm input {
+    @apply w-full m-0 mb-4 #{!important};
+  }
+
+  #footer .first-row .newsletter .frm button {
+    @apply w-full #{!important};
   }
 
   #footer .footer-menu {
-    @apply items-center pt-0 #{!important};
+    @apply w-full pt-0 items-center flex-wrap justify-center #{!important};
   }
 
   #footer .footer-menu p {
