@@ -17,7 +17,7 @@ hero:
     link: "https://www.dedoai.org/contacts/"
   cta_2:
     enable: true
-    label: "Read The Documentation"
+    label: "Read The Docs"
     link: "https://docs.dedoai.org/"
 
 roles:
@@ -179,5 +179,4 @@ newsletter:
 {{< section "home/certifications">}}
 {{< section "home/countdown">}}
 {{< section "home/info">}}
-{{< section "_common/newsletter">}}
 {{< /wrap >}}

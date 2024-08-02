@@ -50,7 +50,7 @@ quarters:
       step: Implement AI and machine learning tools for advanced data analysis
     - icon: /assets/images/icons/roadmap-icon-10.webp
       step: Integrate additional blockchain technologies to improve functionality and user experience
- - name: 2026 Q4
+ - name: 2025 Q4
    steps:
     - icon: /assets/images/icons/roadmap-icon-11.webp
       step: Official launch of the complete platform
