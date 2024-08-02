@@ -69,6 +69,25 @@
   }
 
   // END INFO
+  // DOCUMENTS
+
+  #documents .second {
+    @apply flex-nowrap #{!important};
+  }
+
+  #documents .second .text {
+    @apply w-1/2 h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply w-1/2 bg-center #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+
+  // END DOCUMENTS
 }
 
 // FROM LG TO XL
@@ -172,6 +191,25 @@
   }
 
   // END TEAM
+  // DOCUMENTS
+
+  #documents .second {
+    @apply flex-nowrap #{!important};
+  }
+
+  #documents .second .text {
+    @apply w-1/2 h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply w-1/2 bg-center #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+
+  // END DOCUMENTS
 }
 
 // FROM MD TO LG
@@ -313,6 +351,37 @@
   }
 
   // END TEAM
+  // ROADMAP
+  #roadmap .step-list .quarter .steps {
+    @apply w-full #{!important};
+  }
+
+  #roadmap .step-list .quarter .item {
+    @apply w-full #{!important};
+  }
+
+  // END ROADMAP
+  // DOCUMENTS
+  // DOCUMENTS
+
+  #documents .second {
+    @apply flex-nowrap h-auto #{!important};
+  }
+
+  #documents .second .text {
+    @apply w-1/2 h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply w-1/2 bg-center #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+
+  // END DOCUMENTS
+  // END DOCUMENTS
   // FOOTER
   #footer {
     @apply mt-[100px] #{!important};
@@ -531,6 +600,67 @@
   }
 
   // END VALUES
+  // ROADMAP
+  #roadmap .split {
+    @apply flex-col-reverse gap-8 #{!important};
+  }
+
+  #roadmap .split .first {
+    @apply w-full #{!important};
+  }
+
+  #roadmap .split .second .img-holder {
+    @apply w-full h-full border-solid border-white border-4 rounded-3xl #{!important};
+  }
+
+  #roadmap .step-list .quarter {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #roadmap .step-list .quarter .label {
+    @apply ml-0 pl-[26px] justify-start #{!important};
+  }
+
+  #roadmap .step-list .quarter .item {
+    @apply h-auto w-full #{!important};
+  }
+
+  // END ROADMAP
+  // DOCUMENTS
+  #documents .second {
+    @apply flex-col-reverse items-center mx-0 w-full h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply h-[300px] w-full rounded-b-none rounded-t-3xl #{!important};
+  }
+
+  #documents .second .text {
+    @apply rounded-t-none rounded-b-3xl w-full #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+
+  // END DOCUMENTS
+  // CONTACTS
+  #contacts .main,
+  #contacts .main .frm-hldr form {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #contacts .main .frm-hldr,
+  #contacts .main .frm-hldr p,
+  #contacts .main .frm-hldr form,
+  #contacts .main .frm-hldr form .item,
+  #contacts .main .frm-hldr form input,
+  #contacts .main .frm-hldr form select,
+  #contacts .main .frm-hldr form textarea {
+    @apply w-full #{!important};
+  }
+
+  // END CONTACTS
 
   // FOOTER
   #footer {

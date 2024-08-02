@@ -28,7 +28,7 @@ p {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #FFFFFFCC;
+  color: rgba(255, 255, 255, 0.80);
 }
 
 pre {
@@ -322,7 +322,17 @@ section.intro {
     linear-gradient(180deg, rgba(0, 0, 0, 0.00) 79.5%, #171717 94%),
     linear-gradient(90deg, rgba(23, 23, 23, 0.47) 0%, rgba(48, 48, 48, 0.00) 51.5%, rgba(23, 23, 23, 0.47) 100%),
     url('/assets/images/home/home-hero-bg-2.svg');
-  height: 100vh;
+  height: 900px;
+}
+
+#hero1 .wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100rem;
+  width: 100%;
 }
 
 #hero .grd_hldr {
@@ -800,7 +810,10 @@ section.intro {
   height: 280px;
   padding: 50px;
   border-radius: 24px;
-  background: #171717;
+  background: linear-gradient(96.47deg, #171717 0.37%, #161616 98.43%);
+  border: 2px solid #9A9A9A;
+  box-shadow: 0px 8px 8px 0px #0000001A;
+  position: relative;
 }
 
 #_home #info .card img {
@@ -813,10 +826,11 @@ section.intro {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 #_home #info .card p {
+  width: 240px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -824,6 +838,9 @@ section.intro {
 }
 
 #_home #info .card a {
+  position: absolute;
+  left: 50px;
+  bottom: 41px;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
@@ -1833,7 +1850,6 @@ section.intro {
 #roadmap .second .img-holder {
   width: 670px;
   height: 200px;
-  background-size: cover;
 }
 
 #roadmap .step-list {
