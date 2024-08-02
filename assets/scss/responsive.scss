@@ -644,6 +644,23 @@
   }
 
   // END DOCUMENTS
+  // CONTACTS
+  #contacts .main,
+  #contacts .main .frm-hldr form {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #contacts .main .frm-hldr,
+  #contacts .main .frm-hldr p,
+  #contacts .main .frm-hldr form,
+  #contacts .main .frm-hldr form .item,
+  #contacts .main .frm-hldr form input,
+  #contacts .main .frm-hldr form select,
+  #contacts .main .frm-hldr form textarea {
+    @apply w-full #{!important};
+  }
+
+  // END CONTACTS
 
   // FOOTER
   #footer {
