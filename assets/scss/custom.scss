@@ -1,4 +1,5 @@
 // Add your own custom styles here
+@import './responsive.scss';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -177,7 +178,7 @@ section.page-content, section.intro {
 }
 
 #footer .container {
-    border-top: 1px solid #8881;
+  border-top: 1px solid #8881
 }
 
 
@@ -994,7 +995,6 @@ section.page-content, section.intro {
     background-position-x: center;
 }
 
-
 #about #team .item .txt-hldr{
     width: 240px;
     height: 76px;
@@ -1427,6 +1427,7 @@ section.page-content, section.intro {
 #contacts .map-info span{
     color: #54BEFA;
 }
+
 //--- CONTACTS END ---
 
 
@@ -1765,6 +1766,7 @@ section.page-content, section.intro {
     justify-content: start;
     margin-bottom: 50px;
 }
+
 #roadmap .label {
     display: flex;
     justify-content: center;
