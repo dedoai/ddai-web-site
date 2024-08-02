@@ -531,6 +531,24 @@
   }
 
   // END VALUES
+  // ROADMAP
+  #roadmap .split {
+    @apply flex-col-reverse gap-8 #{!important};
+  }
+
+  #roadmap .split .first {
+    @apply w-full #{!important};
+  }
+
+  #roadmap .split .second .img-holder {
+    @apply w-full h-full border-solid border-white border-4 rounded-3xl #{!important};
+  }
+
+  #roadmap .step-list .quarter .item {
+    @apply h-auto #{!important};
+  }
+
+  // END ROADMAP
 
   // FOOTER
   #footer {

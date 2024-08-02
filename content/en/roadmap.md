@@ -21,14 +21,13 @@ quarters:
     - icon: /assets/images/icons/roadmap-icon-2.webp
       step: Whitepaper and litepaper completed
  - name: 2024 Q3
-   class: done
+   class: current
    steps:
     - icon: /assets/images/icons/roadmap-icon-3.webp
       step: Develop and test V1 smart contract focusing on security, efficiency, and scalability
     - icon: /assets/images/icons/roadmap-icon-4.webp
       step: Engage with the community for feedback and suggestions
  - name: 2024 Q4
-   class: current
    steps:
     - icon: /assets/images/icons/roadmap-icon-5.webp
       step: Official deployment of V1 smart contract
@@ -56,7 +55,6 @@ quarters:
       step: Official launch of the complete platform
     - icon: /assets/images/icons/roadmap-icon-12.webp
       step: Introduce advanced staking mechanisms and expanded governance models through the DEDO token
-
 ---
 {{< wrap >}}
 {{< section "roadmap">}}
