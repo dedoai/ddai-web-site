@@ -793,6 +793,7 @@ section.intro {
   background: linear-gradient(96.47deg, #171717 0.37%, #161616 98.43%);
   border: 2px solid #9A9A9A;
   box-shadow: 0px 8px 8px 0px #0000001A;
+  position: relative;
 }
 
 #_home #info .card img {
@@ -805,10 +806,11 @@ section.intro {
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 #_home #info .card p {
+  width: 240px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -816,6 +818,9 @@ section.intro {
 }
 
 #_home #info .card a {
+  position: absolute;
+  left: 50px;
+  bottom: 41px;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
