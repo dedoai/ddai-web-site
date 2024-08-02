@@ -187,7 +187,7 @@ section.intro {
 }
 
 
-#footer .container .first-row {
+#footer .container .intro-row {
   display: flex;
   justify-content: space-between;
 }
@@ -263,8 +263,28 @@ section.intro {
   margin-bottom: 18px;
 }
 
-#footer .second-row .nav-link {
+#footer .last-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .last-row .copyright p{
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.52px;
+}
+
+#footer .last-row .nav-item {
   display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.52px;
+}
+
+#footer .last-row .nav-item:last-child{
+    border: none;
 }
 
 #footer .social-icons li a {
