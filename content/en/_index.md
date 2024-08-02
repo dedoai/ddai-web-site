@@ -7,7 +7,7 @@ draft: false
 
 hero:
   bg_img: "/images/home/home-hero-bg-1.webp"
-  fg_img_mesh: "/assets/images/home/mesh.svg"
+  fg_img_mesh: "/assets/images/home/mesh.png"
   fg_img_graphics: "/assets/images/home/graphics-desktop.svg"
   title: "Decentralizing Data for a Better Tomorrow"
   sub_title: "A secure platform for easily buying, selling, and trading data."
