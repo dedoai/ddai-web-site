@@ -1,128 +1,130 @@
 <footer id="footer" class="bg-theme-light dark:bg-darkmode-theme-light">
-  <div class="container">
-    <div class="first-row">
-        <div class="lg:col-6 frm-hldr">
-            {{ partial "common/newsletter.html" . }}
+    <div class="container">
+        <div class="intro-row">
+        
+          <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
+            <!-- Brand/logo -->
+            <a class="navbar-brand inline-block"
+              href="{{ site.Home.RelPermalink }}">
+              {{ partial "image.html" (dict "Src" .Site.Params.logo_footer "Size" .Site.Params.logo_footer_size ) }}
+            </a>
+          </div>
+          
+          <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
+            <!-- Social icons -->
+            <ul class="social-icons">
+              {{ range site.Data.social.main }}
+                <li>
+                  <a
+                    target="_blank"
+                    aria-label="{{ .name }}"
+                    rel="nofollow noopener"
+                    href="{{ .link | safeURL }}">
+                    <i class="{{ .icon }}"></i>
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </div>
+
         </div>
-        <div class="footer-menu">
-
-              {{ $currentPage := . }}
-              {{ range site.Menus.footer }}
+    
+        <div class="main-row">
+            <!-- Newsletter -->
+            <div class="lg:col-6 frm-hldr">
+                {{ partial "common/newsletter.html" . }}
+            </div>
+            <!-- Footer Menu -->
+            <div class="footer-menu">
+            {{ $currentPage := . }}
+            {{ range site.Menus.footer }}
                 {{if (not (isset .Params "hide")) }}
-                {{ $menuURL := .URL | absLangURL }}
-                {{ $pageURL:= $currentPage.Permalink | absLangURL }}
-                {{ $active := eq $menuURL $pageURL }}
-                <div>
-                {{ if .HasChildren }}
-                    <p class="mb-4">
-                      {{ .Name }}
-                    </p>
-                    <ul
-                      class="">
-                      {{ range .Children }}
-                      {{if (not (isset .Params "hide")) }}
-                        {{ $childURL := .URL | absLangURL }}
-                        {{ $active := eq $childURL $pageURL }}
-                        <li class="nav-dropdown-item">
-                          <a class="{{ if $active -}}active{{- end -}}"
-                            {{ if findRE `^http` .URL }}
-                              target="_blank" rel="noopener"
-                            {{ end }}
-                            href="{{- if findRE `^#` .URL -}}
-                              {{- if not $.IsHome -}}
-                                {{- site.Home.RelPermalink -}}
-                              {{- end }}
-                              {{- .URL -}}
-                            {{- else -}}
-                              {{- .URL | relLangURL -}}
-                            {{- end -}}">
-                            {{ .Name }}
-                          </a>
-                        </li>
-                      {{ end }}
-                      {{ end }}
-                    </ul>
-
-                {{ else }}
-                    {{ if ne .URL "/" }}
-                        <p><a
-                          class="nav-link {{ if $active }}active{{- end -}}"
-                          {{ if findRE `^http` .URL }}
-                            target="_blank" rel="noopener"
+                    {{ $menuURL := .URL | absLangURL }}
+                    {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+                    {{ $active := eq $menuURL $pageURL }}
+                    <div>
+                    {{ if .HasChildren }}
+                        <p class="mb-4">
+                          {{ .Name }}
+                        </p>
+                        <ul
+                          class="">
+                          {{ range .Children }}
+                              {{if (not (isset .Params "hide")) }}
+                                {{ $childURL := .URL | absLangURL }}
+                                {{ $active := eq $childURL $pageURL }}
+                                <li class="nav-dropdown-item">
+                                  <a class="{{ if $active -}}active{{- end -}}"
+                                    {{ if findRE `^http` .URL }}
+                                      target="_blank" rel="noopener"
+                                    {{ end }}
+                                    href="{{- if findRE `^#` .URL -}}
+                                      {{- if not $.IsHome -}}
+                                        {{- site.Home.RelPermalink -}}
+                                      {{- end }}
+                                      {{- .URL -}}
+                                    {{- else -}}
+                                      {{- .URL | relLangURL -}}
+                                    {{- end -}}">
+                                    {{ .Name }}
+                                  </a>
+                                </li>
+                              {{ end }}
                           {{ end }}
-                          href="{{- if findRE `^#` .URL -}}
-                            {{- if not $.IsHome -}}
-                              {{- site.Home.RelPermalink -}}
-                            {{- end }}{{- .URL -}}
-                          {{- else -}}
-                            {{- .URL | relLangURL -}}
-                          {{- end -}}"
-                          >{{ .Name }}</a></p>
+                        </ul>
+                    {{ else }}
+                        {{ if ne .URL "/" }}
+                            <p><a
+                              class="nav-link {{ if $active }}active{{- end -}}"
+                              {{ if findRE `^http` .URL }}
+                                target="_blank" rel="noopener"
+                              {{ end }}
+                              href="{{- if findRE `^#` .URL -}}
+                                {{- if not $.IsHome -}}
+                                  {{- site.Home.RelPermalink -}}
+                                {{- end }}{{- .URL -}}
+                              {{- else -}}
+                                {{- .URL | relLangURL -}}
+                              {{- end -}}"
+                              >{{ .Name }}</a></p>
+                        {{ end }}
+                    {{ end }}
+                    </div>
+                  {{ end }}
                 {{ end }}
-                {{ end }}
-                </div>
-              {{ end }}
-              {{ end }}
+            </div>    
+        </div>
 
-        </div>    
+        <div class="last-row border-border dark:border-darkmode-border border-t py-10">
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>{{ site.Params.copyright | markdownify }}</p>
+            </div>
+
+            <!-- Legal info  -->
+            <div class="legal">
+                 {{ range site.Menus.legal }}
+                     {{if (not (isset .Params "hide")) }}
+                         {{ $menuURL := .URL | absLangURL }}
+                         {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+                         {{ $active := eq $menuURL $pageURL }}
+                         <a class="nav-item {{ if $active }}active{{- end -}}"
+                              {{ if findRE `^http` .URL }}
+                                target="_blank" rel="noopener"
+                              {{ end }}
+                              href="{{- if findRE `^#` .URL -}}
+                                {{- if not $.IsHome -}}
+                                  {{- site.Home.RelPermalink -}}
+                                {{- end }}{{- .URL -}}
+                              {{- else -}}
+                                {{- .URL | relLangURL -}}
+                              {{- end -}}"
+                          >{{ .Name }}</a>
+                     {{end}}
+                 {{end}}
+            </div>
+            
+        </div>
     </div>
 
-    <div class="second-row row items-center py-10">
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
-        <!-- navbar brand/logo -->
-        <a
-          class="navbar-brand inline-block"
-          href="{{ site.Home.RelPermalink }}">
-          {{ partial "image.html" (dict "Src" .Site.Params.logo_footer "Size" .Site.Params.logo_footer_size ) }}
-        </a>
-      </div>
-      <div class="lg:col-6 mb-8 text-center lg:mb-0">
-        <!-- central column  -->
-             {{ range site.Menus.legal }}
-             {{if (not (isset .Params "hide")) }}
-             {{ $menuURL := .URL | absLangURL }}
-             {{ $pageURL:= $currentPage.Permalink | absLangURL }}
-             {{ $active := eq $menuURL $pageURL }}
-                <a class="nav-link {{ if $active }}active{{- end -}}"
-                      {{ if findRE `^http` .URL }}
-                        target="_blank" rel="noopener"
-                      {{ end }}
-                      href="{{- if findRE `^#` .URL -}}
-                        {{- if not $.IsHome -}}
-                          {{- site.Home.RelPermalink -}}
-                        {{- end }}{{- .URL -}}
-                      {{- else -}}
-                        {{- .URL | relLangURL -}}
-                      {{- end -}}"
-                      >{{ .Name }}</a>
-             {{end}}
-             {{end}}
-        <!-- end -->
-      </div>
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
-        <ul class="social-icons">
-          {{ range site.Data.social.main }}
-            <li>
-              <a
-                target="_blank"
-                aria-label="{{ .name }}"
-                rel="nofollow noopener"
-                href="{{ .link | safeURL }}">
-                <i class="{{ .icon }}"></i>
-              </a>
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!--
-  <div class="border-border dark:border-darkmode-border border-t py-7">
-    <div class="text-light dark:text-darkmode-light container text-center">
-      <p>
-        {{ site.Params.copyright | markdownify }}
-      </p>
-    </div>
-  </div>
-  -->
 </footer>
