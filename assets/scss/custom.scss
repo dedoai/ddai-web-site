@@ -358,12 +358,27 @@ section.intro {
   position: absolute;
   width: 49%;
   right: 0;
-  //bottom: 120px;
   top: 162px;
 }
 
-#hero .img_hldr img {
-  width: 750px;
+#hero .img_hldr div {
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#hero .img_hldr div:first-child {
+  mix-blend-mode: plus-lighter;
+}
+
+#hero .img_hldr div:first-of-type .side-image {
+  width: 700px;
+}
+
+#hero .img_hldr div:nth-child(2) .side-image {
+  width: 550px;
 }
 
 //---
