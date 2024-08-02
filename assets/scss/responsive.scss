@@ -660,6 +660,18 @@
     @apply w-full #{!important};
   }
 
+  #contacts .main .map-hldr {
+    @apply flex-none h-[300px] bg-center #{!important};
+  }
+
+  #contacts .main .map-picker {
+    @apply top-[100px] left-[150px] -translate-x-1/2 -translate-y-1/2 #{!important};
+  }
+
+  #contacts .main .map-info {
+    @apply hidden #{!important};
+  }
+
   // END CONTACTS
 
   // FOOTER
