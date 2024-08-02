@@ -16,10 +16,6 @@ hero:
     enable: true
     label: "Get Started Now"
     link: "https://www.dedoai.org/contacts/"
-  cta_2:
-    enable: true
-    label: "Read The Docs"
-    link: "https://docs.dedoai.org/"
 
 roles:
   title: "Exchange Data with DedoAI"
