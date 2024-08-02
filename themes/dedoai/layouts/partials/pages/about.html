@@ -13,11 +13,10 @@
         <h2 class="section-title">{{.title}}</h2>
         <div class="members">
             {{range .members}}
-            {{/*- $bg_img := resources.Get .img */}}
-            {{/*- $bg_img_url := $bg_img.RelPermalink */}}
-           
-                <!-- <div class="item" style="background:url('{{/*$bg_img_url*/}}')">-->
-                <div class="item" style="background-color:#f1f1f1;">
+                <div class="item" 
+                    style="background:url('{{.img}}');
+                        background-size: cover;
+                        background-position-x: center;">
                     <div class="txt-hldr">
                         <h3>{{.name}}</h3>
                         <p>{{.descr}}</p>
