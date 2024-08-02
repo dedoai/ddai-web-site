@@ -165,8 +165,13 @@
     @apply mb-4 #{!important};
   }
 
-
   // END NEWSLETTER
+  // TEAM
+  #team .members {
+    @apply flex-wrap justify-evenly gap-8 #{!important};
+  }
+
+  // END TEAM
 }
 
 // FROM MD TO LG
@@ -302,6 +307,12 @@
   }
 
   // END NEWSLETTER
+  // TEAM
+  #team .members {
+    @apply flex-wrap justify-evenly gap-8 #{!important};
+  }
+
+  // END TEAM
   // FOOTER
   #footer {
     @apply mt-[100px] #{!important};
@@ -339,11 +350,19 @@
   }
 
   #hero .title h1 {
-    @apply max-md:text-[32px] max-md:leading-normal max-md:font-semibold max-md:text-balance w-full #{!important};
+    @apply text-[32px] leading-normal font-semibold text-balance w-full #{!important};
+  }
+
+  #hero .text p {
+    @apply w-full #{!important};
   }
 
   #hero .img_hldr {
     @apply top-[270px] w-full #{!important};
+  }
+
+  #hero .img_hldr img {
+    @apply w-full #{!important};
   }
 
   #hero .text p {
@@ -495,6 +514,24 @@
   }
 
   // END NEWSLETTER
+
+  // TEAM
+  #team .members {
+    @apply flex-wrap gap-8 #{!important};
+  }
+
+  // END TEAM
+  // VALUES
+  #values .cards {
+    @apply flex-col gap-16 #{!important};
+  }
+
+  #values .cards .item {
+    @apply w-full h-auto mb-0 #{!important};
+  }
+
+  // END VALUES
+
   // FOOTER
   #footer {
     @apply mt-[100px] #{!important};
