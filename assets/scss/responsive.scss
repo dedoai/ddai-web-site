@@ -69,6 +69,25 @@
   }
 
   // END INFO
+  // DOCUMENTS
+
+  #documents .second {
+    @apply flex-nowrap #{!important};
+  }
+
+  #documents .second .text {
+    @apply w-1/2 h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply w-1/2 bg-center #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+
+  // END DOCUMENTS
 }
 
 // FROM LG TO XL
@@ -172,6 +191,25 @@
   }
 
   // END TEAM
+  // DOCUMENTS
+
+  #documents .second {
+    @apply flex-nowrap #{!important};
+  }
+
+  #documents .second .text {
+    @apply w-1/2 h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply w-1/2 bg-center #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+
+  // END DOCUMENTS
 }
 
 // FROM MD TO LG
@@ -323,6 +361,27 @@
   }
 
   // END ROADMAP
+  // DOCUMENTS
+  // DOCUMENTS
+
+  #documents .second {
+    @apply flex-nowrap h-auto #{!important};
+  }
+
+  #documents .second .text {
+    @apply w-1/2 h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply w-1/2 bg-center #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+
+  // END DOCUMENTS
+  // END DOCUMENTS
   // FOOTER
   #footer {
     @apply mt-[100px] #{!important};
@@ -567,6 +626,24 @@
   }
 
   // END ROADMAP
+  // DOCUMENTS
+  #documents .second {
+    @apply flex-col-reverse items-center mx-0 w-full h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply h-[300px] w-full rounded-b-none rounded-t-3xl #{!important};
+  }
+
+  #documents .second .text {
+    @apply rounded-t-none rounded-b-3xl w-full #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+
+  // END DOCUMENTS
 
   // FOOTER
   #footer {
