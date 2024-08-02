@@ -179,4 +179,5 @@ newsletter:
 {{< section "home/certifications">}}
 {{< section "home/countdown">}}
 {{< section "home/info">}}
+{{< section "_common/newsletter">}}
 {{< /wrap >}}

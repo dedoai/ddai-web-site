@@ -18,17 +18,20 @@ weight = 3
 [[main]]
 name = "Documents"
 url = "/documents/"
-weight = 4
+weight = 8
 
 [[main]]
+parent = "Support"
 name = "Contact us"
 url = "/contacts/"
-weight = 5
+params = { ico = "17" }
+weight = 2
 
 #-----------------
 # Footer menu
 
 [[footer]]
+parent = "Learn"
 name = "About"
 url = "/about/"
 weight = 1
@@ -46,20 +49,23 @@ weight = 3
 [[footer]]
 name = "Contact us"
 url = "/contacts/"
-weight = 4
-
-
-[[legal]]
-name = "Terms of Service"
-url = "/terms-of-service/"
-weight = 1
-
-[[legal]]
-name = "Privacy Policy"
-url = "/privacy-policy/"
 weight = 2
 
+
 [[legal]]
+parent = "Support"
+name = "Terms of Service"
+url = "/terms-of-service/"
+weight = 3
+
+[[legal]]
+parent = "Support"
+name = "Privacy Policy"
+url = "/privacy-policy/"
+weight = 4
+
+[[legal]]
+parent = "Support"
 name = "Cookie Policy"
 url = "/cookie-policy//"
-weight = 3
+weight = 5
