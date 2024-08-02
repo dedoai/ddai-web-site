@@ -17,16 +17,16 @@ team:
  members:
  - name: Luca Viviani
    descr: Founder
-   img: "/assets/images/about/luca.webp"
+   img_: "/images/about/members/lv.webp"
  - name: Marco Visibelli
    descr: Founder
-   img: "/assets/images/about/marco.webp"
+   img_: "/images/about/members/mv.webp"
  - name: Ivan Di Lelio
    descr: Founder
-   img: "/assets/images/about/ivan.webp"
+   img_: "/images/about/members/idl.webp"
  - name: Emanuele Costa
    descr: Founder
-   img: "/assets/images/about/emanuele.webp"
+   img_: "/images/about/members/ec.webp"
  
 values:
  title: Our Values

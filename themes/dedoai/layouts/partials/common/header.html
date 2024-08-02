@@ -56,7 +56,7 @@
                     {{ $childURL := .URL | absLangURL }}
                     {{ $active := eq $childURL $pageURL }}
                     <li class="nav-dropdown-item">
-                      <a class="nav-dropdown-link {{- if $active }} active{{- end -}}"
+                      <a class="nav-dropdown-link {{- if $active }}active{{- end -}}"
                         {{ if findRE `^http` .URL }}
                           target="_blank" rel="noopener"
                         {{ end }}
@@ -81,7 +81,7 @@
             {{ else }}
                 {{ if ne .URL "/" }}
                   <li class="nav-item">
-                    <a class="nav-link {{- if $active }} active{{- end -}}"
+                    <a class="nav-link {{- if $active }}active{{- end -}}"
                       {{ if findRE `^http` .URL }}
                         target="_blank" rel="noopener"
                       {{ end }}
@@ -126,7 +126,7 @@
             {{ end }}
             
             
-            {{ if and .IsTranslated false }}
+            {{ if .IsTranslated }}
                 <i class="ico ico-globe"></i>
                 {{ partial "components/language-switcher" (dict "Context" . "Class" "dark:bg-darkmode-theme-light") }}
             {{ end}}
