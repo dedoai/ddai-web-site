@@ -12,6 +12,9 @@ p2: "To make it easier for you to get in touch, please fill out the form below w
 cover: "/assets/images/map-placeholder.png"
 picker_img: "/assets/images/map-picker.png"
 
+alt_cover: "/assets/images/contacts-cover.webp"
+hide_map: true
+
 form:
   items:
   - name: "name"
