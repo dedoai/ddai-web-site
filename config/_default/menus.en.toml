@@ -29,24 +29,49 @@ weight = 5
 # Footer menu
 
 [[footer]]
+name = "Links"
+weight = 1
+
+[[footer]]
+parent = "Links"
 name = "About"
 url = "/about/"
 weight = 1
 
 [[footer]]
+parent = "Links"
 name = "Roadmap"
 url = "/roadmap/"
 weight = 2
 
 [[footer]]
+parent = "Links"
 name = "Documents"
 url = "/documents"
 weight = 3
 
 [[footer]]
+parent = "Links"
 name = "Contact us"
 url = "/contacts/"
 weight = 4
+
+[[footer]]
+name = "Informations"
+weight = 2
+
+[[footer]]
+parent = "Informations"
+name = "Services"
+url = "/#roles"
+weight = 1
+
+[[footer]]
+parent = "Informations"
+name = "Copyright Certificate"
+url = "/#certifications"
+weight = 2
+
 
 
 [[legal]]
