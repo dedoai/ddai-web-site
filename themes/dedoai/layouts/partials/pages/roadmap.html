@@ -2,7 +2,7 @@
 <div class="container">
   <div class="split">
     <div class="first">
-      <h1 class="title">{{$_.title}}</h1>
+      <h1 class="title span-title">{{$_.title}}</h1>
       <p>{{$_.p1}}</p>
     </div>
     <div class="second">
@@ -26,7 +26,10 @@
     {{end}}
   </div>
   <div class="last">
-    <h2>{{$_.t2}}</h2>
+    <h2>
+      {{$_.t2}}
+      <span class="span-title">{{$_.t2SpanTitle}}</span>
+    </h2>
     <p>{{$_.p2}}</p>
   </div>
 </div>
