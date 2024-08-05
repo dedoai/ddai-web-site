@@ -2,23 +2,27 @@
 {{ with $_.certifications }}
 <div class="container">
 
-    <h2 class="section-title">{{.title}}</h2>
-   
-    <div class="pnls_hldr">
-        <div class="lft-pnl">
-        {{range .items}}
-            <div class="block">
-                <img src="{{.icon}}">
-                <h3>{{.title}}</h3>
-                <p>{{.text}}</p>
-            </div>
-        {{end}}
-        </div>
-        <div class="rgt-pnl">
-             <a href="{{.cta_link}}" class="pill">{{.cta_text}}</a>
-        </div>
-   
-   </div>
+  <h2 class="section-title">
+    {{.title}}
+    <span class="span-title">{{.spanTitle}}</span>
+  </h2>
+
+  <div class="pnls_hldr">
+    <div class="lft-pnl">
+      {{range .items}}
+      <div class="block">
+        <div class="block-backdrop"></div>
+        <img src="{{.icon}}">
+        <h3>{{.title}}</h3>
+        <p>{{.text}}</p>
+      </div>
+      {{end}}
+    </div>
+    <div class="rgt-pnl">
+      <a href="{{.cta_link}}" class="pill">{{.cta_text}}</a>
+    </div>
+
+  </div>
 
 </div>
 {{end}}
