@@ -20,11 +20,13 @@ hero:
 roles:
   title: "Exchange Data with DedoAI"
   block_1:
-    title: "Consumers"
+    tag: "Consumer"
+    title: "Being a"
+    spanTitle: "Consumer."
     text: "Consumers can request datasets like images, videos, and etc. to train their AI systems, purchasing them with tokens."
-    img: "/assets/images/home/roles-consumers.webp"
+    img: "/assets/images/home/consumer.svg"
     cta_1:
-      text: Read more
+      text: Read the Litepaper
       link: "#"
     cta_2:
       text: Learn
@@ -36,11 +38,13 @@ roles:
       cta_txt: "Open Webapp"
       cta_link: ""
   block_2:
-    title: "Producers"
+    tag: "Producer"
+    title: "Being a"
+    spanTitle: "Producer."
     text: "Producers can sell their data in response to consumer requests, using tokens in our secure marketplace."
-    img: "/assets/images/home/roles-producers.webp"
+    img: "/assets/images/home/producer.svg"
     cta_1:
-      text: Read more
+      text: Read the litepaper
       link: "#"
     cta_2:
       text: Learn
@@ -53,7 +57,8 @@ roles:
       cta_link: ""
 
 certifications:
-  title: "Our Digital Certification"
+  title: "Our Digital "
+  spanTitle: "Certification."
   items:
   - icon: "/assets/images/home/cert-ico-1.webp"
     title: "Digital Certification and Copyright Protection"
@@ -77,7 +82,8 @@ countdown:
   cd_date: [Days,Hours,Minutes,Seconds]
 
 info:
-  title: "Empowering Data Owenership"
+  title: "Empowering Data "
+  spanTitle: "Ownership"
   items:
   - title: "Decentralization"
     text: "Experience true data ownership and exchange trough our decentralized platform"
