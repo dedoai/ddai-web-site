@@ -9,7 +9,8 @@ noheader: true
 p1: We use blockchain to create a fair and equitable data exchange. Our roadmap highlights key milestones in developing and enhancing the platform.
 cover: /assets/images/roadmap-cover.webp
 
-t2: Looking Ahead
+t2: Looking 
+t2SpanTitle: Ahead.
 p2: As we progress on our journey, we remain committed to innovation, security, and community engagement. Future phases will focus on scaling the platform, exploring new technologies, and continuously enhancing the ecosystem to meet the evolving needs of our users.
 
 quarters:
