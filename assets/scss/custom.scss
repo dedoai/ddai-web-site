@@ -19,7 +19,6 @@ body {
 }
 
 main {
-  padding: 100px 0;
   backdrop-filter: blur(100px);
   background-color: rgba(23, 23, 23, .85);
 }
@@ -341,7 +340,7 @@ section.intro {
 
 #_home {
   margin-top: 0;
-
+  padding-bottom: 100px;
 }
 
 #page-header,
@@ -1117,6 +1116,10 @@ section.intro {
 //------------------------------------------------------------------------------
 //--- ABOUT START ---
 
+#about {
+  @apply py-[100px];
+}
+
 #about .sect {
   margin-bottom: 50px;
 }
@@ -1441,6 +1444,10 @@ section.intro {
 //------------------------------------------------------------------------------
 //--- CONTACTS START ---
 
+#contacts {
+  @apply py-[100px];
+}
+
 #contacts .section-title {
   margin-bottom: 75px;
 }
@@ -1451,8 +1458,6 @@ section.intro {
   line-height: 48px;
   margin-bottom: 50px;
 }
-
-#contacts .section-title p {}
 
 #contacts .main {
   display: flex;
@@ -1904,6 +1909,10 @@ section.intro {
 //------------------------------------------------------------------------------
 //--- ROADMAP START ---
 
+#roadmap {
+  @apply py-[100px];
+}
+
 #roadmap .split {
   display: flex;
   justify-content: space-between;
@@ -2190,6 +2199,10 @@ section.intro {
 
 #_documents .section-title {
   margin-bottom: 60px;
+}
+
+#documents {
+  @apply py-[100px];
 }
 
 #_documents h1,
