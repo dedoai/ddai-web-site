@@ -73,19 +73,13 @@ url = "/#certifications"
 weight = 2
 
 
-
-[[legal]]
-name = "Terms of Service"
-url = "/terms-of-service/"
-weight = 1
-
 [[legal]]
 name = "Privacy Policy"
 url = "/privacy-policy/"
-weight = 2
+weight = 1
 
 [[legal]]
 name = "Cookie Preferences"
 url = "#"
 class = "open-cookie"
-weight = 3
+weight = 2

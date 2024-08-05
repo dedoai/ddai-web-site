@@ -224,6 +224,12 @@
   }
 
   // END CONTACTS
+  // FOOTER
+  #footer .intro-row div:last-of-type {
+    @apply w-fit #{!important};
+  }
+
+  // END FOOTER
 }
 
 // FROM MD TO LG
@@ -231,7 +237,7 @@
 
   // HERO
   #hero #hero1 {
-    height: 750px !important;
+    @apply h-[600px] #{!important};
   }
 
   #hero .txt_hldr {
@@ -498,23 +504,23 @@
   // END CERTIFICATIONS
   // FOOTER
   #footer {
-    @apply mt-[100px] #{!important};
+    @apply mt-0 #{!important};
   }
 
-  #footer .first-row {
-    @apply flex-col items-center #{!important};
+  #footer .main-row {
+    @apply w-full flex-col items-center #{!important};
   }
 
-  #footer .first-row .newsletter {
-    @apply w-full h-auto #{!important};
+  #footer .main-row .newsletter {
+    @apply my-0 #{!important};
   }
 
-  #footer .footer-menu {
-    @apply w-full pt-0 items-center flex-wrap justify-center #{!important};
+  #footer .main-row .footer-menu {
+    @apply flex-row #{!important};
   }
 
-  #footer .footer-menu p {
-    @apply text-nowrap #{!important};
+  #footer .main-row .footer-menu div {
+    @apply m-0 #{!important};
   }
 
   // END FOOTER
@@ -525,7 +531,7 @@
 
   // HERO
   #hero #hero1 {
-    @apply relative h-[900px] #{!important};
+    @apply relative h-[750px] #{!important};
   }
 
   #hero .txt_hldr {
@@ -541,7 +547,7 @@
   }
 
   #hero .img_hldr {
-    @apply top-[270px] w-full #{!important};
+    @apply top-[270px] w-full max-w-[450px] left-1/2 -translate-x-1/2 #{!important};
   }
 
   #hero .img_hldr img {
@@ -567,6 +573,10 @@
   // END HERO
 
   // ROLES
+
+  #roles {
+    @apply mt-0 pt-0 #{!important};
+  }
 
   #roles .section-title {
     @apply text-2xl #{!important};
@@ -597,7 +607,7 @@
   }
 
   #roles .rbox .img_hldr {
-    @apply static w-full #{!important};
+    @apply static w-full h-auto #{!important};
   }
 
   #roles .rbox .pill {
@@ -641,6 +651,10 @@
     @apply w-[30px] h-[30px] mb-[10px] #{!important};
   }
 
+  #certifications .pnls_hldr .rgt-pnl {
+    @apply h-[350px] #{!important};
+  }
+
   #certifications .pnls_hldr .rgt-pnl a {
     @apply hidden #{!important};
   }
@@ -665,17 +679,41 @@
   }
 
   #countdown .pnls_hldr .lft-pnl p {
-    @apply text-sm text-center w-[310px] m-auto mb-4 #{!important};
+    @apply text-sm text-center w-full m-auto mb-4 #{!important};
   }
 
   #countdown .pnls_hldr .image-hldr {
-    @apply w-full m-0 bg-center bg-no-repeat bg-contain #{!important};
+    @apply w-full m-0 bg-center bg-no-repeat bg-contain h-[300px] #{!important};
+  }
+
+  #countdown a {
+    @apply text-sm py-4 px-7 rounded-[40px] #{!important};
   }
 
   // END COUNTDOWN
   // INFO
   #info {
     @apply mb-0 #{!important};
+  }
+
+  #info .section-title {
+    @apply w-full text-2xl #{!important};
+  }
+
+  #info .card {
+    @apply w-full p-4 #{!important};
+  }
+
+  #info .card h3 {
+    @apply w-full #{!important};
+  }
+
+  #info .card p {
+    @apply w-full #{!important};
+  }
+
+  #info .card a {
+    @apply left-5 bottom-4 #{!important};
   }
 
   // END INFO
@@ -802,15 +840,35 @@
 
   // FOOTER
   #footer {
-    @apply mt-[100px] #{!important};
+    @apply mt-0 pt-6 #{!important};
+  }
+
+  #footer .container {
+    @apply flex flex-col #{!important};
   }
 
   #footer .intro-row {
-    @apply flex-col pt-4 #{!important};
+    @apply flex-row order-2 border-t border-white/20 pt-[35px] mb-0 #{!important};
+  }
+
+  #footer .navbar-brand img {
+    @apply w-[100px] #{!important};
+  }
+
+  #footer .social-icons li {
+    @apply ml-[15px] #{!important};
+  }
+
+  #footer .social-icons li a {
+    @apply text-sm w-[20px] h-[20px] #{!important};
+  }
+
+  #footer .main-row {
+    @apply flex-col order-1 mb-0 #{!important};
   }
 
   #footer .main-row .newsletter {
-    @apply w-full h-auto #{!important};
+    @apply w-full h-auto mt-0 mb-[70px] #{!important};
   }
 
   #footer .main-row .newsletter p {
@@ -826,7 +884,19 @@
   }
 
   #footer .footer-menu {
-    @apply w-full pt-0 items-center flex-wrap justify-center #{!important};
+    @apply w-full pt-0 items-start flex-wrap justify-center #{!important};
+  }
+
+  #footer .main-row .footer-menu {
+    @apply flex-row #{!important};
+  }
+
+  #footer .main-row .menu-col:first-child {
+    @apply w-2/5 #{!important};
+  }
+
+  #footer .main-row .menu-col:last-child {
+    @apply ml-0 w-3/5 #{!important};
   }
 
   #footer .footer-menu p {
@@ -834,7 +904,11 @@
   }
 
   #footer .last-row {
-    @apply flex-col-reverse gap-8 text-center items-center #{!important};
+    @apply flex-col text-center items-center order-3 border-t-0 pt-0 #{!important};
+  }
+
+  #footer .last-row .copyright p {
+    @apply text-center text-balance #{!important};
   }
 
   // END FOOTER
