@@ -749,7 +749,9 @@ section.intro {
 
 #_home #countdown .pnls_hldr {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
 }
 
 #_home #countdown .lft-pnl {
@@ -797,11 +799,12 @@ section.intro {
 
 #_home #countdown .image-hldr {
   display: block;
-  width: 550px;
-  height: 266px;
-  margin-left: 30px;
-  background-image: url('/assets/images/home/home-countdown-cover.webp');
-  background-size: cover;
+  width: 482px;
+  height: 482px;
+  background-image: url('/assets/images/home/countdown.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #_home #countdown .counter {
