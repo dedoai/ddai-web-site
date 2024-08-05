@@ -82,7 +82,8 @@ countdown:
   cd_date: [Days,Hours,Minutes,Seconds]
 
 info:
-  title: "Empowering Data Owenership"
+  title: "Empowering Data "
+  spanTitle: "Ownership"
   items:
   - title: "Decentralization"
     text: "Experience true data ownership and exchange trough our decentralized platform"
