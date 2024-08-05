@@ -6,21 +6,26 @@
 
 // HTML tags ###################################################################
 
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/global-background.svg");
+}
+
 ::selection {
   background-color: #866EFF;
   color: #fff;
 }
 
 main {
-  margin-top: 100px;
+  padding: 100px 0;
+  backdrop-filter: blur(100px);
+  background-color: rgba(23, 23, 23, .85);
 }
 
 footer {
   padding-top: 130px;
-}
-
-section {
-  // margin: 100px auto;
 }
 
 p {
@@ -205,7 +210,6 @@ section.intro {
   height: 2rem;
   width: 2rem;
   font-size: 21px;
-
 }
 
 
@@ -337,10 +341,7 @@ section.intro {
 
 #_home {
   margin-top: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("/assets/images/home/roles-bg.svg");
+
 }
 
 #page-header,
