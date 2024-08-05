@@ -709,15 +709,35 @@
 
   // FOOTER
   #footer {
-    @apply mt-[100px] #{!important};
+    @apply mt-[30px] pt-0 #{!important};
+  }
+  
+  #footer .container {
+	@apply flex flex-col #{!important};
   }
 
   #footer .intro-row {
-    @apply flex-col pt-4 #{!important};
+    @apply flex-row order-2 border-t border-white/[.2] pt-[35px] mb-0 #{!important};
+  }
+  
+  #footer .navbar-brand img {
+  	@apply w-[100px] #{!important};
+  }
+  
+  #footer .social-icons li {
+    @apply ml-[15px] #{!important};
+  }
+  
+  #footer .social-icons li a {
+      @apply text-[12px] w-[18px] h-[18px] #{!important};
+  }
+  
+  #footer .main-row {
+    @apply flex-col  order-1 mb-0 #{!important};
   }
 
   #footer .main-row .newsletter {
-    @apply w-full h-auto #{!important};
+    @apply w-full h-auto mt-0 mb-[70px] #{!important};
   }
 
   #footer .main-row .newsletter p {
@@ -733,7 +753,19 @@
   }
 
   #footer .footer-menu {
-    @apply w-full pt-0 items-center flex-wrap justify-center #{!important};
+    @apply w-full pt-0 items-start flex-wrap justify-center #{!important};
+  }
+  
+  #footer .main-row .footer-menu {
+    @apply flex-row #{!important};
+  }
+  
+  #footer .main-row .menu-col:first-child {
+     @apply w-2/5 #{!important}; 
+  }
+  
+  #footer .main-row .menu-col:last-child{
+     @apply ml-0 w-3/5 #{!important}; 
   }
 
   #footer .footer-menu p {
@@ -741,7 +773,7 @@
   }
 
   #footer .last-row {
-    @apply flex-col-reverse gap-8 text-center items-center #{!important};
+    @apply flex-col text-center items-center order-3 border-t-0 pt-0 #{!important};
   }
 
   // END FOOTER
