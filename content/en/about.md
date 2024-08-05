@@ -18,16 +18,16 @@ team:
  spanTitle: Team.
  members:
  - name: Luca Viviani
-   descr: Founder
+   descr: CFO
    img: "/assets/images/about/luca.webp"
  - name: Marco Visibelli
-   descr: Founder
+   descr: CEO
    img: "/assets/images/about/marco.webp"
  - name: Ivan Di Lelio
-   descr: Founder
+   descr: CTO
    img: "/assets/images/about/ivan.webp"
  - name: Emanuele Costa
-   descr: Founder
+   descr: CDS
    img: "/assets/images/about/emanuele.webp"
  
 values:
@@ -52,7 +52,6 @@ vision:
  spanTitle: Vision.
  extraTitle: for the Future
  text: "Imagine a future where data drives economic empowerment and innovation. At dedoAI, we're committed to making this a reality. With advanced technology and a community focus, we're revolutionizing the data economy. Join us in democratizing data and unlocking its true value for everyone."
-
 ---
 {{< wrap >}}
 {{< section "about">}}
