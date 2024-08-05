@@ -13,12 +13,13 @@
 
   {{ with $_.team }}
   <div id="team" class="sect">
-    <h2 class="section-title">{{.title}}</h2>
+    <h2 class="section-title">
+      {{.title}}
+      <span class="span-title">{{.spanTitle}}</span>
+    </h2>
     <div class="members">
       {{range .members}}
-      <div class="item" style="background:url('{{.img}}');
-                        background-size: cover;
-                        background-position-x: center;">
+      <div class="item" style="background:url('{{.img}}'); background-size: cover; background-position-x: center;">
         <div class="txt-hldr">
           <h3>{{.name}}</h3>
           <p>{{.descr}}</p>
@@ -31,7 +32,10 @@
 
   {{ with $_.values }}
   <div id="values" class="sect">
-    <h2 class="section-title">{{.title}}</h2>
+    <h2 class="section-title">
+      {{.title}}
+      <span class="span-title">{{.spanTitle}}</span>
+    </h2>
     <div class="cards">
       {{range .items}}
       <div class="item">
@@ -48,7 +52,11 @@
 
   {{ with $_.vision }}
   <div id="vision" class="sect">
-    <h2 class="section-title">{{.title}}</h2>
+    <h2 class="section-title">
+      {{.title}}
+      <span class="span-title">{{.spanTitle}}</span>
+      {{.extraTitle}}
+    </h2>
     <p>{{.text}}</p>
   </div>
   {{end}}
