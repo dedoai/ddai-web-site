@@ -57,7 +57,8 @@ roles:
       cta_link: ""
 
 certifications:
-  title: "Our Digital Certification"
+  title: "Our Digital "
+  spanTitle: "Certification."
   items:
   - icon: "/assets/images/home/cert-ico-1.webp"
     title: "Digital Certification and Copyright Protection"
