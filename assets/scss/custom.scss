@@ -194,6 +194,20 @@ section.intro {
     margin-bottom: 20px;
 }
 
+#footer .social-icons li{
+    margin-left: 20px;
+}
+
+#footer .social-icons li a {
+  border-radius: 1.25rem;
+  background: #FFF;
+  color: #171717;
+  height: 2rem;
+  width: 2rem;
+  font-size: 21px;
+  
+}
+
 
 #footer .main-row {
     display: flex;
@@ -232,7 +246,7 @@ section.intro {
     border-radius: 8px;
     color: #FFFFFF;
     background: #404040;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #footer .newsletter .frm input::placeholder {
@@ -316,14 +330,6 @@ section.intro {
 
 #footer .last-row .nav-item:last-child {
   border: none;
-}
-
-#footer .social-icons li a {
-  border-radius: 1.25rem;
-  background: #FFF;
-  color: #171717;
-  height: 2rem;
-  width: 2rem;
 }
 
 // PAGES #######################################################################

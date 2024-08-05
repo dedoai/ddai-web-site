@@ -85,6 +85,7 @@ url = "/privacy-policy/"
 weight = 2
 
 [[legal]]
-name = "Cookie Policy"
-url = "/cookie-policy//"
+name = "Cookie Preferences"
+url = "#"
+class = "open-cookie"
 weight = 3
