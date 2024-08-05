@@ -210,6 +210,12 @@
   }
 
   // END DOCUMENTS
+  // CONTACTS
+  #contacts .main {
+    @apply gap-8 #{!important};
+  }
+
+  // END CONTACTS
 }
 
 // FROM MD TO LG
@@ -362,7 +368,6 @@
 
   // END ROADMAP
   // DOCUMENTS
-  // DOCUMENTS
 
   #documents .second {
     @apply flex-nowrap h-auto #{!important};
@@ -381,7 +386,35 @@
   }
 
   // END DOCUMENTS
-  // END DOCUMENTS
+  // CONTACTS
+  #contacts .main,
+  #contacts .main .frm-hldr form {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #contacts .main .frm-hldr,
+  #contacts .main .frm-hldr p,
+  #contacts .main .frm-hldr form,
+  #contacts .main .frm-hldr form .item,
+  #contacts .main .frm-hldr form input,
+  #contacts .main .frm-hldr form select,
+  #contacts .main .frm-hldr form textarea {
+    @apply w-full #{!important};
+  }
+
+  #contacts .main .map-hldr {
+    @apply flex-none h-[300px] bg-center #{!important};
+  }
+
+  #contacts .main .map-picker {
+    @apply top-[100px] left-[150px] -translate-x-1/2 -translate-y-1/2 #{!important};
+  }
+
+  #contacts .main .map-info {
+    @apply hidden #{!important};
+  }
+
+  // END CONTACTS
   // FOOTER
   #footer {
     @apply mt-[100px] #{!important};

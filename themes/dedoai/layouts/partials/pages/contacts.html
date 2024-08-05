@@ -35,6 +35,9 @@
                 <button class="btn btn-cta">{{$_.form.submit_text}}</button>
             </form>
         </div>
+        {{with $_.hide_map }}
+        <div class="map-hldr" style="background-image: url('{{$_.alt_cover}}')"></div>
+        {{else}}
         <div class="map-hldr" style="background-image: url('{{$_.cover}}')">
             <img class="map-picker" src="{{$_.picker_img}}" alt="" />
             <div class="map-info">
@@ -45,6 +48,8 @@
                 <p>{{$_.map_l3 | safeHTML}}</p>
             </div>
         </div>
+        
+        {{end}}
     </div>
     
 </div>
