@@ -302,6 +302,10 @@ section.intro {
 
 #_home {
   margin-top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/assets/images/home/roles-bg.svg");
 }
 
 #page-header,
@@ -321,7 +325,7 @@ section.intro {
   background-position: center;
   background-size: cover;
   background-image:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.00) 79.5%, #171717 94%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.00) 79.5%, #0B0A0B 94%),
     linear-gradient(90deg, rgba(23, 23, 23, 0.47) 0%, rgba(48, 48, 48, 0.00) 51.5%, rgba(23, 23, 23, 0.47) 100%),
     url('/assets/images/home/home-hero-bg-2.svg');
   height: 900px;
@@ -418,39 +422,40 @@ section.intro {
 //---
 
 #_home #roles {
-  margin: 100px auto;
+  padding-top: 100px;
+  background: linear-gradient(0deg, #0B0A0B00 0%, #0B0A0BE5 90%);
 }
 
 #_home #roles .rbox {
-  position: relative;
-  border: 4px solid #FFFFFF;
-  box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 24px;
-  padding: 38px 50px;
-  margin-top: 160px;
-}
-
-#_home #roles .rbox.vg-bg {
-  background: linear-gradient(90deg, #5C4ADF 0%, #A391FF 100%);
-}
-
-#_home #roles .rbox.pg-bg {
-  background: linear-gradient(90deg, #B15FFE 4.5%, #C8A8FF 61.5%);
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 6rem;
 }
 
 #_home #roles .rbox h3 {
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 48.41px;
   margin-bottom: 12px;
+  width: 603px;
+}
+
+#_home #roles .rbox h3 span {
+  font-family: "Kaushan Script";
+  font-weight: 400;
 }
 
 #_home #roles .rbox p {
-  width: 50%;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
+  width: 470px;
+  font-size: 18px;
+  line-height: 21.78px;
   margin-bottom: 20px;
+}
+
+#_home #roles .rbox .img_hldr {
+  width: 524px;
+  height: 350px;
 }
 
 #_home #roles .rbox .cta_row {
@@ -459,7 +464,19 @@ section.intro {
   gap: 30px;
 }
 
-#_home #roles .rbox .pill {
+#_home #roles .rbox .tag {
+  padding: 10px;
+  border-radius: 24px;
+  border-width: 1px;
+  border-color: #676767;
+  width: min-content;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14.52px;
+  margin-bottom: 1rem;
+}
+
+#_home #roles .pill {
   display: block;
   height: 50px;
   padding: 17px 27px;
@@ -474,12 +491,8 @@ section.intro {
   transition: all 0.3s ease-in;
 }
 
-#_home #roles .rbox.vg-bg .pill {
-  color: #6756E5;
-}
-
-#_home #roles .rbox.pg-bg .pill {
-  color: #B15BF4
+#_home #roles .rbox .pill {
+  background-color: #6756E5;
 }
 
 #_home #roles .rbox .pill:hover {
@@ -505,13 +518,6 @@ section.intro {
   margin-top: 5px;
   margin-left: 10px;
 
-}
-
-#_home #roles .rbox .img_hldr {
-  position: absolute;
-  right: 130px;
-  bottom: -10px;
-  width: 420px;
 }
 
 #_home #roles .rbox .toggler {
