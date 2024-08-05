@@ -7,7 +7,8 @@ draft: false
 noheader: true
 
 intro:
- title:  Shaping the Future of Data
+ title:  Shaping the 
+ spanTitle: Future of Data
  text: "At dedoAI, we're making data ownership and use accessible for everyone. Our mission is to help you control and profit from your data. Using blockchain, we ensure fair and transparent exchanges, valuing your data as a key asset in the digital economy."
  cta_txt: "Join our Team"
  cta_link: "#"
