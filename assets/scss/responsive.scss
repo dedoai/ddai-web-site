@@ -125,6 +125,18 @@
     @apply right-7 bottom-1 #{!important};
   }
 
+  #roles .rbox .img-hldr {
+    @apply w-full #{!important};
+  }
+
+  #roles .rbox h3 {
+    @apply w-auto #{!important};
+  }
+
+  #roles .rbox p {
+    @apply w-auto #{!important};
+  }
+
   // END ROLES
   // CERTIFICATIONS
   #certifications {
@@ -248,8 +260,45 @@
 
   // END HERO
   // ROLES
+
+  #roles .section-title {
+    @apply text-2xl #{!important};
+  }
+
+  #roles .rbox:first-of-type {
+    @apply m-0 p-7 flex-col #{!important};
+  }
+
+  #roles .rbox:last-of-type {
+    @apply mt-0 p-7 flex-col-reverse #{!important};
+  }
+
+  #roles .left-content {
+    @apply w-full #{!important};
+  }
+
+  #roles .right-content {
+    @apply w-full #{!important};
+  }
+
+  #roles .rbox h3 {
+    @apply text-[40px] mb-[20px] w-full #{!important};
+  }
+
+  #roles .rbox p {
+    @apply text-sm w-full mb-[20px] text-white #{!important};
+  }
+
   #roles .rbox .img_hldr {
-    @apply -right-9 bottom-6 #{!important};
+    @apply static w-full #{!important};
+  }
+
+  #roles .rbox .img_hldr img {
+    @apply mx-auto #{!important};
+  }
+
+  #roles .rbox .pill {
+    @apply text-center rounded-xl #{!important};
   }
 
   // END ROLES
@@ -491,16 +540,28 @@
     @apply text-2xl #{!important};
   }
 
-  #roles .rbox {
-    @apply mt-0 p-7 #{!important};
+  #roles .rbox:first-of-type {
+    @apply m-0 p-7 flex-col #{!important};
+  }
+
+  #roles .rbox:last-of-type {
+    @apply mt-0 p-7 flex-col-reverse #{!important};
+  }
+
+  #roles .left-content {
+    @apply w-full #{!important};
+  }
+
+  #roles .right-content {
+    @apply w-full #{!important};
   }
 
   #roles .rbox h3 {
-    @apply text-2xl mb-1 #{!important};
+    @apply text-[40px] mb-[20px] w-full #{!important};
   }
 
   #roles .rbox p {
-    @apply text-sm w-full text-white #{!important};
+    @apply text-sm w-full mb-[20px] text-white #{!important};
   }
 
   #roles .rbox .img_hldr {
@@ -508,7 +569,7 @@
   }
 
   #roles .rbox .pill {
-    @apply text-center w-full #{!important};
+    @apply text-center rounded-xl #{!important};
   }
 
   // END ROLES
