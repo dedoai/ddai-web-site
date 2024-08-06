@@ -1,0 +1,114 @@
+#about {
+  @apply py-[50px];
+}
+
+#about .sect {
+  margin-bottom: 50px;
+}
+
+#about .section-title {
+  text-align: left;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+#about #intro p {
+  margin-bottom: 50px;
+}
+
+#about #team .members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#about .members .item .member-icon {
+  background-color: #FFF;
+  color: #171717;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+}
+
+#about .item {
+  padding: 23px 27px;
+  border-radius: 24px;
+  border: solid 2px #9A9A9A80;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #17171790 0%, #17171790 100%),
+    url('/assets/images/home/card-gradient-2.png') center/cover no-repeat;
+  flex-grow: 1;
+  gap: 1rem;
+}
+
+#about .item:last-of-type {
+  flex-grow: 0;
+}
+
+#about .item:nth-of-type(odd) {
+  background: linear-gradient(90deg, #17171790 0%, #17171790 100%),
+    url('/assets/images/home/card-gradient.png') center/cover no-repeat;
+}
+
+#about #values .cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#about #values .item {
+  width: 260px;
+  height: 200px;
+}
+
+#about #values .item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+#about #values .item p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#about #values .ico {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  #about .section-title {
+    @apply text-2xl #{!important};
+  }
+
+  #about #team .section-title {
+    @apply text-center #{!important};
+  }
+
+  #about #team .members {
+    @apply flex-col items-center gap-8 #{!important};
+  }
+
+  #about .item {
+    @apply w-full #{!important};
+  }
+
+  #about #values .section-title {
+    @apply text-[32px] text-center #{!important};
+  }
+
+  #about #values .cards {
+    @apply flex-col #{!important};
+  }
+}

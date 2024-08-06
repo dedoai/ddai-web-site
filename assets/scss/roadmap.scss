@@ -1,0 +1,149 @@
+#roadmap {
+  @apply py-[100px];
+}
+
+#roadmap .split {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#roadmap .first {
+  width: 600px;
+}
+
+#roadmap .first .title {
+  margin-bottom: 30px;
+}
+
+#roadmap .second .img-holder {
+  width: 670px;
+  height: 200px;
+}
+
+#roadmap .step-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#roadmap .quarter {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 50px;
+}
+
+#roadmap .label {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+  margin-right: 100px;
+}
+
+#roadmap .label h2 {
+  width: 100px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+#roadmap .label .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background-color: #6453E4;
+}
+
+#roadmap .label.done .icon {
+  background-image: url('/assets/images/icons/roadmap-icon-done.webp');
+  background-size: cover;
+  background-color: #FFFFFF;
+}
+
+#roadmap .label.current .icon {
+  background-image: url('/assets/images/icons/roadmap-icon-current.webp');
+  background-size: cover;
+  background-color: #171717;
+}
+
+#roadmap .steps-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#roadmap .steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
+}
+
+#roadmap .item {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px dashed #6453E4;
+}
+
+#roadmap .item img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#roadmap .item span {
+  font-weight: 500;
+  line-height: 20px;
+  color: #FFF;
+}
+
+#roadmap .last h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#roadmap .last p {
+  text-align: center;
+}
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  #roadmap {
+    @apply pt-[50px] #{!important};
+  }
+
+  #roadmap .split {
+    @apply flex-col-reverse gap-8 #{!important};
+  }
+
+  #roadmap .split .first {
+    @apply w-full #{!important};
+  }
+
+  #roadmap .split .first p {
+    @apply w-full #{!important};
+  }
+
+  #roadmap .step-list .quarter {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #roadmap .label {
+    @apply justify-start #{!important};
+  }
+}

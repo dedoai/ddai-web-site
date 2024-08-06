@@ -1,0 +1,266 @@
+// Do not change the order of BPs since they're used in the declaration's order
+
+#footer {
+  border-top: 1px solid #8881
+}
+
+#footer .container .intro-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+#footer .social-icons li {
+  margin-left: 20px;
+}
+
+#footer .social-icons li a {
+  border-radius: 1.25rem;
+  background: #FFF;
+  color: #171717;
+  height: 2rem;
+  width: 2rem;
+  font-size: 21px;
+}
+
+
+#footer .main-row {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+// Footer Form start
+
+#footer .newsletter {
+  width: 595px;
+  height: 160px;
+  margin-top: 53px;
+  margin-bottom: 70px;
+}
+
+#footer .newsletter h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#footer .newsletter p {
+  width: 580px;
+  margin-bottom: 20px;
+}
+
+#footer .newsletter .frm input {
+  width: 425px;
+  height: 40px;
+  margin-right: 20px;
+  padding: 4px 16px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background: #404040;
+  font-weight: 500;
+}
+
+#footer .newsletter .frm input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: left;
+  color: #EEEEEE;
+}
+
+#footer .newsletter .frm .btn-cta {
+  width: 114px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+  border: 2px solid #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+}
+
+// Footer form end
+#footer .main-row .footer-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+
+#footer .main-row h3 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19.36px;
+}
+
+#footer .main-row .menu-col {
+  padding: 26px 23px;
+}
+
+#footer .main-row .menu-col:first-child {
+  width: 180px;
+}
+
+#footer .main-row .menu-col:last-child {
+  width: 210px;
+  margin-left: 20px;
+}
+
+#footer .main-row .menu-col .nav-dropdown-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding-bottom: 0;
+}
+
+.footer-menu .nav-dropdown-item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+#footer .last-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .last-row .copyright p {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.52px;
+}
+
+#footer .last-row .nav-item {
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.52px;
+}
+
+#footer .last-row .nav-item:last-child {
+  border: none;
+}
+
+#footer .social-icons li a {
+  border-radius: 1.25rem;
+  background: #FFF;
+  color: #171717;
+  height: 2rem;
+  width: 2rem;
+}
+
+// FROM LG TO XL
+@media only screen and (max-width: 1279px) {
+
+  #footer {
+    @apply mt-0 #{!important};
+  }
+
+  #footer .intro-row div:last-of-type {
+    @apply w-fit #{!important};
+  }
+
+  #footer .main-row {
+    @apply w-full flex-col items-center #{!important};
+  }
+
+  #footer .main-row .newsletter {
+    @apply my-0 #{!important};
+  }
+
+  #footer .main-row .footer-menu {
+    @apply flex-row #{!important};
+  }
+
+  #footer .main-row .footer-menu div {
+    @apply m-0 #{!important};
+  }
+}
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  #footer {
+    @apply mt-0 pt-6 #{!important};
+  }
+
+  #footer .container {
+    @apply flex flex-col #{!important};
+  }
+
+  #footer .intro-row {
+    @apply flex-row order-2 border-t border-white/20 pt-[35px] mb-0 #{!important};
+  }
+
+  #footer .navbar-brand img {
+    @apply w-[100px] #{!important};
+  }
+
+  #footer .social-icons li {
+    @apply ml-[15px] #{!important};
+  }
+
+  #footer .social-icons li a {
+    @apply text-sm w-[20px] h-[20px] #{!important};
+  }
+
+  #footer .main-row {
+    @apply flex-col order-1 mb-0 #{!important};
+  }
+
+  #footer .main-row .newsletter {
+    @apply w-full h-auto mt-0 mb-[70px] #{!important};
+  }
+
+  #footer .main-row .newsletter p {
+    @apply w-full #{!important};
+  }
+
+  #footer .main-row .newsletter .frm input {
+    @apply w-full m-0 mb-4 #{!important};
+  }
+
+  #footer .main-row .newsletter .frm button {
+    @apply w-full #{!important};
+  }
+
+  #footer .footer-menu {
+    @apply w-full pt-0 items-start flex-wrap justify-center #{!important};
+  }
+
+  #footer .main-row .footer-menu {
+    @apply flex-row #{!important};
+  }
+
+  #footer .main-row .menu-col:first-child {
+    @apply w-2/5 #{!important};
+  }
+
+  #footer .main-row .menu-col:last-child {
+    @apply ml-0 w-3/5 #{!important};
+  }
+
+  #footer .footer-menu p {
+    @apply text-nowrap #{!important};
+  }
+
+  #footer .last-row {
+    @apply flex-col text-center items-center order-3 border-t-0 pt-0 #{!important};
+  }
+
+  #footer .last-row .copyright p {
+    @apply text-center text-balance #{!important};
+  }
+}

@@ -11,11 +11,11 @@ p1: "Whether you're curious about our technology, interested in partnering with 
 subt: Get in
 spanSubtitle: Touch.
 p2: "To make it easier for you to get in touch, please fill out the form below with your details and your inquiry. Our team will get back to you as soon as possible."
-cover: "/assets/images/map-placeholder.png"
+cover: "/assets/images/static-map.png"
 picker_img: "/assets/images/map-picker.png"
 
-alt_cover: "/assets/images/contacts-cover.webp"
-hide_map: true
+alt_cover: "/assets/images/static-map.png"
+hide_map: false
 
 form:
   items:
@@ -58,9 +58,7 @@ form:
   
 map_title: "Our Offices"
 map_text: "If you prefer, you can also contact us directly at our office:"
-map_l1: "Headquarters <span>[Address] [City, Country]</span>"
-map_l2: "Phone: <span>[Phone Number]</span>"
-map_l3: "Email: <span>[General Contact Email]</span>"
+map_l1: "HTLC Consulting FZC LLC"
  
 ---
 {{< wrap >}}
