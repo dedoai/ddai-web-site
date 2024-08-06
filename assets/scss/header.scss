@@ -1,0 +1,49 @@
+// Do not change the order of BPs since they're used in the declaration's order
+
+// BEYOND XL 
+@media only screen and (min-width: 1280px) {
+
+  .navbar.container {
+    max-width: 100%;
+    padding: 0 30px;
+    justify-content: left;
+  }
+
+  #nav-menu {
+    margin-left: 150px;
+  }
+
+  #nav-menu .nav-link svg {
+    margin-left: 10px;
+  }
+
+  #nav-menu .nav-dropdown-list {
+    transition: all 0.2s ease-out;
+    min-width: 220px;
+    background-color: #262626;
+  }
+
+  #nav-menu .nav-dropdown-list .menu-ico {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  #nav-menu .nav-dropdown-item {
+    margin-bottom: 20px;
+    opacity: 70%;
+  }
+
+  #nav-menu .nav-dropdown-item:last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  #nav-menu .nav-dropdown-item:hover {
+    opacity: 100%;
+  }
+
+  #nav-menu .nav-dropdown-item:hover a {
+    color: #FFF;
+  }
+}
