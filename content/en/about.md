@@ -17,18 +17,18 @@ team:
  title: Our
  spanTitle: Team.
  members:
- - name: Luca Viviani
+ - name: "/assets/images/about/cfo.svg"
    descr: CFO
-   img: "/assets/images/about/luca.webp"
- - name: Marco Visibelli
+   img: "/assets/images/about/cfo.webp"
+ - name: "/assets/images/about/ceo.svg"
    descr: CEO
-   img: "/assets/images/about/marco.webp"
- - name: Ivan Di Lelio
+   img: "/assets/images/about/ceo.webp"
+ - name: "/assets/images/about/cto.svg"
    descr: CTO
-   img: "/assets/images/about/ivan.webp"
- - name: Emanuele Costa
+   img: "/assets/images/about/cto.webp"
+ - name: "/assets/images/about/cds.svg"
    descr: CDS
-   img: "/assets/images/about/emanuele.webp"
+   img: "/assets/images/about/cds.webp"
  
 values:
  title: Our 
