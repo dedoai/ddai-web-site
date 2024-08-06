@@ -1,5 +1,6 @@
 @import './about.scss';
 @import './contacts.scss';
+@import './documents.scss';
 @import './footer.scss';
 @import './header.scss';
 @import './home.scss';
@@ -1892,73 +1893,6 @@ section.intro {
 
 //------------------------------------------------------------------------------
 //--- DOCUMENTS START ---
-
-#_documents .sect {
-  margin-bottom: 50px;
-}
-
-#_documents .section-title {
-  margin-bottom: 60px;
-}
-
-#documents {
-  @apply py-[100px];
-}
-
-#_documents h1,
-#_documents h2 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  margin-bottom: 24px;
-}
-
-#_documents .second {
-  display: flex;
-  height: 388px;
-}
-
-#_documents .second .text {
-  width: 660px;
-  background: linear-gradient(100deg, #2C2C2C 40%, #212121 100%);
-  border-radius: 24px 0 0 24px;
-  padding: 50px;
-  border: 1px solid #BDBDBDB2;
-}
-
-#_documents .second h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  margin-bottom: 30px;
-}
-
-#_documents .second p {
-  width: 540px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #FFFFFF;
-  margin-bottom: 50px;
-}
-
-#_documents .second .btn-cta {
-  padding: 21px 40px;
-  border-radius: 8px;
-  border: 2px solid #FFFFFF;
-  background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
-  font-weight: 700;
-}
-
-#_documents .second .cover {
-  width: 660px;
-  background-size: cover;
-  border-radius: 0 24px 24px 0;
-}
-
-#_documents .fourth a {
-  color: #0094FF;
-}
 
 //--- DOCUMENTS END ---
 
