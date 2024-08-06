@@ -1,5 +1,5 @@
 #about {
-  @apply py-[100px];
+  @apply py-[50px];
 }
 
 #about .sect {
@@ -19,75 +19,52 @@
 
 #about #team .members {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-#about #team .item {
-  width: 280px;
-  height: 416px;
+#about .members .item .member-icon {
+  background-color: #FFF;
+  color: #171717;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+}
+
+#about .item {
+  padding: 23px 27px;
+  border-radius: 24px;
+  border: solid 2px #9A9A9A80;
+  display: flex;
   position: relative;
-  padding: 12px 16px 12px 16px;
-  border-radius: 8px;
-  background-position-x: center;
-}
-
-
-#about #team .item .txt-hldr {
-  width: 240px;
-  height: 76px;
-  position: absolute;
-  bottom: 20px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 1px solid #FFF;
-  background: #1E1E1E80;
+  align-items: center;
   justify-content: space-between;
+  background: linear-gradient(90deg, #17171790 0%, #17171790 100%),
+    url('/assets/images/home/card-gradient-2.png') center/cover no-repeat;
+  flex-grow: 1;
+  gap: 1rem;
 }
 
-#about #team .item {
-  width: 280px;
-  height: 340px;
-  position: relative;
-  padding: 12px 16px 12px 16px;
-  border-radius: 8px;
-  background-position: cover;
+#about .item:last-of-type {
+  flex-grow: 0;
 }
 
-#about #team .item .txt-hldr {
-  width: 240px;
-  height: 76px;
-  position: absolute;
-  bottom: 20px;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: 1px solid #FFF;
-  background: #1E1E1E;
-  justify: space-between;
-}
-
-#about #team .item .txt-hldr.txt-hldr h3 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-#about #team .item .txt-hldr.txt-hldr p {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 17px;
+#about .item:nth-of-type(odd) {
+  background: linear-gradient(90deg, #17171790 0%, #17171790 100%),
+    url('/assets/images/home/card-gradient.png') center/cover no-repeat;
 }
 
 #about #values .cards {
   display: flex;
-  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 #about #values .item {
   width: 260px;
   height: 200px;
-  margin-bottom: 100px;
 }
 
 #about #values .item h3 {
@@ -106,4 +83,32 @@
   width: 50px;
   height: 50px;
   margin-bottom: 15px;
+}
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  #about .section-title {
+    @apply text-2xl #{!important};
+  }
+
+  #about #team .section-title {
+    @apply text-center #{!important};
+  }
+
+  #about #team .members {
+    @apply flex-col items-center gap-8 #{!important};
+  }
+
+  #about .item {
+    @apply w-full #{!important};
+  }
+
+  #about #values .section-title {
+    @apply text-[32px] text-center #{!important};
+  }
+
+  #about #values .cards {
+    @apply flex-col #{!important};
+  }
 }
