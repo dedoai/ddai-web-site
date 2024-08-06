@@ -40,8 +40,8 @@
 #roadmap .label {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
-  margin-right: 50px;
+  margin-top: 6px;
+  margin-right: 100px;
 }
 
 #roadmap .label h2 {
@@ -58,7 +58,6 @@
   border-radius: 10px;
   margin-right: 10px;
   background-color: #6453E4;
-  // 866EFF
 }
 
 #roadmap .label.done .icon {
@@ -73,19 +72,27 @@
   background-color: #171717;
 }
 
+#roadmap .steps-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 #roadmap .steps {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
 }
 
 #roadmap .item {
   display: flex;
   align-items: center;
-  height: 50px;
+  min-height: 50px;
   padding: 15px;
   border-radius: 14px;
   border: 1px dashed #6453E4;
-  margin: 10px;
 }
 
 #roadmap .item img {
@@ -111,4 +118,32 @@
 
 #roadmap .last p {
   text-align: center;
+}
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  #roadmap {
+    @apply pt-[50px] #{!important};
+  }
+
+  #roadmap .split {
+    @apply flex-col-reverse gap-8 #{!important};
+  }
+
+  #roadmap .split .first {
+    @apply w-full #{!important};
+  }
+
+  #roadmap .split .first p {
+    @apply w-full #{!important};
+  }
+
+  #roadmap .step-list .quarter {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #roadmap .label {
+    @apply justify-start #{!important};
+  }
 }
