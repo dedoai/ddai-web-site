@@ -18,6 +18,7 @@ alt_cover: "/assets/images/contacts-cover.webp"
 hide_map: true
 
 form:
+  action: https://api.dev.dedoai.org/contactmail
   items:
   - name: "name"
     type: "text"
@@ -53,7 +54,6 @@ form:
     icon: "/assets/images/icons/contacts-icon-1.webp"
     placeholder: "Write your message here"
 
-  action: "#"
   submit_text: "Send Message"
   
 map_title: "Our Offices"
