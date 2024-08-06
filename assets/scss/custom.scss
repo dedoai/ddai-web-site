@@ -58,8 +58,47 @@ option:hover {
 
 // THEME ######################################################################
 
-// Top Right Menu
+// New header
 
+   .header {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+   :is(.dark .header) {
+      background: none;
+    }
+    
+   .navbar.container {
+      position: absolute;      
+      top: 24px;
+      left: 0; 
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto; 
+
+      max-width: unset;
+      width: 775px;
+      height:80px;
+
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      padding: 21px;
+      border-radius: 24px;
+      background: #171717CC;
+      box-shadow: 0px 4px 4px 0px #0000001A;
+   }
+   
+   
+   .navbar .nav-menu{
+       order: 3;
+   }
+
+// end New header
+
+
+// Top Right Menu - not used at the moment - 
 .tr-menu {
   display: flex;
   justify-content: space-between;
@@ -107,6 +146,8 @@ option:hover {
   position: relative;
   background-size: cover;
 }
+// END Top Right Menu
+
 
 h1.section-title,
 .page-title h1 {
