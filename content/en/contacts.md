@@ -38,12 +38,16 @@ form:
   - name: "subject"
     type: "select"
     options:
-     - label: Option 1
-       value: 1
-     - label: Option 2
-       value: 2
-     - label: Option 3
-       value: 3
+     - label: "General Inquiry"
+       value: "general_inq"
+     - label: "Partnership Opportunities"
+       value: "partnership"
+     - label: "Technical Support"
+       value: "support"
+     - label: "Media & Press"
+       value: "media_press"
+     - label: "Other"
+       value: "other"
     label: "Subject"
     icon: "/assets/images/icons/contacts-icon-1.webp"
     placeholder: "Select an option"
