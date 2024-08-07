@@ -90,10 +90,49 @@ option:hover {
       box-shadow: 0px 4px 4px 0px #0000001A;
    }
    
-   
-   .navbar .nav-menu{
-       order: 3;
+   .navbar #nav-menu:before {
+      content: '';
+      display: block;
+      height: 30px;
+      width: 1px;
+      background-color: #E5E5E5;
+      opacity: 0.7;
+      margin: 25px 15px;
    }
+   
+   .navbar #nav-menu{
+       @apply lg:order-3 #{!important};
+   }
+   
+   .navbar #nav-menu .nav-item{
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+   }
+   
+   .navbar #nav-menu .nav-link {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.36px;
+   }
+   
+   .navbar #nav-menu .nav-item:last-child{
+      margin-right: 0;
+   }
+   
+   .navbar #nav-menu .nav-item:last-child .nav-link{
+      padding: 9px 27px;
+      border: 2px solid #FFFFFF;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+      transition: all 1s ease-out;
+   }
+   
+   .navbar #nav-menu .nav-item:last-child .nav-link:hover{
+      color: #FFF;
+      background: linear-gradient(90deg, #AA55DD 0%, #AA55DD 100%);
+   }
+
 
 // end New header
 
@@ -146,6 +185,7 @@ option:hover {
   position: relative;
   background-size: cover;
 }
+
 // END Top Right Menu
 
 

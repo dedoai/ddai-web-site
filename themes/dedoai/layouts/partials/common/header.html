@@ -71,6 +71,7 @@
       </li>
       {{ else }}
       {{ if ne .URL "/" }}
+      {{ end }}
       <li class="nav-item">
         <a class="nav-link {{- if $active }} active{{- end -}}" {{ if findRE `^http` .URL }} target="_blank"
           rel="noopener" {{ end }} href="{{- if findRE `^#` .URL -}}
@@ -81,7 +82,6 @@
                         {{- .URL | relLangURL -}}
                       {{- end -}}">{{ .Name }}</a>
       </li>
-      {{ end }}
       {{ end }}
       {{ end }}
       {{ end }}
