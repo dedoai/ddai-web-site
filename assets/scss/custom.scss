@@ -747,19 +747,20 @@ section.intro {
 }
 
 #info .card {
-  width: 340px;
-  height: 280px;
-  padding: 50px;
+  width: 390px;
+  height: 300px;
+  padding: 30px;
   border-radius: 24px;
   background: url('/assets/images/home/card-gradient-2.png') no-repeat center/cover;
   border: 2px solid #9A9A9A;
   box-shadow: 0px 8px 8px 0px #0000001A;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#info .card:nth-child(1),
-#info .card:nth-child(3),
-#info .card:nth-child(5) {
+#info .card:nth-of-type(odd) {
   background: url('/assets/images/home/card-gradient.png') no-repeat center/cover;
 }
 
@@ -779,7 +780,6 @@ section.intro {
 }
 
 #_home #info .card p {
-  width: 240px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -788,13 +788,12 @@ section.intro {
 }
 
 #_home #info .card a {
-  position: absolute;
-  left: 50px;
   bottom: 41px;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
   color: #866EFF;
+  backdrop-filter: blur(0);
 }
 
 

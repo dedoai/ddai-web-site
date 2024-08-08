@@ -2,7 +2,10 @@
 <div class="container">
   <div class="pnls_hldr">
     <div class="lft-pnl">
-      <h2 class="section-title">{{.title | safeHTML }}</h2>
+      <h2 class="section-title">
+        {{.title | safeHTML }}
+        <span class="span-title">{{.spanTitle}}</span>
+      </h2>
       <p>{{.text}}</p>
       <a class="btn btn-cta" href="{{.cta_link}}">{{.cta_txt}}</a>
     </div>
