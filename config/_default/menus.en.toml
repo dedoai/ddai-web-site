@@ -21,7 +21,7 @@ url = "/documents/"
 weight = 4
 
 [[main]]
-name = "Contact us"
+name = "Contact US"
 url = "/contacts/"
 weight = 5
 

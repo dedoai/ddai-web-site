@@ -58,56 +58,6 @@ option:hover {
 
 // THEME ######################################################################
 
-// Top Right Menu
-
-.tr-menu {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  margin-left: auto;
-}
-
-.tr-menu a {
-  font-weight: 700;
-}
-
-.tr-menu a:first-child {
-  margin-right: 35px;
-}
-
-.tr-menu select,
-.tr-menu select:focus {
-  border: none;
-  font-weight: 700;
-  --tw-ring-color: #171717;
-}
-
-.tr-menu option {
-  --tw-ring-color: #866EFF;
-}
-
-.tr-menu .btn-cta {
-  line-height: 19px;
-}
-
-.ico-marketplace {
-  top: 3px;
-  background: url('/assets/images/icons/marketplace-icon.webp');
-}
-
-.ico-globe {
-  margin-left: 40px;
-  background: url('/assets/images/icons/globe-icon.webp');
-}
-
-.ico {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  position: relative;
-  background-size: cover;
-}
-
 h1.section-title,
 .page-title h1 {
   font-size: 48px;

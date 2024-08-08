@@ -18,6 +18,7 @@ alt_cover: "/assets/images/static-map.png"
 hide_map: false
 
 form:
+  action: https://api.dev.dedoai.org/contactmail
   items:
   - name: "name"
     type: "text"
@@ -37,12 +38,16 @@ form:
   - name: "subject"
     type: "select"
     options:
-     - label: Option 1
-       value: 1
-     - label: Option 2
-       value: 2
-     - label: Option 3
-       value: 3
+     - label: "General Inquiry"
+       value: "general_inq"
+     - label: "Partnership Opportunities"
+       value: "partnership"
+     - label: "Technical Support"
+       value: "support"
+     - label: "Media & Press"
+       value: "media_press"
+     - label: "Other"
+       value: "other"
     label: "Subject"
     icon: "/assets/images/icons/contacts-icon-1.webp"
     placeholder: "Select an option"
@@ -53,7 +58,6 @@ form:
     icon: "/assets/images/icons/contacts-icon-1.webp"
     placeholder: "Write your message here"
 
-  action: "#"
   submit_text: "Send Message"
   
 map_title: "Our Offices"
