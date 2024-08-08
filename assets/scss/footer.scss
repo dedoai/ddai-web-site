@@ -11,17 +11,10 @@
   margin-bottom: 20px;
 }
 
-#footer .social-icons li {
-  margin-left: 20px;
-}
-
-#footer .social-icons li a {
-  border-radius: 1.25rem;
-  background: #FFF;
-  color: #171717;
-  height: 2rem;
-  width: 2rem;
-  font-size: 21px;
+#footer .social-icons li a{
+  height: 30px;
+  width: 30px;
+  background: #171717;
 }
 
 
@@ -151,14 +144,6 @@
 
 #footer .last-row .nav-item:last-child {
   border: none;
-}
-
-#footer .social-icons li a {
-  border-radius: 1.25rem;
-  background: #FFF;
-  color: #171717;
-  height: 2rem;
-  width: 2rem;
 }
 
 // FROM LG TO XL
