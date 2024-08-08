@@ -7,7 +7,6 @@
       <span class="span-title">{{.spanTitle}}</span>
     </h1>
     <p>{{.text}}</p>
-    <a class="btn btn-cta" href="{{.cta_link}}">{{.cta_txt}}</a>
   </div>
   {{end}}
 
@@ -19,11 +18,16 @@
     </h2>
     <div class="members">
       {{range .members}}
-      <div class="item" style="background:url('{{.img}}'); background-size: cover; background-position-x: center;">
+      <div class="item">
         <div class="txt-hldr">
-          <h3>{{.name}}</h3>
+          <img src="{{.name}}" style="margin-bottom: 10px; height: 20px; " />
           <p>{{.descr}}</p>
         </div>
+        {{if .linkedin}}
+        <a class="member-icon" target="_blank" aria-label="linkedin" rel="nofollow noopener" href="{{.linkedin}}">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        {{end}}
       </div>
       {{end}}
     </div>

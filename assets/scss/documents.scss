@@ -1,0 +1,135 @@
+#_documents .sect {
+  margin-bottom: 50px;
+}
+
+#_documents .section-title {
+  margin-bottom: 60px;
+}
+
+#documents {
+  @apply pt-[150px] pb-1;
+}
+
+#_documents h1,
+#_documents h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+#_documents .second {
+  display: flex;
+  height: 388px;
+}
+
+#_documents .second .text {
+  width: 50%;
+  background: linear-gradient(90deg, #17171799 0%, #17171799 100%), url('/assets/images/home/card-gradient.png') no-repeat center/cover;
+  border-radius: 24px 0 0 24px;
+  padding: 50px;
+  border: 1px solid #BDBDBDB2;
+}
+
+#_documents .second h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+#_documents .second p {
+  width: 540px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 2rem;
+  color: #FFFFFF;
+}
+
+#_documents .second .btn-cta {
+  padding: 21px 40px;
+  border-radius: 8px;
+  border: 2px solid #FFFFFF;
+  background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+  font-weight: 700;
+}
+
+#_documents .second .cover {
+  width: 50%;
+  background-size: cover;
+  border-radius: 0 24px 24px 0;
+}
+
+#_documents .fourth a {
+  color: #0094FF;
+}
+
+// FROM LG TO XL
+@media only screen and (max-width: 1279px) {
+
+  #documents .second .cover,
+  #documents .second .text {
+    @apply w-1/2 #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full mb-6 #{!important};
+  }
+}
+
+// FROM MD TO LG
+@media only screen and (max-width: 1023px) {
+
+  #documents .second {
+    @apply flex-nowrap h-auto #{!important};
+  }
+
+  #documents .second .text {
+    @apply w-1/2 h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply w-1/2 bg-center #{!important};
+  }
+
+  #documents .second .text p {
+    @apply w-full #{!important};
+  }
+}
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  #documents .second .text,
+  #documents .second .cover {
+    @apply w-full #{!important};
+  }
+
+  #documents .second {
+    @apply flex-col items-center mx-0 w-full h-auto #{!important};
+  }
+
+  #documents .second .cover {
+    @apply h-[300px] w-full rounded-t-none rounded-b-3xl #{!important};
+  }
+
+  #documents .second .text {
+    @apply rounded-b-none rounded-t-3xl w-full p-6 h-[320px] #{!important};
+  }
+
+  #documents .second .text h2 {
+    @apply text-2xl mb-4 #{!important};
+  }
+
+  #documents .second .text p {
+    @apply text-base mb-10 #{!important};
+  }
+
+  #documents .second a {
+    @apply p-[17px] w-full #{!important};
+  }
+
+  #documents .third h2,
+  #documents .fourth h2 {
+    @apply text-2xl mb-6 #{!important};
+  }
+}

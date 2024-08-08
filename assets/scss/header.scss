@@ -1,0 +1,173 @@
+// Do not change the order of BPs since they're used in the declaration's order
+
+// BEYOND XL 
+@media only screen and (min-width: 1280px) {
+
+
+}
+
+// BEYOND MD
+@media only screen and (min-width: 1024px) {
+
+   // New Version
+   .header {
+      @apply py-0 #{!important};
+   }
+       
+   .navbar.container {
+      position: absolute;      
+      top: 24px;
+      left: 0; 
+      right: 0; 
+      margin-left: auto; 
+      margin-right: auto; 
+
+      max-width: unset;
+      width: 775px;
+      height:80px;
+
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      padding: 21px;
+      border-radius: 24px;
+      background: #171717CC;
+      box-shadow: 0px 4px 4px 0px #0000001A;
+   }
+   
+   .navbar #nav-menu:before {
+      content: '';
+      display: block;
+      height: 30px;
+      width: 1px;
+      background-color: #E5E5E5;
+      opacity: 0.7;
+      margin: 25px 15px;
+   }
+   
+   .navbar #nav-menu{
+       @apply lg:order-3 #{!important};
+   }
+   
+   .navbar #nav-menu .nav-item{
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+   }
+   
+   .navbar #nav-menu .nav-link {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.36px;
+   }
+   
+   .navbar #nav-menu .nav-item:last-child{
+      margin-right: 0;
+   }
+   
+   .navbar #nav-menu .nav-item:last-child .nav-link{
+      padding: 9px 27px;
+      border: 2px solid #FFFFFF;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+      transition: all 1s ease-out;
+   }
+   
+   .navbar #nav-menu .nav-item:last-child .nav-link:hover{
+      color: #FFF;
+      background: linear-gradient(90deg, #AA55DD 0%, #AA55DD 100%);
+   }
+}
+
+// UNDER MD
+@media only screen and (max-width: 1023px) {
+
+   .header {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+   }
+   
+   .navbar.container {
+      max-width: 100%;
+   }
+
+   .navbar .navbar-brand .img {
+      height: 30px;
+      width: auto;
+   }
+
+   .navbar #nav-menu {
+      position: absolute;
+      top: 47px;
+      left:0;
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: #171717;
+      padding-bottom: 0;
+   }
+   
+   .navbar .nav-item {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      margin: 75px 30px;
+   }
+   
+   .navbar .nav-item:first-item{
+      margin-top: 50px;
+   }
+   
+   .navbar .nav-item:last-item{
+      margin-bottom: 50px;
+   }
+   
+   .navbar .nav-item a {
+      text-align: left;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24.2px;
+   }
+   
+   .navbar .nav-item  a:before{
+      content: '';
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 8px;
+      margin-right: 10px;
+      background-size: cover;
+   }
+   
+   .navbar .nav-item:nth-child(1)  a:before{
+      background-image: url('/assets/images/menu/mobile/mobile-ico-home.png');
+   }
+   
+   .navbar .nav-item:nth-child(2)  a:before{
+      background-image: url('/assets/images/menu/mobile/mobile-ico-about.png');
+   }
+   
+   .navbar .nav-item:nth-child(3)  a:before{
+      background-image: url('/assets/images/menu/mobile/mobile-ico-roadmap.png');
+   }
+   
+   .navbar .nav-item:nth-child(4)  a:before{
+      background-image: url('/assets/images/menu/mobile/mobile-ico-documents.png');
+   }
+   
+   .navbar .nav-item:last-child  a:before{
+      content: unset;
+   }
+   
+   .navbar .nav-item:last-child  a {
+      width:100%;
+      border-radius: 40px;
+      border: 2px;
+      background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
+      border: 2px solid #FFFFFF;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.36px;
+   }
+}
