@@ -73,7 +73,7 @@ url = "/#certifications"
 weight = 2
 
 [[footer]]
-parent = "Dedo Token"
+parent = "DEDO Token"
 name = "Copyright Certificate"
 url = "/#countdown"
 weight = 3
