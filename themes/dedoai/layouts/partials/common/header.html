@@ -59,9 +59,6 @@
                         {{- else -}}
                           {{- .URL | relLangURL -}}
                         {{- end -}}">
-              {{- with .Params.ico -}}
-              <img class="menu-ico" src="/assets/images/menu/menu-ico-{{.}}.webp" />
-              {{- end -}}
               {{ .Name }}
             </a>
           </li>
@@ -71,6 +68,7 @@
       </li>
       {{ else }}
       {{ if ne .URL "/" }}
+      {{ end }}
       <li class="nav-item">
         <a class="nav-link {{- if $active }} active{{- end -}}" {{ if findRE `^http` .URL }} target="_blank"
           rel="noopener" {{ end }} href="{{- if findRE `^#` .URL -}}
@@ -81,7 +79,6 @@
                         {{- .URL | relLangURL -}}
                       {{- end -}}">{{ .Name }}</a>
       </li>
-      {{ end }}
       {{ end }}
       {{ end }}
       {{ end }}
