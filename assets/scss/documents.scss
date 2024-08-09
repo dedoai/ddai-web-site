@@ -122,8 +122,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.5rem;
   gap: 1rem;
+}
+
+.flexor2 .btn-cta {
+  border-radius: 8px !important;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexor2 .pdf-viewer-pagination {
+  height: 30px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-viewer-controls .btn-cta {
+  border-radius: 8px !important;
 }
 
 .pdf-viewer-wrapper .pdf-viewer-controls .pdf-viewer-first-row h4 {

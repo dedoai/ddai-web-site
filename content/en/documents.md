@@ -10,6 +10,8 @@ t1: Explore
 t1SpanTitle: Our Vision.
 p1: Explore the core of our mission and technology. Access in-depth insights into how we're democratizing data with blockchain technology.
 pdfTitle: DedoAI Litepaper
+goToLabel: Go to slide
+goToPlaceholder: e.g. 32
 
 t2: Litepaper
 p2: Discover our mission, technology, and solutions with dedoAI. Our Litepaper offers a concise, comprehensive introduction, perfect for those new to dedoAI or blockchain technology.

@@ -23,23 +23,23 @@
           </div>
           <hr />
           <div class="flexor">
-            <span>Go to slide</span>
-            <input type="number" placeholder="e.g. 32">
+            <span>{{$_.goToLabel}}</span>
+            <input type="number" placeholder="{{$_.goToPlaceholder}}">
           </div>
         </div>
       </div>
       <div class="flexor2">
-        <div id="prev"
-          style="width: 50px; height: 30px; background: url('/assets/images/left-arrow.png') no-repeat center/cover">
-        </div>
+        <button id="prev" class="btn btn-cta">
+          <img src="/assets/images/left-arrow.svg" />
+        </button>
         <div class="pdf-viewer-pagination">
           <span id="currentPage2"></span>
           /
           <span id="totalPages2"></span>
         </div>
-        <div id="next"
-          style="width: 50px; height: 30px; background: url('/assets/images/right-arrow.png') no-repeat center/cover">
-        </div>
+        <button id="next" class="btn btn-cta">
+          <img src="/assets/images/right-arrow.svg" />
+        </button>
       </div>
       <a class="btn btn-cta" href="{{$_.cta_link}}" target="_blank">{{$_.cta_text}}</a>
     </div>
