@@ -1,3 +1,15 @@
+/* Chrome, Safari, Edge, Opera */
+#_documents input::-webkit-outer-spin-button,
+#_documents input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#_documents input[type=number] {
+  -moz-appearance: textfield;
+}
+
 #_documents .sect {
   margin-bottom: 50px;
 }

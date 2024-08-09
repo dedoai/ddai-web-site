@@ -24,7 +24,7 @@
           <hr />
           <div class="flexor">
             <span>{{$_.goToLabel}}</span>
-            <input type="number" placeholder="{{$_.goToPlaceholder}}">
+            <input type="number" id="page-selector" placeholder="{{$_.goToPlaceholder}}">
           </div>
         </div>
       </div>
@@ -44,13 +44,12 @@
       <a class="btn btn-cta" href="{{$_.cta_link}}" target="_blank">{{$_.cta_text}}</a>
     </div>
   </div>
-  <div class="sect second row">
-    <div class="text">
-      <h2>{{$_.t2}}</h2>
-      <p>{{$_.p2}}</p>
-      <a class="btn btn-cta" href="{{$_.cta_link}}" target="_blank">{{$_.cta_text}}</a>
-    </div>
-    <div class="cover" style="background-image:url('{{$_.cover}}');"></div>
+  <div class="sect third">
+    <h2>
+      {{$_.t2}}
+      <span class="span-title">{{$_.t2SpanTitle}}</span>
+    </h2>
+    <p>{{$_.p2}}</p>
   </div>
   <div class="sect third">
     <h2>
@@ -80,7 +79,7 @@
     pageNum = 1,
     pageRendering = false,
     pageNumPending = null,
-    scale = 1,
+    scale = 1.5,
     canvas = document.getElementById('litepaper-canvas'),
     ctx = canvas.getContext('2d');
 
@@ -124,11 +123,23 @@
     }
   }
 
+  document.getElementById('page-selector').addEventListener('blur', (e) => {
+    const { value: _value } = e.target;
+    const value = Number(_value);
+    if (value < 1 || value > pdfDoc.numPages) {
+      e.target.value = "";
+      return;
+    }
+    pageNum = value;
+    queueRenderPage(value);
+  });
+
   function onPrevPage() {
     if (pageNum <= 1) {
       return;
     }
     pageNum--;
+    document.getElementById('page-selector').value = "";
     queueRenderPage(pageNum);
   }
   document.getElementById('prev').addEventListener('click', onPrevPage);
@@ -138,6 +149,7 @@
       return;
     }
     pageNum++;
+    document.getElementById('page-selector').value = "";
     queueRenderPage(pageNum);
   }
   document.getElementById('next').addEventListener('click', onNextPage);
