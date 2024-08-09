@@ -70,7 +70,7 @@
       border: 2px solid #FFFFFF;
       border-radius: 12px;
       background: linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #AA55DD 100%);
-      transition: all 1s ease-out;
+      transition: all 0.3s ease-out;
    }
    
    .navbar #nav-menu .nav-item:last-child .nav-link:hover{
@@ -83,8 +83,14 @@
 @media only screen and (max-width: 1023px) {
 
    .header {
+      background: none !important;
       padding-top: 1rem !important;
       padding-bottom: 1rem !important;
+      transition: all 0.3s ease-out!important;
+   }
+   
+   .header:has(input#nav-toggle:checked) {
+      background-color: #171717!important;
    }
    
    .navbar.container {
