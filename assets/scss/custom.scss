@@ -182,7 +182,7 @@ section.intro {
 
 #consent-overlay label {
   display: block;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #consent-overlay .btn {
@@ -210,6 +210,28 @@ section.intro {
     bottom: 4px;
   }
 }
+
+@media only screen and (max-width: 420px) {
+  #consent-notice {
+    padding: 1rem 0.125rem;
+  }
+  
+  #consent-notice span {
+    margin-right: .5rem;
+    margin-left: .5rem;
+  }
+
+  #consent-notice button.btn {
+    margin-left: .125rem;
+  }
+  
+  #consent-notice button{
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+       
+}
+
 
 // PAGES #######################################################################
 //--- HOME START ---
