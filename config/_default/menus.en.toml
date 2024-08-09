@@ -72,6 +72,12 @@ name = "Copyright Certificate"
 url = "/#certifications"
 weight = 2
 
+[[footer]]
+parent = "DEDO Token"
+name = "Copyright Certificate"
+url = "/#countdown"
+weight = 3
+
 
 [[legal]]
 name = "Privacy Policy"
