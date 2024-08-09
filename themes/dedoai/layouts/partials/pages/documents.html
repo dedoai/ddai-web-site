@@ -1,5 +1,17 @@
 {{- $_ := .Page.Params -}}
 <div class="container">
+  <div class="pdf-viewer-wrapper">
+    <canvas id="litepaper-canvas"></canvas>
+    <div class="pdf-viewer-controls">
+      <button id="prev">Previous</button>
+      <div>
+        <span id="currentPage"></span>
+        /
+        <span id="totalPages"></span>
+      </div>
+      <button id="next">Next</button>
+    </div>
+  </div>
   <div class="sect section-title">
     <h1>
       {{$_.t1}}
@@ -30,3 +42,89 @@
     <p>{{$_.p4 | markdownify}}</p>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" type="module"></script>
+<script type="module">
+
+  const { pdfjsLib } = globalThis;
+
+  const pdfUrl = "/assets/media/Litepaper_dedoAI_V1.22.pdf";
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+  var pdfDoc = null,
+    pageNum = 1,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 1,
+    canvas = document.getElementById('litepaper-canvas'),
+    ctx = canvas.getContext('2d');
+
+  function renderPage(num) {
+    pageRendering = true;
+    // Using promise to fetch the page
+    pdfDoc
+      .getPage(num)
+      .then((page) => {
+        var viewport = page.getViewport({ scale });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        // Render PDF page into canvas context
+        var renderTask = page.render({
+          canvasContext: ctx,
+          viewport: viewport
+        });
+
+        // Wait for rendering to finish
+        renderTask.promise.then(function () {
+          pageRendering = false;
+          if (pageNumPending !== null) {
+            // New page rendering is pending
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+    // Update page counters
+    document.getElementById('currentPage').textContent = num;
+  }
+
+  function queueRenderPage(num) {
+    if (pageRendering) {
+      pageNumPending = num;
+    } else {
+      renderPage(num);
+    }
+  }
+
+  function onPrevPage() {
+    if (pageNum <= 1) {
+      return;
+    }
+    pageNum--;
+    queueRenderPage(pageNum);
+  }
+  document.getElementById('prev').addEventListener('click', onPrevPage);
+
+  function onNextPage() {
+    if (pageNum >= pdfDoc.numPages) {
+      return;
+    }
+    pageNum++;
+    queueRenderPage(pageNum);
+  }
+  document.getElementById('next').addEventListener('click', onNextPage);
+
+  pdfjsLib
+    .getDocument(pdfUrl)
+    .promise
+    .then((pdfDoc_) => {
+      pdfDoc = pdfDoc_;
+      if (pdfDoc) document.getElementById('totalPages').textContent = pdfDoc.numPages;
+
+      // Initial/first page rendering
+      renderPage(pageNum);
+    });
+
+</script>
