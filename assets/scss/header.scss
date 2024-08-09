@@ -31,8 +31,9 @@
       align-content: center;
       padding: 21px;
       border-radius: 24px;
-      background: #171717CC;
+      background: rgba(23, 23, 23, 0.7);
       box-shadow: 0px 4px 4px 0px #0000001A;
+      backdrop-filter: blur(6px);
    }
    
    .navbar #nav-menu:before {
