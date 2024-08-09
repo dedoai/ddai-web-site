@@ -9,8 +9,12 @@ noheader: true
 t1: Explore
 t1SpanTitle: Our Vision.
 p1: Explore the core of our mission and technology. Access in-depth insights into how we're democratizing data with blockchain technology.
+pdfTitle: DedoAI Litepaper
+goToLabel: Go to slide
+goToPlaceholder: e.g. 32
 
-t2: Litepaper
+t2: dedoAI
+t2SpanTitle: Litepaper.
 p2: Discover our mission, technology, and solutions with dedoAI. Our Litepaper offers a concise, comprehensive introduction, perfect for those new to dedoAI or blockchain technology.
 cover: "/assets/images/documents-cover.webp"
 cta_text: Download Litepaper
@@ -22,7 +26,7 @@ p3: Our journey is constantly evolving, and as we make strides in our mission, a
 
 t4: Need More
 t4Spantitle: Information?
-p4: "If you have specific questions or require further details, please do not hesitate to contact us at [info@dedoai.org](mailto:info@dedoai.org). We're here to provide you with the information you need to fully understand and engage with our project."
+p4: "If you have specific questions or require further details, please do not hesitate to contact us at [hello@dedoai.org](mailto:hello@dedoai.org). We're here to provide you with the information you need to fully understand and engage with our project."
 
 ---
 {{< wrap >}}

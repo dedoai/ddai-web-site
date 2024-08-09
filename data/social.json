@@ -2,28 +2,23 @@
   "main": [
     {
       "name": "linkedin",
-      "icon": "fab fa-linkedin",
-      "link": "https://www.linkedin.com/"
+      "link": "https://www.linkedin.com/company/dedoai_/"
     },
     {
       "name": "instagram",
-      "icon": "fab fa-instagram",
-      "link": "https://www.instagram.com/"
-    },
-    {
-      "name": "x",
-      "icon": "fab fa-x",
-      "link": "https://x.com/"
+      "link": "https://www.instagram.com/dedoai/"
     },
     {
       "name": "github",
-      "icon": "fab fa-github",
-      "link": "https://www.github.com/"
+      "link": "https://www.github.com/dedoai"
+    },
+    {
+      "name": "twitter",
+      "link": "https://x.com/dedoai"
     },
     {
       "name": "email",
-      "icon": "fa fa-envelope",
-      "link": "mailto:hello@dedoai.org"
+      "link": "mailto:info@dedoai.org"
     }
   ]
 }

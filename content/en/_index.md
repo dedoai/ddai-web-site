@@ -6,7 +6,6 @@ date: 2024-07-15T06:00:00.000Z
 draft: false
 
 hero:
-  bg_img: "/images/home/home-hero-bg-1.webp"
   fg_img_mesh: "/assets/images/home/mesh.png"
   fg_img_graphics: "/assets/images/home/graphics-desktop.svg"
   title: "Redefining Data Ownership for the AI Era"
