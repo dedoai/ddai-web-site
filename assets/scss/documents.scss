@@ -63,6 +63,23 @@
   color: #0094FF;
 }
 
+#documents .pdf-viewer-wrapper {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.pdf-viewer-wrapper .pdf-viewer-controls {
+  margin-top: 1rem;
+  width: inherit;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.pdf-viewer-wrapper #litepaper-canvas {
+  margin: 0 auto;
+}
+
 // FROM LG TO XL
 @media only screen and (max-width: 1279px) {
 
@@ -78,6 +95,10 @@
 
 // FROM MD TO LG
 @media only screen and (max-width: 1023px) {
+
+  #documents {
+    @apply pt-[50px] #{!important};
+  }
 
   #documents .second {
     @apply flex-nowrap h-auto #{!important};
@@ -131,5 +152,9 @@
   #documents .third h2,
   #documents .fourth h2 {
     @apply text-2xl mb-6 #{!important};
+  }
+
+  #documents #litepaper-canvas {
+    width: 100%;
   }
 }
