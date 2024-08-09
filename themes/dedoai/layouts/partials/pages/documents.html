@@ -1,23 +1,48 @@
 {{- $_ := .Page.Params -}}
 <div class="container">
-  <div class="pdf-viewer-wrapper">
-    <canvas id="litepaper-canvas"></canvas>
-    <div class="pdf-viewer-controls">
-      <button id="prev">Previous</button>
-      <div>
-        <span id="currentPage"></span>
-        /
-        <span id="totalPages"></span>
-      </div>
-      <button id="next">Next</button>
-    </div>
-  </div>
   <div class="sect section-title">
     <h1>
       {{$_.t1}}
       <span class="span-title">{{$_.t1SpanTitle}}</span>
     </h1>
     <p>{{$_.p1}}</p>
+  </div>
+  <div class="pdf-viewer-wrapper">
+    <canvas id="litepaper-canvas"></canvas>
+    <div class="pdf-viewer-controls">
+      <div class="pdf-viewer-pagination-wrapper">
+        <div class="pdf-viewer-first-row">
+          <div class="block-backdrop"></div>
+          <div class="flexor">
+            <h4>{{$_.pdfTitle}}</h4>
+            <div class="pdf-viewer-pagination">
+              <span id="currentPage"></span>
+              /
+              <span id="totalPages"></span>
+            </div>
+          </div>
+          <hr />
+          <div class="flexor">
+            <span>Go to slide</span>
+            <input type="number" placeholder="e.g. 32">
+          </div>
+        </div>
+      </div>
+      <div class="flexor2">
+        <div id="prev"
+          style="width: 50px; height: 30px; background: url('/assets/images/left-arrow.png') no-repeat center/cover">
+        </div>
+        <div class="pdf-viewer-pagination">
+          <span id="currentPage2"></span>
+          /
+          <span id="totalPages2"></span>
+        </div>
+        <div id="next"
+          style="width: 50px; height: 30px; background: url('/assets/images/right-arrow.png') no-repeat center/cover">
+        </div>
+      </div>
+      <a class="btn btn-cta" href="{{$_.cta_link}}" target="_blank">{{$_.cta_text}}</a>
+    </div>
   </div>
   <div class="sect second row">
     <div class="text">
@@ -88,6 +113,7 @@
 
     // Update page counters
     document.getElementById('currentPage').textContent = num;
+    document.getElementById('currentPage2').textContent = num;
   }
 
   function queueRenderPage(num) {
@@ -121,7 +147,11 @@
     .promise
     .then((pdfDoc_) => {
       pdfDoc = pdfDoc_;
-      if (pdfDoc) document.getElementById('totalPages').textContent = pdfDoc.numPages;
+      if (pdfDoc) {
+        const { numPages } = pdfDoc;
+        document.getElementById('totalPages').textContent = numPages;
+        document.getElementById('totalPages2').textContent = numPages;
+      }
 
       // Initial/first page rendering
       renderPage(pageNum);
