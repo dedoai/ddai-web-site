@@ -500,3 +500,12 @@
 
   // END INFO
 }
+
+// BELOW XS
+@media only screen and (max-width: 639px) {
+
+   #hero .img_hldr {
+    @apply top-[498px] #{!important};
+  }
+
+}
