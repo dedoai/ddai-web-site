@@ -9,7 +9,16 @@
                     <button class="btn btn-cta" type="submit">{{.btn_txt}}</button>
                 </form>
             </div>
-            <div id="nlrsp"></div>
+        </div>
+        <div id="form-overlay">
+           <div>
+              <div>{{.subscribe_advise | markdownify }}</div>
+              <div class="center">
+                 <button class="btn nl-deny">{{.deny_btn_txt}}</button>
+                 <button class="btn nl-accept">{{.accept_btn_txt}}</button>
+              </div>
+              <div id="nlrsp"></div>
+           </div>
         </div>
         <script  type="text/javascript" src="/js/newsletter.js"></script>
     {{end}}
