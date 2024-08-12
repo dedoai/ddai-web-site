@@ -87,5 +87,5 @@ weight = 1
 [[legal]]
 name = "Cookie Preferences"
 url = "#"
-class = "open-cookie"
+params = { class = "open-cookie" }
 weight = 2

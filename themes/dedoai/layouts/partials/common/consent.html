@@ -64,6 +64,7 @@
     }
     function acceptSomeConsentScripts(consentValue) {
         setConsentInputs(consentValue);
+        console.log('consentValue', consentValue);
         createCookie('consent-settings',consentValue,31);
         document.getElementById('consent-notice').style.display = 'none';
         document.getElementById('consent-overlay').classList.remove('active');
@@ -136,6 +137,10 @@
         if (!document.querySelector("#consent-overlay > div").contains(e.target)){
             this.classList.toggle('active');
         }
+    });
+    document.querySelector(".open-cookie").addEventListener("click",function(e) {
+       event.preventDefault();
+       document.getElementById('consent-overlay').classList.toggle('active');
     });
 </script>
 
