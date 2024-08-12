@@ -14,7 +14,7 @@
         {{$_.subt}}
         <span class="span-title">{{$_.spanSubtitle}}</span>
       </h2>
-      <p>{{$_.p2}}</p>
+      <p>{{$_.p2 | markdownify}}</p>
       <form id="ctcfrm" action="{{$_.form.action}}" method="POST">
         {{range $_.form.items}}
         <div class="item">
@@ -46,37 +46,40 @@
 
 </div>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('#ctcfrm').addEventListener('submit', function (event) {
+  document
+    .addEventListener('DOMContentLoaded', function () {
+      document
+        .querySelector('#ctcfrm')
+        .addEventListener('submit', function (e) {
 
-      event.preventDefault();
+          e.preventDefault();
 
-      var data = this;
+          var data = this;
 
-      let formData = new FormData(data);
+          let formData = new FormData(data);
 
-      const dataObject = Object.fromEntries(formData.entries());
+          const dataObject = Object.fromEntries(formData.entries());
 
-      const j_body = JSON.stringify(dataObject);
+          const j_body = JSON.stringify(dataObject);
 
-      fetch(data.getAttribute('action'), {
-        method: data.getAttribute('method'),
-        body: j_body
-      })
-        .then((response) => {
-          if (response.status === 200) {
-            return response.json();
-          } else {
-            throw new Error("Something went wrong on server!");
-          }
-        })
-        .then((response) => {
+          fetch(data.getAttribute('action'), {
+            method: data.getAttribute('method'),
+            body: j_body
+          })
+            .then((response) => {
+              if (response.status === 200) {
+                return response.json();
+              } else {
+                throw new Error("Something went wrong on server!");
+              }
+            })
+            .then((response) => {
 
-          let resp = JSON.parse(response.body);
-          let respbox = document.querySelector('#subresp');
-          respbox.innerHTML = '<span>' + resp.message + '</span>';
-          event.target.reset()
-        })
+              let resp = JSON.parse(response.body);
+              let respbox = document.getElementById('#subresp');
+              respbox.innerHTML = '<span>' + resp.message + '</span>';
+              e.target.reset()
+            })
+        });
     });
-  });
 </script>
