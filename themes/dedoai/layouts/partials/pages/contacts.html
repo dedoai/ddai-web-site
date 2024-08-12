@@ -53,14 +53,14 @@
         .addEventListener('submit', function (e) {
 
           e.preventDefault();
-
           var data = this;
-
           let formData = new FormData(data);
-
           const dataObject = Object.fromEntries(formData.entries());
-
           const j_body = JSON.stringify(dataObject);
+          
+          grecaptcha.enterprise.ready(async () => {
+            const token = await grecaptcha.enterprise.execute('6LcMCR0qAAAAAG-sYu0Ej4RVViuvhsMEwTqdLd4d', {action: 'LOGIN'});
+          });
 
           fetch(data.getAttribute('action'), {
             method: data.getAttribute('method'),
