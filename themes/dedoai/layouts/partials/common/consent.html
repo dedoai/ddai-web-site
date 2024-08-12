@@ -1,4 +1,9 @@
-<div id="consent-notice"><span>We would like to use <a class="manage-consent" href="#manage-consent">third party code</a> to improve the functionality of this website.</span><button class="btn manage-consent">Manage preferences</button><button class="btn deny-consent">Deny</button><button class="btn approve-consent">Allow</button></div>
+<div id="consent-notice">
+   <span>We would like to use <a class="manage-consent" href="#manage-consent">third party code</a> to improve the functionality of this website.</span>
+   <button class="btn manage-consent">Manage preferences</button>
+   <button class="btn deny-consent">Deny</button>
+   <button class="btn approve-consent">Allow</button>
+</div>
 <div id="consent-overlay">
     <div>
         {{ range $index, $item := .Site.Data.consent.items }}
