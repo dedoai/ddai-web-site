@@ -18,7 +18,7 @@ alt_cover: "/assets/images/static-map.png"
 hide_map: false
 
 form:
-  action: https://api.dev.dedoai.org/contact/mail
+  action: https://api.dedoai.org/contact/mail
   items:
   - name: "first_name"
     type: "text"
