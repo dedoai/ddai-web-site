@@ -1,21 +1,20 @@
 ---
 title: "dedoAI | Home"
-meta_title: "dedo AI | Decentralizing Data for a Better Tomorrow"
+meta_title: "dedo AI | Redefining Data Ownership for the AI Era"
 description: " secure platform for easily buying, selling, and trading data."
 date: 2024-07-15T06:00:00.000Z
 draft: false
 
 hero:
-  bg_img: "/images/home/home-hero-bg-1.webp"
   fg_img_mesh: "/assets/images/home/mesh.png"
   fg_img_graphics: "/assets/images/home/graphics-desktop.svg"
-  title: "Decentralizing Data for a Better Tomorrow"
+  title: "Redefining Data Ownership for the AI Era"
   sub_title: "A secure platform for easily buying, selling, and trading data."
-  text: "Transforming Data with Blockchain: <span>Secure, <br>Accessible, and Creator-Owned</spam>"
+  text: "<span>Secure, Decentralized</span> and <span>Transparent Data Exchange</span> for a <span>New</span> AI Economy Transforming Data with Blockchain: <span>Secure, <br>Accessible, and Creator-Owned</spam>"
   cta:
     enable: true
-    label: "Get Started Now"
-    link: "https://www.dedoai.org/contacts/"
+    label: "Read Litepaper"
+    link: "/documents"
 
 roles:
   title: "Exchange Data with DedoAI"
@@ -23,7 +22,7 @@ roles:
     tag: "Consumer"
     title: "Being a"
     spanTitle: "Consumer."
-    text: "Consumers can request datasets like images, videos, and etc. to train their AI systems, purchasing them with tokens."
+    text: "Consumer can access high-quality, unique datasets from images, videos and more,  tailored to every AI needs. Purchase data securely and transparently on our decentralized marketplace with dedoAI tokens."
     img: "/assets/images/home/consumer.svg"
     cta_1:
       text: Read the Litepaper
@@ -41,7 +40,7 @@ roles:
     tag: "Producer"
     title: "Being a"
     spanTitle: "Producer."
-    text: "Producers can sell their data in response to consumer requests, using tokens in our secure marketplace."
+    text: "Your Datasets are valuable – capitalize on it. Respond to market demands, set competitive prices, and earn DedoAI tokens. Our blockchain technology ensures secure transactions and fair compensation."
     img: "/assets/images/home/producer.svg"
     cta_1:
       text: Read the litepaper
@@ -61,23 +60,24 @@ certifications:
   spanTitle: "Certification."
   items:
   - icon: "/assets/images/home/cert-ico-1.webp"
-    title: "Digital Certification and Copyright Protection"
-    text: "DedoAI ensures copyright protection and regulatory compliance, crucial for companies and researchers using data for AI training. Your investments are safeguarded with our robust digital certification."
+    title: "Copyright Assurance and Compliance"
+    text: "Dedo AI provides robust digital certification to ensure copyright protection, safeguarding your investments and enabling safe data use for AI training."
   - icon: "/assets/images/home/cert-ico-2.webp"
-    title: "Transparent and Secure Transactions"
-    text: "Digital certificates include the dataset hash, purchase timestamp, and seller's digital signature, simplifying verification and enhancing transparency. This builds trust between buyers and sellers, ensuring a secure and compliant data exchange environment."
+    title: "Transparent Transactions You Can Trust"
+    text: "Each transaction on Dedo AI is secured with digital certificates and Blockchain that verify dataset integrity and authenticity, ensuring a trustworthy exchange environment."
   - icon: "/assets/images/home/cert-ico-3.webp"
-    title: "Commitment to Data Protection Laws"
-    text: "DedoAI adheres to data protection laws like GDPR and CCPA by incorporating compliance mechanisms into the platform. This commitment establishes DedoAI as a leader in the data ecosystem, emphasizing quality, transparency, and legality in every transaction."
+    title: "Upholding Data Protection Standards"
+    text: "Dedo AI integrates compliance mechanisms with data protection laws like GDPR and CCPA, setting a benchmark for quality, transparency, and legality in data transactions."
   
-  cta_text: "Read more"
-  cta_link: "#"
+  cta_text: "Read Litepaper"
+  cta_link: "/documents"
 
 countdown:
-  title: "Cryptocurrency is the value of dedoAI"
-  text: "DEDO is dedoAI's native cryptocurrency. It is used for marketplace operations, transactions, games or for selling and buying data."
-  cta_txt: "Read the Lite Paper"
-  cta_link: "/documents/"
+  title: "DEDOAI Token: Your Key to "
+  spanTitle: Data Monetization.
+  text: "Our token facilitates frictionless data transactions and rewards valuable contributions through our innovative \"Proof of Data\" mechanism, and empowers you to shape platform decisions."
+  cta_txt: "Read Litepaper"
+  cta_link: "/documents"
   cd_txt: "Listing Token Countdown"
   cd_date: [Days,Hours,Minutes,Seconds]
 
@@ -85,33 +85,33 @@ info:
   title: "Empowering Data "
   spanTitle: "Ownership"
   items:
-  - title: "Decentralization"
-    text: "Experience true data ownership and exchange trough our decentralized platform"
+  - title: "Decentralized"
+    text: "Leverage blockchain technology for a truly distributed data ecosystem. Our decentralized architecture ensures no single point of failure, enhancing data integrity and resilience against censorship."
     icon: "/assets/images/home/info-ico-1.webp"
     cta_txt: "Read more"
     cta_link: "#"
-  - title: "Marketplace"
-    text: "Experience true data ownership and exchange trough our decentralized platform"
+  - title: "dedoAI Marketplace"
+    text: "Our platform provides a robust marketplace where data consumers and producers can interact seamlessly. Buy and sell high-quality datasets securely, enhancing AI capabilities with diverse and reliable data sources."
     icon: "/assets/images/home/info-ico-2.webp"
     cta_txt: "Read more"
     cta_link: "#"
   - title: "Monetization"
-    text: "Unlock the true value of your data with our innovative monetization mechanisms."
+    text: "Dedo AI provides a robust framework for monetizing your data. Earn fair compensation and fully realize the value of your data contributions."
     icon: "/assets/images/home/info-ico-3.webp"
     cta_txt: "Read more"
     cta_link: "#"
   - title: "Data Staking"
-    text: 'Participate in our unique "Proof of Data" program to earn rewards for contributing data.'
+    text: "Maximize your earnings with our unique \"Proof of Data\" staking mechanism. Active data Producers enjoy enhanced rewards, incentivizing quality contributions to the ecosystem."
     icon: "/assets/images/home/info-ico-4.webp"
     cta_txt: "Read more"
     cta_link: "#"
   - title: "Security"
-    text: "Rest assured that your data is protected with state-of-the-art blockchain security."
+    text: "Advanced encryption and blockchain technology ensure the integrity and security of all data transactions."
     icon: "/assets/images/home/info-ico-5.webp"
     cta_txt: "Read more"
     cta_link: "#"
   - title: "Smart Contracts"
-    text: "Automate transactions and agreements with trust and transparency."
+    text: "Smart contracts automate and enforce agreements between data Consumer and Producer on DeDoAI, ensuring compliance, reducing fraud risk, and streamlining transactions."
     icon: "/assets/images/home/info-ico-6.webp"
     cta_txt: "Read more"
     cta_link: "#"

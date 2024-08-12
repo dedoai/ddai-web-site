@@ -1,5 +1,5 @@
 #contacts {
-  @apply pt-[50px] pb-[100px];
+  @apply pt-[150px] pb-[100px];
 }
 
 #contacts .section-title {
@@ -39,6 +39,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 510px;
+  margin: 0 auto;
 }
 
 #contacts .frm-hldr .item {

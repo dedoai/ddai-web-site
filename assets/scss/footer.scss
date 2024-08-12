@@ -11,17 +11,10 @@
   margin-bottom: 20px;
 }
 
-#footer .social-icons li {
-  margin-left: 20px;
-}
-
-#footer .social-icons li a {
-  border-radius: 1.25rem;
-  background: #FFF;
-  color: #171717;
-  height: 2rem;
-  width: 2rem;
-  font-size: 21px;
+#footer .social-icons li a{
+  height: 30px;
+  width: 30px;
+  background: #171717;
 }
 
 
@@ -122,10 +115,18 @@
   font-weight: 500;
   line-height: 19px;
   padding-bottom: 0;
+  color: #FFFFFFCC;
+  transition: all 0.3s ease-out;
 }
 
 .footer-menu .nav-dropdown-item:not(:last-child) {
   margin-bottom: 18px;
+}
+
+#footer .main-row .menu-col .nav-dropdown-link:hover{
+   color: #FFFFFFFF;
+   box-shadow: 0.5px 0.5px 1px 0px #0000001A;
+   box-shadow: -0.5px -0.5px 1px 0px #0000001A;
 }
 
 #footer .last-row {
@@ -151,14 +152,6 @@
 
 #footer .last-row .nav-item:last-child {
   border: none;
-}
-
-#footer .social-icons li a {
-  border-radius: 1.25rem;
-  background: #FFF;
-  color: #171717;
-  height: 2rem;
-  width: 2rem;
 }
 
 // FROM LG TO XL

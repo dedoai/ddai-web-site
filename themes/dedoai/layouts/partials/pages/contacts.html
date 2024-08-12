@@ -42,48 +42,41 @@
         <div id="subresp"></div>
       </form>
     </div>
-    {{with $_.hide_map }}
-    <div class="map-hldr" style="background-image: url('{{$_.alt_cover}}')"></div>
-    {{else}}
-    <div class="map-hldr" style="background-image: url('{{$_.cover}}')">
-      <img class="map-picker" src="{{$_.picker_img}}" alt="" />
-      <div class="map-info">
-        <h2>{{$_.map_title}}</h2>
-        <p>{{$_.map_text | safeHTML}}</p>
-        <p class="mb-0">{{$_.map_l1 | safeHTML}}</p>
-      </div>
-    </div>
-
-    {{end}}
   </div>
 
 </div>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#ctcfrm').addEventListener('submit', function (event) {
-        event.preventDefault();
-        var data = this;
-        let formData = new FormData(data);
-        const dataObject = Object.fromEntries(formData.entries());
-        const j_body = JSON.stringify(dataObject);
-        console.log('j_body',j_body);
-        fetch(data.getAttribute('action'), {
-          method: data.getAttribute('method'),
-          body:  j_body
+
+      event.preventDefault();
+
+      var data = this;
+
+      let formData = new FormData(data);
+
+      const dataObject = Object.fromEntries(formData.entries());
+
+      const j_body = JSON.stringify(dataObject);
+
+      fetch(data.getAttribute('action'), {
+        method: data.getAttribute('method'),
+        body: j_body
+      })
+        .then((response) => {
+          if (response.status === 200) {
+            return response.json();
+          } else {
+            throw new Error("Something went wrong on server!");
+          }
         })
         .then((response) => {
-            if (response.status === 200) {
-              return response.json();
-            } else {
-              throw new Error("Something went wrong on server!");
-            }
-          })
-          .then((response) => {
-              // sconsole.log( response );
-              let resp = JSON.parse(response.body);
-              let respbox = document.querySelector('#subresp');
-              respbox.innerHTML = '<span>'+resp.message+'</span>';
-          })
+
+          let resp = JSON.parse(response.body);
+          let respbox = document.querySelector('#subresp');
+          respbox.innerHTML = '<span>' + resp.message + '</span>';
+          event.target.reset()
+        })
     });
-});
+  });
 </script>

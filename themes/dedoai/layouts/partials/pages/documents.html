@@ -7,13 +7,49 @@
     </h1>
     <p>{{$_.p1}}</p>
   </div>
-  <div class="sect second row">
-    <div class="text">
-      <h2>{{$_.t2}}</h2>
-      <p>{{$_.p2}}</p>
+  <div class="pdf-viewer-wrapper">
+    <canvas id="litepaper-canvas"></canvas>
+    <div class="pdf-viewer-controls">
+      <div class="pdf-viewer-pagination-wrapper">
+        <div class="pdf-viewer-first-row">
+          <div class="block-backdrop"></div>
+          <div class="flexor">
+            <h4>{{$_.pdfTitle}}</h4>
+            <div class="pdf-viewer-pagination">
+              <span id="currentPage"></span>
+              /
+              <span id="totalPages"></span>
+            </div>
+          </div>
+          <hr />
+          <div class="flexor">
+            <span>{{$_.goToLabel}}</span>
+            <input type="number" id="page-selector" placeholder="{{$_.goToPlaceholder}}">
+          </div>
+        </div>
+      </div>
+      <div class="flexor2">
+        <button id="prev" class="btn btn-cta">
+          <img src="/assets/images/left-arrow.svg" />
+        </button>
+        <div class="pdf-viewer-pagination">
+          <span id="currentPage2"></span>
+          /
+          <span id="totalPages2"></span>
+        </div>
+        <button id="next" class="btn btn-cta">
+          <img src="/assets/images/right-arrow.svg" />
+        </button>
+      </div>
       <a class="btn btn-cta" href="{{$_.cta_link}}" target="_blank">{{$_.cta_text}}</a>
     </div>
-    <div class="cover" style="background-image:url('{{$_.cover}}');"></div>
+  </div>
+  <div class="sect third">
+    <h2>
+      {{$_.t2}}
+      <span class="span-title">{{$_.t2SpanTitle}}</span>
+    </h2>
+    <p>{{$_.p2}}</p>
   </div>
   <div class="sect third">
     <h2>
@@ -30,3 +66,107 @@
     <p>{{$_.p4 | markdownify}}</p>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" type="module"></script>
+<script type="module">
+
+  const { pdfjsLib } = globalThis;
+
+  const pdfUrl = "/assets/media/Litepaper_dedoAI_V1.22.pdf";
+
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+  var pdfDoc = null,
+    pageNum = 1,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 1.5,
+    canvas = document.getElementById('litepaper-canvas'),
+    ctx = canvas.getContext('2d');
+
+  function renderPage(num) {
+    pageRendering = true;
+    // Using promise to fetch the page
+    pdfDoc
+      .getPage(num)
+      .then((page) => {
+        var viewport = page.getViewport({ scale });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        // Render PDF page into canvas context
+        var renderTask = page.render({
+          canvasContext: ctx,
+          viewport: viewport
+        });
+
+        // Wait for rendering to finish
+        renderTask.promise.then(function () {
+          pageRendering = false;
+          if (pageNumPending !== null) {
+            // New page rendering is pending
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+    // Update page counters
+    document.getElementById('currentPage').textContent = num;
+    document.getElementById('currentPage2').textContent = num;
+  }
+
+  function queueRenderPage(num) {
+    if (pageRendering) {
+      pageNumPending = num;
+    } else {
+      renderPage(num);
+    }
+  }
+
+  document.getElementById('page-selector').addEventListener('blur', (e) => {
+    const { value: _value } = e.target;
+    const value = Number(_value);
+    if (value < 1 || value > pdfDoc.numPages) {
+      e.target.value = "";
+      return;
+    }
+    pageNum = value;
+    queueRenderPage(value);
+  });
+
+  function onPrevPage() {
+    if (pageNum <= 1) {
+      return;
+    }
+    pageNum--;
+    document.getElementById('page-selector').value = "";
+    queueRenderPage(pageNum);
+  }
+  document.getElementById('prev').addEventListener('click', onPrevPage);
+
+  function onNextPage() {
+    if (pageNum >= pdfDoc.numPages) {
+      return;
+    }
+    pageNum++;
+    document.getElementById('page-selector').value = "";
+    queueRenderPage(pageNum);
+  }
+  document.getElementById('next').addEventListener('click', onNextPage);
+
+  pdfjsLib
+    .getDocument(pdfUrl)
+    .promise
+    .then((pdfDoc_) => {
+      pdfDoc = pdfDoc_;
+      if (pdfDoc) {
+        const { numPages } = pdfDoc;
+        document.getElementById('totalPages').textContent = numPages;
+        document.getElementById('totalPages2').textContent = numPages;
+      }
+
+      // Initial/first page rendering
+      renderPage(pageNum);
+    });
+
+</script>

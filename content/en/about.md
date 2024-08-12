@@ -16,16 +16,16 @@ team:
  spanTitle: Team.
  members:
  - name: "/assets/images/about/ceo.svg"
-   descr: CEO
+   descr: Founder
    linkedin: "https://www.linkedin.com/in/marcovisibelli/"
  - name: "/assets/images/about/cfo.svg"
-   descr: CFO
+   descr: Founder
    linkedin: ""
  - name: "/assets/images/about/cto.svg"
-   descr: CTO
+   descr: Founder
    linkedin: "https://www.linkedin.com/in/ivan-di-lelio-49255526/"
  - name: "/assets/images/about/cds.svg"
-   descr: CDS
+   descr: Founder
    linkedin: ""
  - name: "/assets/images/about/head-dev.svg"
    descr: Head of Dev

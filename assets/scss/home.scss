@@ -70,7 +70,7 @@
   }
 
   #hero .txt_hldr {
-    @apply left-20 top-44 right-12 w-auto #{!important};
+    @apply left-20 top-44 right-12 w-[500px] #{!important};
   }
 
   #hero .title h1 {
@@ -160,9 +160,21 @@
 // FROM MD TO LG
 @media only screen and (max-width: 1023px) {
 
+  // FLOATING MENU ADJUST:
+  #_home {
+    margin-top: -4rem !important;
+  }
+
+
   // HERO
   #hero #hero1 {
     @apply h-[600px] #{!important};
+
+  }
+
+  #hero #hero1 #grd_hldr {
+    background: linear-gradient(180.29deg, #171717 2.64%, rgba(174, 85, 228, 0) 60.73%) !important;
+
   }
 
   #hero .txt_hldr {
@@ -298,11 +310,13 @@
 
   // HERO
   #hero #hero1 {
-    @apply relative h-[750px] #{!important};
+    // @apply relative h-[750px] #{!important};
+    @apply relative h-[812px] #{!important}; // floating menu adaptation
   }
 
   #hero .txt_hldr {
-    @apply left-6 top-8 right-6 w-auto #{!important};
+    // @apply left-6 top-8 right-6 w-auto #{!important};
+    @apply left-6 top-24 right-6 w-auto #{!important}; // floating menu adaptation
   }
 
   #hero .title h1 {
@@ -314,7 +328,8 @@
   }
 
   #hero .img_hldr {
-    @apply top-[270px] w-full max-w-[450px] left-1/2 -translate-x-1/2 #{!important};
+    // @apply top-[270px] w-full max-w-[450px] left-1/2 -translate-x-1/2 #{!important};
+    @apply top-[334px] w-full max-w-[450px] left-1/2 -translate-x-1/2 #{!important}; // floating menu adaptation
   }
 
   #hero .img_hldr img {
@@ -484,4 +499,12 @@
   }
 
   // END INFO
+}
+
+// BELOW XS
+@media only screen and (max-width: 639px) {
+
+  #hero .img_hldr {
+    @apply top-[310px] #{!important};
+  }
 }
