@@ -18,14 +18,14 @@ alt_cover: "/assets/images/static-map.png"
 hide_map: false
 
 form:
-  action: https://api.dev.dedoai.org/contactmail
+  action: https://api.dedoai.org/contact/mail
   items:
-  - name: "name"
+  - name: "first_name"
     type: "text"
     label: "First name"
     icon: "/assets/images/icons/contacts-form-ico-1.webp"
     placeholder: "Insert your Name"
-  - name: "surname"
+  - name: "last_name"
     type: "text"
     label: "Last name"
     icon: "/assets/images/icons/contacts-form-ico-1.webp"
