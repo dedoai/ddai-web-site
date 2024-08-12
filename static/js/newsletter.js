@@ -37,3 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+document.getElementById("form-overlay").addEventListener("click",function(e) {
+    if (!document.querySelector("#form-overlay > div").contains(e.target)){
+        this.classList.toggle('active');
+    }
+});
