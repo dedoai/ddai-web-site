@@ -4,11 +4,13 @@
             <h2 class="section-title">{{.title}}</h2>
             <p>{{.text}}</p>
             <div class="frm">
-                <form action="{{.action}}">
-                    <input type="email" placeholder="{{.placeholder}}">
+                <form id="nlfrm" action="{{.action}}" method="POST">
+                    <input type="email" name="email" placeholder="{{.placeholder}}" autocomplete required>
                     <button class="btn btn-cta" type="submit">{{.btn_txt}}</button>
                 </form>
             </div>
+            <div id="nlrsp"></div>
         </div>
+        <script  type="text/javascript" src="/js/newsletter.js"></script>
     {{end}}
 {{ end }}

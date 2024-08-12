@@ -53,7 +53,7 @@
       let formData = new FormData(data);
       const dataObject = Object.fromEntries(formData.entries());
       const j_body = JSON.stringify(dataObject);
-      console.log('j_body', j_body);
+      //console.log('j_body', j_body);
       fetch(data.getAttribute('action'), {
         method: data.getAttribute('method'),
         body: j_body

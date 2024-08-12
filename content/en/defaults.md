@@ -18,9 +18,9 @@ newsletter:
     text: "Sign up to our mailing list below and be the first to know about new updates. Don't worry, we hate spam too."
     placeholder: "Enter your email!"
     btn_txt: "Subscribe"
-    action: "#newsletter"
+    action: "https://api.dedoai.org/newsletter/"
     confirm: "Successful subscribed"
-    error: "Problem ssubscibing"
+    error: "Problem subscibing"
     recapcha: 
 
 ---
