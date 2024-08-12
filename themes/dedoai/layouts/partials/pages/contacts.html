@@ -48,12 +48,17 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#ctcfrm').addEventListener('submit', function (event) {
+
       event.preventDefault();
+
       var data = this;
+
       let formData = new FormData(data);
+
       const dataObject = Object.fromEntries(formData.entries());
+
       const j_body = JSON.stringify(dataObject);
-      console.log('j_body', j_body);
+
       fetch(data.getAttribute('action'), {
         method: data.getAttribute('method'),
         body: j_body
@@ -66,10 +71,11 @@
           }
         })
         .then((response) => {
-          // sconsole.log( response );
+
           let resp = JSON.parse(response.body);
           let respbox = document.querySelector('#subresp');
           respbox.innerHTML = '<span>' + resp.message + '</span>';
+          event.target.reset()
         })
     });
   });
