@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var overlay = document.getElementById('form-overlay');
-    var respbox = document.querySelector('#nlrsp');
+    var respbox = document.querySelector('#form-overlay > div');
     document.querySelector('#nlfrm').addEventListener('submit', function (event) {
       event.preventDefault();
       overlay.classList.toggle('active');
@@ -26,15 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {
          } else {
          const err = "Something went wrong on server!";
          respbox.innerHTML = '<span>' + err + '</span>';
-         throw new Error(err);
-         setTimeout( overlay.classList.toggle('active'), 1000 );
+         setTimeout( ()=>{overlay.classList.toggle('active')}, 2000 );
+         //throw new Error(err);
          }
       })
       .then((response) => {
          let resp = JSON.parse(response.body);
          respbox.innerHTML = '<span>' + resp.message + '</span>';
-         setTimeout( overlay.classList.toggle('active'), 1000 );
-      });
+         setTimeout( ()=>{overlay.classList.toggle('active')}, 2000 );
+      })
     });
   });
 });
