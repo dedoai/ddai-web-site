@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var overlay = document.getElementById('form-overlay');
+    var respbox = document.querySelector('#nlrsp');
     document.querySelector('#nlfrm').addEventListener('submit', function (event) {
       event.preventDefault();
       overlay.classList.toggle('active');
@@ -26,11 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
          const err = "Something went wrong on server!";
          respbox.innerHTML = '<span>' + err + '</span>';
          throw new Error(err);
+         setTimeout( overlay.classList.toggle('active'), 1000 );
          }
       })
       .then((response) => {
          let resp = JSON.parse(response.body);
-         let respbox = document.querySelector('#nlrsp');
          respbox.innerHTML = '<span>' + resp.message + '</span>';
          setTimeout( overlay.classList.toggle('active'), 1000 );
       });
