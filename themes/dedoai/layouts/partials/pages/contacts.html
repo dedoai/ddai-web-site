@@ -14,7 +14,7 @@
         {{$_.subt}}
         <span class="span-title">{{$_.spanSubtitle}}</span>
       </h2>
-      <p>{{$_.p2}}</p>
+      <p>{{$_.p2 | markdownify}}</p>
       <form id="ctcfrm" action="{{$_.form.action}}" method="POST">
         {{range $_.form.items}}
         <div class="item">
@@ -38,7 +38,7 @@
           {{end}}
         </div>
         {{end}}
-        <button type="submit" class="btn btn-cta">{{$_.form.submit_text}}</button>
+        <button id="submit-btn" type="submit" class="btn btn-cta">{{$_.form.submit_text}}</button>
         <div id="subresp"></div>
       </form>
     </div>
@@ -46,31 +46,42 @@
 
 </div>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('#ctcfrm').addEventListener('submit', function (event) {
-      event.preventDefault();
-      var data = this;
-      let formData = new FormData(data);
-      const dataObject = Object.fromEntries(formData.entries());
-      const j_body = JSON.stringify(dataObject);
-      //console.log('j_body', j_body);
-      fetch(data.getAttribute('action'), {
-        method: data.getAttribute('method'),
-        body: j_body
-      })
-        .then((response) => {
-          if (response.status === 200) {
-            return response.json();
-          } else {
-            throw new Error("Something went wrong on server!");
-          }
-        })
-        .then((response) => {
-          // sconsole.log( response );
-          let resp = JSON.parse(response.body);
-          let respbox = document.querySelector('#subresp');
-          respbox.innerHTML = '<span>' + resp.message + '</span>';
-        })
+  document
+    .addEventListener('DOMContentLoaded', function () {
+      document
+        .querySelector('#ctcfrm')
+        .addEventListener('submit', function (e) {
+
+          e.preventDefault();
+
+          var data = this;
+
+          let formData = new FormData(data);
+
+          const dataObject = Object.fromEntries(formData.entries());
+
+          const j_body = JSON.stringify(dataObject);
+
+          fetch(data.getAttribute('action'), {
+            method: data.getAttribute('method'),
+            body: j_body
+          })
+            .then((response) => {
+              if (response.status === 200) {
+                return response.json();
+              } else {
+                throw new Error("Something went wrong on server!");
+              }
+            })
+            .then((response) => {
+
+              const body = JSON.parse(response.body);
+              const statusBox = document.getElementById('subresp');
+              const submitBtn = document.getElementById('submit-btn');
+              submitBtn.classList.add('hidden');
+              statusBox.innerHTML = '<span>' + body.message + '</span>';
+              e.target.reset()
+            })
+        });
     });
-  });
 </script>
