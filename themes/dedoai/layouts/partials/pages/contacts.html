@@ -15,7 +15,7 @@
         <span class="span-title">{{$_.spanSubtitle}}</span>
       </h2>
       <p>{{$_.p2 | markdownify}}</p>
-      <form id="ctcfrm" action="{{$_.form.action}}" method="POST">
+      <form id="ctcfrm">
         {{range $_.form.items}}
         <div class="item">
           <label for="{{.name}}">{{.label}}</label>
@@ -38,12 +38,12 @@
           {{end}}
         </div>
         {{end}}
+
         <button id="submit-btn" type="submit" class="btn btn-cta">{{$_.form.submit_text}}</button>
         <div id="subresp"></div>
       </form>
     </div>
   </div>
-
 </div>
 <script>
   document
@@ -54,34 +54,39 @@
 
           e.preventDefault();
 
-          var data = this;
+          const data = Object.fromEntries(new FormData(this).entries());
 
-          let formData = new FormData(data);
+          const captchaAction = 'CONTACT_REQUEST';
 
-          const dataObject = Object.fromEntries(formData.entries());
+          grecaptcha
+            .enterprise
+            .ready(async () => {
 
-          const j_body = JSON.stringify(dataObject);
+              const token = await grecaptcha.enterprise.execute(recaptchaKey, { action: captchaAction });
 
-          fetch(data.getAttribute('action'), {
-            method: data.getAttribute('method'),
-            body: j_body
-          })
-            .then((response) => {
-              if (response.status === 200) {
-                return response.json();
-              } else {
-                throw new Error("Something went wrong on server!");
-              }
-            })
-            .then((response) => {
+              data.recaptchaToken = token;
+              data.recaptchaAction = captchaAction;
 
-              const body = JSON.parse(response.body);
-              const statusBox = document.getElementById('subresp');
-              const submitBtn = document.getElementById('submit-btn');
-              submitBtn.classList.add('hidden');
-              statusBox.innerHTML = '<span>' + body.message + '</span>';
-              e.target.reset()
-            })
+              fetch("{{$_.form.action}}", {
+                method: 'POST',
+                body: JSON.stringify(data)
+              })
+                .then((response) => {
+                  let toRet = {};
+
+                  if (response.status === 200) toRet = response.json();
+
+                  return toRet;
+                })
+                .then((response) => {
+                  const body = JSON.parse(response.body);
+                  const statusBox = document.getElementById('subresp');
+                  const submitBtn = document.getElementById('submit-btn');
+                  submitBtn.classList.add('hidden');
+                  statusBox.innerHTML = '<span>' + body.message + '</span>';
+                  e.target.reset()
+                })
+            });
         });
     });
 </script>
