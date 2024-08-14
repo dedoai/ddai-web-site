@@ -20,7 +20,7 @@
                     aria-label="{{ .name }}"
                     rel="nofollow noopener"
                     href="{{ .link | safeURL }}">
-                    <img src="/assets/images/icons/social/social-icons-{{ .name }}-circle.svg" />
+                    <img src="/assets/images/icons/social/social-icons-{{ .name }}-circle.svg" alt="{{ title .name }} icon" title="{{ title .name }}"/>
                   </a>
                 </li>
               {{ end }}
