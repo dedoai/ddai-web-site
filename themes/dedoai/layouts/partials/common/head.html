@@ -70,7 +70,8 @@
 <!-- Crisp Chat -->
 {{/* {{ partialCached "crisp-chat.html" . }} */}}
 
-{{ if false }}
+{{ with site.Params.recaptcha }}
 <!-- Recaptcha V3 use only in production -->
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6LcMCR0qAAAAAG-sYu0Ej4RVViuvhsMEwTqdLd4d"></script>
+<script src="https://www.google.com/recaptcha/enterprise.js?render={{.key}}"></script>
+<script>const recaptchaKey = "{{.key}}"</script>
 {{ end }}
