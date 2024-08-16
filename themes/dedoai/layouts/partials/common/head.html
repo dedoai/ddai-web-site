@@ -69,3 +69,7 @@
 
 <!-- Crisp Chat -->
 {{/* {{ partialCached "crisp-chat.html" . }} */}}
+
+{{ with site.Params }}
+<script src="https://www.google.com/recaptcha/enterprise.js?render={{.recaptcha.key}}"></script>
+{{end}}
