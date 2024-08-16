@@ -48,6 +48,17 @@
 <script>
   document
     .addEventListener('DOMContentLoaded', function () {
+
+      const submitBtn = document.getElementById('submit-btn');
+      const statusBox = document.getElementById('subresp');
+
+      const handleError = () => {
+        submitBtn.classList.remove('loading');
+        submitBtn.classList.add('error');
+        submitBtn.innerHTML = "{{$_.form.failed_sent}}";
+        statusBox.innerHTML = "{{$_.form.retry}}";
+      }
+
       document
         .querySelector('#ctcfrm')
         .addEventListener('submit', function (e) {
@@ -55,6 +66,9 @@
           e.preventDefault();
 
           const data = Object.fromEntries(new FormData(this).entries());
+
+          submitBtn.classList.add('loading');
+          submitBtn.innerHTML = "<img src=\"/assets/images/loading-animation.svg\" style=\"margin: 0 auto;\"/>";
 
           const captchaAction = 'CONTACT_REQUEST';
 
@@ -69,23 +83,20 @@
 
               fetch("{{$_.form.action}}", {
                 method: 'POST',
-                body: JSON.stringify(data)
+                body: JSON.stringify(data),
+                headers: {
+                  'Content-Type': 'application/json',
+                }
               })
                 .then((response) => {
-                  let toRet = {};
 
-                  if (response.status === 200) toRet = response.json();
-
-                  return toRet;
+                  if (response.status === 200) {
+                    submitBtn.classList.remove('loading');
+                    submitBtn.innerHTML = "{{$_.form.message_sent}}";
+                    submitBtn.style.background = "#48BB78 !important";
+                  } else handleError();
                 })
-                .then((response) => {
-                  const body = JSON.parse(response.body);
-                  const statusBox = document.getElementById('subresp');
-                  const submitBtn = document.getElementById('submit-btn');
-                  submitBtn.classList.add('hidden');
-                  statusBox.innerHTML = '<span>' + body.message + '</span>';
-                  e.target.reset()
-                })
+                .catch(handleError);
             });
         });
     });

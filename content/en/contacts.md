@@ -59,6 +59,9 @@ form:
     placeholder: "Write your message here"
 
   submit_text: "Send Message"
+  message_sent: "Message Sent!"
+  failed_sent: "Failed to Send"
+  retry: "Retry!"
   
 map_title: "Our Offices"
 map_text: "If you prefer, you can also contact us directly at our office:"
