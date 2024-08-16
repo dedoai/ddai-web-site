@@ -1,0 +1,25 @@
+#contacts .btn-cta.error {
+  background: #EE655F !important;
+}
+
+#contacts .btn-cta.success {
+  background: #48BB78 !important;
+}
+
+#contacts .btn-cta.loading {
+  min-width: 156px;
+}
+
+#contacts .loading>img {
+  animation: infinite 1s linear loading;
+}
+
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
