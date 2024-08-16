@@ -5,7 +5,8 @@
   "license": "MIT",
   "author": "DedoAI",
   "scripts": {
-    "dev": "hugo server",
+    "start:dev": "hugo server -e development",
+    "start:prod": "hugo server -e production",
     "build:prod": "hugo --forceSyncStatic -e production --minify",
     "build:dev": "hugo --forceSyncStatic -e development --minify",
     "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",

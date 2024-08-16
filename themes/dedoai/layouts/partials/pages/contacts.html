@@ -49,6 +49,8 @@
     </div>
   </div>
 </div>
+{{ with site.Params }}
+<script src="https://www.google.com/recaptcha/enterprise.js?render={{.recaptcha.key}}"></script>
 <script>
   document
     .addEventListener('DOMContentLoaded', function () {
@@ -80,12 +82,11 @@
           submitBtnLoader.classList.remove('hidden');
 
           const captchaAction = 'CONTACT_REQUEST';
-
           grecaptcha
             .enterprise
             .ready(async () => {
 
-              const token = await grecaptcha.enterprise.execute(recaptchaKey, { action: captchaAction });
+              const token = await grecaptcha.enterprise.execute("{{.recaptcha.key}}", { action: captchaAction });
 
               data.recaptchaToken = token;
               data.recaptchaAction = captchaAction;
@@ -119,3 +120,4 @@
         });
     });
 </script>
+{{end}}
