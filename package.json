@@ -6,7 +6,8 @@
   "author": "DedoAI",
   "scripts": {
     "dev": "hugo server",
-    "build": "hugo --forceSyncStatic -e production --minify",
+    "build:prod": "hugo --forceSyncStatic -e production --minify",
+    "build:dev": "hugo --forceSyncStatic -e development --minify",
     "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "dev:example": "cd exampleSite; hugo server",
     "build:example": "cd exampleSite; hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
