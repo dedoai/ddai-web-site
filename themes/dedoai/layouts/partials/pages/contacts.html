@@ -91,7 +91,7 @@
               data.recaptchaToken = token;
               data.recaptchaAction = captchaAction;
 
-              fetch("{{$_.form.action}}", {
+              fetch("{{.apis.basePath}}/{{$_.form.actionEndpoint}}", {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
@@ -110,7 +110,7 @@
                 })
                 .then(() => {
                   setTimeout(() => {
-                    submitBtn.classList.remove('success');
+                    submitBtn.classList.remove('success', 'error');
                     submitBtnText.innerHTML = "{{$_.form.submit_text}}";
                     statusBox.innerHTML = "";
                   }, 5000); // 5 seconds

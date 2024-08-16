@@ -103,6 +103,10 @@ map_marker = "images/marker.png"
 [subscription]
 enable = false
 
-#Recaptcha
+# Recaptcha
 [recaptcha] 
 key = "6LdOOSgqAAAAAD8Z4cDYWhuwMfNfh_Nu21mfJLAs"
+
+# Apis
+[apis]
+basePath = "https://api.dev.dedoai.org"
