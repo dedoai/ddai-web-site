@@ -20,7 +20,7 @@
                     aria-label="{{ .name }}"
                     rel="nofollow noopener"
                     href="{{ .link | safeURL }}">
-                    <img src="/assets/images/icons/social/social-icons-{{ .name }}-circle.svg" />
+                    <img src="/assets/images/icons/social/social-icons-{{ .name }}-circle.svg" alt="{{ title .name }} icon" title="{{ title .name }}"/>
                   </a>
                 </li>
               {{ end }}
@@ -110,7 +110,7 @@
                          {{ $menuURL := .URL | absLangURL }}
                          {{ $pageURL:= $currentPage.Permalink | absLangURL }}
                          {{ $active := eq $menuURL $pageURL }}
-                         <a class="nav-item {{ if $active }}active{{- end -}}"
+                         <a class="nav-item {{ if $active }}active{{- end -}}{{with .Params.class}} {{.}}{{end}}"
                               {{ if findRE `^http` .URL }}
                                 target="_blank" rel="noopener"
                               {{ end }}

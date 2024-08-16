@@ -14,8 +14,8 @@
         {{$_.subt}}
         <span class="span-title">{{$_.spanSubtitle}}</span>
       </h2>
-      <p>{{$_.p2}}</p>
-      <form id="ctcfrm" action="{{$_.form.action}}" method="POST">
+      <p>{{$_.p2 | markdownify}}</p>
+      <form id="ctcfrm">
         {{range $_.form.items}}
         <div class="item">
           <label for="{{.name}}">{{.label}}</label>
@@ -38,45 +38,66 @@
           {{end}}
         </div>
         {{end}}
-        <button type="submit" class="btn btn-cta">{{$_.form.submit_text}}</button>
+
+        <button id="submit-btn" type="submit" class="btn btn-cta">{{$_.form.submit_text}}</button>
         <div id="subresp"></div>
       </form>
     </div>
   </div>
-
 </div>
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('#ctcfrm').addEventListener('submit', function (event) {
+  document
+    .addEventListener('DOMContentLoaded', function () {
 
-      event.preventDefault();
+      const submitBtn = document.getElementById('submit-btn');
+      const statusBox = document.getElementById('subresp');
 
-      var data = this;
+      const handleError = () => {
+        submitBtn.classList.remove('loading');
+        submitBtn.classList.add('error');
+        submitBtn.innerHTML = "{{$_.form.failed_sent}}";
+        statusBox.innerHTML = "{{$_.form.retry}}";
+      }
 
-      let formData = new FormData(data);
+      document
+        .querySelector('#ctcfrm')
+        .addEventListener('submit', function (e) {
 
-      const dataObject = Object.fromEntries(formData.entries());
+          e.preventDefault();
 
-      const j_body = JSON.stringify(dataObject);
+          const data = Object.fromEntries(new FormData(this).entries());
 
-      fetch(data.getAttribute('action'), {
-        method: data.getAttribute('method'),
-        body: j_body
-      })
-        .then((response) => {
-          if (response.status === 200) {
-            return response.json();
-          } else {
-            throw new Error("Something went wrong on server!");
-          }
-        })
-        .then((response) => {
+          submitBtn.classList.add('loading');
+          submitBtn.innerHTML = "<img src=\"/assets/images/loading-animation.svg\" style=\"margin: 0 auto;\"/>";
 
-          let resp = JSON.parse(response.body);
-          let respbox = document.querySelector('#subresp');
-          respbox.innerHTML = '<span>' + resp.message + '</span>';
-          event.target.reset()
-        })
+          const captchaAction = 'CONTACT_REQUEST';
+
+          grecaptcha
+            .enterprise
+            .ready(async () => {
+
+              const token = await grecaptcha.enterprise.execute(recaptchaKey, { action: captchaAction });
+
+              data.recaptchaToken = token;
+              data.recaptchaAction = captchaAction;
+
+              fetch("{{$_.form.action}}", {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                  'Content-Type': 'application/json',
+                }
+              })
+                .then((response) => {
+
+                  if (response.status === 200) {
+                    submitBtn.classList.remove('loading');
+                    submitBtn.innerHTML = "{{$_.form.message_sent}}";
+                    submitBtn.style.background = "#48BB78 !important";
+                  } else handleError();
+                })
+                .catch(handleError);
+            });
+        });
     });
-  });
 </script>

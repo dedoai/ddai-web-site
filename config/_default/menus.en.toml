@@ -73,8 +73,8 @@ url = "/#certifications"
 weight = 2
 
 [[footer]]
-parent = "DEDO Token"
-name = "Copyright Certificate"
+parent = "Informations"
+name = "DEDO Token"
 url = "/#countdown"
 weight = 3
 
@@ -87,5 +87,5 @@ weight = 1
 [[legal]]
 name = "Cookie Preferences"
 url = "#"
-class = "open-cookie"
+params = { class = "open-cookie" }
 weight = 2

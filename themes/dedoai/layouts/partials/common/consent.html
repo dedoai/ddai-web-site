@@ -1,4 +1,9 @@
-<div id="consent-notice"><span>We would like to use <a class="manage-consent" href="#manage-consent">third party code</a> to improve the functionality of this website.</span><button class="btn manage-consent">Manage preferences</button><button class="btn deny-consent">Deny</button><button class="btn approve-consent">Allow</button></div>
+<div id="consent-notice">
+   <span>We would like to use <a class="manage-consent" href="#manage-consent">third party code</a> to improve the functionality of this website.</span>
+   <button class="btn manage-consent">Manage preferences</button>
+   <button class="btn deny-consent">Deny</button>
+   <button class="btn approve-consent">Allow</button>
+</div>
 <div id="consent-overlay">
     <div>
         {{ range $index, $item := .Site.Data.consent.items }}
@@ -59,6 +64,7 @@
     }
     function acceptSomeConsentScripts(consentValue) {
         setConsentInputs(consentValue);
+        console.log('consentValue', consentValue);
         createCookie('consent-settings',consentValue,31);
         document.getElementById('consent-notice').style.display = 'none';
         document.getElementById('consent-overlay').classList.remove('active');
@@ -131,6 +137,10 @@
         if (!document.querySelector("#consent-overlay > div").contains(e.target)){
             this.classList.toggle('active');
         }
+    });
+    document.querySelector(".open-cookie").addEventListener("click",function(e) {
+       event.preventDefault();
+       document.getElementById('consent-overlay').classList.toggle('active');
     });
 </script>
 

@@ -507,4 +507,16 @@
   #hero .img_hldr {
     @apply top-[310px] #{!important};
   }
+
+  #hero .img_hldr div:last-of-type img {
+    content: url('/assets/images/home/graphics-mobile.svg') !important;
+  }
+}
+
+// BELOW XXS
+@media only screen and (max-width: 419px) {
+
+  #hero .img_hldr {
+    @apply top-[400px] #{!important};
+  }
 }

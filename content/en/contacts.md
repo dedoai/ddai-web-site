@@ -10,7 +10,7 @@ noheader: true
 p1: "Whether you're curious about our technology, interested in partnering with us, or simply have questions about the future of data, we're here to answer all your inquiries. Our team is dedicated to fostering open communication and collaboration with our community, potential partners, and anyone interested in the project."
 subt: Get in
 spanSubtitle: Touch.
-p2: "To make it easier for you to get in touch, please fill out the form below with your details and your inquiry. Our team will get back to you as soon as possible."
+p2: "To make it easier for you to get in touch, please fill out the form below with your details and your inquiry. Our team will get back to you as soon as possible. Or elese feel free to contact us at [hello@dedoai.org](<mailto:hello@dedoai.org>)"
 cover: "/assets/images/static-map.png"
 picker_img: "/assets/images/map-picker.png"
 
@@ -18,7 +18,7 @@ alt_cover: "/assets/images/static-map.png"
 hide_map: false
 
 form:
-  action: https://api.dev.dedoai.org/contactmail
+  action: https://api.dedoai.org/contact/mail
   items:
   - name: "first_name"
     type: "text"
@@ -59,6 +59,9 @@ form:
     placeholder: "Write your message here"
 
   submit_text: "Send Message"
+  message_sent: "Message Sent!"
+  failed_sent: "Failed to Send"
+  retry: "Retry!"
   
 map_title: "Our Offices"
 map_text: "If you prefer, you can also contact us directly at our office:"
