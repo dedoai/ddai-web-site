@@ -1,7 +1,7 @@
 ---
 title: "Privacy policy"
 meta_title: "dedoAI | Privacy policy"
-description: "dedoAI's policy describes the processing of personal data with reference to users consulting thise website"
+description: "dedoAI's privacy policy describes the processing of personal data with reference to users consulting thise website"
 date: 2024-08-19T06:00:00.000Z
 draft: false
 layout: simplepage
