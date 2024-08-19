@@ -1,24 +1,81 @@
-{{ with site.GetPage "defaults"  }}
-    {{with .Params.newsletter }}
-        <div class="newsletter">
-            <h2 class="section-title">{{.title}}</h2>
-            <p>{{.text}}</p>
-            <div class="frm">
-                <form id="nlfrm" action="{{.action}}" method="POST">
-                    <input type="email" name="email" placeholder="{{.placeholder}}" autocomplete required>
-                    <button class="btn btn-cta" type="submit">{{.btn_txt}}</button>
-                </form>
-            </div>
-        </div>
-        <div id="form-overlay">
-           <div>
-              <div>{{.subscribe_advise | markdownify }}</div>
-              <div class="center">
-                 <button class="btn nl-deny">{{.deny_btn_txt}}</button>
-                 <button class="btn nl-accept">{{.accept_btn_txt}}</button>
-              </div>
-           </div>
-        </div>
-        <script  type="text/javascript" src="/js/newsletter.js"></script>
-    {{end}}
-{{ end }}
+{{ with site.GetPage "defaults" }}
+{{with .Params.newsletter }}
+<div class="newsletter">
+  <h2 class="section-title">{{.title}}</h2>
+  <p>{{.text}}</p>
+  <div class="frm">
+    <form id="nlfrm">
+      <input type="email" name="email" placeholder="{{.placeholder}}" autocomplete required>
+      <button class="btn btn-cta" type="submit">
+        <span id="submit-text">{{.btn_txt}}</span>
+        <img id="submit-loader" src="/assets/images/loading-animation.svg" class="hidden" style="margin: 0 auto;" />
+      </button>
+    </form>
+  </div>
+</div>
+<div id="form-overlay">
+  <div>
+    <div>{{.subscribe_advise | markdownify }}</div>
+    <div class="center">
+      <button class="btn nl-deny">{{.deny_btn_txt}}</button>
+      <button class="btn nl-accept">{{.accept_btn_txt}}</button>
+    </div>
+  </div>
+</div>
+<script>
+  const endpoint = "{{.actionEndpoint}}";
+</script>
+{{with site.Params}}
+<script>
+
+  const backdrop = document.getElementById('form-overlay');
+  const respbox = document.querySelector('#form-overlay > div');
+
+  document
+    .querySelector('#nlfrm')
+    .addEventListener('submit', function (e) {
+
+      e.preventDefault();
+
+      backdrop.classList.toggle('active');
+
+      const formData = Object.fromEntries(new FormData(this).entries());
+
+      document
+        .querySelector('.nl-deny')
+        .addEventListener('click', function () {
+          backdrop.classList.toggle('active');
+          return;
+        });
+
+      document
+        .querySelector('.nl-accept')
+        .addEventListener('click', function (e) {
+
+          e.preventDefault();
+
+          fetch(`{{.apis.basePath}}/${endpoint}`, {
+            method: 'POST',
+            body: JSON.stringify(formData),
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+            .then(() => {
+              backdrop.classList.toggle('active')
+            })
+        });
+    });
+
+  document
+    .getElementById("form-overlay")
+    .addEventListener("click", function (e) {
+      if (!document.querySelector("#form-overlay > div").contains(e.target)) {
+        this.classList.toggle('active');
+      }
+    });
+
+</script>
+{{end}}
+{{end}}
+{{end}}

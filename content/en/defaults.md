@@ -18,7 +18,7 @@ newsletter:
     text: "Sign up to our mailing list below and be the first to know about new updates. Don't worry, we hate spam too."
     placeholder: "Enter your email!"
     btn_txt: "Subscribe"
-    action: "https://api.dedoai.org/newsletter/"
+    actionEndpoint: newsletter
     confirm: "Successful subscribed"
     error: "Problem subscibing"
     subscribe_advise: 'I have read the information on the processing of personal data as available on the <a href="/privacy-policy/" target="_blank">privacy policy</a> and that I consent to the processing of my personal data in order to receive periodic communications on the developments of the project and on further services relating to the project'
