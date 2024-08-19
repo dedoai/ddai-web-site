@@ -87,7 +87,6 @@ The updated list of these subjects can always be requested from the Data Control
 As part of some processing operations carried out through the website, the Data Controller relies on providers to supply certain services that involve the transfer of personal data to the United States.
 
 In particular, the following cases can be referred to:
-
 -  Tracking services for marketing purposes and user profiling carried out through the tools offered by Google, Telegram and Sendgrid
 -  Identity verification service for users who intend to make a token purchase. This service is provided by Passbase.
 
@@ -97,16 +96,13 @@ In accordance with the principle of transparency and fairness, the Data Controll
 
 In any case, such transfers are made only following the explicit and free consent given by the user, who is informed of the risks associated with such transfers.
 
-
 ## 6. Personal data retention periods
 
 Data are processed for the period strictly necessary to achieve the purposes for which they were collected:
-
 -  Personal data collected for purposes related to the performance of a contract between the Data Controller and the User will be retained until the performance of that contract is completed.
 -  Personal data collected for the purpose of fulfilling legal obligations will be retained within the time limits specified by applicable regulations.
 -  Personal data collected for purposes attributable to the legitimate interest of the Data Controller will be retained until such interest is satisfied.
 -  Personal data collected on the basis of the user's consent shall be retained until such consent is revoked.
-
 
 The Data Controller may be obliged to retain personal data for a longer period in compliance with a legal obligation or by order of an authority.
 
@@ -115,7 +111,6 @@ At the end of the retention period, the personal data will be deleted. Therefore
 ## 7. Rights of data subjects
 
 The subjects to whom the personal data refer (user) may exercise the following rights towards the Data Controller:
-
 -  Obtain confirmation of the existence or otherwise of personal data processing, to know its content and origin.
 -  Verify the accuracy of the data or request their integration, updating or rectification.
 -  Request the cancellation or transformation into anonymous form of personal data
