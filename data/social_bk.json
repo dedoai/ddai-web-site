@@ -1,0 +1,28 @@
+{
+  "main": [
+    {
+      "name": "linkedin",
+      "link": "https://www.linkedin.com/company/dedo_ai/"
+    },
+    {
+      "name": "instagram",
+      "link": "https://www.instagram.com/dedoai/"
+    },
+    {
+      "name": "github",
+      "link": "https://www.github.com/dedoai"
+    },
+    {
+      "name": "twitter",
+      "link": "https://x.com/dedo_ai"
+    },
+    {
+      "name": "telegram",
+      "link": "https://t.me/dedoai"
+    },
+    {
+      "name": "email",
+      "link": "mailto:info@dedoai.org"
+    }
+  ]
+}
