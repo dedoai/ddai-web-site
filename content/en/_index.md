@@ -1,7 +1,8 @@
 ---
-title: "dedoAI | Home"
-meta_title: "dedo AI | Redefining Data Ownership for the AI Era"
-description: " secure platform for easily buying, selling, and trading data."
+title: "Redefining Data Ownership for the AI Era"
+meta_title: "dedoAI | Home"
+description: "Redefine data ownership with DedoAI. Our platform offers secure transactions, unique datasets, and fair compensation for producers, all powered by blockchain technology."
+keywords: [home, data ownership, consumer, producer, token, ownership, dedoai, ai data exchange, smartcontracts]
 date: 2024-07-15T06:00:00.000Z
 draft: false
 

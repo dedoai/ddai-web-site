@@ -62,7 +62,7 @@ breadcrumbs = false
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["dedoAI", "AI Data Exchange"]
+keywords = ["AI Data Exchange", "Data Ownership", "Certification", "Smartcontracts", "Blockchain", "Consumer", "Producer", "Litepaper", "Whitepaper", "Token"]
 description = "Decentralizing Data for a Better Tomorrow"
 author = "dedoAI"
 image = "images/og-image.png"
