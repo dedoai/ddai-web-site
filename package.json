@@ -8,7 +8,7 @@
     "start:dev": "hugo server -e staging",
     "start:prod": "hugo server -e production",
     "build:prod": "sh ./scripts/pre-build.sh && hugo --forceSyncStatic -e production --minify",
-    "build:dev": "DEPLOY_ENV=.dev sh ./scripts/pre-build.sh && hugo --forceSyncStatic -e staging --minify",
+    "build:dev": "sh ./scripts/pre-build.sh && hugo --forceSyncStatic -e production --minify",
     "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "dev:example": "cd exampleSite; hugo server",
     "build:example": "cd exampleSite; hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
