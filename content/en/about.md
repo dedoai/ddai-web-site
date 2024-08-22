@@ -1,7 +1,8 @@
 ---
-title: "dedoAI | About"
-meta_title: "dedoAI | About Us: Shaping the Future of Data"
-description: "this is meta description"
+title: "Shaping the Future of Data."
+meta_title: "dedoAI | About"
+description: "At dedoAI, we empower data producers to take control and profit from their data. Join us in shaping a transparent and innovative future for the data economy."
+keywords: [about, team, values, vision, dedoai,ai data exchange, smartcontracts]
 date: 2024-07-15T06:00:00.000Z
 draft: false
 noheader: true

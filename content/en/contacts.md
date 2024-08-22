@@ -2,7 +2,8 @@
 title: Contact
 spanTitle: Us.
 meta_title: "dedoAI | Contacts"
-description: "Contact page of dedoAI"
+description: "Have questions about our technology or potential partnerships? Reach out to us! Our dedicated team is ready to provide answers and foster collaboration."
+keywords: [contacts, get in touch, form, partnership, support, media, inquiry, dedoai, ai data exchange, smartcontracts, blockchain]
 date: 2024-07-16T06:00:00.000Z
 draft: false
 noheader: true
