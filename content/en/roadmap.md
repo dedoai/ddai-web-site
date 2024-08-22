@@ -1,6 +1,8 @@
 ---
 title: Roadmap
 meta_title: "dedoAI | Roadmap"
+description: "Discover our roadmap detailing the milestones in developing a fair data exchange platform using blockchain technology. Join us on our journey towards innovation."
+keywords: [roadmap, blockchain, kickoff, prototype, launch, community, dedoai,ai data exchange, smartcontracts]
 date: 2024-07-18T06:00:00.000Z
 draft: false
 noheader: true

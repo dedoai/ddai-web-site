@@ -1,7 +1,8 @@
 ---
 title: "Privacy policy"
-meta_title: "dedoAI | Privacy policy"
-description: "dedoAI's privacy policy describes the processing of personal data with reference to users consulting thise website"
+meta_title: "dedoAI | Privacy Policy"
+description: "Review our comprehensive Privacy Policy at www.dedoai.org, outlining the collection and use of personal data, ensuring your privacy is safeguarded in accordance with regulations."
+keywords: [privacy, data controller, dedoai,ai data exchange, smartcontracts, blockchain]
 date: 2024-08-19T06:00:00.000Z
 draft: false
 layout: simplepage
