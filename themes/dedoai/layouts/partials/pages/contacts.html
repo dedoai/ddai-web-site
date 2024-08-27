@@ -39,23 +39,32 @@
         </div>
         {{end}}
 
-        <button id="submit-btn" type="submit" class="btn btn-cta">{{$_.form.submit_text}}</button>
+        <button id="submit-btn" type="submit" class="btn btn-cta">
+          <span id="submit-btn-text">{{$_.form.submit_text}}</span>
+          <img id="submit-btn-loader" class="hidden" src="/assets/images/loading-animation.svg"
+            style="margin: 0 auto;" />
+        </button>
         <div id="subresp"></div>
       </form>
     </div>
   </div>
 </div>
+{{ with site.Params }}
 <script>
   document
     .addEventListener('DOMContentLoaded', function () {
 
       const submitBtn = document.getElementById('submit-btn');
+      const submitBtnText = document.getElementById('submit-btn-text');
+      const submitBtnLoader = document.getElementById('submit-btn-loader');
       const statusBox = document.getElementById('subresp');
 
       const handleError = () => {
         submitBtn.classList.remove('loading');
         submitBtn.classList.add('error');
-        submitBtn.innerHTML = "{{$_.form.failed_sent}}";
+        submitBtnLoader.classList.add('hidden');
+        submitBtnText.classList.remove('hidden');
+        submitBtnText.innerHTML = "{{$_.form.failed_sent}}";
         statusBox.innerHTML = "{{$_.form.retry}}";
       }
 
@@ -68,20 +77,20 @@
           const data = Object.fromEntries(new FormData(this).entries());
 
           submitBtn.classList.add('loading');
-          submitBtn.innerHTML = "<img src=\"/assets/images/loading-animation.svg\" style=\"margin: 0 auto;\"/>";
+          submitBtnText.classList.add('hidden');
+          submitBtnLoader.classList.remove('hidden');
 
           const captchaAction = 'CONTACT_REQUEST';
-
           grecaptcha
             .enterprise
             .ready(async () => {
 
-              const token = await grecaptcha.enterprise.execute(recaptchaKey, { action: captchaAction });
+              const token = await grecaptcha.enterprise.execute("{{.recaptcha.key}}", { action: captchaAction });
 
               data.recaptchaToken = token;
               data.recaptchaAction = captchaAction;
 
-              fetch("{{$_.form.action}}", {
+              fetch("{{.apis.basePath}}/{{$_.form.actionEndpoint}}", {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
@@ -89,15 +98,25 @@
                 }
               })
                 .then((response) => {
-
+                  document.getElementById('ctcfrm').reset();
                   if (response.status === 200) {
                     submitBtn.classList.remove('loading');
-                    submitBtn.innerHTML = "{{$_.form.message_sent}}";
-                    submitBtn.style.background = "#48BB78 !important";
+                    submitBtn.classList.add('success');
+                    submitBtnLoader.classList.add('hidden');
+                    submitBtnText.classList.remove('hidden');
+                    submitBtnText.innerHTML = "{{$_.form.message_sent}}";
                   } else handleError();
+                })
+                .then(() => {
+                  setTimeout(() => {
+                    submitBtn.classList.remove('success', 'error');
+                    submitBtnText.innerHTML = "{{$_.form.submit_text}}";
+                    statusBox.innerHTML = "";
+                  }, 5000); // 5 seconds
                 })
                 .catch(handleError);
             });
         });
     });
 </script>
+{{end}}

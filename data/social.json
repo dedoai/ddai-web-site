@@ -2,7 +2,7 @@
   "main": [
     {
       "name": "linkedin",
-      "link": "https://www.linkedin.com/company/dedo_ai/"
+      "link": "https://www.linkedin.com/company/dedo-ai/"
     },
     {
       "name": "instagram",
@@ -22,7 +22,7 @@
     },
     {
       "name": "email",
-      "link": "mailto:info@dedoai.org"
+      "link": "mailto:hello@dedoai.org"
     }
   ]
 }
