@@ -1,12 +1,13 @@
 {
-  "name": "hugoplate",
+  "name": "ddai-website",
   "description": "hugo tailwindcss boilerplate",
-  "version": "1.12.4",
+  "version": "2.0.5",
   "license": "MIT",
-  "author": "zeon.studio",
+  "author": "DedoAI",
   "scripts": {
-    "dev": "hugo server",
-    "build": "hugo --forceSyncStatic -e production --minify",
+    "start": "hugo server -e production",
+    "build:prod": "RECAPTCHA_KEY=6LcMCR0qAAAAAG-sYu0Ej4RVViuvhsMEwTqdLd4d API_BASE_PATH=https://api.dedoai.org sh ./scripts/pre-build.sh && hugo --forceSyncStatic -e production --minify",
+    "build:dev": "RECAPTCHA_KEY=6LdOOSgqAAAAAD8Z4cDYWhuwMfNfh_Nu21mfJLAs API_BASE_PATH=https://api.dev.dedoai.org DEPLOY_ENV=.dev sh ./scripts/pre-build.sh && hugo --forceSyncStatic -e production --minify",
     "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "dev:example": "cd exampleSite; hugo server",
     "build:example": "cd exampleSite; hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",

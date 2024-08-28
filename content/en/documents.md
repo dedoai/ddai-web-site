@@ -1,7 +1,8 @@
 ---
 title: "Documents Info"
 meta_title: "dedoAI | Documents"
-description: "Certification Info"
+description: "Explore dedoAI's vision and mission as we leverage blockchain technology to democratize data. Access our Litepaper for a comprehensive overview of our initiatives."
+keywords: [documents, litepaper, dedoai, ai data exchange, smartcontracts, blockchain]
 date: 2024-07-23T06:00:00.000Z
 draft: false
 noheader: true

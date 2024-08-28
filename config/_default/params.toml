@@ -62,7 +62,7 @@ breadcrumbs = false
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["dedoAI", "AI Data Exchange"]
+keywords = ["AI Data Exchange", "Data Ownership", "Certification", "Smartcontracts", "Blockchain", "Consumer", "Producer", "Litepaper", "Whitepaper", "Token"]
 description = "Decentralizing Data for a Better Tomorrow"
 author = "dedoAI"
 image = "images/og-image.png"
@@ -102,10 +102,3 @@ map_marker = "images/marker.png"
 # Subscription
 [subscription]
 enable = false
-# mailchimp subsciption
-mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"
-
-#Recaptcha
-[recaptcha] 
-key = "6LcMCR0qAAAAAG-sYu0Ej4RVViuvhsMEwTqdLd4d"
