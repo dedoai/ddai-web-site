@@ -89,6 +89,7 @@
 
               data.recaptchaToken = token;
               data.recaptchaAction = captchaAction;
+              data.client = 'CLIENT_WEB_SITE_DEV';
 
               fetch("{{.apis.basePath}}/{{$_.form.actionEndpoint}}", {
                 method: 'POST',
@@ -97,8 +98,10 @@
                   'Content-Type': 'application/json',
                 }
               })
+                .then((response) => response.json())
                 .then((response) => {
                   document.getElementById('ctcfrm').reset();
+
                   if (response.status === 200) {
                     submitBtn.classList.remove('loading');
                     submitBtn.classList.add('success');
@@ -106,8 +109,7 @@
                     submitBtnText.classList.remove('hidden');
                     submitBtnText.innerHTML = "{{$_.form.message_sent}}";
                   } else handleError();
-                })
-                .then(() => {
+
                   setTimeout(() => {
                     submitBtn.classList.remove('success', 'error');
                     submitBtnText.innerHTML = "{{$_.form.submit_text}}";
