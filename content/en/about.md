@@ -28,12 +28,9 @@ team:
  - name: "/assets/images/about/cds.svg"
    descr: Founder
    linkedin: ""
- - name: "/assets/images/about/head-dev.svg"
-   descr: Head of Dev
-   linkedin: "https://www.linkedin.com/in/mihai-gabriel-canea/"
  - name: "/assets/images/about/blockchain-eng.svg"
    descr: Blockchain Engineer
-   linkedin: "https://www.linkedin.com/in/roccomusolino/"
+   linkedin: "https://www.linkedin.com/in/mihai-gabriel-canea/"
  - name: "/assets/images/about/fe-eng.svg"
    descr: Frontend Engineer
    linkedin: "https://www.linkedin.com/in/vincenzo-chiavetta/"
