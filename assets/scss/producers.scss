@@ -1,0 +1,116 @@
+#producers  {
+  @apply pt-[150px] pb-[100px];
+}
+
+#producers  .split {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#producers  .first {
+  width: 600px;
+}
+
+#producers  .first .title {
+  margin-bottom: 30px;
+}
+
+#producers  .second .img-holder {
+  width: 670px;
+  height: 200px;
+}
+
+// FORM
+
+#producers .main {
+  display: flex;
+  gap: 2rem;
+}
+
+#producers .frm-hldr {
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  padding: 50px;
+  background: linear-gradient(90deg, #17171799 0%, #17171799 100%), url('/assets/images/home/card-gradient-2.png') no-repeat center/cover;
+}
+
+#producers .frm-hldr h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+#producers .frm-hldr p {
+  margin-bottom: 24px;
+  width: 510px;
+}
+
+#producers .frm-hldr p a {
+  color: #0094FF;
+}
+
+#producers .frm-hldr form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 510px;
+  margin: 0 auto;
+}
+
+#producers .frm-hldr .item {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+#producers .frm-hldr input{
+  width: 100%;
+}
+
+#producers .frm-hldr button{
+  width: 100%;
+}
+
+
+// FORM END
+
+// Prefooter
+#producers .pre_footer {
+  width: 612px;
+  margin: auto;
+}
+
+
+// FROM XS TO MD
+@media only screen and (max-width: 767px) {
+
+  #producers  {
+    @apply pt-[50px] #{!important};
+  }
+
+  #producers  .split {
+    @apply flex-col-reverse gap-8 #{!important};
+  }
+
+  #producers  .split .first {
+    @apply w-full #{!important};
+  }
+
+  #producers  .split .first p {
+    @apply w-full #{!important};
+  }
+
+  #producers  .step-list .quarter {
+    @apply flex-col gap-4 #{!important};
+  }
+
+  #producers  .label {
+    @apply justify-start #{!important};
+  }
+}
