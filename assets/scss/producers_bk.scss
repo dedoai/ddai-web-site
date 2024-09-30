@@ -1,91 +1,27 @@
 #producers  {
-  @apply pt-[100px] pb-[100px];
+  @apply pt-[150px] pb-[100px];
 }
 
-#producers  {}
-
-#producers .container{
-  padding: 0;
-}
-
-#producers .title {
-  padding: 50px;
-}
-
-#producers .title h1{
-  padding-bottom: 10px;
-  font-size: 48px;
-  line-height: normal;
-}
-
-#producers .title p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-// FORM
-
-#producers .frm-hldr{
+#producers  .split {
   display: flex;
-  width: 1320px;
-  padding: 50px;
-  align-items: flex-start;
-  gap: 50px;
-
-  border-radius: 24px;
-  border: 1px solid var(--Stroke-2, #FFF);
-  background: url(<path-to-image>) lightgray 50% / cover no-repeat, linear-gradient(96deg, #171717 0.37%, #161616 98.43%);
-
-  /* Shadows/Shadow Medium */
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
-}
-
-#producers  .frm-hldr #frm {
-  display: flex;
-  width: 430px;
-  height: 567px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  //flex: 1 0 0;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
   margin-bottom: 50px;
 }
 
-
-#producers  .frm-hldr #frm h2{
-  font-size: 36px;
-  line-height: normal;
+#producers  .first .title {
+  margin-bottom: 30px;
 }
 
-#producers .frm-hldr #frm .item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+#producers  .second .img-holder {
+  width: 670px;
+  height: 200px;
 }
 
-#producers .frm-hldr #frm .item input{
-  width: 100%;
-}
-
-#producers .frm-hldr #frm #submit-btn{
-  border-radius: 6px;
-  border: 2px solid #FFF;
-  background: var(--Accent-Accent-Pink, linear-gradient(90deg, #6655E4 12%, #9F54DB 67%, #A5D 100%));
-
-/* Shadows/Shadow Default */
-box-shadow: -0.5px -0.5px 1px 0px rgba(0, 0, 0, 0.10), 0.5px 0.5px 1px 0px rgba(0, 0, 0, 0.10);
-}
-
-#producers  .frm-hldr .img-hldr {
-
-}
-
-#producers  {}
-
-/*
-
+// FORM
 
 #producers .main {
   display: flex;
@@ -139,8 +75,6 @@ box-shadow: -0.5px -0.5px 1px 0px rgba(0, 0, 0, 0.10), 0.5px 0.5px 1px 0px rgba(
 
 
 // FORM END
-
-*/
 
 // Prefooter
 #producers .pre_footer {
