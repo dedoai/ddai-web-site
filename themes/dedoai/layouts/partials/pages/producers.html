@@ -29,18 +29,20 @@
           <div id="subresp"></div>
         </form>
       <div class="img-hldr">
-        <img src="" class="" />
+<!--
+        <img src="/assets/images/producers-cover.webp" class="cover" />
+-->
       </div>
     </div>
   </div>
   
   {{ with $_.why }}
-  <div class="pre_footer">
-    <h2>{{.spanTitle}} <span class="span-title">{{.title}}</span></h2>
-    <ul>
-      <li>{{.l1 | safeHTML}}</li>
-      <li>{{.l2 | safeHTML}}</li>
-    </ul>
+  <div class="pre-footer">
+    <div class="pf-content">
+      <h2>{{.title}} <span class="span-title">{{.spanTitle}}</span></h2>
+      <p>{{.l1 | safeHTML}}</p>
+      <p>{{.l2 | safeHTML}}</p>
+    </div>
   </div>
   {{ end }}
 

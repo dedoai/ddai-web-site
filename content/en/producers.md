@@ -12,7 +12,7 @@ spanTitle: Producer
 p1: "Your Datasets are valuable – capitalize on it. Respond to market demands, set competitive prices, and earn DedoAI tokens. Our blockchain technology ensures secure transactions and fair compensation."
 t2: 'Join dedoAI'
 t2SpanTitle: 'Marketplace'
-p2: "Sign up to begin earning compensation for your data contributions. Harness the value of your data by joining dedoAI Marketplace, a platform designed to enable individuals and organizations to securely share and monetize their data"
+p2: "Harness the value of your data by joining dedoAI Marketplace, a platform designed to enable individuals and organizations to securely share and monetize their data"
 cover: "/assets/images/roadmap-cover.webp"
 
 form:
@@ -44,8 +44,8 @@ form:
   retry: "Retry!"
 
 why:
-  spanTitle: Why 
-  title: choose dedoAI?
+  title: Why choose 
+  spanTitle: dedoAI?
   l1: '<b>Fair 	Compensation</b>: Receive equitable payment for the data you contribute, with no 	intermediaries involved.'
   l2: '<b>Security and 	Transparency</b>: Your data privacy and ownership rights are safeguarded with the 	highest standards.'
   
