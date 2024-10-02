@@ -37,7 +37,7 @@ form:
     type: "text"
     label: "Telegram ID"
     icon: "/assets/images/icons/contacts-form-ico-1.webp"
-    placeholder: "Insert your Telegram ID"
+    placeholder: "Insert your @telegram_id"
   submit_text: "Subscribe as producer"
   message_sent: "Successfully subscribed!"
   failed_sent: "Failed to subscribe"
