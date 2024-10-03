@@ -13,7 +13,6 @@ p1: "Your Datasets are valuable – capitalize on it. Respond to market demands,
 t2: 'Join dedoAI'
 t2SpanTitle: 'Marketplace'
 p2: "Harness the value of your data by joining dedoAI Marketplace, a platform designed to enable individuals and organizations to securely share and monetize their data"
-cover: "/assets/images/roadmap-cover.webp"
 
 form:
   actionEndpoint: contact/mail
