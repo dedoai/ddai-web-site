@@ -101,6 +101,11 @@
       transition: all 0.3s ease-out!important;
    }
    
+   .header.scrolled {
+      background: rgba(18, 18, 18, 0.70) !important;
+      backdrop-filter: blur(15px) !important;
+   }
+   
    .header:has(input#nav-toggle:checked) {
       background-color: #171717!important;
    }
