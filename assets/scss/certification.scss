@@ -1,0 +1,163 @@
+#_certification .container {
+  //padding: 0;
+  width: 100%;
+}
+
+#_certification .page-title{
+  padding-top: 200px;
+}
+
+#_certification .section-title {
+  margin-bottom: 50px;
+}
+
+#_certification .split {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#_certification .text .title {
+  margin-bottom: 30px;
+}
+
+#_certification .image {
+  height: 250px;
+  background-size: cover;
+}
+
+#_certification .first .text {
+  width: 540px;
+  margin-top: 30px;
+  margin-right: 55px,
+}
+
+#_certification .first .text p{
+  text-align: justify;
+}
+
+#_certification .first .image {
+  width: 655px;
+}
+
+#_certification .second .image {
+  width: 655px;
+  margin: 39px 0;
+}
+
+#_certification .second .text {
+  width: 550px;
+  margin: 30px;
+  //margin-left: 55px;
+}
+
+#_certification .second .text p{
+  text-align: justify;
+}
+
+#_certification .third .title h2 {
+  margin-bottom: 24px;
+}
+
+#_certification .third .title p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#_certification .steps {
+  display: flex;
+  justify-contents: space-between;
+  margin: 50px auto;
+}
+
+#_certification .item {
+  width: 300px;
+  padding: 0 30px;
+}
+
+#_certification .item p {
+  width: 246px;
+}
+
+#_certification .item h3 {
+  width: 271px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #866EFF;
+  margin: 10px 0;
+}
+
+#_certification .arw {
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/images/icons/certification-rgt-arr-icon.webp');
+  background-size: cover;
+  margin: auto;
+}
+
+#_certification .resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#_certification .resume .box{
+  width: 565px;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #FFF;  
+}
+
+#_certification .resume .box h3{
+  width: 402px;
+  margin: auto;
+}
+
+#_certification .barw {
+  width: 90px;
+  height: 90px;
+  background-image: url('/assets/images/icons/certification-big-rgt-arr-icon.webp');
+  background-size: cover;
+}
+
+#_certification .resume .box.b1 {
+  background-image: url('/assets/images/bg-resume-1.webp');
+  background-size: cover;
+}
+
+#_certification .resume .box.b2 {
+  background-image: url('/assets/images/bg-resume-2.webp');
+  background-size: cover;
+}
+
+
+#_certification .arw:last-child {
+  display: none;
+}
+
+#_certification .sect.third .arw{
+  margin-top: 10px;
+}
+
+#_certification .fourth {
+  padding-bottom: 108px;
+}
+
+#_certification .fourth .text {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1279px) {
+  #certification{
+
+  }
+}
