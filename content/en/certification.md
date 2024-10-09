@@ -5,19 +5,19 @@ noheader: true
 meta_title: "dedoAI | Certification Info"
 description: "When Producers sell their datasets, they sign a copyright transfer agreement, granting Consumers the rights to the purchased datasets. Supported by DEDO Tokens, these contracts ensure a clear and traceable transfer of rights, protecting both Producers and Consumers."
 date: 2024-07-23T06:00:00.000Z
-draft: true
+draft: false
 
 
 
 sec_1:
   title: Copyright Guarantee
   text: When a Producer sells their datasets, a copyright transfer agreement is signed, granting Consumers the copyright of the purchased datasets. These contracts, supported by transactions in DedoAI Tokens, ensure a clear and traceable transfer of rights. The copyright transfer process is fundamental in protecting both Producers and Consumers, ensuring that data is used in accordance with the established terms.
-  img: /assets/images/certification-1.webp
+  img: /assets/images/certification-img1.webp
 
 sec_2:
   title: Blockchain Archiving
   text: The DedoAI blockchain serves as an immutable archive for all transactions, guaranteeing data transparency and integrity. Each dataset produced by Producers is uniquely identified by a checksum, a digital fingerprint of the file that ensures the data's uniqueness and integrity. By saving these checksums on the blockchain, a permanent and unalterable trace of each transaction is created, making any manipulation or fraud impossible. This system not only protects Consumers' rights but also provides a reliable and verifiable certification of transactions.
-  img: /assets/images/certification-2.webp
+  img: /assets/images/certification-img2.webp
 
 sec_steps:
   title: Dataset Copyright License
