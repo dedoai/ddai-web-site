@@ -5,6 +5,7 @@
 @import './header.scss';
 @import './home.scss';
 @import './roadmap.scss';
+@import './certification.scss';
 @import './cookieConsent.scss';
 
 @tailwind base;
@@ -37,7 +38,8 @@ footer {
 p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  //line-height: 20px;
+  line-height: 1.21rem;
   text-align: left;
   color: rgba(255, 255, 255, 0.80);
 }
@@ -1447,114 +1449,6 @@ section.intro {
 }
 
 //--- PARTNERS END ---
-
-
-//------------------------------------------------------------------------------
-//--- CERTIFICATION START ---
-
-#_certification .container {
-  padding: 0,
-}
-
-#_certification .section-title {
-  margin-bottom: 50px;
-}
-
-#_certification .split {
-  display: flex;
-  justify-content: space-between;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-align: left;
-  margin-bottom: 50px;
-}
-
-#_certification .text .title {
-  margin-bottom: 30px;
-}
-
-#_certification .image {
-  height: 250px;
-  background-size: cover;
-}
-
-#_certification .first .text {
-  width: 540px;
-  margin-top: 50px;
-  margin-right: 55px,
-}
-
-#_certification .first .image {
-  width: 655px;
-}
-
-#_certification .second .image {
-  width: 655px;
-}
-
-#_certification .second .text {
-  width: 610px;
-  margin-top: 30px;
-  //margin-left: 55px;
-}
-
-#_certification .third .title h2 {
-  margin-bottom: 24px;
-}
-
-#_certification .third .title p {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-}
-
-#_certification .steps {
-  display: flex;
-  justify-contents: space-between;
-  margin: 50px auto;
-}
-
-#_certification .item {
-  width: 300px;
-  padding-left: 30px;
-}
-
-#_certification .item p {
-  width: 246px;
-}
-
-#_certification .item h3 {
-  width: 271px;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 24px;
-  color: #866EFF;
-  margin-bottom: 10px;
-}
-
-#_certification .arw {
-  width: 30px;
-  height: 30px;
-  background-image: url('/assets/images/icons/certification-rgt-arr-icon.webp.webp');
-  background-size: cover;
-}
-
-#_certification .arw:last-child {
-  display: none;
-}
-
-#_certification .fourth .text {
-  width: 100%;
-}
-
-//--- CERTIFICATION END ---
-
-
-//------------------------------------------------------------------------------
-//--- DOCUMENTS START ---
-
-//--- DOCUMENTS END ---
 
 
 //------------------------------------------------------------------------------
