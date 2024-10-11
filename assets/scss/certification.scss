@@ -55,7 +55,6 @@
 #_certification .second .text {
   width: 550px;
   margin: 30px;
-  //margin-left: 55px;
 }
 
 #_certification .second .text p{
@@ -83,7 +82,6 @@
 
 #_certification .item {
   width: 240px;
-  //padding: 0 30px;
 }
 
 #_certification .item p {
@@ -145,12 +143,15 @@
   background-size: cover;
 }
 
-
 #_certification .arw:last-child {
   display: none;
 }
 
-#_certification .sect.third .arw{
+#_certification .graph .smll{
+  display: none;
+}
+
+#_certification .third .arw{
   margin-top: 10px;
 }
 
@@ -168,19 +169,35 @@
 
 
 @media only screen and (max-width: 1279px) {
-  #certification{
-
-  }
   #_certification .image {
     width: 400px;
   }
   
-  #_certification .steps, #_certification .sect.third .steps {
-    padding: 0;
+  #certification .graph .steps{
+    justify-content: space-around;
   }
   
-  #_certification .arw{
+  #_certification .graph .dskt{
     display: none;
+  }
+
+  #_certification .graph .item{
+    width: 360px;
+    margin-bottom: 40px;
+  }
+  
+  #_certification .graph .smll{
+    display: block;
+  }
+  
+  #_certification .graph .arw{
+    display: none;
+  }
+  
+  
+  
+  #_certification .steps, #_certification .sect.third .steps{
+    padding: 0;
   }
   
   #_certification .resume .box{
@@ -190,6 +207,41 @@
   
   #_certification .resume .box h3{
     width: auto;
+  }
+  
+  #_certification .third .steps{
+    justify-content: space-around;
+  }
+
+  #_certification .third .steps .item{
+    width: 360px;
+    margin-bottom: 40px;
+  }
+  
+  #_certification .third .steps .arw{
+    // margin-top: auto;
+    display: none;
+  }
+  
+  #_certification .third .steps div:nth-child(4) {
+    //
+     display: none;
+    /*
+    background-position: center;
+    transform: rotate(135deg);
+    margin-top: 0;
+    width: 100%;
+    background-size: 30px;
+    height: 150px;
+    background-repeat: no-repeat;
+    */
+  }
+  
+  
+  
+
+  #_certification .third img{
+    display: block;
   }
 }
 
@@ -225,11 +277,29 @@
     margin: 0;
   }
   
+  #_certification .graph .item{
+    width: 270px;
+  }
+  
+  /*
   #_certification .steps {
     gap: 50px;
     justify-content: space-around;
   }
-
+  
+  #_certification .arw{
+    display: none;
+  }
+ */
+ 
+  #_certification .third .steps .item {
+    width: 300px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #FFF;
+  }
+ 
+ 
   #_certification .resume {
     flex-direction: column;
     gap: 20px;
@@ -284,7 +354,6 @@
     margin: 0px auto;
   }
   
-  
   #_certification .resume .box {
     width: 100%;
     padding: 25px;
@@ -295,6 +364,17 @@
   #_certification .resume .box h3{
     width: 100%;
   }
+  
+  
+  #_certification .third .steps .item {
+    width: 100%;
+  }
+  
+  #_certification .third .steps div:nth-child(4) {
+    transform: rotate(90deg);
+    height: 30px;
+  }
+
   
   #_certification .third h3 {
     text-align: center;
