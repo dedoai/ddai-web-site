@@ -84,10 +84,6 @@
   width: 240px;
 }
 
-#_certification .item p {
-  //width: 246px;
-}
-
 #_certification .item h3 {
   width: 271px;
   font-size: 20px;
@@ -222,24 +218,7 @@
     // margin-top: auto;
     display: none;
   }
-  
-  #_certification .third .steps div:nth-child(4) {
-    //
-     display: none;
-    /*
-    background-position: center;
-    transform: rotate(135deg);
-    margin-top: 0;
-    width: 100%;
-    background-size: 30px;
-    height: 150px;
-    background-repeat: no-repeat;
-    */
-  }
-  
-  
-  
-
+    
   #_certification .third img{
     display: block;
   }
@@ -280,23 +259,9 @@
   #_certification .graph .item{
     width: 270px;
   }
-  
-  /*
-  #_certification .steps {
-    gap: 50px;
-    justify-content: space-around;
-  }
-  
-  #_certification .arw{
-    display: none;
-  }
- */
  
   #_certification .third .steps .item {
-    width: 300px;
-    padding: 12px;
-    border-radius: 12px;
-    border: 1px solid #FFF;
+    //width: 300px;
   }
  
  
@@ -317,6 +282,10 @@
 
 @media only screen and (max-width: 767px) {
 
+  #_certification .page-title {
+      padding-top: 110px;
+  }
+
   #_certification .page-title h1{
     font-size: 2rem !important;
     line-height: 2.5rem !important;
@@ -329,15 +298,34 @@
   #_certification h3{
     font-size: 1.2rem !important;
   }
-
-  #_certification .steps{
-    gap:0;
+  
+  #_certification .first {
+    gap: 30px;
+    margin-bottom: 50px;
   }
   
-  #_certification .steps .item{
-    margin-bottom: 40px;
-    width: 80%;
-    margin: 40px auto;
+  #_certification .graph .title{
+    margin-bottom: 24px;
+  }
+
+  #_certification .graph .steps{
+    gap:0;
+    margin: 0;
+  }
+  
+  #_certification .graph .steps .item{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+  
+  #_certification .graph .arw {
+    display: block;
+    margin-bottom: 24px;
+  }
+  
+  #_certification .graph .arw:last-child {
+    display: none;
   }
   
   #_certification .steps, #_certification .sect.third .steps {
@@ -354,32 +342,54 @@
     margin: 0px auto;
   }
   
+  #_certification .resume{
+    gap: 24px;
+    margin-bottom: 50px;
+  }
+  
   #_certification .resume .box {
     width: 100%;
-    padding: 25px;
+    padding: 55px 20px;
     height: auto;
     text-align: center;
   }
   
   #_certification .resume .box h3{
     width: 100%;
+    font-size: 1.5rem !important;
   }
   
+  #_certification .resume .barw{
+    width: 50px;
+    height: 50px;
+  }
+  
+  #_certification .third{
+    margin-bottom: 36px;
+  }
+  
+  #_certification .third .steps{
+    margin: 0;
+  }
   
   #_certification .third .steps .item {
     width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
   }
   
-  #_certification .third .steps div:nth-child(4) {
-    transform: rotate(90deg);
-    height: 30px;
-  }
-
-  
-  #_certification .third h3 {
-    text-align: center;
+  #_certification .third .title{
+    margin-bottom: 30px;
   }
   
+  #_certification .third .title p{
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  #_certification .fourth{
+    padding-bottom: 50px;
+  }
 }
 
 
