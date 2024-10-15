@@ -7,33 +7,35 @@ description: "When Producers sell their datasets, they sign a copyright transfer
 date: 2024-07-23T06:00:00.000Z
 draft: false
 
-
-
 sec_1:
   title: Copyright Guarantee
   text: When a Producer sells their datasets, a copyright transfer agreement is signed, granting Consumers the copyright of the purchased datasets. These contracts, supported by transactions in DedoAI Tokens, ensure a clear and traceable transfer of rights. The copyright transfer process is fundamental in protecting both Producers and Consumers, ensuring that data is used in accordance with the established terms.
-  img: /assets/images/certification-img1.webp
+  img: /assets/images/certification/certification-img1.webp
 
 sec_2:
   title: Blockchain Archiving
   text: The DedoAI blockchain serves as an immutable archive for all transactions, guaranteeing data transparency and integrity. Each dataset produced by Producers is uniquely identified by a checksum, a digital fingerprint of the file that ensures the data's uniqueness and integrity. By saving these checksums on the blockchain, a permanent and unalterable trace of each transaction is created, making any manipulation or fraud impossible. This system not only protects Consumers' rights but also provides a reliable and verifiable certification of transactions.
-  img: /assets/images/certification-img2.webp
+  img: /assets/images/certification/certification-img2.webp
 
 sec_steps:
   title: Dataset Copyright License
   steps:
    - title: Step 1
      text: Producers and Consumers Sign ownership right contract
-     img: '/assets/images/certification-steps-placeholder.png'
+     img: '/assets/images/certification/certification-step-1.webp'
+     img2: '/assets/images/certification/certification-step-mob-1.webp'
    - title: Step 2
      text: Ensures that the dataset has not been altered and matches the original file.
-     img: '/assets/images/certification-steps-placeholder.png'
+     img: '/assets/images/certification/certification-step-2.webp'
+     img2: '/assets/images/certification/certification-step-mob-2.webp'
    - title: Step 3
      text: dedoAI connector validates data
-     img: '/assets/images/certification-steps-placeholder.png'
+     img: '/assets/images/certification/certification-step-3.webp'
+     img2: '/assets/images/certification/certification-step-mob-3.webp'
    - title: Step 4
      text: Consumer purchases chosen dataset
-     img: '/assets/images/certification-steps-placeholder.png'
+     img: '/assets/images/certification/certification-step-4.webp'
+     img2: '/assets/images/certification/certification-step-mob-4.webp'
   t2: The producer transfer ownership
   t3: Consumer Acquires the Licensed Dataset
      
@@ -43,12 +45,16 @@ sec_3:
   steps:
    - title: Transaction date and time
      text: Provides a precise timestamp of when the transaction occurred.
+     img: '/assets/images/certification/certification-step-mob-1.webp'
    - title: Unique dataset identifier (checksum)
      text: Ensures that the dataset has not been altered and matches the original file.
+     img: '/assets/images/certification/certification-step-mob-2.webp'
    - title: Producer and Consumer details
      text: Includes information about both parties involved in the transaction, ensuring transparency and accountability.
+     img: '/assets/images/certification/certification-step-mob-3.webp'
    - title: Copyright transfer agreement details
      text: Specifies the terms and conditions of the copyright transfer.
+     img: '/assets/images/certification/certification-step-mob-4.webp'
  
 sec_4:
   title: Legal Validity

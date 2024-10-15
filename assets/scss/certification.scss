@@ -27,6 +27,7 @@
   background-position: center;
   border-radius: 24px;
   border: 1px solid #FFF;
+  box-shadow: 0px 8px 8px 0px #0000001A;
 }
 
 #_certification .first {
@@ -54,7 +55,6 @@
 #_certification .second .text {
   width: 550px;
   margin: 30px;
-  //margin-left: 55px;
 }
 
 #_certification .second .text p{
@@ -82,11 +82,6 @@
 
 #_certification .item {
   width: 240px;
-  //padding: 0 30px;
-}
-
-#_certification .item p {
-  //width: 246px;
 }
 
 #_certification .item h3 {
@@ -144,12 +139,15 @@
   background-size: cover;
 }
 
-
 #_certification .arw:last-child {
   display: none;
 }
 
-#_certification .sect.third .arw{
+#_certification .graph .smll{
+  display: none;
+}
+
+#_certification .third .arw{
   margin-top: 10px;
 }
 
@@ -167,19 +165,35 @@
 
 
 @media only screen and (max-width: 1279px) {
-  #certification{
-
-  }
   #_certification .image {
     width: 400px;
   }
   
-  #_certification .steps, #_certification .sect.third .steps {
-    padding: 0;
+  #certification .graph .steps{
+    justify-content: space-around;
   }
   
-  #_certification .arw{
+  #_certification .graph .dskt{
     display: none;
+  }
+
+  #_certification .graph .item{
+    width: 360px;
+    margin-bottom: 40px;
+  }
+  
+  #_certification .graph .smll{
+    display: block;
+  }
+  
+  #_certification .graph .arw{
+    display: none;
+  }
+  
+  
+  
+  #_certification .steps, #_certification .sect.third .steps{
+    padding: 0;
   }
   
   #_certification .resume .box{
@@ -189,6 +203,24 @@
   
   #_certification .resume .box h3{
     width: auto;
+  }
+  
+  #_certification .third .steps{
+    justify-content: space-around;
+  }
+
+  #_certification .third .steps .item{
+    width: 360px;
+    margin-bottom: 40px;
+  }
+  
+  #_certification .third .steps .arw{
+    // margin-top: auto;
+    display: none;
+  }
+    
+  #_certification .third img{
+    display: block;
   }
 }
 
@@ -203,6 +235,10 @@
   
   #_certification .image {
     width: 100%;
+    order: 1;
+  }
+  
+  #_certification .text {
     order: 2;
   }
   
@@ -220,11 +256,15 @@
     margin: 0;
   }
   
-  #_certification .steps {
-    gap: 50px;
-    justify-content: space-around;
+  #_certification .graph .item{
+    width: 270px;
   }
-
+ 
+  #_certification .third .steps .item {
+    //width: 300px;
+  }
+ 
+ 
   #_certification .resume {
     flex-direction: column;
     gap: 20px;
@@ -242,6 +282,10 @@
 
 @media only screen and (max-width: 767px) {
 
+  #_certification .page-title {
+      padding-top: 110px;
+  }
+
   #_certification .page-title h1{
     font-size: 2rem !important;
     line-height: 2.5rem !important;
@@ -254,15 +298,34 @@
   #_certification h3{
     font-size: 1.2rem !important;
   }
-
-  #_certification .steps{
-    gap:0;
+  
+  #_certification .first {
+    gap: 30px;
+    margin-bottom: 50px;
   }
   
-  #_certification .steps .item{
-    margin-bottom: 40px;
-    width: 80%;
-    margin: 40px auto;
+  #_certification .graph .title{
+    margin-bottom: 24px;
+  }
+
+  #_certification .graph .steps{
+    gap:0;
+    margin: 0;
+  }
+  
+  #_certification .graph .steps .item{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+  
+  #_certification .graph .arw {
+    display: block;
+    margin-bottom: 24px;
+  }
+  
+  #_certification .graph .arw:last-child {
+    display: none;
   }
   
   #_certification .steps, #_certification .sect.third .steps {
@@ -279,22 +342,54 @@
     margin: 0px auto;
   }
   
+  #_certification .resume{
+    gap: 24px;
+    margin-bottom: 50px;
+  }
   
   #_certification .resume .box {
     width: 100%;
-    padding: 25px;
+    padding: 55px 20px;
     height: auto;
     text-align: center;
   }
   
   #_certification .resume .box h3{
     width: 100%;
+    font-size: 1.5rem !important;
   }
   
-  #_certification .third h3 {
-    text-align: center;
+  #_certification .resume .barw{
+    width: 50px;
+    height: 50px;
   }
   
+  #_certification .third{
+    margin-bottom: 36px;
+  }
+  
+  #_certification .third .steps{
+    margin: 0;
+  }
+  
+  #_certification .third .steps .item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  
+  #_certification .third .title{
+    margin-bottom: 30px;
+  }
+  
+  #_certification .third .title p{
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  #_certification .fourth{
+    padding-bottom: 50px;
+  }
 }
 
 
