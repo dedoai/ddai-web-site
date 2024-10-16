@@ -19,49 +19,19 @@
         <div class="author">
             <img src="/assets/images/icons/news-author-icon.webp"> {{$_.author}}
         </div>
-        <div class="share">
-            <ul class="social-icons">
-                <li>
-                  <a target="_blank" aria-label="linkedin" rel="nofollow noopener" href="https://www.linkedin.com/">
-                    <i class="fab fa-linkedin"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a target="_blank" aria-label="instagram" rel="nofollow noopener" href="https://www.instagram.com/">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a target="_blank" aria-label="x" rel="nofollow noopener" href="https://x.com/">
-                    <i class="fab fa-x"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a target="_blank" aria-label="github" rel="nofollow noopener" href="https://www.github.com/">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
-              
-                <li>
-                  <a target="_blank" aria-label="email" rel="nofollow noopener" href="mailto:hello@dedoai.org">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-            </ul>
-        </div>
+        {{ partial "components/custom-share" . }}
     </div>
-    
+    {{ with $_.hideCover }}{{ else }}
     <div class="img_hldr" style="background-image:url('{{$img}}');"></div>
-<!--
-    <img class="cover" src="{{$img}}" alt="{{$_.title}}"/>    
--->
+    {{ end }}
     
     <article class="content">
-        {{ .Content  | markdownify }}
+        {{ .Content }}
     </article>
+    
+    <div class="go-back">
+      <a class="btn btn-cta" href="/news/">Go back</a>
+    </div>
     
     <div class="sepline"></div>
     
@@ -70,51 +40,18 @@
             <div class="author">
                 <img src="/assets/images/icons/news-author-icon.webp">{{$_.author}}
             </div>
-            <div class="share">
-                <ul class="social-icons">
-                    <li>
-                      <a target="_blank" aria-label="linkedin" rel="nofollow noopener" href="https://www.linkedin.com/">
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a target="_blank" aria-label="instagram" rel="nofollow noopener" href="https://www.instagram.com/">
-                        <i class="fab fa-instagram"></i>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a target="_blank" aria-label="x" rel="nofollow noopener" href="https://x.com/">
-                        <i class="fab fa-x"></i>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a target="_blank" aria-label="github" rel="nofollow noopener" href="https://www.github.com/">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                  
-                    <li>
-                      <a target="_blank" aria-label="email" rel="nofollow noopener" href="mailto:hello@dedoai.org">
-                        <i class="fa fa-envelope"></i>
-                      </a>
-                    </li>
-                </ul>
-            </div>
+            {{ partial "components/custom-share" . }}
         </div>
 
       <!-- Latest Posts -->
       {{ $latest := ( last 5 ( where .Site.Pages "Type" "news" ).ByDate )  | intersect (where site.RegularPages ".Title" "!=" .Title) }}
       {{ $latest = $latest | last 3 }}
       {{ with $latest }}
-        <div class="section pb-0">
-          <h2 class="h3 mb-12">{{ i18n "related_posts" }}</h2>
+        <div class="latest-posts">
+          <h2 class="h3">{{ i18n "latest_posts" }}</h2>
           <div id="_news">
             {{ range . }}
                 {{ partial "components/post-item" . }}
-
             {{ end }}
           </div>
         </div>

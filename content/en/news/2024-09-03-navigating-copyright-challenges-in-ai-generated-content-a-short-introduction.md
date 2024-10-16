@@ -1,6 +1,6 @@
 ---
 title: "Navigating copyright challenges in AI-generated content: A short introduction"
-description: "Navigating copyright in AI-generated content is tricky. Who owns it? Is it truly original? It's crucial to certify the sources of datasets used in AI training, ensuring legal compliance and ethical standards.  #AI #Copyright #ContentCreation #datasets"
+description: "Navigating copyright in AI-generated content is tricky. Who owns it? Is it truly original? It's crucial to certify the sources of datasets used in AI training, ensuring legal compliance and ethical standards."
 date: 2024-09-03T06:00:00Z
 image: "/assets/images/news/post-003.jpeg"
 category: "Copyright"
