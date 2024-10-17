@@ -1,6 +1,6 @@
 ---
-title: "The Vision Behind dedoAI: Preparing for the AI Economy"
-description: "Artificial Intelligence (AI) is transforming industries at an unprecedented pace. While AI is becoming smarter, it heavily relies on quality data to learn and improve."
+title: "The vision behind dedoAI: preparing for the AI economy"
+description: "Artificial Intelligence is transforming industries at an unprecedented pace. While AI is becoming smarter, it heavily relies on quality data to learn and improve."
 date: 2024-10-08T06:00:00Z
 image: "/assets/images/news/post-028.jpeg"
 category: "Introduction"
