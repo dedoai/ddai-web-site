@@ -1,4 +1,9 @@
-//  NEWS LIST START
+//  NEWS LIST
+#_news .container{
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #_news .title {
   font-size: 48px;
   font-weight: 700;
@@ -339,6 +344,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+
+  #_news .container{
+  padding-left: 19px;
+  padding-right: 19px;
+  }
 
   #_news .item{
     width: 100%;
