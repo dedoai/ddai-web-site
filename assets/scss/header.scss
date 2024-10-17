@@ -110,6 +110,14 @@
       background-color: #171717!important;
    }
    
+   input#nav-toggle:checked ~ #nav-menu {
+    display: flex!important;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 60px);
+    padding: 0 20px 40px 20px;
+   }
+   
    .navbar.container {
       max-width: 100%;
    }
@@ -137,11 +145,11 @@
    }
    
    .navbar .nav-item {
-      height: 50px;
+      //height: 50px;
       display: flex;
       align-items: center;
       //margin: 75px 30px;
-      margin: 30px;
+      //margin: 30px;
    }
    
    .navbar .nav-item:first-item{
@@ -188,6 +196,10 @@
    
    .navbar .nav-item:nth-child(5)  a:before{
       background-image: url('/assets/images/menu/mobile/mobile-ico-certification.png');
+   }
+   
+   .navbar .nav-item:nth-child(6)  a:before{
+      background-image: url('/assets/images/menu/mobile/mobile-ico-news.png');
    }
    
    .navbar .nav-item:last-child  a:before{
