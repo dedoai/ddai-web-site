@@ -70,8 +70,8 @@ certifications:
     title: "Upholding Data Protection Standards"
     text: "Dedo AI integrates compliance mechanisms with data protection laws like GDPR and CCPA, setting a benchmark for quality, transparency, and legality in data transactions."
   
-  cta_text: "Read Litepaper"
-  cta_link: "/documents"
+  cta_text: "Read More"
+  cta_link: "/certification/"
 
 countdown:
   title: "DEDOAI Token: Your Key to "

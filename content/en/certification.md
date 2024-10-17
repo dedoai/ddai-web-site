@@ -9,12 +9,12 @@ draft: false
 
 sec_1:
   title: Copyright Guarantee
-  text: When a Producer sells their datasets, a copyright transfer agreement is signed, granting Consumers the copyright of the purchased datasets. These contracts, supported by transactions in DedoAI Tokens, ensure a clear and traceable transfer of rights. The copyright transfer process is fundamental in protecting both Producers and Consumers, ensuring that data is used in accordance with the established terms.
+  text: When a Producer sells their datasets, a copyright transfer agreement is signed, granting Consumers the copyright of the purchased datasets. These contracts, supported by transactions in dedoAI Tokens, ensure a clear and traceable transfer of rights. The copyright transfer process is fundamental in protecting both Producers and Consumers, ensuring that data is used in accordance with the established terms.
   img: /assets/images/certification/certification-img1.webp
 
 sec_2:
   title: Blockchain Archiving
-  text: The DedoAI blockchain serves as an immutable archive for all transactions, guaranteeing data transparency and integrity. Each dataset produced by Producers is uniquely identified by a checksum, a digital fingerprint of the file that ensures the data's uniqueness and integrity. By saving these checksums on the blockchain, a permanent and unalterable trace of each transaction is created, making any manipulation or fraud impossible. This system not only protects Consumers' rights but also provides a reliable and verifiable certification of transactions.
+  text: The dedoAI blockchain serves as an immutable archive for all transactions, guaranteeing data transparency and integrity. Each dataset produced by Producers is uniquely identified by a checksum, a digital fingerprint of the file that ensures the data's uniqueness and integrity. By saving these checksums on the blockchain, a permanent and unalterable trace of each transaction is created, making any manipulation or fraud impossible. This system not only protects Consumers' rights but also provides a reliable and verifiable certification of transactions.
   img: /assets/images/certification/certification-img2.webp
 
 sec_steps:
@@ -58,7 +58,7 @@ sec_3:
  
 sec_4:
   title: Legal Validity
-  text1: The downloadable certificate issued by DedoAI has full legal validity. It is supported by digitally signed copyright transfer agreements from the Producers, making each transaction transparent and verifiable. The transactions and their related checksums are immutably recorded on the blockchain, ensuring they cannot be altered or tampered with.
+  text1: The downloadable certificate issued by dedoAI has full legal validity. It is supported by digitally signed copyright transfer agreements from the Producers, making each transaction transparent and verifiable. The transactions and their related checksums are immutably recorded on the blockchain, ensuring they cannot be altered or tampered with.
   text2: This certificate provides tangible and reliable proof of the copyright acquired by the Consumer, including all relevant details of the transaction and the dataset. With this system, Consumers can be confident in the legitimacy and integrity of the purchased data, while Producers can securely and transparently certify the transfer of their copyright.
   
 ---
