@@ -1,0 +1,25 @@
+<div class="share">
+  <ul class="share-icons">
+    <li><!-- Linkedin -->
+      <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink }}&amp;title={{ .Title }}&amp;summary={{ .Title }}&amp;{{ .Permalink }}" target="_blank" rel="noopener" aria-label="">
+        <img src="/assets/images/icons/share/share-linkedin.png" alt="Share on " title="Share on " />
+      </a>
+    </li>
+    <li><!--  Facebook  -->
+      <a href="https://facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener" aria-label="" title="Facebook">
+        <img src="/assets/images/icons/share/share-facebook.png" alt="Share on " title="Share on " />
+      </a>
+    </li>
+    <li><!-- Twitter / X -->
+      <a href="https://twitter.com/intent/tweet/?text={{ .Title }}&amp;url={{ .Permalink }}" target="_blank" rel="noopener" aria-label="" title="Twitter">
+        <img src="/assets/images/icons/share/share-twitter.png" alt="Share on " title="Share on " />
+      </a>
+    </li>
+
+    <li><!-- Email -->
+      <a href="mailto:?subject={{ .Title }}&amp;body={{ .Permalink }}" target="_blank" rel="noopener" aria-label="" title="E-Mail">
+        <img src="/assets/images/icons/share/share-email.png" alt="Share on " title="Share on " />
+      </a>
+    </li>
+  </ul>
+</div>

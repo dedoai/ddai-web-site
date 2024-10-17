@@ -26,9 +26,14 @@ url = "/certification/"
 weight = 5
 
 [[main]]
+name = "News"
+url = "/news/"
+weight = 6
+
+[[main]]
 name = "Contact US"
 url = "/contacts/"
-weight = 6
+weight = 7
 
 #-----------------
 # Footer menu
@@ -82,6 +87,12 @@ parent = "Informations"
 name = "DEDO Token"
 url = "/#countdown"
 weight = 3
+
+[[footer]]
+parent = "Informations"
+name = "News"
+url = "/news/"
+weight = 4
 
 
 [[legal]]
