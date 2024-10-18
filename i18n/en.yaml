@@ -10,9 +10,6 @@
 - id: related_posts
   translation: Related Posts
 
-- id: latest_posts
-  translation: "Also check out our latest Posts!"
-
 - id: categories
   translation: Categories
 

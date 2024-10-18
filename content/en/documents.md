@@ -19,7 +19,7 @@ t2SpanTitle: Litepaper.
 p2: Discover our mission, technology, and solutions with dedoAI. Our Litepaper offers a concise, comprehensive introduction, perfect for those new to dedoAI or blockchain technology.
 cover: "/assets/images/documents-cover.webp"
 cta_text: Download Litepaper
-cta_link: "/assets/media/Litepaper_dedoAI_V1.23.pdf"
+cta_link: "/assets/media/Litepaper_dedoAI_V1.22.pdf"
 
 t3: Stay
 t3SpanTitle: Informed.

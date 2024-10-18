@@ -21,19 +21,9 @@ url = "/documents/"
 weight = 4
 
 [[main]]
-name = "Certification"
-url = "/certification/"
-weight = 5
-
-[[main]]
-name = "News"
-url = "/news/"
-weight = 6
-
-[[main]]
 name = "Contact US"
 url = "/contacts/"
-weight = 7
+weight = 5
 
 #-----------------
 # Footer menu
@@ -79,7 +69,7 @@ weight = 1
 [[footer]]
 parent = "Informations"
 name = "Copyright Certificate"
-url = "/certification/"
+url = "/#certifications"
 weight = 2
 
 [[footer]]
@@ -87,12 +77,6 @@ parent = "Informations"
 name = "DEDO Token"
 url = "/#countdown"
 weight = 3
-
-[[footer]]
-parent = "Informations"
-name = "News"
-url = "/news/"
-weight = 4
 
 
 [[legal]]

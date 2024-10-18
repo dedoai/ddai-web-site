@@ -13,27 +13,27 @@
    .header {
       @apply py-0 #{!important};
    }
-   
-   .nav-hldr{
-      display: flex;
-      align-content: center;
-      width: auto;
+       
+   .navbar.container {
       position: absolute;      
       top: 24px;
       left: 0; 
       right: 0; 
-   }
-   
-   .navbar.centered {
-      height:80px;
       margin-left: auto; 
-      margin-right: auto;
+      margin-right: auto; 
+
+      max-width: unset;
+      width: 775px;
+      height:80px;
+
+      display: flex;
+      justify-content: space-between;
       align-content: center;
       padding: 21px;
       border-radius: 24px;
       background: rgba(23, 23, 23, 0.7);
       box-shadow: 0px 4px 4px 0px #0000001A;
-      backdrop-filter: blur(6px); 
+      backdrop-filter: blur(6px);
    }
    
    .navbar #nav-menu:before {
@@ -101,31 +101,12 @@
       transition: all 0.3s ease-out!important;
    }
    
-   .header.scrolled {
-      background: rgba(18, 18, 18, 0.70) !important;
-      backdrop-filter: blur(15px) !important;
-   }
-   
    .header:has(input#nav-toggle:checked) {
       background-color: #171717!important;
    }
    
-   input#nav-toggle:checked ~ #nav-menu {
-    display: flex!important;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100vh - 60px);
-    padding: 0 20px 40px 20px;
-   }
-   
    .navbar.container {
       max-width: 100%;
-   }
-   
-   .navbar.centered {
-     max-width: 100%;
-     padding-left: 1rem;
-     padding-right: 1rem;
    }
 
    .navbar .navbar-brand .img {
@@ -141,12 +122,13 @@
       border-top: 1px solid rgba(255, 255, 255, 0.2);
       background-color: #171717;
       padding-bottom: 0;
-      height: 90vh;
    }
    
    .navbar .nav-item {
+      height: 50px;
       display: flex;
       align-items: center;
+      margin: 75px 30px;
    }
    
    .navbar .nav-item:first-item{
@@ -189,14 +171,6 @@
    
    .navbar .nav-item:nth-child(4)  a:before{
       background-image: url('/assets/images/menu/mobile/mobile-ico-documents.png');
-   }
-   
-   .navbar .nav-item:nth-child(5)  a:before{
-      background-image: url('/assets/images/menu/mobile/mobile-ico-certification.png');
-   }
-   
-   .navbar .nav-item:nth-child(6)  a:before{
-      background-image: url('/assets/images/menu/mobile/mobile-ico-news.png');
    }
    
    .navbar .nav-item:last-child  a:before{

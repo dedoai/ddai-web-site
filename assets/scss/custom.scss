@@ -5,8 +5,6 @@
 @import './header.scss';
 @import './home.scss';
 @import './roadmap.scss';
-@import './certification.scss';
-@import './news.scss';
 @import './cookieConsent.scss';
 
 @tailwind base;
@@ -39,8 +37,7 @@ footer {
 p {
   font-size: 16px;
   font-weight: 400;
-  //line-height: 20px;
-  line-height: 1.21rem;
+  line-height: 20px;
   text-align: left;
   color: rgba(255, 255, 255, 0.80);
 }
@@ -1085,7 +1082,239 @@ section.intro {
   font-weight: 700;
   line-height: 20px;
 }
+
 //--- TECHNOLOGY END ---
+
+//------------------------------------------------------------------------------
+//--- NEWS START ---
+
+#news .title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 50px;
+}
+
+#news .news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#news .item {
+  width: 390px;
+  margin-bottom: 60px;
+}
+
+#news .cover {
+  width: 390px;
+  height: 140px;
+  border-radius: 24px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+#news .info {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #866EFF;
+  margin-bottom: 15px;
+}
+
+#news .info span {
+  margin-right: 20px;
+}
+
+#news .info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+#news h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+#news p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+#news .author {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #FFF;
+  opacity: 1;
+}
+
+#news .author img {
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: -3px;
+}
+
+//--- NEWS END ---
+
+
+//------------------------------------------------------------------------------
+//--- NEWS DETAIL START ---
+
+
+#_news-detail .container {
+  width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+
+#_news-detail .info {
+  margin-bottom: 30px;
+  color: #866EFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+#_news-detail .info span {
+  margin-right: 20px;
+}
+
+#_news-detail .title {
+  margin-bottom: 30px;
+}
+
+#_news-detail .title h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 25px;
+}
+
+#_news-detail .title p {}
+
+#_news-detail .cover {
+  margin-bottom: 50px;
+}
+
+#_news-detail .shrhldr {
+  display: flex;
+  justify-content: space-between;
+}
+
+#_news-detail .content {
+  width: 880px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+#_news-detail .content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 50px;
+  color: #FFFFFFCC;
+}
+
+#_news-detail .content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #FFFFFFCC;
+}
+
+#_news-detail .prefooter {
+  margin-bottom: 30px;
+}
+
+#_news-detail .share {
+  margin-bottom: 50px;
+}
+
+.sepline {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 33.29%, rgba(255, 255, 255, 0.8) 91.49%, rgba(255, 255, 255, 0.4) 130.91%);
+  margin-bottom: 50px;
+}
+
+#_news-detail .rel_title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+
+#_news-detail .author {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+#_news-detail .author img {
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: -3px;
+}
+
+#_news-detail .share .social-icons li a {
+  border-radius: 1.25rem;
+  background: #FFF;
+  color: #171717;
+  height: 2rem;
+  width: 2rem;
+}
+
+#_news-detail .latest-articles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#_news-detail .latest-articles .item {
+  width: 390px;
+}
+
+#_news-detail .latest-articles .info {
+  margin-bottom: 15px;
+}
+
+#_news-detail .info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+#_news-detail .latest-articles .item .cover {
+  margin-bottom: 20px;
+}
+
+#_news-detail .latest-articles .item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+#_news-detail .latest-articles .item p {
+  margin-bottom: 15px;
+}
+
+//--- NEWS DETAIL END ---
+
 
 //------------------------------------------------------------------------------
 //--- CAREERS START ---
@@ -1218,6 +1447,114 @@ section.intro {
 }
 
 //--- PARTNERS END ---
+
+
+//------------------------------------------------------------------------------
+//--- CERTIFICATION START ---
+
+#_certification .container {
+  padding: 0,
+}
+
+#_certification .section-title {
+  margin-bottom: 50px;
+}
+
+#_certification .split {
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#_certification .text .title {
+  margin-bottom: 30px;
+}
+
+#_certification .image {
+  height: 250px;
+  background-size: cover;
+}
+
+#_certification .first .text {
+  width: 540px;
+  margin-top: 50px;
+  margin-right: 55px,
+}
+
+#_certification .first .image {
+  width: 655px;
+}
+
+#_certification .second .image {
+  width: 655px;
+}
+
+#_certification .second .text {
+  width: 610px;
+  margin-top: 30px;
+  //margin-left: 55px;
+}
+
+#_certification .third .title h2 {
+  margin-bottom: 24px;
+}
+
+#_certification .third .title p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+#_certification .steps {
+  display: flex;
+  justify-contents: space-between;
+  margin: 50px auto;
+}
+
+#_certification .item {
+  width: 300px;
+  padding-left: 30px;
+}
+
+#_certification .item p {
+  width: 246px;
+}
+
+#_certification .item h3 {
+  width: 271px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #866EFF;
+  margin-bottom: 10px;
+}
+
+#_certification .arw {
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/images/icons/certification-rgt-arr-icon.webp.webp');
+  background-size: cover;
+}
+
+#_certification .arw:last-child {
+  display: none;
+}
+
+#_certification .fourth .text {
+  width: 100%;
+}
+
+//--- CERTIFICATION END ---
+
+
+//------------------------------------------------------------------------------
+//--- DOCUMENTS START ---
+
+//--- DOCUMENTS END ---
 
 
 //------------------------------------------------------------------------------
