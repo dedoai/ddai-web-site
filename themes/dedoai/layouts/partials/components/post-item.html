@@ -1,0 +1,16 @@
+{{ $tformat := "2 Jan 2006" }}
+{{ $image := .Params.image }}
+{{ if ( eq $image "" ) }}
+  {{ $image = "/assets/images/news/1.webp" }}
+{{ end }}
+  <div class="item">
+      <a href="{{.RelPermalink}}"><div class="cover" style="background-image:url('{{$image}}');" alt="{{ .Title }}"></div></a>
+      <div class="info">
+          <span>{{ .Params.date | time.Format $tformat }}</span>
+          <span><img src="/assets/images/icons/news-cat-icon.webp">{{.Params.category}}</span>
+          <span>{{.ReadingTime}} Min Read</span>
+      </div>
+      <a href="{{.RelPermalink}}"><h2>{{ .Title }}</h2>
+      <p>{{.Description}}</p></a>
+      <p class="author"><img src="/assets/images/icons/news-author-icon.webp"><span>{{ .Params.author }}</span></p>
+  </div>
