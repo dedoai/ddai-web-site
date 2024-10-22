@@ -1,5 +1,29 @@
 // Do not change the order of BPs since they're used in the declaration's order
 
+  #latest-news {
+    margin: auto;
+    margin-top: 190px;
+  }
+  
+  #latest-news .latest-posts #_news {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #latest-news #_news .item{
+    margin-bottom: 0px;
+  }
+  
+  #latest-news .latest-posts h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #latest-news #_news .info span {
+    margin-right: 10px;
+  }
+
 // BEYOND XL 
 @media only screen and (min-width: 1280px) {
 
@@ -155,6 +179,14 @@
   }
 
   // END COUNTDOWN
+  
+  #latest-news #_news .item {
+    width: 320px;
+  }
+  
+  #latest-news #_news .info span:last-of-type {
+    display: none;
+  }
 }
 
 // FROM MD TO LG
@@ -303,6 +335,29 @@
   }
 
   // END COUNTDOWN
+  
+  #latest-news {
+    margin: 80px auto;
+    margin-bottom: 0;
+  }
+  
+  #latest-news .latest-posts #_news {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  #latest-news .latest-posts #_news .item {
+    margin: auto;
+    width: 390px;
+  }
+  #latest-news  .latest-posts #_news .item:last-of-type {
+   display: block;
+  }
+  
+  #latest-news #_news .cover {
+    height: 0;
+    padding-bottom: 50%;
+  }
 }
 
 // FROM XS TO MD
@@ -499,6 +554,13 @@
   }
 
   // END INFO
+  #latest-news #_news .item {
+    width: 100% !important;
+  }
+  
+  #latest-news #_news .info span:last-of-type {
+    display: inline-block;
+  }
 }
 
 // BELOW XS

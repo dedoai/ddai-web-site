@@ -9,12 +9,10 @@
       <span class="category"><img src="/assets/images/icons/news-cat-icon.webp">{{.Params.category}}</span>
       <span>{{.ReadingTime}} Min Read</span>
     </div>
-    
     <div class="title">
         <h1>{{$_.title}}</h1>
         <p>{{$_.description}}</p>
     </div>
-
     <div class="shrhldr">
         <div class="author">
             <img src="/assets/images/icons/news-author-icon.webp"> {{$_.author}}
@@ -24,38 +22,21 @@
     {{ with $_.hideCover }}{{ else }}
     <div class="img_hldr" style="background-image:url('{{$img}}');"></div>
     {{ end }}
-    
     <article class="content">
         {{ .Content }}
     </article>
-    
     <div class="go-back">
       <a class="btn btn-cta" href="/news/">Go back</a>
     </div>
-    
     <div class="sepline"></div>
-    
     <div class="secondary">    
-        <div class="shrhldr">
-            <div class="author">
-                <img src="/assets/images/icons/news-author-icon.webp">{{$_.author}}
-            </div>
-            {{ partial "components/custom-share" . }}
+      <div class="shrhldr">
+        <div class="author">
+          <img src="/assets/images/icons/news-author-icon.webp">{{$_.author}}
         </div>
-
-      <!-- Latest Posts -->
-      {{ $latest := ( last 5 ( where .Site.Pages "Type" "news" ).ByDate )  | intersect (where site.RegularPages ".Title" "!=" .Title) }}
-      {{ $latest = $latest | last 3 }}
-      {{ with $latest }}
-        <div class="latest-posts">
-          <h2 class="h3">{{ i18n "latest_posts" }}</h2>
-          <div id="_news">
-            {{ range . }}
-                {{ partial "components/post-item" . }}
-            {{ end }}
-          </div>
-        </div>
-      {{ end }}
+        {{ partial "components/custom-share" . }}
+      </div>
+      {{ partial "common/latest-news" . }}
     </div>
   </section>
 {{ end }}

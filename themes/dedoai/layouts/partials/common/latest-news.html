@@ -1,0 +1,13 @@
+<!-- Latest Posts -->
+{{ $latest := ( last 5 ( where .Site.Pages "Type" "news" ).ByDate )  | intersect (where site.RegularPages ".Title" "!=" .Title) }}
+{{ $latest = $latest | last 3 }}
+{{ with $latest }}
+  <div class="latest-posts">
+    <h2 class="h3">{{ i18n "latest_posts" }}</h2>
+    <div id="_news">
+      {{ range . }}
+          {{ partial "components/post-item" . }}
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

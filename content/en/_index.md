@@ -176,6 +176,9 @@ newsletter:
   error: "Problem ssubscibing"
   btn_txt: "Subscribe"
   btn_link: "#"
+  
+latestnews:
+  title: "Our latest news"
 ---
 {{< wrap >}}
 {{< section "home/hero">}}
@@ -183,4 +186,5 @@ newsletter:
 {{< section "home/certifications">}}
 {{< section "home/countdown">}}
 {{< section "home/info">}}
+{{< section "home/latest-news">}}
 {{< /wrap >}}
