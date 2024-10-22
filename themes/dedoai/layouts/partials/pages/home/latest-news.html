@@ -1,0 +1,16 @@
+{{- $_ := .Page.Params -}}
+
+<!-- Latest Posts -->
+{{ $latest := first 3 (where site.RegularPages "Type" "news").ByDate.Reverse }}
+{{ with $latest }}
+<div class="container">
+  <div class="latest-posts">
+    <h2 class="h3">{{$_.latestnews.title}}</h2>
+    <div id="_news">
+      {{ range . }}
+          {{ partial "components/post-item" . }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
