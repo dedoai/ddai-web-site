@@ -25,9 +25,6 @@ team:
  - name: "/assets/images/about/cto.svg"
    descr: Founder
    linkedin: "https://www.linkedin.com/in/ivan-di-lelio-49255526/"
- - name: "/assets/images/about/cds.svg"
-   descr: Founder
-   linkedin: ""
  - name: "/assets/images/about/head-dev.svg"
    descr: Head of Dev
    linkedin: "https://www.linkedin.com/in/mihai-gabriel-canea/"
